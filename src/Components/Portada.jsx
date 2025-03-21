@@ -12,7 +12,7 @@ function Portada() {
     return (
         <div className="portada-container">
             <div className="contenido">
-                <h1 className="titulo">🦖 Aventura Prehistórica</h1>
+                <h1 className="titulo"> Aventura Prehistórica</h1>
                 <p className="subtitulo">Explora, aprende y descubre en el Parque Jurásico Educativo</p>
                 <button className="btn-aventura" onClick={handleStart}>
                     Empezar Aventura
