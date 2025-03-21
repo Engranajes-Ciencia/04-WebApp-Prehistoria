@@ -36,3 +36,24 @@
     background-color: #0056b3;
   }
   
+
+
+    .avatar-options {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 10px;
+    }
+  
+    .avatar-options img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 2px solid gray;
+      cursor: pointer;
+      transition: border 0.3s ease;
+    }
+  
+    .avatar-options img.selected {
+      border: 4px solid green;
+    }
