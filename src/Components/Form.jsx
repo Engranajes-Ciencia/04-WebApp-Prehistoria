@@ -1,11 +1,21 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
+import exploradorImg from '../assets/avatars/explorador.png';
+import exploradoraImg from '../assets/avatars/exploradora.png';
+
+
 
 function Form() {
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState("");
   const navigate = useNavigate(); // React Router redirection
+
+  const avatars = {
+    explorador: exploradorImg,
+    exploradora: exploradoraImg,
+  };
+
 
   // Actualiza el estado del nombre
   const handleName = (e) => setName(e.target.value);
@@ -49,7 +59,7 @@ function Form() {
       <fieldset>
         <label>Elige tu avatar:</label>
         <div className="avatar-options">
-          {["explorador", "exploradora"].map((tipo) => (
+          {Object.keys(avatars).map((tipo) => (
             <label key={tipo}>
               <input
                 type="radio"
@@ -60,7 +70,7 @@ function Form() {
                 className="hidden"
               />
               <img
-                src={`/avatars/${tipo}.png`}
+                src={avatars[tipo]}
                 alt={tipo}
                 className={`avatar-img ${avatar === tipo ? "selected" : ""}`}
               />
@@ -69,6 +79,7 @@ function Form() {
               </p>
             </label>
           ))}
+
         </div>
       </fieldset>
 
