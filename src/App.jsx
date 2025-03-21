@@ -1,7 +1,8 @@
 import { Routes, Route } from "react-router-dom";
+import Portada from "./Components/Portada";
 import Header from "./Components/Header";
 import Form from "./Components/Form";
-import Mapa from "./Components/Mapa"; // Asegúrate de tener este componente
+import Mapa from "./Components/Mapa"; 
 import "./index.css";
 
 
@@ -11,9 +12,9 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Form />} />
+        <Route path="/" element={<Portada />} />
+        <Route path="/form" element={<Form />} />
         <Route path="/mapa" element={<Mapa />} />
-        {/* Aquí puedes añadir más rutas como /actividad/:id más adelante */}
       </Routes>
     </div>
   );

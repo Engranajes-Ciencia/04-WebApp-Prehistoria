@@ -60,7 +60,7 @@ function Form() {
   return (
 
     <>
-      {/* Fondo que cambia */}
+      {/* Fondo  */}
       <div
         className="fondo-cambiante"
         style={{
