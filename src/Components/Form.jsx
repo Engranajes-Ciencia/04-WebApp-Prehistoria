@@ -1,55 +1,75 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./Form.css";
 
 function Form() {
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState("");
+  const navigate = useNavigate(); // React Router redirection
 
-  // Función para manejar el cambio en el input de nombre
-  const handleName = (e) => {
-    setName(e.target.value);
-  };
+  // Actualiza el estado del nombre
+  const handleName = (e) => setName(e.target.value);
 
-  // Función para manejar el cambio en el select de avatar
-  const handleAvatar = (e) => {
-    setAvatar(e.target.value);
-  };
+  // Actualiza el estado del avatar
+  const handleAvatar = (e) => setAvatar(e.target.value);
 
-  // Función para manejar el envío del formulario. Evita que se recargue la página.
+  // Manejo del envío del formulario
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(`¡Bienvenido, ${name}! ¡Bonita foto de ${avatar} has elegido!`);
-    setName("");   // Reinicia el input de nombre
-    setAvatar(""); // Reinicia el select de avatar
+
+    if (!name || !avatar) {
+      alert("Por favor, escribe tu nombre y elige un avatar.");
+      return;
+    }
+
+    // Guardamos en localStorage
+    localStorage.setItem("nombre", name);
+    localStorage.setItem("avatar", avatar);
+
+    // Redirigimos al mapa
+    navigate("/mapa");
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="form" onSubmit={handleSubmit}>
       <fieldset>
-        <label htmlFor="name">Nombre: </label>
+        <label htmlFor="name">Nombre:</label>
         <input
           type="text"
           id="name"
           value={name}
-          onChange={handleName} // Usamos la función separada aquí
+          onChange={handleName}
           maxLength="30"
           required
+          placeholder="Escribe tu nombre..."
+          autoFocus
         />
       </fieldset>
 
       <fieldset>
-        <label htmlFor="avatar">Elige tu avatar: </label>
-        <select
-          id="avatar"
-          value={avatar}
-          onChange={handleAvatar} // Usamos la función separada aquí
-          required
-        >
-          <option value="">Selecciona...</option>
-          <option value="T-Rex">T-Rex</option>
-          <option value="Diplodocus">Diplodocus</option>
-          <option value="Aquilops">Aquilops</option>
-        </select>
+        <label>Elige tu avatar:</label>
+        <div className="avatar-options">
+          {["explorador", "exploradora"].map((tipo) => (
+            <label key={tipo}>
+              <input
+                type="radio"
+                name="avatar"
+                value={tipo}
+                checked={avatar === tipo}
+                onChange={handleAvatar}
+                className="hidden"
+              />
+              <img
+                src={`/avatars/${tipo}.png`}
+                alt={tipo}
+                className={`avatar-img ${avatar === tipo ? "selected" : ""}`}
+              />
+              <p style={{ textAlign: "center" }}>
+                {tipo.charAt(0).toUpperCase() + tipo.slice(1)}
+              </p>
+            </label>
+          ))}
+        </div>
       </fieldset>
 
       <button type="submit">Empezar Aventura</button>
@@ -58,3 +78,4 @@ function Form() {
 }
 
 export default Form;
+
