@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import exploradorImg from '../assets/avatars/explorador.png';
 import exploradoraImg from '../assets/avatars/exploradora.png';
-// import "./Mapa.css";
+import "./Mapa.css";
 
 const avatarMap = {
     explorador: exploradorImg,

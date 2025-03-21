@@ -1,6 +1,5 @@
 .mapa-container {
-    /*background-image: url('/images/mapa-fondo.jpg');
-     O */
+    background-image: url('src/assets/images/Mapa.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;
