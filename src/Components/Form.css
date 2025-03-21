@@ -1,0 +1,38 @@
+/* Estilos del formulario*/
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+
+  fieldset {
+    border: none; 
+    padding: 0; 
+    margin: 0 0 20px 0; 
+  }
+  
+  .form label {
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .form input, .form select {
+    padding: 8px;
+    margin-left: 10px;
+    font-size: 16px;
+  }
+  
+  button {
+    margin-top: 15px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  

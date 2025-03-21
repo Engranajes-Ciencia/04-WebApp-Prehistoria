@@ -1,0 +1,16 @@
+/*Estilos para elementos generales (App.jsx)*/
+body {
+  font-family: Arial, sans-serif;
+    background-color: #eff7eb63;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0 20 0 0;
+  }
+  
