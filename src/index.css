@@ -1,10 +1,96 @@
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-Condensed.ttf') format('truetype');
+  font-weight: 400;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-CondensedBold.ttf') format('truetype');
+  font-weight: 700;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-CondensedItalic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-CondensedBoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+  font-stretch: condensed;
+}
+
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-Hollow.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Milford';
+  src: url('./assets/fonts/MilfordCondensed-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
 /*Estilos para elementos generales (App.jsx)*/
 body {
-  font-family: Arial, sans-serif;
-    background-color: #eff7eb63;
-    margin: 0;
-    padding: 0;
-  }
+  font-family: 'Milford', sans-serif;
+  background-color: #eff7eb63;
+  margin: 0;
+  padding: 0;
+}
   
   .container {
     display: flex;
