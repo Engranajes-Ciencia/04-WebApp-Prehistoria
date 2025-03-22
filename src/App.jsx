@@ -1,9 +1,12 @@
 import { Routes, Route } from "react-router-dom";
+import Mododejuego from "./Components/ModoJuego";
 import Portada from "./Components/Portada";
 import Header from "./Components/Header";
 import Form from "./Components/Form";
-import Mapa from "./Components/Mapa"; 
+import Mapa from "./Components/Mapa";
+
 import "./index.css";
+
 
 
 function App() {
@@ -12,7 +15,8 @@ function App() {
       <Header />
 
       <Routes>
-        <Route path="/" element={<Portada />} />
+        <Route path="/" element={<Mododejuego />} />
+        <Route path="/portada" element={<Portada />} />
         <Route path="/form" element={<Form />} />
         <Route path="/mapa" element={<Mapa />} />
       </Routes>
