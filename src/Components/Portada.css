@@ -1,0 +1,56 @@
+.portada-container {
+    background-image: url('public/assets/images/portada-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    font-family: 'Milford', sans-serif;
+}
+
+
+
+.contenido {
+    z-index: 2;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    animation: slideIn 1.2s ease forwards;
+    max-width: 600px;
+}
+
+.titulo {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.subtitulo {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+
+.btn-aventura {
+    background-color: #79a981;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-aventura:hover {
+    background-color: #5f8b6a;
+}
+

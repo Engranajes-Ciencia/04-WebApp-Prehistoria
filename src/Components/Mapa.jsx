@@ -1,13 +1,11 @@
 // src/Components/Mapa.jsx
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import exploradorImg from '../assets/avatars/explorador.png';
-import exploradoraImg from '../assets/avatars/exploradora.png';
-// import "./Mapa.css";
+import "./Mapa.css";
 
 const avatarMap = {
-    explorador: exploradorImg,
-    exploradora: exploradoraImg,
+    explorador: "/assets/avatars/explorador.png",
+    exploradora: "/assets/avatars/exploradora.png",
 };
 
 function Mapa() {
@@ -46,7 +44,7 @@ function Mapa() {
 
                 <p>Escanea un código QR o selecciona una actividad para comenzar.</p>
 
-                <button className="qr-button" onClick={() => alert('Abrir cámara (próximamente)')}>
+                <button className="qr-button" onClick={() => navigate("/EscanerQR")}> 
                     📷 Escanear Código QR
                 </button>
             </div>
