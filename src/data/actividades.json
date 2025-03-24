@@ -16,7 +16,191 @@
             }
         },
         "respuestaCorrecta": "Un antiguo animal marino / Planta del pasado",
-        "geniallyURL": "https://view.genial.ly/xxxxx", // url genialy
+        "geniallyURL": "https://view.genial.ly/xxxxx",
         "completada": false
-    },
-]
+    }
+    {
+        "id": 2,
+        "titulo": "Dinosaurios",
+        "ubicacion": "Parada 2 - Dinosarurios",
+        "avatarDialogo": {
+            "explorador": {
+                "mensaje": "¡Cuidado! Estamos rodeados de gigantes del pasado. Cada uno vivió en una época diferente y tenía habilidades únicas.",
+                "sabiasQue": "El Brontosaurio podía llegar a medir más de 20 metros, pero comía solo plantas",
+                "pregunta": "¿Cuál de estos dinosaurios crees que era más rápido? Triceratops, Brontosaurio, Velociraptor, Alosaurio"
+            },
+            "exploradora": {
+                "mensaje": "¡Increíble! Este fósil nos cuenta una historia del pasado. Es de un helecho que vivió hace más de 300 millones de años.",
+                "sabiasQue": "El Brontosaurio podía llegar a medir más de 20 metros, pero comía solo plantas",
+                "pregunta": "¿Cuál de estos dinosaurios crees que era más rápido? Triceratops, Brontosaurio, Velociraptor, Alosaurio"
+            }
+        },
+        "respuestaCorrecta": "Velociraptor",
+        "geniallyURL": "https://view.genial.ly/xxxxx",
+        "completada": false
+    }
+]   {
+          "id": 3,
+        "titulo": "Tortuga de las Galapagos",
+        "ubicacion": "Parada 3 - Tortuga de las Galapagos",
+        "avatarDialogo": {
+            "explorador": {
+                "mensaje": "Este animal ha sobrevivido desde la época de los grandes descubrimientos.
+                Fue clave en las ideas de Darwin sobre la evolución.",
+                "sabiasQue": "Las tortugas gigantes pueden vivir mas de 150 años.",
+                "pregunta": "¿Por que crees que algunas especies viven tanto tiempo?"
+            },
+            "exploradora": {
+                "mensaje": "Este animal ha sobrevivido desde la época de los grandes descubrimientos.
+                Fue clave en las ideas de Darwin sobre la evolución.",
+                "sabiasQue": "Las tortugas gigantes pueden vivir mas de 150 años.",
+                "pregunta": "¿Por que crees que algunas especies viven tanto tiempo?
+        },
+        "respuestaCorrecta": "Por su metabolismo lento y las pocas amenazas naturales.",
+        "geniallyURL": "https://view.genial.ly/xxxxx",
+        "completada": false
+    }
+    {
+        "id": 4,
+        "titulo": "Huellas de Laetoli",
+        "ubicacion": "Parada 4 - Huellas de Laetoli",
+        "avatarDialogo": {
+            "explorador": {
+                "mensaje": "¡Mira esas huellas! Fueron dejadas por nuestros antepasados hace mas de 3 millones de años.",
+                "sabiasQue": "Estas huellas muestran que ya caminaban erguidos como nosotros.",
+                "pregunta": "¿Qué diferencia hay entre caminar a cuatro patas y a dos?"
+            },
+            "exploradora": {
+                "mensaje": "¡¡Mira esas huellas! Fueron dejadas por nuestros antepasados hace mas de 3 millones de años.",
+                "sabiasQue": "Estas huellas muestran que ya caminaban erguidos como nosotros.",
+                "pregunta": "¿Qué diferencia hay entre caminar a cuatro patas y a dos?"
+            }
+        },
+        "respuestaCorrecta": "Libera las manos y mejora el campo de visión.",
+        "geniallyURL": "https://view.genial.ly/xxxxx",
+        "completada": false
+    }
+    {
+        "id": 5,
+        "titulo": "Pinturas rupestres",
+        "ubicacion": "Parada 4 - Cueva",
+        "avatarDialogo": {
+            "explorador": {
+                "mensaje": "Aquí comenzó el arte. Los primeros humanos representaban animales, manos y escenas de caza.",
+                "sabiasQue": "Usaban pigmentos naturales y hasta soplaban pinturas con huesos.",
+                "pregunta": "¿Qué te gustaría de dibujar a ti en una cueva si fueras un humano prehistórico?"
+            },
+            "exploradora": {
+                "mensaje": "Aquí comenzó el arte. Los primeros humanos representaban animales, manos y escenas de caza.",
+                "sabiasQue": "Usaban pigmentos naturales y hasta soplaban pinturas con huesos.",
+                "pregunta": "¿Qué te gustaría de dibujar a ti en una cueva si fueras un humano prehistórico ?"
+            }
+        },
+        "respuestaCorrecta": libre, puede ser de validacion creativa,
+        "geniallyURL": "https://view.genial.ly/xxxxx",
+        "completada": false
+    }
+    {
+         "id": 6,
+        "titulo": "Poblado nómada",
+        "ubicacion": "Parada 6 - Poblado nómada",
+        "avatarDialogo": {
+            "explorador": {
+                "mensaje": "Este campamento es temporal. Los nómadas viajaban siguiendo a los animales y buscando comida.",
+                "sabiasQue": "Los nómadas podían dormir en pieles de animales y usaban lanzas de piedra.",
+                "pregunta": "¿Qué ventajas y desventajas tenía vivir como nómada?."
+            },
+            "exploradora": {
+                "mensaje": "Este campamento es temporal. Los nómadas viajaban siguiendo a los animales y buscando comida.",
+                "sabiasQue": "Los nómadas podían dormir en pieles de animales y usaban lanzas de piedra.",
+                "pregunta": "¿Qué ventajas y desventajas tenía vivir como nómada?."
+            }
+        },
+        "respuestaCorrecta": "Ventajas: libertad y caza. Desventajas: sin estabilidad ni hogar fijo.",
+        "geniallyURL": "https://view.genial.ly/xxxxx",
+        "completada": false
+    }
+    {
+        "id": 7,
+        "titulo": "Poblado sedentario",
+        "ubicacion": "Parada 7 - Poblado sedentario",
+        "avatarDialogo": {
+            "explorador": {
+                "mensaje": "Aquí empezó la civilización. Cultivaban alimentos, domesticaban animales y construían
+                casas de barro.",
+                "sabiasQue": "Gracias a la agricultura los humanos podían quedarse en un solo lugar.",
+                "pregunta": "¿Qué cambió en la vida humana al pasar de nómades a sedentarios?."
+            },
+            "exploradora": {
+                "mensaje": "Aquí empezó la civilización. Cultivaban alimentos, domesticaban animales y construían
+                casas de barro.",
+                "sabiasQue": "Gracias a la agricultura los humanos podían quedarse en un solo lugar.",
+                "pregunta": "¿Qué cambió en la vida humana al pasar de nómades a sedentarios?."
+            }
+        },
+        "respuestaCorrecta": "Se fundaron aldeas, agricultura y nació la civilización.",
+        "geniallyURL": "https://view.genial.ly/xxxxx",
+        "completada": false
+    }
+    {
+        "id": 8,
+        "titulo": "Pozo",
+        "ubicacion": "Parada 8 - Pozo",
+        "avatarDialogo": {
+            "explorador": {
+                "mensaje": "El agua era vida. Este pozo representa cómo aprendieron a obtener agua del subsuelo.",
+                "sabiasQue": "Los pozos mas antiguos datan de más de 7000 años.",
+                "pregunta": "¿Por qué era tan importante tener agua cerca del poblado?."
+            },
+            "exploradora": {
+                "mensaje": "El agua era vida. Este pozo representa cómo aprendieron a obtener agua del subsuelo.",
+                "sabiasQue": "Los pozos mas antiguos datan de más de 7000 años.",
+                "pregunta": "¿Por qué era tan importante tener agua cerca del poblado?."
+            }
+        },
+        "respuestaCorrecta": "Porque garantizaba agua cerca y evitaba largas caminatas.",
+        "geniallyURL": "https://view.genial.ly/xxxxx",
+        "completada": false
+    }
+    {
+        "id": 9,
+        "titulo": "Stonehenge",
+        "ubicacion": "Parada 9 - Stonehenge",
+        "avatarDialogo": {
+            "explorador": {
+                "mensaje": "Estas piedras misteriosas siguen siendo un enigma.¿Templo?¿Calendario solar?
+                ¿Ritual?.",
+                "sabiasQue": "Algunas piedras fueron transportadas más de 200 kilometros.",
+                "pregunta": "¿Qué crees tu que hacían aquí nuestros antepasados?."
+            },
+            "exploradora": {
+                "mensaje": "Estas piedras misteriosas siguen siendo un enigma.¿Templo?¿Calendario solar?
+                ¿Ritual?.",
+                "sabiasQue": "Algunas piedras fueron transportadas más de 200 kilometros.",
+                "pregunta": "¿Qué crees tu que hacían aquí nuestros antepasados?."
+            }
+        },
+        "respuestaCorrecta": "Rituales religiosos o seguimiento del sol (interpretativo).",
+        "geniallyURL": "https://view.genial.ly/xxxxx",
+        "completada": false
+    }
+    {
+        "id": 10,
+        "titulo": "Templo de Karnak (Egipto)",
+        "ubicacion": "Parada 10 - Templo de Karnak",
+        "avatarDialogo": {
+            "explorador": {
+                "mensaje": "Bienvenido al corazón de la civilización egipcia. Este templo estaba dedicado al dios Amon-Ra.",
+                "sabiasQue": "Karnak es uno de los templos más grandes jamas construídos por el ser humano.",
+                "pregunta": "¿Qué nos dicen los templos de la forma de pensar de las civilizaciones antiguas?."
+            },
+            "exploradora": {
+                "mensaje": "Bienvenido al corazón de la civilización egipcia. Este templo estaba dedicado al dios Amon-Ra.",
+                "sabiasQue": "Karnak es uno de los templos más grandes jamas construídos por el ser humano.",
+                "pregunta": "¿Qué nos dicen los templos de la forma de pensar de las civilizaciones antiguas?."
+            }
+        },
+        "respuestaCorrecta": "Que la religión era central y el poder se mostraba en piedra.",
+        "geniallyURL": "https://view.genial.ly/xxxxx",
+        "completada": false
+    }
