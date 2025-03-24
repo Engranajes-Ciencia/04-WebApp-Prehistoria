@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
 import exploradorImg from '../assets/avatars/explorador.png';
@@ -11,11 +11,13 @@ import fondo5 from "../assets/form-fondo/fondo5.png";
 import fondo6 from "../assets/form-fondo/fondo6.png";
 
 
+
 function Form() {
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState("");
   const [fondoActual, setFondoActual] = useState(0);
   const navigate = useNavigate(); // React Router redirection
+  const welcomeRef = useRef(new Audio("/sounds/welcome.mp3")); // sonido welcome al hacer click form
 
   const avatars = {
     explorador: exploradorImg,
@@ -48,6 +50,11 @@ function Form() {
       alert("Por favor, escribe tu nombre y elige un avatar.");
       return;
     }
+
+    // Sonido al hacer clic
+    welcomeRef.current.currentTime = 0;
+    welcomeRef.current.play();
+
 
     // Guardamos en localStorage
     localStorage.setItem("nombre", name);
