@@ -10,6 +10,7 @@
     justify-content: center;
     text-align: center;
     overflow: hidden;
+    font-family: 'Milford', sans-serif;
 }
 
 
@@ -25,7 +26,6 @@
 }
 
 .titulo {
-    font-family: 'Milford', sans-serif;
     font-size: 3rem;
     margin-bottom: 10px;
     color: #333;
@@ -36,6 +36,7 @@
     color: #555;
     margin-bottom: 30px;
 }
+
 
 .btn-aventura {
     background-color: #79a981;

@@ -17,20 +17,21 @@ function Mododejuego() {
     return (
         <div className="modojuego-container">
             <h1 className="titulo">Elige tu estilo de juego</h1>
+            <p className="subtitulo">¿Exploras solo o acompañado?</p>
             <div className="opciones">
                 <button
                     className="btn-opcion"
                     onClick={() => handleChoice("solo")}
                     style={{ backgroundImage: `url(${soloimage})` }}
                 >
-                    Modo Solo
+                    <span>Modo Solo</span>
                 </button>
                 <button
                     className="btn-opcion"
                     onClick={() => handleChoice("grupos")}
                     style={{ backgroundImage: `url(${grupoimage})` }}
                 >
-                    Grupo
+                    <span>Grupo</span>
                 </button>
             </div>
         </div>
