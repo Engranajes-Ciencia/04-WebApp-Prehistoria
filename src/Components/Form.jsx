@@ -1,14 +1,7 @@
+// src/Components/Form.jsx
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
-import exploradorImg from '../assets/avatars/explorador.png';
-import exploradoraImg from '../assets/avatars/exploradora.png';
-import fondo1 from "../assets/form-fondo/fondo1.png";
-import fondo2 from "../assets/form-fondo/fondo2.png";
-import fondo3 from "../assets/form-fondo/fondo3.png";
-import fondo4 from "../assets/form-fondo/fondo4.png";
-import fondo5 from "../assets/form-fondo/fondo5.png";
-import fondo6 from "../assets/form-fondo/fondo6.png";
 
 
 
@@ -20,11 +13,19 @@ function Form() {
   const welcomeRef = useRef(new Audio("/sounds/welcome.mp3")); // sonido welcome al hacer click form
 
   const avatars = {
-    explorador: exploradorImg,
-    exploradora: exploradoraImg,
+    explorador: "/assets/avatars/explorador.png",
+    exploradora: "/assets/avatars/exploradora.png",
   };
 
-  const fondos = [fondo1, fondo2, fondo3, fondo4,fondo5, fondo6];
+
+  const fondos = [
+    "/assets/form-fondo/fondo1.png",
+    "/assets/form-fondo/fondo2.png",
+    "/assets/form-fondo/fondo3.png",
+    "/assets/form-fondo/fondo4.png",
+    "/assets/form-fondo/fondo5.png",
+    "/assets/form-fondo/fondo6.png",
+  ];
 
   // Cambio automático del fondo
   useEffect(() => {

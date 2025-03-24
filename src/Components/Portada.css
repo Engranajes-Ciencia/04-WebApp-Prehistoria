@@ -1,5 +1,5 @@
 .portada-container {
-    background-image: url('src/assets/images/portada-fondo.jpg');
+    background-image: url('public/assets/images/portada-fondo.jpg');
     background-size: cover;
     background-position: center;
     position: relative;

@@ -1,0 +1,39 @@
+.actividad-container {
+    padding: 40px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #f7f7f7d2;
+    border-radius: 12px;
+    font-family: 'Milford', sans-serif;
+}
+
+.actividad-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.avatar-actividad {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+h3 {
+    font-size: 24px;
+    color: #2c3e50;
+}
+
+.sabiasque,
+.pregunta {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.actividad-genially {
+    margin-top: 30px;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}

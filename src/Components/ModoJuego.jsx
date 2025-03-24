@@ -1,6 +1,4 @@
 import { useNavigate } from "react-router-dom";
-import soloimage from "../assets/images/solo.jpg"; 
-import grupoimage from "../assets/images/grupo.jpg"; 
 import "./ModoJuego.css";
 
 function Mododejuego() {
@@ -22,14 +20,14 @@ function Mododejuego() {
                 <button
                     className="btn-opcion"
                     onClick={() => handleChoice("solo")}
-                    style={{ backgroundImage: `url(${soloimage})` }}
+                    style={{ backgroundImage: `url(/assets/images/solo.jpg)` }}
                 >
                     <span>Modo Solo</span>
                 </button>
                 <button
                     className="btn-opcion"
                     onClick={() => handleChoice("grupos")}
-                    style={{ backgroundImage: `url(${grupoimage})` }}
+                    style={{ backgroundImage: `url(/assets/images/grupo.jpg)` }}
                 >
                     <span>Grupo</span>
                 </button>

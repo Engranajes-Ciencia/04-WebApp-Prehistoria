@@ -1,0 +1,19 @@
+.footer {
+    background: linear-gradient(135deg, #5acb7c, #377354);
+    color: white;
+    text-align: center;
+    padding: 20px 15px;
+    font-family: 'Milford', sans-serif;
+    font-size: 14px;
+    margin-top: auto;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    }
+
+.footer strong {
+    color: #ffe074;
+}
+
+.footer p {
+    margin: 4px 0;
+}
