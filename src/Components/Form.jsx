@@ -9,6 +9,8 @@ function Form() {
   const navigate = useNavigate(); // React Router redirection
   const welcomeRef = useRef(new Audio("/sounds/welcome.mp3")); // sonido welcome al hacer click form
   const dinoRef = useRef(null); // Referencia para el sonido dino
+  const exploradoraSoundRef = useRef(new Audio("/sounds/exploradora.wav")); // Sonido exploradora
+  const exploradorSoundRef = useRef(new Audio("/sounds/explorador.wav")); // Sonido explorador
 
   const avatars = {
     explorador: "/assets/avatars/explorador.png",
@@ -63,7 +65,23 @@ function Form() {
   const handleName = (e) => setName(e.target.value);
 
   // Actualiza el estado del avatar
-  const handleAvatar = (e) => setAvatar(e.target.value);
+  const handleAvatar = (e) => {
+    const selectedAvatar = e.target.value;
+    setAvatar(selectedAvatar);
+
+    // Reproduce el sonido específico según el avatar seleccionado
+    if (selectedAvatar === "exploradora") {
+      exploradoraSoundRef.current.currentTime = 0; // Reinicia el audio
+      exploradoraSoundRef.current.play().catch((error) =>
+        console.warn("El navegador bloqueó el autoplay del sonido exploradora.")
+      );
+    } else if (selectedAvatar === "explorador") {
+      exploradorSoundRef.current.currentTime = 0; // Reinicia el audio
+      exploradorSoundRef.current.play().catch((error) =>
+        console.warn("El navegador bloqueó el autoplay del sonido explorador.")
+      );
+    }
+  };
 
   // Manejo del envío del formulario
   const handleSubmit = (e) => {
