@@ -9,13 +9,13 @@ function Actividad() {
     const avatar = localStorage.getItem("avatar");
     const nombre = localStorage.getItem("nombre");
 
-    if (!actividad) {
-        return <p>Actividad no encontrada</p>;
+    if (!actividad || !avatar || !nombre) {
+        return <p>Actividad no encontrada o datos incompletos</p>;
     }
 
-    const avatarImg = avatar
-        ? `/avatars/${avatar}.png`
-        : "/avatars/explorador.png";
+    const avatarData = actividad.avatarDialogo[avatar];
+
+    const avatarImg = `/avatars/${avatar}.png`;
 
     return (
         <div className="actividad-container">
@@ -25,9 +25,9 @@ function Actividad() {
             </div>
 
             <h3>{actividad.titulo}</h3>
-            <p>{actividad.descripcion}</p>
-            <p className="sabiasque"><strong>¿Sabías que...?</strong> {actividad.sabiasQue}</p>
-            <p className="pregunta"><strong>Pregunta:</strong> {actividad.pregunta}</p>
+            <p>{avatarData.mensaje}</p>
+            <p className="sabiasque"><strong>¿Sabías que...?</strong> {avatarData.sabiasQue}</p>
+            <p className="pregunta"><strong>Pregunta:</strong> {avatarData.pregunta}</p>
 
             <div className="actividad-genially">
                 <iframe

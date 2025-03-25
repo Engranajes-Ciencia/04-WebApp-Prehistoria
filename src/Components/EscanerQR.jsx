@@ -1,4 +1,4 @@
-// src/Components/EscanerQR.jsx
+
 // src/Components/EscanerQR.jsx
 import { useNavigate } from "react-router-dom";
 import { Html5QrcodeScanner } from "html5-qrcode";
