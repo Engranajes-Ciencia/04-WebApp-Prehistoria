@@ -8,6 +8,10 @@ function EscanerQR() {
     const navigate = useNavigate();
 
     useEffect(() => {
+        
+        const qrReaderElement = document.getElementById("qr-reader");
+        if (!qrReaderElement) return;
+
         const scanner = new Html5QrcodeScanner("qr-reader", {
             fps: 10,
             qrbox: 250
@@ -16,13 +20,20 @@ function EscanerQR() {
         scanner.render(
             (decodedText) => {
                 console.log("QR detectado:", decodedText);
-                scanner.clear();
-                navigate(`/${decodedText}`);
+                scanner.clear().then(() => {
+                    
+                    const ruta = decodedText.startsWith("actividad/")
+                        ? `/${decodedText}`
+                        : `/actividad/${decodedText}`;
+
+                    navigate(ruta);
+                });
             },
             (error) => {
                 console.warn("Escaneo fallido:", error);
             }
         );
+
 
         return () => {
             scanner.clear().catch((err) => console.error("Error al limpiar scanner", err));

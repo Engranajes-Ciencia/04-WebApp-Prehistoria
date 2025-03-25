@@ -6,7 +6,8 @@ import "./Actividad.css";
 function Actividad() {
     const { id } = useParams();
     const actividad = actividades.find((a) => a.id === parseInt(id));
-    const avatar = localStorage.getItem("avatar");
+
+    const avatar = localStorage.getItem("avatar");// "explorador" o "exploradora"
     const nombre = localStorage.getItem("nombre");
 
     if (!actividad || !avatar || !nombre) {
@@ -15,7 +16,7 @@ function Actividad() {
 
     const avatarData = actividad.avatarDialogo[avatar];
 
-    const avatarImg = `/avatars/${avatar}.png`;
+    const avatarImg = `/assets/avatars/${avatar}.png`;
 
     return (
         <div className="actividad-container">
@@ -31,7 +32,7 @@ function Actividad() {
 
             <div className="actividad-genially">
                 <iframe
-                    src={actividad.geniallyUrl}
+                    src={actividad.geniallyURL}
                     width="100%"
                     height="500px"
                     frameBorder="0"
