@@ -1,21 +1,30 @@
 // src/Components/Actividad.jsx
+import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import actividades from "../data/actividades.json";
+import { marcarActividadComoCompletada } from "../utils/localStorage";
 import "./Actividad.css";
+
+
+
 
 function Actividad() {
     const { id } = useParams();
     const actividad = actividades.find((a) => a.id === parseInt(id));
-
-    const avatar = localStorage.getItem("avatar");// "explorador" o "exploradora"
+    const avatar = localStorage.getItem("avatar");
     const nombre = localStorage.getItem("nombre");
+
+    useEffect(() => {
+        if (id) {
+            marcarActividadComoCompletada(Number(id));
+        }
+    }, [id]);
 
     if (!actividad || !avatar || !nombre) {
         return <p>Actividad no encontrada o datos incompletos</p>;
     }
 
     const avatarData = actividad.avatarDialogo[avatar];
-
     const avatarImg = `/assets/avatars/${avatar}.png`;
 
     return (

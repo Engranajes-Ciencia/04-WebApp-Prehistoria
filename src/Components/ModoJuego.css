@@ -8,37 +8,40 @@
     background: linear-gradient(135deg, #3c7a57, #b0e57c);
     text-align: center;
     padding: 20px;
+    font-family: 'Milford', sans-serif;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .titulo {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-bottom: 10px;
-    color: #2d5d3b;
+    color: #f7f7f7;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
 }
 
 .subtitulo {
-    font-size: 1.2rem;
-    color: #333;
-    margin-bottom: 30px;
+    font-size: 1.4rem;
+    color: #ffffffdd;
+    margin-bottom: 40px;
     font-style: italic;
 }
 
 .opciones {
     display: flex;
-    gap: 20px;
+    gap: 24px;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 .btn-opcion {
-    width: 450px;
-        height: 480px;
-    font-size: 1.5rem;
+    width: 400px;
+    height: 420px;
+    font-size: 1.6rem;
     font-weight: bold;
     color: white;
     border: none;
-    border-radius: 15px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -47,24 +50,23 @@
     background-position: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .btn-opcion::before {
     content: "";
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    inset: 0;
     background: rgba(0, 0, 0, 0.4);
     z-index: 0;
+    transition: background 0.3s ease;
 }
 
 .btn-opcion span {
     position: relative;
     z-index: 1;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
 .btn-solo {
@@ -77,5 +79,17 @@
 
 .btn-opcion:hover {
     transform: scale(1.05);
-    box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.4);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.98);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }

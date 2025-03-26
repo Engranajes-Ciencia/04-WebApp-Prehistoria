@@ -1,0 +1,92 @@
+.final-container {
+    max-width: 960px;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+    background: linear-gradient(to bottom, #fefefe, #e0f7fa);
+    border-radius: 20px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+    font-family: 'Milford', sans-serif;
+}
+
+.nombre-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.avatar-mini-final {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 2px solid #4caf50;
+    background-color: #fff;
+    padding: 4px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+}
+
+.nombre-final {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #2e7d32;
+}
+
+.diploma-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+    margin-bottom: 30px;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.acciones-finales {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.btn-descargar,
+.btn-reiniciar {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-descargar {
+    background-color: #2e7d32;
+    color: white;
+}
+
+.btn-descargar:hover {
+    background-color: #1b5e20;
+}
+
+.btn-reiniciar {
+    background-color: #c62828;
+    color: white;
+}
+
+.btn-reiniciar:hover {
+    background-color: #8e0000;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
