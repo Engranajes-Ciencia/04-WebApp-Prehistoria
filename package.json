@@ -1,5 +1,6 @@
 {
   "name": "museo-prehistoria",
+  "homepage": "https://github.com/Engranajes-Ciencia/04-WebApp-Prehistoria",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -12,11 +13,9 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "@blackbox-vision/react-qr-reader": "^5.0.0",
     "html5-qrcode": "^2.3.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-qr-reader": "^3.0.0-beta-1",
     "react-router-dom": "^7.4.0"
   },
   "devDependencies": {
@@ -27,6 +26,7 @@
     "eslint": "^9.21.0",
     "eslint-plugin-react-hooks": "^5.1.0",
     "eslint-plugin-react-refresh": "^0.4.19",
+    "gh-pages": "^6.3.0",
     "globals": "^15.15.0",
     "vite": "^6.2.2"
   }
