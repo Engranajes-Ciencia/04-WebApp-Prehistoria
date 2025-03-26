@@ -7,7 +7,8 @@ import Mapa from "./Components/Mapa";
 import EscanerQR from './Components/EscanerQR';
 import Actividad from "./Components/Actividad";
 import Footer from "./Components/Footer";
-
+import EntreActividades from "./Components/EntreActividades";
+import Final from "./Components/Final";
 import "./index.css";
 
 
@@ -22,8 +23,10 @@ function App() {
         <Route path="/portada" element={<Portada />} />
         <Route path="/form" element={<Form />} />
         <Route path="/mapa" element={<Mapa />} />
+        <Route path="/entre-actividad" element={<EntreActividades />} />
         <Route path="/EscanerQR" element={<EscanerQR />} />
         <Route path="/actividad/:id" element={<Actividad />} />
+        <Route path="/final" element={<Final />} />
       </Routes>
 
       <Footer />
