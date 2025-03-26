@@ -1,9 +1,6 @@
-// src/Components/Form.jsx
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Form.css";
-
-
 
 function Form() {
   const [name, setName] = useState("");
@@ -11,12 +8,14 @@ function Form() {
   const [fondoActual, setFondoActual] = useState(0);
   const navigate = useNavigate(); // React Router redirection
   const welcomeRef = useRef(new Audio("/sounds/welcome.mp3")); // sonido welcome al hacer click form
+  const dinoRef = useRef(null); // Referencia para el sonido dino
+  const exploradoraSoundRef = useRef(new Audio("/sounds/exploradora.wav")); // Sonido exploradora
+  const exploradorSoundRef = useRef(new Audio("/sounds/explorador.wav")); // Sonido explorador
 
   const avatars = {
     explorador: "/assets/avatars/explorador.png",
     exploradora: "/assets/avatars/exploradora.png",
   };
-
 
   const fondos = [
     "/assets/form-fondo/fondo1.png",
@@ -36,12 +35,53 @@ function Form() {
     return () => clearInterval(intervalo);
   }, []);
 
+  // Reproducir sonido dino.mp3 al abrir el formulario
+  useEffect(() => {
+    if (!dinoRef.current) {
+      dinoRef.current = new Audio("/sounds/dino.mp3");
+      dinoRef.current.volume = 1.0;
+    }
+
+    const playDinoSound = async () => {
+      try {
+        await dinoRef.current.play();
+      } catch (error) {
+        console.warn("El navegador bloqueó el autoplay del sonido dino.");
+      }
+    };
+
+    playDinoSound(); // Reproducir el sonido al montar el componente
+
+    return () => {
+      // Detener y reiniciar el audio al desmontar el componente
+      if (dinoRef.current) {
+        dinoRef.current.pause();
+        dinoRef.current.currentTime = 0;
+      }
+    };
+  }, []); // Se ejecuta solo al cargar el formulario
 
   // Actualiza el estado del nombre
   const handleName = (e) => setName(e.target.value);
 
   // Actualiza el estado del avatar
-  const handleAvatar = (e) => setAvatar(e.target.value);
+  const handleAvatar = (e) => {
+    const selectedAvatar = e.target.value;
+    setAvatar(selectedAvatar);
+
+    // Reproduce el sonido específico según el avatar seleccionado
+    if (selectedAvatar === "exploradora") {
+      exploradoraSoundRef.current.currentTime = 0; // Reinicia el audio
+      exploradoraSoundRef.current.play().catch((error) =>
+        console.warn("El navegador bloqueó el autoplay del sonido exploradora.")
+      );
+    } else if (selectedAvatar === "explorador") {
+      exploradorSoundRef.current.currentTime = 0; // Reinicia el audio
+      exploradorSoundRef.current.play().catch((error) =>
+        console.warn("El navegador bloqueó el autoplay del sonido explorador.")
+      );
+    }
+  };
 
   // Manejo del envío del formulario
   const handleSubmit = (e) => {
@@ -52,10 +92,9 @@ function Form() {
       return;
     }
 
-    // Sonido al hacer clic
+    // Sonido al hacer clic en "Empezar Aventura"
     welcomeRef.current.currentTime = 0;
     welcomeRef.current.play();
-
 
     // Guardamos en localStorage
     localStorage.setItem("nombre", name);
@@ -66,7 +105,6 @@ function Form() {
   };
 
   return (
-
     <>
       {/* Fondo  */}
       <div
@@ -84,8 +122,8 @@ function Form() {
           transition: "background-image 1s ease-in-out",
         }}
       ></div>
-        
-  {/* Formulario */ }
+
+      {/* Formulario */}
       <form className="form" onSubmit={handleSubmit}>
         <fieldset>
           <label htmlFor="name">Nombre:</label>
@@ -134,4 +172,3 @@ function Form() {
 }
 
 export default Form;
-
