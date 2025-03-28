@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useRef } from "react";
-import "./Portada.css";
+import "../Styles/Portada.css";
 
 function Portada() {
     const navigate = useNavigate();

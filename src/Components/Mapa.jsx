@@ -1,7 +1,7 @@
 // src/Components/Mapa.jsx
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./Mapa.css";
+import "../Styles/Mapa.css";
 
 const avatarMap = {
     explorador: "/assets/avatars/explorador.png",
