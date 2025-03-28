@@ -1,55 +1,55 @@
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/Milford.woff2') format('woff2');
+  src: url('${import.meta.env.BASE_URL}fonts/Milford.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/MilfordBold.woff2') format('woff2');
+  src: url('${import.meta.env.BASE_URL}fonts/MilfordBold.woff2') format('woff2');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/MilfordItalic.woff2') format('woff2');
+  src: url('${import.meta.env.BASE_URL}fonts/MilfordItalic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/MilfordBoldItalic.woff2') format('woff2');
+  src: url('${import.meta.env.BASE_URL}fonts/MilfordBoldItalic.woff2') format('woff2');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/MilfordBlack.woff2') format('woff2');
+  src: url('${import.meta.env.BASE_URL}fonts/MilfordBlack.woff2') format('woff2');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/MilfordCondensed.woff2') format('woff2');
+  src: url('${import.meta.env.BASE_URL}fonts/MilfordCondensed.woff2') format('woff2');
   font-weight: 400;
   font-stretch: condensed;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/MilfordCondensedBold.woff2') format('woff2');
+  src: url('${import.meta.env.BASE_URL}fonts/MilfordCondensedBold.woff2') format('woff2');
   font-weight: 700;
   font-stretch: condensed;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/MilfordCondensedItalic.woff2') format('woff2');
+  src: url('${import.meta.env.BASE_URL}fonts/MilfordCondensedItalic.woff2') format('woff2');
   font-weight: 400;
   font-style: italic;
   font-stretch: condensed;
@@ -57,7 +57,7 @@
 
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/MilfordCondensedBoldItalic.woff2') format('woff2');
+  src: url('${import.meta.env.BASE_URL}fonts/MilfordCondensedBoldItalic.woff2') format('woff2');
   font-weight: 700;
   font-style: italic;
   font-stretch: condensed;
@@ -65,21 +65,21 @@
 
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/MilfordHollow.woff2') format('woff2');
+  src: url('${import.meta.env.BASE_URL}fonts/MilfordHollow.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/MilfordLight.woff2') format('woff2');
+  src: url('${import.meta.env.BASE_URL}fonts/MilfordLight.woff2') format('woff2');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/fonts/MilfordLightitalic.woff2') format('truwoff2etype');
+  src: url('${import.meta.env.BASE_URL}fonts/MilfordLightitalic.woff2') format('truwoff2etype');
   font-weight: 300;
   font-style: italic;
 }
