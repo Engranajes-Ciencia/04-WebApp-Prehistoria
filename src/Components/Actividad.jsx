@@ -25,7 +25,7 @@ function Actividad() {
     }
 
     const avatarData = actividad.avatarDialogo[avatar];
-    const avatarImg = `/assets/avatars/${avatar}.png`;
+    const avatarImg = `${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`;
 
     return (
         <div className="actividad-container">

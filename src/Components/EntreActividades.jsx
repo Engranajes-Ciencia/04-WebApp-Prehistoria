@@ -20,7 +20,7 @@ function EntreActividades() {
             <h2>Mapa del Recorrido</h2>
 
             <img
-                src={`/assets/avatars/${avatar}.png`}
+                src={`${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`}
                 alt="avatar"
                 className="guia-avatar"
             />
@@ -33,7 +33,12 @@ function EntreActividades() {
             </div>
 
 
-            <img src="/assets/images/fondo-mapa.jpg" alt="Mapa" className="mapa-real" />
+            <img
+                src={`${import.meta.env.BASE_URL}assets/images/fondo-mapa.jpg`}
+                alt="Mapa"
+                className="mapa-real"
+            />
+
 
             <ul className="checkpoints">
                 {actividades.map((act) => (

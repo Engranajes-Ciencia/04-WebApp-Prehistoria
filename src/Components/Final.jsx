@@ -17,25 +17,28 @@ function Final() {
         resetActividadesCompletadas(); // Limpieza para siguiente usuario
     }, []);
 
-    const handleDescargarDiploma = () => {
+    const handleDescargarDiploma = async () => {
+        const { jsPDF } = await import("jspdf");
+
         const doc = new jsPDF({ orientation: "landscape" });
 
-        const img = new Image(); // crea imagen con avatar y nombre elegido y guardado en local store
+        const img = new Image();
         const avatar = localStorage.getItem("avatar");
         const nombre = localStorage.getItem("nombre") || "Explorador/a";
         const imagePath =
             avatar === "exploradora"
-                ? "/assets/images/diploma_exploradora.jpg"
-                : "/assets/images/diploma_explorador.jpg";
+                ? `${import.meta.env.BASE_URL}assets/images/diploma_exploradora.jpg`
+                : `${import.meta.env.BASE_URL}assets/images/diploma_explorador.jpg`;
 
         img.src = imagePath;
 
         img.onload = () => {
-            doc.addImage(img, "JPEG", 10, 10, 277, 190); // ajustado para A4 landscape
-            doc.text(`Nombre: ${nombre}`, 20, 205); // añade el nombre elegido debajo
-            doc.save("diploma-aventura-prehistorica.pdf"); // guarda pdf
+            doc.addImage(img, "JPEG", 10, 10, 277, 190);
+            doc.text(`Nombre: ${nombre}`, 20, 205);
+            doc.save("diploma-aventura-prehistorica.pdf");
         };
     };
+
 
 
     const handleReiniciarJuego = () => {
@@ -49,7 +52,7 @@ function Final() {
 
             <div className="nombre-avatar">
                 <img
-                    src={`/assets/avatars/${avatar}.png`}
+                    src={`${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`}
                     alt={avatar}
                     className="avatar-mini-final"
                 />
@@ -64,7 +67,7 @@ function Final() {
 
 
             <img
-                src={`/assets/images/diploma_${avatar}.jpg`}
+                src={`${import.meta.env.BASE_URL}assets/images/diploma_${avatar}.jpg`}
                 alt="Diploma"
                 className="diploma-img"
             />
