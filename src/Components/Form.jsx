@@ -73,15 +73,18 @@ function Form() {
     const selected = e.target.value;
     setAvatar(selected);
 
-    if (selected === "exploradora") {
-      exploradoraSoundRef.current.currentTime = 0;
-      exploradoraSoundRef.current.play().catch(() =>
-        console.warn(" Autoplay bloqueado para exploradora.wav")
+    // Reproduce el sonido específico según el avatar seleccionado
+    if (selectedAvatar === "exploradora") {
+      exploradorSoundRef.current.currentTime = 100; // Silencia el otro audio
+      exploradoraSoundRef.current.currentTime = 0; // Reinicia el audio
+      exploradoraSoundRef.current.play().catch((error) =>
+        console.warn("El navegador bloqueó el autoplay del sonido exploradora.")
       );
-    } else if (selected === "explorador") {
-      exploradorSoundRef.current.currentTime = 0;
-      exploradorSoundRef.current.play().catch(() =>
-        console.warn(" Autoplay bloqueado para explorador.wav")
+    } else if (selectedAvatar === "explorador") {
+      exploradoraSoundRef.current.currentTime = 100; // Silencia el otro audio
+      exploradorSoundRef.current.currentTime = 0; // Reinicia el audio
+      exploradorSoundRef.current.play().catch((error) =>
+        console.warn("El navegador bloqueó el autoplay del sonido explorador.")
       );
     }
   };
