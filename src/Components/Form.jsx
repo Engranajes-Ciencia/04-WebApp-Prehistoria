@@ -6,86 +6,87 @@ function Form() {
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState("");
   const [fondoActual, setFondoActual] = useState(0);
-  const navigate = useNavigate(); // React Router redirection
-  const welcomeRef = useRef(new Audio("/sounds/welcome.mp3")); // sonido welcome al hacer click form
-  const dinoRef = useRef(null); // Referencia para el sonido dino
-  const exploradoraSoundRef = useRef(new Audio("/sounds/exploradora.wav")); // Sonido exploradora
-  const exploradorSoundRef = useRef(new Audio("/sounds/explorador.wav")); // Sonido explorador
+  const navigate = useNavigate();
+
+  const welcomeRef = useRef(null);
+  const dinoRef = useRef(null);
+  const exploradoraSoundRef = useRef(null);
+  const exploradorSoundRef = useRef(null);
 
   const avatars = {
-    explorador: "/assets/avatars/explorador.png",
-    exploradora: "/assets/avatars/exploradora.png",
+    explorador: `${import.meta.env.BASE_URL}assets/avatars/explorador.png`,
+    exploradora: `${import.meta.env.BASE_URL}assets/avatars/exploradora.png`,
   };
 
   const fondos = [
-    "/assets/form-fondo/fondo1.png",
-    "/assets/form-fondo/fondo2.png",
-    "/assets/form-fondo/fondo3.png",
-    "/assets/form-fondo/fondo4.png",
-    "/assets/form-fondo/fondo5.png",
-    "/assets/form-fondo/fondo6.png",
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo1.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo2.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo3.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo4.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo5.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo6.png`,
   ];
 
-  // Cambio automático del fondo
+  //  Cambio automático del fondo cada 5 segundos
   useEffect(() => {
     const intervalo = setInterval(() => {
       setFondoActual((prev) => (prev + 1) % fondos.length);
-    }, 5000); // cada 5 segundos
-
+    }, 5000);
     return () => clearInterval(intervalo);
   }, []);
 
-  // Reproducir sonido dino.mp3 al abrir el formulario
+  //  Reproducir sonido de dinosaurio al cargar
   useEffect(() => {
-    if (!dinoRef.current) {
-      dinoRef.current = new Audio("/sounds/dino.mp3");
-      dinoRef.current.volume = 1.0;
-    }
+    dinoRef.current = new Audio(`${import.meta.env.BASE_URL}sounds/dino.mp3`);
+    dinoRef.current.volume = 1.0;
 
-    const playDinoSound = async () => {
+    const play = async () => {
       try {
         await dinoRef.current.play();
       } catch (error) {
-        console.warn("El navegador bloqueó el autoplay del sonido dino.");
+        console.warn(" Autoplay bloqueado para dino.mp3");
       }
     };
 
-    playDinoSound(); // Reproducir el sonido al montar el componente
+    play();
 
     return () => {
-      // Detener y reiniciar el audio al desmontar el componente
       if (dinoRef.current) {
         dinoRef.current.pause();
         dinoRef.current.currentTime = 0;
       }
     };
-  }, []); // Se ejecuta solo al cargar el formulario
+  }, []);
 
-  // Actualiza el estado del nombre
+  //  Inicializar sonidos de bienvenida y avatar
+  useEffect(() => {
+    welcomeRef.current = new Audio(`${import.meta.env.BASE_URL}sounds/welcome.mp3`);
+    exploradoraSoundRef.current = new Audio(`${import.meta.env.BASE_URL}sounds/exploradora.wav`);
+    exploradorSoundRef.current = new Audio(`${import.meta.env.BASE_URL}sounds/explorador.wav`);
+  }, []);
+
+  //  Actualiza nombre
   const handleName = (e) => setName(e.target.value);
 
-  // Actualiza el estado del avatar
+  //  Actualiza avatar + reproduce sonido
   const handleAvatar = (e) => {
-    const selectedAvatar = e.target.value;
-    setAvatar(selectedAvatar);
+    const selected = e.target.value;
+    setAvatar(selected);
 
-    // Reproduce el sonido específico según el avatar seleccionado
-    if (selectedAvatar === "exploradora") {
-      exploradorSoundRef.current.currentTime = 100; // Silencia el otro audio
-      exploradoraSoundRef.current.currentTime = 0; // Reinicia el audio
-      exploradoraSoundRef.current.play().catch((error) =>
-        console.warn("El navegador bloqueó el autoplay del sonido exploradora.")
+    if (selected === "exploradora") {
+      exploradoraSoundRef.current.currentTime = 0;
+      exploradoraSoundRef.current.play().catch(() =>
+        console.warn(" Autoplay bloqueado para exploradora.wav")
       );
-    } else if (selectedAvatar === "explorador") {
-      exploradoraSoundRef.current.currentTime = 100; // Silencia el otro audio
-      exploradorSoundRef.current.currentTime = 0; // Reinicia el audio
-      exploradorSoundRef.current.play().catch((error) =>
-        console.warn("El navegador bloqueó el autoplay del sonido explorador.")
+    } else if (selected === "explorador") {
+      exploradorSoundRef.current.currentTime = 0;
+      exploradorSoundRef.current.play().catch(() =>
+        console.warn(" Autoplay bloqueado para explorador.wav")
       );
     }
   };
 
-  // Manejo del envío del formulario
+  //  Enviar formulario
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -94,21 +95,18 @@ function Form() {
       return;
     }
 
-    // Sonido al hacer clic en "Empezar Aventura"
     welcomeRef.current.currentTime = 0;
     welcomeRef.current.play();
 
-    // Guardamos en localStorage
     localStorage.setItem("nombre", name);
     localStorage.setItem("avatar", avatar);
 
-    // Redirigimos al mapa
     navigate("/mapa");
   };
 
   return (
     <>
-      {/* Fondo  */}
+      {/* Fondo dinámico */}
       <div
         className="fondo-cambiante"
         style={{
@@ -174,3 +172,4 @@ function Form() {
 }
 
 export default Form;
+

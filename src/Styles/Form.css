@@ -1,4 +1,17 @@
-/* Estilos del formulario*/
+/* Fondo dinámico detrás del formulario */
+.fondo-cambiante {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+
+/* Estilo principal del formulario */
 .form {
   position: relative;
   display: flex;
@@ -34,6 +47,7 @@
   transform: scale(1.01);
 }
 
+/* Campos */
 fieldset {
   border: none;
   padding: 0;
@@ -56,6 +70,7 @@ fieldset {
     border: 2px solid #9b9b9b;
     border-radius: 6px;
     background-color: #f9f9f9;
+    transition: all 0.3s ease;
     }
 
 .form input:focus {
@@ -63,7 +78,8 @@ fieldset {
   outline: none;
   background-color: #fff;
 }
-  
+
+/* Botón */
 button {
   margin-top: 20px;
   padding: 12px 20px;
@@ -83,12 +99,13 @@ button:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Avatares */
 .avatar-options {
   display: flex;
   justify-content: space-evenly;
   gap: 25px;
   margin-top: 15px;
+  flex-wrap: wrap;
 }
 
 

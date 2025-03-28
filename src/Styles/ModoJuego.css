@@ -69,13 +69,7 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
 }
 
-.btn-solo {
-    background-image: url('../assets/images/solo.jpg');
-}
 
-.btn-grupo {
-    background-image: url('../assets/images/grupo.jpg');
-}
 
 .btn-opcion:hover {
     transform: scale(1.10);

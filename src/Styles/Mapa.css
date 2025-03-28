@@ -1,5 +1,5 @@
 .mapa-container {
-    background-image: url('public/assets/images/Mapa.png');
+    background-image: url('/04-WebApp-Prehistoria/assets/images/Mapa.png');
     background-size: cover;
     background-position: center;
     min-height: 100vh;

@@ -20,14 +20,19 @@ function Mododejuego() {
                 <button
                     className="btn-opcion"
                     onClick={() => handleChoice("solo")}
-                    style={{ backgroundImage: `url(/assets/images/solo.jpg)` }}
+                    style={{
+                        backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/solo.jpg)`
+                    }}
                 >
                     <span>Modo Solo</span>
                 </button>
                 <button
                     className="btn-opcion"
                     onClick={() => handleChoice("grupos")}
-                    style={{ backgroundImage: `url(/assets/images/grupo.jpg)` }}
+                    style={{
+                        backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/grupo.jpg)`
+                    }}
+
                 >
                     <span>Grupo</span>
                 </button>
