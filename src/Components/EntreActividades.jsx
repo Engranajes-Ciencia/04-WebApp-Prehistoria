@@ -4,7 +4,7 @@
 import { getActividadesCompletadas } from "../utils/localStorage";
 import actividades from "../data/actividades.json";
 import { useNavigate } from "react-router-dom";
-import "./EntreActividades.css";
+import "../Styles/EntreActividades.css";
 
 function EntreActividades() {
     const completadas = getActividadesCompletadas();

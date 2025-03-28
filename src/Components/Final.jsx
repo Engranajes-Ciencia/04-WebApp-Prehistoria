@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { resetActividadesCompletadas } from "../utils/localStorage";
 import { jsPDF } from "jspdf";
-import "./Final.css";
+import "../Styles/Final.css";
 
 function Final() {
     const [avatar, setAvatar] = useState("");

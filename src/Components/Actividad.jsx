@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import actividades from "../data/actividades.json";
 import { marcarActividadComoCompletada } from "../utils/localStorage";
-import "./Actividad.css";
+import "../Styles/Actividad.css";
 
 
 
