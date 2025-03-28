@@ -1,5 +1,3 @@
-
-
 import { useEffect, useState } from "react";
 import { resetActividadesCompletadas } from "../utils/localStorage";
 import { jsPDF } from "jspdf";
