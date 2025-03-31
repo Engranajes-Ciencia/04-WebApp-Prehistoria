@@ -10,6 +10,7 @@ import Footer from "./Components/Footer";
 import EntreActividades from "./Components/EntreActividades";
 import Final from "./Components/Final";
 import Vitrina from "./Components/Vitrina";
+import ConnectionAlert from "./Components/ConnectionAlert";
 import "./index.css";
 
 
@@ -31,6 +32,7 @@ function App() {
         <Route path="/vitrina" element={<Vitrina />} />
       </Routes>
 
+      <ConnectionAlert />
       <Footer />
     </div>
   );
