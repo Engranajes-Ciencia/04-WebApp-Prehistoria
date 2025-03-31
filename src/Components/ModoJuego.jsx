@@ -17,29 +17,25 @@ function Mododejuego() {
             <h1 className="titulo">Elige tu estilo de juego</h1>
             <p className="subtitulo">¿Exploras solo o acompañado?</p>
             <div className="opciones">
-                <div className="imgSolo">
                 <button
-                    className="btn-opcion" id="solo"
+                    className="btn-opcion"
                     onClick={() => handleChoice("solo")}
                     style={{
                         backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/solo.jpg)`
                     }}
                 >
-                    <span>Modo solitario</span>
+                    <span>Modo Solo</span>
                 </button>
-                </div>
-                <div className="imgGrupo">
                 <button
-                    className="btn-opcion" id="grupo"
+                    className="btn-opcion"
                     onClick={() => handleChoice("grupos")}
                     style={{
                         backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/grupo.jpg)`
                     }}
 
                 >
-                    <span>Modo equipo</span>
+                    <span>Grupo</span>
                 </button>
-                </div>
             </div>
         </div>
     );
