@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import "../Styles/Form.css";
 
 function Form() {
+  const nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ0-9\s]*$/;
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState("");
   const [fondoActual, setFondoActual] = useState(0);
@@ -92,6 +93,11 @@ function Form() {
   //  Enviar formulario
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    if (!nameRegex.test(name)) {
+      alert("El nombre solo puede contener letras, números y espacios");
+      return; //Detiene el envío si hay caracteres inválidos
+    }
 
     if (!name || !avatar) {
       alert("Por favor, escribe tu nombre y elige un avatar.");
