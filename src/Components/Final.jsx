@@ -1,11 +1,12 @@
-
-
+import { Routes, Route } from "react-router-dom";
+import { useNavigate } from "react-router-dom" // Navegacion entre paginas 
 import { useEffect, useState } from "react";
 import { resetActividadesCompletadas } from "../utils/localStorage";
 import { jsPDF } from "jspdf";
 import "../Styles/Final.css";
 
 function Final() {
+    const { navigate } = useNavigate();
     const [avatar, setAvatar] = useState("");
     const [nombre, setNombre] = useState("");
 
@@ -80,7 +81,12 @@ function Final() {
                 </button>
                 <button className="btn-reiniciar" onClick={handleReiniciarJuego}>
                     Reiniciar Juego
+                </button> 
+                
+                <button className="btn-vitrina" onClick={() => window.location.href = "#/vitrina"}>
+                    Medallas disponibles
                 </button>
+
             </div>
         </div>
     );
