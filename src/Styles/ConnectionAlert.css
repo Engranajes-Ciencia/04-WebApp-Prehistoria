@@ -1,0 +1,12 @@
+.connection-alert {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    z-index: 1000;
+  }
