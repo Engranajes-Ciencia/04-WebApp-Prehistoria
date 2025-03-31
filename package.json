@@ -13,6 +13,7 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
     "html5-qrcode": "^2.3.8",
     "jspdf": "^3.0.1",
     "react": "^19.0.0",

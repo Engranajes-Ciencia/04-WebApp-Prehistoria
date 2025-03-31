@@ -13,8 +13,6 @@ import Vitrina from "./Components/Vitrina";
 import ConnectionAlert from "./Components/ConnectionAlert";
 import "./index.css";
 
-
-
 function App() {
   return (
     <div className="contenido-principal">
