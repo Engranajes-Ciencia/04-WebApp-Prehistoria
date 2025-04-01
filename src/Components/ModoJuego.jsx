@@ -17,7 +17,6 @@ function Mododejuego() {
             <h1 className="titulo">Elige tu estilo de juego</h1>
             <p className="subtitulo">¿Exploras solo o acompañado?</p>
             <div className="opciones">
-                <div className="imgSolo">
                 <button
                     className="btn-opcion" id="solo"
                     onClick={() => handleChoice("solo")}
@@ -27,8 +26,6 @@ function Mododejuego() {
                 >
                     <span>Modo solitario</span>
                 </button>
-                </div>
-                <div className="imgGrupo">
                 <button
                     className="btn-opcion" id="grupo"
                     onClick={() => handleChoice("grupos")}
@@ -39,7 +36,6 @@ function Mododejuego() {
                 >
                     <span>Modo equipo</span>
                 </button>
-                </div>
             </div>
         </div>
     );

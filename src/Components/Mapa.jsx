@@ -4,8 +4,8 @@ import { useNavigate } from "react-router-dom";
 import "../Styles/Mapa.css";
 
 const avatarMap = {
-    explorador: `${import.meta.env.BASE_URL}assets/avatars/explorador.png`,
-    exploradora: `${import.meta.env.BASE_URL}assets/avatars/exploradora.png`,
+    Kushim: `${import.meta.env.BASE_URL}assets/avatars/explorador.png`,
+    Enheduanna: `${import.meta.env.BASE_URL}assets/avatars/exploradora.png`,
 };
 
 function Mapa() {
@@ -29,7 +29,7 @@ function Mapa() {
     return (
         <div className="mapa-container">
             <div className="saludo">
-                <h2>¡Hola {nombre}!</h2>
+                <h2>¡Saludos {nombre}!</h2>
 
                 <div className="guia">
                     <img
@@ -38,7 +38,7 @@ function Mapa() {
                         className="avatar-mini"
                     />
                     <p>
-                        Soy tu guía <strong>{avatar}</strong>. ¡Vamos a explorar juntos!
+                        Yo ser guía <strong>{avatar}</strong>. Tú seguir <strong>{avatar}</strong>. <br/><br/><strong>{nombre}</strong> tener prendas raras. <br/> <br/>¿<strong>{nombre}</strong> no ser de aquí?<br/> <br/>No importar,<br/><br/> ¡<strong>{nombre}</strong> y <strong>{avatar}</strong> explorar tierras!
                     </p>
                 </div>
 
@@ -47,8 +47,11 @@ function Mapa() {
                 <button className="qr-button" onClick={() => navigate("/EscanerQR")}> 
                     📷 Escanear Código QR
                 </button>
+                
             </div>
+            <div className="fondo"></div>
         </div>
+ 
     );
 }
 
