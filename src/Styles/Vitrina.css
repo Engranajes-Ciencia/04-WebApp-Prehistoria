@@ -1,0 +1,47 @@
+.vitrina-container {
+    text-align: center;
+    margin: 20px;
+}
+
+/* Marco con imagen de fondo */
+.vitrina-marco {
+    position: relative;
+    width: 135%;
+    max-width: 600px;
+    min-height: 350px;
+    margin: 20px auto;
+    border: 8px solid #333;
+    border-radius: 10px;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/assets/images/imagesMedal/fondo.jpg"); 
+    
+}
+
+/* Tabla de medallas con fondo semitransparente */
+.vitrina-tabla {
+    position: relative;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 15px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.medalla {
+    padding: 10px;
+    text-align: center;
+}
+
+.medalla-img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+}

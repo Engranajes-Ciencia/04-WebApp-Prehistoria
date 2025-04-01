@@ -1,9 +1,8 @@
 import React from "react";
-
-
+import "../styles/Vitrina.css"; 
 
 const Vitrina = () => {
-    // Lista de medallas (puedes agregar más si lo deseas)
+
     const medallas = [
         "medalla1.jpg",
         "medalla2.jpg",
@@ -18,36 +17,42 @@ const Vitrina = () => {
     ];
 
     return (
-        <div style={{ textAlign: "center", margin: "20px" }}>
+        <div className="vitrina-container">
             <h1>Estas son tus medallas</h1>
-            <table style={{ margin: "0 auto", width: "80%" }}>
-                <tbody>
-                    {/* Fila 1 */}
-                    <tr>
-                        {medallas.slice(0, 5).map((medalla, index) => (
-                            <td key={index} style={{ padding: "10px" }}>
-                                <img
-                                    src={`${import.meta.env.BASE_URL}assets/images/imagesMedal/${medalla}`}
-                                    alt={`Medalla ${index + 1}`}
-                                    style={{ width: "100px", height: "auto", borderRadius: "8px" }}
-                                />
-
-                            </td>
-                        ))}
-                    </tr>
-                    {/* Fila 2 */}
-                    <tr>
-                        {medallas.slice(5, 10).map((medalla, index) => (
-                            <td key={index + 5} style={{ padding: "10px" }}>
-                                <img
-                                    src={`${import.meta.env.BASE_URL}assets/images/imagesMedal/${medalla}`}                                    alt={`Medalla ${index + 6}`}
-                                    style={{ width: "100px", height: "auto", borderRadius: "8px" }}
-                                />
-                            </td>
-                        ))}
-                    </tr>
-                </tbody>
-            </table>
+            
+            {/* Contenedor principal con imagen de fondo */}
+            <div className="vitrina-marco">
+                
+                {/* Contenedor de la tabla con medallas */}
+                <div className="vitrina-tabla">
+                    <table>
+                        <tbody>
+                            <tr>
+                                {medallas.slice(0, 5).map((medalla, index) => (
+                                    <td key={index} className="medalla">
+                                        <img
+                                            src={`${import.meta.env.BASE_URL}assets/images/imagesMedal/${medalla}`}
+                                            alt={`Medalla ${index + 1}`}
+                                            className="medalla-img"
+                                        />
+                                    </td>
+                                ))}
+                            </tr>
+                            <tr>
+                                {medallas.slice(5, 10).map((medalla, index) => (
+                                    <td key={index + 5} className="medalla">
+                                        <img
+                                            src={`${import.meta.env.BASE_URL}assets/images/imagesMedal/${medalla}`}
+                                            alt={`Medalla ${index + 6}`}
+                                            className="medalla-img"
+                                        />
+                                    </td>
+                                ))}
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </div>
     );
 };
