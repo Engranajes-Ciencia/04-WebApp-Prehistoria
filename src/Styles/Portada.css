@@ -1,9 +1,9 @@
+/* Estilos Portada */
 .portada-container {
     background-image: url('/04-WebApp-Prehistoria/assets/images/portada-fondo.jpg');
     background-size: cover;
     background-position: center;
     position: relative;
-    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -11,6 +11,7 @@
     text-align: center;
     font-family: 'Milford', sans-serif;
     padding: 20px;
+    min-height: 80vh; 
 }
 
 
@@ -23,6 +24,8 @@
     animation: fadeInUp 1s ease-in-out;
     max-width: 600px;
     text-align: center;
+    margin-top: 60px; 
+    margin-bottom: 60px; 
 }
 
 .titulo {
@@ -39,7 +42,6 @@
     line-height: 1.6;
     font-style: italic;
 }
-
 
 .btn-aventura {
     background-color: #5cb85c;
@@ -72,4 +74,48 @@
         transform: translateY(0);
     }
 }
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    .portada-container {
+        padding: 10px;
+        height: auto; 
+        min-height: 90vh;
+    }
+
+    .contenido {
+        padding: 30px 20px;
+    }
+
+    .titulo {
+        font-size: 2rem;
+    }
+
+    .subtitulo {
+        font-size: 1.1rem;
+    }
+
+    .btn-aventura {
+        width: 100%;
+        padding: 14px;
+    }
+}
+
+/* Media Queries para pantallas de 769px o más */
+@media (min-width: 769px) {
+    .portada-container {
+        min-height: 60vh; 
+    }
+
+    .contenido {
+        margin-top: 100px; 
+        margin-bottom: 80px; 
+    }
+}
+
+
+
+  
+
+
 

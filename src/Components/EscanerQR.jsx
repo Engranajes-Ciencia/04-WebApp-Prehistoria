@@ -33,6 +33,9 @@ function EscanerQR() {
                     return;
                 }
 
+                //  Marcamos acceso como válido
+                localStorage.setItem("accesoQR", "true");
+
 
                 scanner.clear().then(() => {
                     navigate(ruta);
