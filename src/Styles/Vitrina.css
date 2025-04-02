@@ -17,7 +17,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("/assets/images/imagesMedal/fondo.jpg"); 
+    background-image: url("/assets/images/imagesMedal/fondo.jpeg"); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     
 }
 
@@ -25,7 +28,6 @@
 .vitrina-tabla {
     position: relative;
     z-index: 1;
-    background-color: rgba(255, 255, 255, 0.7);
     padding: 15px;
     border-radius: 8px;
     display: flex;
@@ -42,6 +44,70 @@
 
 .medalla-img {
     width: 100px;
-    height: auto;
+    height: 100px;
+    object-fit: cover;
     border-radius: 8px;
+    background-color: transparent;
+    mix-blend-mode: multiply;
+}
+
+.medalla-img[src*="medalla1.png"] {
+    display: block;
+    transform: scale(1.09) !important; 
+    transform-origin: center; 
+
+}
+.medalla-img[src*="medalla2.png"] {
+    display: block;
+    transform: scale(1.28) !important; 
+    transform-origin: center; 
+
+}
+.medalla-img[src*="medalla3.png"] {
+    display: block;
+    transform: scale(1.17) !important; 
+    transform-origin: center; 
+
+}
+.medalla-img[src*="medalla4.png"] {
+    display: block;
+    transform: scale(1.06) !important; 
+    transform-origin: center; 
+
+}
+.medalla-img[src*="medalla5.png"] {
+    display: block;
+    transform: scale(1.07) !important; 
+    transform-origin: center; 
+
+}
+.medalla-img[src*="medalla6.png"] {
+    display: block;
+    transform: scale(1.06)  !important; 
+    transform-origin: center; 
+
+}
+.medalla-img[src*="medalla7.png"] {
+    display: block;
+    transform: scale(1.07)  !important; 
+    transform-origin: center; 
+
+}
+.medalla-img[src*="medalla8.png"] {
+    display: block;
+    transform: scale(1.11)  !important; 
+    transform-origin: center; 
+
+}
+.medalla-img[src*="medalla9.png"] {
+    display: block;
+    transform: scale(1.09)  !important; 
+    transform-origin: center; 
+
+}
+.medalla-img[src*="medalla10.png"] {
+    display: block;
+    transform: scale(1.09)   !important; 
+    transform-origin: center; 
+
 }

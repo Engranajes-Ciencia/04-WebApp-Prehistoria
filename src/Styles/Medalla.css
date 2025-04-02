@@ -1,0 +1,18 @@
+/* src/styles/Medalla.css */
+.medalla-img {
+    width: 80px;  /* Tamaño estándar para las medallas */
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.medalla-completa {
+    filter: none; /* Sin filtro, medalla a color */
+}
+
+.medalla-gris {
+    filter: grayscale(100%) brightness(70%);  /* Medalla en gris */
+}
+
+.medalla-img:hover {
+    transform: scale(1.1);  /* Efecto de zoom al pasar el mouse */
+}

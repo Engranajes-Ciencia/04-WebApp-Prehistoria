@@ -11,7 +11,8 @@
     text-align: center;
     font-family: 'Milford', sans-serif;
     padding: 20px;
-    min-height: 80vh; 
+    min-height: 80vh;
+    flex-grow: 1;
 }
 
 

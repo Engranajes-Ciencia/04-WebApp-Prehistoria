@@ -1,54 +1,49 @@
+// src/Components/Vitrina.jsx
 import React from "react";
-import "../styles/Vitrina.css"; 
+import "../styles/Vitrina.css";
+import Medalla from "./Medalla";
 
 const Vitrina = () => {
-
     const medallas = [
-        "medalla1.jpg",
-        "medalla2.jpg",
-        "medalla3.jpg",
-        "medalla4.jpg",
-        "medalla5.jpg",
-        "medalla6.jpg",
-        "medalla7.jpg",
-        "medalla8.jpg",
-        "medalla9.jpg",
-        "medalla10.jpg"
+        "medalla1.png",
+        "medalla2.png",
+        "medalla3.png",
+        "medalla4.png",
+        "medalla5.png",
+        "medalla6.png",
+        "medalla7.png",
+        "medalla8.png",
+        "medalla9.png",
+        "medalla10.png"
     ];
+
+    // Obtener actividades completadas del localStorage
+    const completadas = JSON.parse(localStorage.getItem("actividadesCompletadas")) || [];
 
     return (
         <div className="vitrina-container">
             <h1>Estas son tus medallas</h1>
-            
-            {/* Contenedor principal con imagen de fondo */}
+
             <div className="vitrina-marco">
-                
-                {/* Contenedor de la tabla con medallas */}
                 <div className="vitrina-tabla">
                     <table>
                         <tbody>
-                            <tr>
-                                {medallas.slice(0, 5).map((medalla, index) => (
-                                    <td key={index} className="medalla">
-                                        <img
-                                            src={`${import.meta.env.BASE_URL}assets/images/imagesMedal/${medalla}`}
-                                            alt={`Medalla ${index + 1}`}
-                                            className="medalla-img"
-                                        />
-                                    </td>
-                                ))}
-                            </tr>
-                            <tr>
-                                {medallas.slice(5, 10).map((medalla, index) => (
-                                    <td key={index + 5} className="medalla">
-                                        <img
-                                            src={`${import.meta.env.BASE_URL}assets/images/imagesMedal/${medalla}`}
-                                            alt={`Medalla ${index + 6}`}
-                                            className="medalla-img"
-                                        />
-                                    </td>
-                                ))}
-                            </tr>
+                            {[0, 5].map((rowStart) => (
+                                <tr key={rowStart}>
+                                    {medallas.slice(rowStart, rowStart + 5).map((medalla, index) => {
+                                        const medallaId = rowStart + index + 1;
+                                        const estaCompletada = completadas.includes(medallaId);
+
+                                        return (
+                                            <Medalla
+                                                key={medallaId}
+                                                id={medallaId}
+                                                completada={estaCompletada}
+                                            />
+                                        );
+                                    })}
+                                </tr>
+                            ))}
                         </tbody>
                     </table>
                 </div>
