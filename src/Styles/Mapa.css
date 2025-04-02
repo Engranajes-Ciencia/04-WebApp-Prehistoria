@@ -1,18 +1,28 @@
-.mapa-container {
+.fondo {
+    position: absolute;
+        z-index: -1;
     background-image: url('/04-WebApp-Prehistoria/assets/images/Mapa.png');
+    top: 1vh;
+    left: -32.95vw;
+    width: 99vw;
+    height: 77.5vh;
+    z-index: -1;
     background-size: cover;
     background-position: center;
-    min-height: 100vh;
-    padding: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    filter: blur(5px);
+}
+
+.mapa-container {
+    position:relative;
     font-family: 'Milford', sans-serif;
     font-weight: bold;
+
 }
 
 .saludo {
-    background: rgba(255, 255, 255, 0.92);
+    position: relative;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.726);
     padding: 40px 30px;
     border-radius: 20px;
     max-width: 650px;
@@ -21,6 +31,8 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    bottom: -60px;
+    opacity: 1;
     animation: aparecer 0.7s ease;
 }
 
@@ -47,9 +59,9 @@
 }
 
 .avatar-mini {
-    width: 65px;
-    height: 65px;
-    border-radius: 50%;
+    width: 115px;
+    height: 195px;
+    border-radius: 25px;
     border: 2px solid #4CAF50;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }

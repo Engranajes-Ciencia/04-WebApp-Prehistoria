@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    height: 100vh;
+    justify-content: top;
+    height: 75vh;
     width: 100vw;
     background: linear-gradient(135deg, #3c7a57, #b0e57c);
     text-align: center;
@@ -38,7 +38,7 @@
     height: 420px;
     font-size: 1.6rem;
     font-weight: bold;
-    color: white;
+    color: #ffffff;
     border: none;
     border-radius: 20px;
     cursor: pointer;
@@ -50,15 +50,14 @@
     background-position: center;
     position: relative;
     overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, all 1s ease;
 }
 
 .btn-opcion::before {
     content: "";
     position: absolute;
     inset: 0;
-    background: rgba(0, 0, 0, 0.4);
     z-index: 0;
     transition: background 0.3s ease;
 }
@@ -67,13 +66,48 @@
     position: relative;
     z-index: 1;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+    background-color: #79a981a2;
+    border-radius: 8px;
+    transition: transform 1s ease, color 0.5s ease, background-color 0.5s ease, border-radius 0.5s ease;
 }
 
 
 
 .btn-opcion:hover {
-    transform: scale(1.05);
-    box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.4);
+    transform: scale(1.10);
+    box-shadow: 0px 12px 28px rgba(146, 255, 118, 0.8);
+}
+
+.btn-opcion:hover::before {
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.btn-opcion:hover span {
+    color: #79a981;
+    background-color: #ffffff;
+    border-radius: 8px;
+    text-shadow: 00px 0px 10px #ffffff;
+    transform: scale(1.5);
+}
+
+#solo {
+    background-position-x: -7vw;
+    background-repeat: no repeat;
+    transition: background-size 1s ease, background-position 1s ease, all 1.2s ease;
+}
+#solo:hover {
+    background-position: center;
+    background-size: 29.2vw;
+}
+
+#grupo {
+    background-position-x: -11vw;
+    background-repeat: no repeat;
+    transition: background-size 1s ease, background-position 1s ease, all 1.2s ease;
+}
+#grupo:hover {
+    background-position: center;
+    background-size: 39vw;
 }
 
 @keyframes fadeIn {

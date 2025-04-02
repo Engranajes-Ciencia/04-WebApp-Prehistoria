@@ -9,9 +9,9 @@ import Actividad from "./Components/Actividad";
 import Footer from "./Components/Footer";
 import EntreActividades from "./Components/EntreActividades";
 import Final from "./Components/Final";
+import Vitrina from "./Components/Vitrina";
+import ConnectionAlert from "./Components/ConnectionAlert";
 import "./index.css";
-
-
 
 function App() {
   return (
@@ -27,8 +27,10 @@ function App() {
         <Route path="/EscanerQR" element={<EscanerQR />} />
         <Route path="/actividad/:id" element={<Actividad />} />
         <Route path="/final" element={<Final />} />
+        <Route path="/vitrina" element={<Vitrina />} />
       </Routes>
 
+      <ConnectionAlert />
       <Footer />
     </div>
   );

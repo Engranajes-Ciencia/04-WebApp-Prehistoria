@@ -1,5 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { validarNombre, transformarAvatar } from "../utils/validations";
 import "../Styles/Form.css";
 
 function Form() {
@@ -14,17 +15,17 @@ function Form() {
   const exploradorSoundRef = useRef(null);
 
   const avatars = {
-    explorador: `${import.meta.env.BASE_URL}assets/avatars/explorador.png`,
-    exploradora: `${import.meta.env.BASE_URL}assets/avatars/exploradora.png`,
+    Kushim: `${import.meta.env.BASE_URL}assets/avatars/explorador.png`,
+    Enheduanna: `${import.meta.env.BASE_URL}assets/avatars/exploradora.png`,
   };
 
   const fondos = [
-    `${import.meta.env.BASE_URL}assets/form-fondo/fondo1.png`,
-    `${import.meta.env.BASE_URL}assets/form-fondo/fondo2.png`,
-    `${import.meta.env.BASE_URL}assets/form-fondo/fondo3.png`,
-    `${import.meta.env.BASE_URL}assets/form-fondo/fondo4.png`,
-    `${import.meta.env.BASE_URL}assets/form-fondo/fondo5.png`,
-    `${import.meta.env.BASE_URL}assets/form-fondo/fondo6.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/foto1.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/foto2.jpg`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/foto3.jpg`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/foto4.jpg`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/foto5.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/foto6.png`,
   ];
 
   //  Cambio automático del fondo cada 5 segundos
@@ -51,10 +52,8 @@ function Form() {
     play();
 
     return () => {
-      if (dinoRef.current) {
-        dinoRef.current.pause();
-        dinoRef.current.currentTime = 0;
-      }
+      dinoRef.current.pause();
+      dinoRef.current.currentTime = 0;
     };
   }, []);
 
@@ -73,15 +72,18 @@ function Form() {
     const selected = e.target.value;
     setAvatar(selected);
 
-    if (selected === "exploradora") {
-      exploradoraSoundRef.current.currentTime = 0;
+    // Reproduce el sonido específico según el avatar seleccionado
+    if (selected === "Kushim") { // Nombres invertidos
+      exploradoraSoundRef.current.currentTime = 0; // Reinicia el audio
+      exploradorSoundRef.current.currentTime = 100; // Silencia el otro audio
       exploradoraSoundRef.current.play().catch(() =>
-        console.warn(" Autoplay bloqueado para exploradora.wav")
+        console.warn("El navegador bloqueó el autoplay del sonido exploradora.")
       );
-    } else if (selected === "explorador") {
-      exploradorSoundRef.current.currentTime = 0;
+    } else if (selected === "Enheduanna") { // Nombres invertidos
+      exploradorSoundRef.current.currentTime = 0; // Reinicia el audio
+      exploradoraSoundRef.current.currentTime = 100; // Silencia el otro audio
       exploradorSoundRef.current.play().catch(() =>
-        console.warn(" Autoplay bloqueado para explorador.wav")
+        console.warn("El navegador bloqueó el autoplay del sonido explorador.")
       );
     }
   };
@@ -90,17 +92,28 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    if (!validarNombre(name)) {
+      alert("El nombre solo puede contener letras, números y espacios.");
+      return;
+    }
+
     if (!name || !avatar) {
       alert("Por favor, escribe tu nombre y elige un avatar.");
       return;
     }
 
+    //  Reproduce sonido de bienvenida
     welcomeRef.current.currentTime = 0;
     welcomeRef.current.play();
 
+    //  Guarda nombre localstore
     localStorage.setItem("nombre", name);
-    localStorage.setItem("avatar", avatar);
 
+    //  Transformamos y guardamos avatar con el valor que espera el JSON
+    localStorage.setItem("avatar", transformarAvatar(avatar));
+
+
+    //  Redirige al mapa
     navigate("/mapa");
   };
 
@@ -126,13 +139,13 @@ function Form() {
       {/* Formulario */}
       <form className="form" onSubmit={handleSubmit}>
         <fieldset>
-          <label htmlFor="name">Nombre:</label>
+          <label htmlFor="name">Nombre de explorador/a:</label>
           <input
             type="text"
             id="name"
             value={name}
             onChange={handleName}
-            maxLength="30"
+            maxLength="20"
             required
             placeholder="Escribe tu nombre..."
             autoFocus
@@ -140,7 +153,7 @@ function Form() {
         </fieldset>
 
         <fieldset>
-          <label>Elige tu avatar:</label>
+          <label>Elige a tu guía:</label>
           <div className="avatar-options">
             {Object.keys(avatars).map((tipo) => (
               <label key={tipo}>
@@ -157,7 +170,7 @@ function Form() {
                   alt={tipo}
                   className={`avatar-img ${avatar === tipo ? "selected" : ""}`}
                 />
-                <p style={{ textAlign: "center" }}>
+                <p style={{ textAlign: "left" }} className="text-img">
                   {tipo.charAt(0).toUpperCase() + tipo.slice(1)}
                 </p>
               </label>

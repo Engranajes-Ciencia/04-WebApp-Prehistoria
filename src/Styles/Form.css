@@ -24,7 +24,6 @@
   border-radius: 25px 80px 25px 25px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
   max-width: 460px;
-  backdrop-filter: blur(4px);
   border: 1px solid #d7e7dd;
   font-family: 'Milford', sans-serif;
   font-weight: bold;
@@ -42,11 +41,9 @@
     opacity: 1;
   }
 }
-
-.form:hover {
-  transform: scale(1.01);
+.form:hover{
+  transform: scale(1.05);
 }
-
 /* Campos */
 fieldset {
   border: none;
@@ -77,6 +74,9 @@ fieldset {
   border-color: #79a981;
   outline: none;
   background-color: #fff;
+}
+.form input:hover {
+  transform: scale(1.05);
 }
 
 /* Botón */
@@ -110,9 +110,9 @@ button:hover {
 
 
 .avatar-options img {
-  width: 95px;
-  height: 95px;
-  border-radius: 50%;
+  width: 165px;
+  height: 250px;
+  border-radius: 25px;
   border: 3px solid gray;
   cursor: pointer;
   transition: all 0.3s ease;
