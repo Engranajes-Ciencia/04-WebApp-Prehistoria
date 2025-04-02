@@ -13,6 +13,7 @@ function EntreActividades() {
     const siguiente = completadas.length + 1;
 
     const avatar = localStorage.getItem("avatar") || "explorador"; // o exploradora
+    const nombre = localStorage.getItem("nombre") || "explorador/a";
 
 
     return (
@@ -25,7 +26,7 @@ function EntreActividades() {
                 className="guia-avatar"
             />
             <p className="guia-texto">
-                ¡Buen trabajo {completadas.length >= 10 ? "explorador/a" : ""}! Has completado {completadas.length} de 10 paradas.
+                ¡Buen trabajo {nombre}! Has completado {completadas.length} de 10 paradas.
             </p>
 
             <div className="barra-progreso">

@@ -1,9 +1,9 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { validarNombre, transformarAvatar } from "../utils/validations";
 import "../Styles/Form.css";
 
 function Form() {
-  const nameRegex = /^[a-zA-ZáéíóúÁÉÍÓÚñÑ0-9\s]*$/;
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState("");
   const [fondoActual, setFondoActual] = useState(0);
@@ -52,10 +52,8 @@ function Form() {
     play();
 
     return () => {
-      if (dinoRef.current) {
-        dinoRef.current.pause();
-        dinoRef.current.currentTime = 0;
-      }
+      dinoRef.current.pause();
+      dinoRef.current.currentTime = 0;
     };
   }, []);
 
@@ -78,13 +76,13 @@ function Form() {
     if (selected === "Kushim") { // Nombres invertidos
       exploradoraSoundRef.current.currentTime = 0; // Reinicia el audio
       exploradorSoundRef.current.currentTime = 100; // Silencia el otro audio
-      exploradoraSoundRef.current.play().catch((error) =>
+      exploradoraSoundRef.current.play().catch(() =>
         console.warn("El navegador bloqueó el autoplay del sonido exploradora.")
       );
     } else if (selected === "Enheduanna") { // Nombres invertidos
       exploradorSoundRef.current.currentTime = 0; // Reinicia el audio
       exploradoraSoundRef.current.currentTime = 100; // Silencia el otro audio
-      exploradorSoundRef.current.play().catch((error) =>
+      exploradorSoundRef.current.play().catch(() =>
         console.warn("El navegador bloqueó el autoplay del sonido explorador.")
       );
     }
@@ -94,9 +92,9 @@ function Form() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    if (!nameRegex.test(name)) {
-      alert("El nombre solo puede contener letras, números y espacios");
-      return; //Detiene el envío si hay caracteres inválidos
+    if (!validarNombre(name)) {
+      alert("El nombre solo puede contener letras, números y espacios.");
+      return;
     }
 
     if (!name || !avatar) {
@@ -104,12 +102,18 @@ function Form() {
       return;
     }
 
+    //  Reproduce sonido de bienvenida
     welcomeRef.current.currentTime = 0;
     welcomeRef.current.play();
 
+    //  Guarda nombre localstore
     localStorage.setItem("nombre", name);
-    localStorage.setItem("avatar", avatar);
 
+    //  Transformamos y guardamos avatar con el valor que espera el JSON
+    localStorage.setItem("avatar", transformarAvatar(avatar));
+
+
+    //  Redirige al mapa
     navigate("/mapa");
   };
 
@@ -141,7 +145,7 @@ function Form() {
             id="name"
             value={name}
             onChange={handleName}
-            maxLength="10"
+            maxLength="20"
             required
             placeholder="Escribe tu nombre..."
             autoFocus

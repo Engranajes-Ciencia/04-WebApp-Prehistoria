@@ -4,9 +4,10 @@ import { useNavigate } from "react-router-dom";
 import "../Styles/Mapa.css";
 
 const avatarMap = {
-    Kushim: `${import.meta.env.BASE_URL}assets/avatars/explorador.png`,
-    Enheduanna: `${import.meta.env.BASE_URL}assets/avatars/exploradora.png`,
+    explorador: `${import.meta.env.BASE_URL}assets/avatars/explorador.png`,
+    exploradora: `${import.meta.env.BASE_URL}assets/avatars/exploradora.png`,
 };
+
 
 function Mapa() {
     const navigate = useNavigate();

@@ -37,12 +37,14 @@ function EscanerQR() {
                 localStorage.setItem("accesoQR", "true");
 
 
-                scanner.clear().then(() => {
-                    navigate(ruta);
-                });
+                setTimeout(() => {
+                    scanner.clear().then(() => {
+                        navigate(ruta);
+                    });
+                }, 100); // Pequeño delay para asegurar que localStorage se guarde
             },
             (error) => {
-                console.warn(" Escaneo fallido:", error);
+                console.warn("Escaneo fallido:", error);
             }
         );
 

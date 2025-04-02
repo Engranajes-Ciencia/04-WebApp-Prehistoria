@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import actividades from "../data/actividades.json";
 import { marcarActividadComoCompletada } from "../utils/localStorage";
+import { validarAvatar, validarNombre } from "../utils/validations";
 import "../Styles/Actividad.css";
 
 
@@ -15,36 +16,26 @@ function Actividad() {
     const actividad = actividades.find((a) => a.id === parseInt(id));
     const avatar = localStorage.getItem("avatar");
     const nombre = localStorage.getItem("nombre");
+    const accesoQR = localStorage.getItem("accesoQR");
     
 
-    // Protección: si no hay datos o no has llegado por QR = redirige
     useEffect(() => {
-        const accesoQR = localStorage.getItem("accesoQR"); // permiso de entrada
-        const completadas = JSON.parse(localStorage.getItem("actividadesCompletadas")) || [];
-        const actividadActual = Number(id);
-
-        // Detectar cuál es la siguiente actividad permitida
-        const siguienteEsperada = completadas.length + 1;
-
         if (
-            accesoQR !== "true" || // Protege contra acceso directo a /actividad/:id sin QR
-            actividadActual !== siguienteEsperada ||  // Asegura que se sigan las actividades en orden (no saltarse ninguna)
-            !avatar || !nombre
+            accesoQR !== "true" ||
+            !validarNombre(nombre) ||
+            !validarAvatar(avatar)
         ) {
-            alert(" Acceso no autorizado. Debes escanear el QR correcto en orden.");
+            alert("Acceso no autorizado. Por favor, escanea un QR válido.");
             navigate("/EscanerQR");
             return;
         }
 
-        //  Marcar como completada si todo OK
-        marcarActividadComoCompletada(actividadActual);
-
-        //  Solo eliminamos permiso QR (avatar/nombre/progreso permanecen)
+        marcarActividadComoCompletada(Number(id));
         localStorage.removeItem("accesoQR");
-    }, [id, navigate, avatar, nombre]);
+    }, [id, navigate, avatar, nombre, accesoQR]);
 
     if (!actividad || !avatar || !nombre) {
-        return <p className="error-msg"> Actividad no encontrada o acceso no permitido.</p>;
+        return <p className="error-msg">Actividad no encontrada o acceso no permitido.</p>;
     }
 
     const avatarData = actividad.avatarDialogo[avatar];
