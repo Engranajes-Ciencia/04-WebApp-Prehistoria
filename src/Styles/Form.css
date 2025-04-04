@@ -21,15 +21,16 @@
   margin: 80px auto;
   padding: 50px 30px;
   background: rgba(255, 255, 255, 0.85);
-  border-radius: 25px 80px 25px 25px;
+  border-radius: 30px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
-  max-width: 460px;
+  max-width: 480px;
   border: 1px solid #d7e7dd;
   font-family: 'Milford', sans-serif;
   font-weight: bold;
   animation: slideUp 0.8s ease-out;
   transition: all 0.3s ease;
 }
+
 @keyframes slideUp {
   from {
     transform: translateY(40px);
@@ -41,9 +42,11 @@
     opacity: 1;
   }
 }
+
 .form:hover{
   transform: scale(1.05);
 }
+
 /* Campos */
 fieldset {
   border: none;
@@ -54,39 +57,39 @@ fieldset {
 .form label {
   font-size: 1.2rem;
   color: #3d3d3d;
-  margin-bottom: 8px;
+  margin-bottom: 10px;
   display: block;
 }
   
-  .form input,
-  .form select {
-    padding: 10px;
-    font-size: 17px;
-    font-weight: bold;
-    width: 100%;
-    border: 2px solid #9b9b9b;
-    border-radius: 6px;
-    background-color: #f9f9f9;
-    transition: all 0.3s ease;
-    }
-
-.form input:focus {
-  border-color: #79a981;
-  outline: none;
-  background-color: #fff;
+.form input[type="text"] {
+  padding: 9px;
+  font-size: 15px;
+  border-radius: 10px;
+  width: 100%;
+  border: 2px solid #ccc;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
 }
+
+.form input[type="text"]:focus {
+  border-color: #79a981;
+  background-color: #fff;
+  outline: none;
+}
+
 .form input:hover {
-  transform: scale(1.05);
+  background-color: #f0f0f0;
+  border-color: #79a981;
 }
 
 /* Botón */
 button {
   margin-top: 20px;
-  padding: 12px 20px;
+  padding: 12px;
   background: linear-gradient(135deg, #79a981, #5f8b6a);
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 10px;
   font-size: 1rem;
   font-weight: bold;
   cursor: pointer;
@@ -102,20 +105,26 @@ button:hover {
 /* Avatares */
 .avatar-options {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   gap: 25px;
-  margin-top: 15px;
+  margin-top: 10px;
   flex-wrap: wrap;
+}
+
+/* Ocultar radio buttons */
+.avatar-options input[type="radio"] {
+  display: none;
 }
 
 
 .avatar-options img {
-  width: 165px;
-  height: 250px;
-  border-radius: 25px;
+  width: 150px;
+  height: 220px;
+  border-radius: 20px;
   border: 3px solid gray;
   cursor: pointer;
   transition: all 0.3s ease;
+  object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .avatar-options img:hover {
@@ -133,10 +142,16 @@ button:hover {
   }
 
   50% {
-    transform: scale(1.1);
+    transform: scale(1.08);
   }
 
   100% {
     transform: scale(1);
   }
+}
+
+.text-img {
+  text-align: center;
+  font-size: 1rem;
+  margin-top: 6px;
 }

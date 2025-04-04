@@ -170,7 +170,7 @@ function Form() {
                   alt={tipo}
                   className={`avatar-img ${avatar === tipo ? "selected" : ""}`}
                 />
-                <p style={{ textAlign: "left" }} className="text-img">
+                <p className="text-img">
                   {tipo.charAt(0).toUpperCase() + tipo.slice(1)}
                 </p>
               </label>
