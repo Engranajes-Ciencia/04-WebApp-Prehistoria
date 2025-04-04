@@ -1,9 +1,10 @@
-.modojuego-container {
+/* Estilos generales */
+.modojuego-container { 
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: top;
-    height: 75vh;
+    justify-content: center; 
+    min-height: 90vh; 
     width: 100vw;
     background: linear-gradient(135deg, #3c7a57, #b0e57c);
     text-align: center;
@@ -31,11 +32,13 @@
     gap: 24px;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 
+/* Botones de opciones */
 .btn-opcion {
     width: 400px;
-    height: 420px;
+    height: 320px;
     font-size: 1.6rem;
     font-weight: bold;
     color: #ffffff;
@@ -71,11 +74,11 @@
     transition: transform 1s ease, color 0.5s ease, background-color 0.5s ease, border-radius 0.5s ease;
 }
 
-
-
 .btn-opcion:hover {
-    transform: scale(1.10);
+    transform: scale(1.05);
     box-shadow: 0px 12px 28px rgba(146, 255, 118, 0.8);
+    background-size: 110%; 
+    background-position: center;
 }
 
 .btn-opcion:hover::before {
@@ -86,38 +89,93 @@
     color: #79a981;
     background-color: #ffffff;
     border-radius: 8px;
-    text-shadow: 00px 0px 10px #ffffff;
+    text-shadow: 0px 0px 10px #ffffff;
     transform: scale(1.5);
 }
 
-#solo {
-    background-position-x: -7vw;
-    background-repeat: no repeat;
-    transition: background-size 1s ease, background-position 1s ease, all 1.2s ease;
-}
 #solo:hover {
+    background-size: 130%; 
     background-position: center;
-    background-size: 29.2vw;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
-#grupo {
-    background-position-x: -11vw;
-    background-repeat: no repeat;
-    transition: background-size 1s ease, background-position 1s ease, all 1.2s ease;
-}
 #grupo:hover {
+    background-size: 150%; 
     background-position: center;
-    background-size: 39vw;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: scale(0.98);
+/* ✅ Media queries */
+
+@media (max-width: 768px) {
+    .modojuego-container {
+        min-height: 95vh; /* Evita el espacio en blanco */
     }
 
-    to {
-        opacity: 1;
-        transform: scale(1);
+    .titulo {
+        font-size: 2.2rem;
+    }
+
+    .subtitulo {
+        font-size: 1.2rem;
+        margin-bottom: 25px;
+    }
+
+    .opciones {
+        flex-direction: column; /* Apila los botones en columna */
+        gap: 16px;
+    }
+
+    .btn-opcion {
+        width: 280px;
+        height: 220px;
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 768px) and (orientation: landscape) {
+    .modojuego-container {
+        min-height: 100vh;
+        padding-bottom: 50px; /* Asegura que no tape el Footer */
+    }
+
+    .opciones {
+        flex-direction: row; /* Se mantiene en fila */
+        gap: 10px;
+    }
+
+    .btn-opcion {
+        width: 220px;
+        height: 180px;
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .modojuego-container {
+        min-height: 100vh;
+        padding: 10px;
+    }
+
+    .titulo {
+        font-size: 1.8rem;
+    }
+
+    .subtitulo {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .opciones {
+        flex-direction: column; /* Mantiene los botones en columna */    
+        gap: 12px;
+    }
+
+    .btn-opcion {
+        width: 220px;
+        height: 180px;
+        font-size: 1.1rem;
     }
 }

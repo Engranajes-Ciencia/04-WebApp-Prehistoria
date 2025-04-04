@@ -1,4 +1,3 @@
-
 // src/Components/EntreActividades.jsx
 
 import { getActividadesCompletadas } from "../utils/localStorage";
@@ -14,7 +13,6 @@ function EntreActividades() {
 
     const avatar = localStorage.getItem("avatar") || "explorador"; // o exploradora
     const nombre = localStorage.getItem("nombre") || "explorador/a";
-
 
     return (
         <div className="mapa-check-container">
@@ -33,13 +31,11 @@ function EntreActividades() {
                 <div className="relleno" style={{ width: `${(completadas.length / 10) * 100}%` }}></div>
             </div>
 
-
             <img
                 src={`${import.meta.env.BASE_URL}assets/images/fondo-mapa.jpg`}
                 alt="Mapa"
                 className="mapa-real"
             />
-
 
             <ul className="checkpoints">
                 {actividades.map((act) => (
@@ -49,15 +45,22 @@ function EntreActividades() {
                 ))}
             </ul>
 
-            {completadas.length >= 10 ? (
-                <button className="btn-final" onClick={() => navigate("/final")}>
-                    Ver pantalla final 
+            <div className="botones-container">
+                {completadas.length >= 10 ? (
+                    <button className="btn-final" onClick={() => navigate("/final")}>
+                        Ver pantalla final
+                    </button>
+                ) : (
+                    <button className="btn-scan" onClick={() => navigate("/EscanerQR")}>
+                        Escanear siguiente parada ({siguiente})
+                    </button>
+                )}
+
+                {/* Botón para Ver Medallas */}
+                <button className="btn-medallas" onClick={() => navigate("/Vitrina")}>
+                    Ver Medallas
                 </button>
-            ) : (
-                <button className="btn-scan" onClick={() => navigate("/EscanerQR")}>
-                    Escanear siguiente parada ({siguiente})
-                </button>
-            )}
+            </div>
         </div>
     );
 }

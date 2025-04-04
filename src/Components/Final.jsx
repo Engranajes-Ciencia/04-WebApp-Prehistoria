@@ -5,6 +5,8 @@ import { resetActividadesCompletadas } from "../utils/localStorage";
 import { jsPDF } from "jspdf";
 import "../Styles/Final.css";
 
+
+
 function Final() {
     const  navigate  = useNavigate();
     const [avatar, setAvatar] = useState("");
