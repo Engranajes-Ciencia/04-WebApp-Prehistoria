@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import "../Styles/ModoJuego.css";
 
-function Mododejuego() {
+function ModoJuego() {
     const navigate = useNavigate();
 
     const handleChoice = (choice) => {
@@ -41,4 +41,4 @@ function Mododejuego() {
     );
 }
 
-export default Mododejuego;
+export default ModoJuego;
