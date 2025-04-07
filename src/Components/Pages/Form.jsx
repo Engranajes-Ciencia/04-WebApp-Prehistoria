@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
-import { validarNombre, transformarAvatar } from "../utils/validations";
-import "../Styles/Form.css";
+import { validarNombre, transformarAvatar } from "../../config/utils/validations";
+import "../../Styles/Pages/Form.css";
 
 function Form() {
   const [name, setName] = useState("");

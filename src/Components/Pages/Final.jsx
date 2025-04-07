@@ -1,9 +1,9 @@
 
 import { useNavigate } from "react-router-dom" // Navegacion entre paginas 
 import { useEffect, useState } from "react";
-import { resetActividadesCompletadas } from "../utils/localStorage";
+import { resetActividadesCompletadas } from "../../config/utils/localStorage";
 import { jsPDF } from "jspdf";
-import "../Styles/Final.css";
+import "../../Styles/Pages/Final.css";
 
 
 

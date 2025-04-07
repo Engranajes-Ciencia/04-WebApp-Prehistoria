@@ -1,5 +1,4 @@
-// src/Components/Footer.jsx
-import "../Styles/Footer.css";
+import "../../Styles/Layout/Footer.css";
 
 function Footer() {
     return (

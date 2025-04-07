@@ -1,8 +1,8 @@
-// src/Components/EscanerQR.jsx
+// src/Components/Pages/EscanerQR.jsx
 import { useNavigate } from "react-router-dom";
 import { Html5QrcodeScanner } from "html5-qrcode";
 import { useEffect, useState } from "react";
-import "../Styles/EscanerQR.css";
+import "../../Styles/Pages/EscanerQR.css";
 
 function EscanerQR() {
     const navigate = useNavigate();

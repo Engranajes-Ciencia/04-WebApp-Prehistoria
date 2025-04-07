@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import "../Styles/ModoJuego.css";
+import "../../Styles/Pages/ModoJuego.css";
 
 function ModoJuego() {
     const navigate = useNavigate();

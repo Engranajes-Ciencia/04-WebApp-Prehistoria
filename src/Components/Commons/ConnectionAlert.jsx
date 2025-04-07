@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import "../Styles/ConnectionAlert.css";
+import "../../Styles/Commons/ConnectionAlert.css";
 
 function ConnectionAlert() {
   const [isOnline, setIsOnline] = useState(navigator.onLine);

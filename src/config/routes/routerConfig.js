@@ -9,7 +9,7 @@ const ROUTES = {
     ESCANERQR: '/escanerQR',
     ACTIVIDAD: '/actividad/:id',
     FINAL: '/final',
-    VITRINA: '/vitrina',
+    VITRINA: '/vitrina'
 };
 
 export default ROUTES;

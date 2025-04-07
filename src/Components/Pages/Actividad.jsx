@@ -1,10 +1,10 @@
-// src/Components/Actividad.jsx
+// src/Components/Pages/Actividad.jsx
 import { useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import actividades from "../data/actividades.json";
-import { marcarActividadComoCompletada } from "../utils/localStorage";
-import { validarAvatar, validarNombre } from "../utils/validations";
-import "../Styles/Actividad.css";
+import actividades from "../../config/data/actividades.json";
+import { marcarActividadComoCompletada } from "../../config/utils/localStorage";
+import { validarAvatar, validarNombre } from "../../config/utils/validations";
+import "../../Styles/Pages/Actividad.css";
 
 
 
