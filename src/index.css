@@ -95,17 +95,12 @@ html {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  
 }
-<<<<<<< Updated upstream
 
 
-=======
 html,
->>>>>>> Stashed changes
 #root {
   height: 100vh;
-  
 }
 
 
