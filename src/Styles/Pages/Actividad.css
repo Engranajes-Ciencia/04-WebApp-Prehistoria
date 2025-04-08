@@ -102,3 +102,20 @@ iframe {
         opacity: 1;
     }
 }
+
+
+.dark .actividad-container {
+    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+    color: var(--blanco);
+}
+
+.dark .sabiasque,
+.dark .pregunta {
+    background-color: #333;
+    color: var(--blanco);
+    border-left-color: var(--verde);
+}
+
+.dark iframe {
+    filter: brightness(0.9);
+}

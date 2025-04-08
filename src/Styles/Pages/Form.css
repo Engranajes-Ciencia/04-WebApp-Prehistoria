@@ -24,7 +24,7 @@
   border-radius: 30px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
   max-width: 480px;
-  border: 1px solid #d7e7dd;
+  border: 1px solid var(--grisClaro);
   font-family: 'Milford', sans-serif;
   font-weight: bold;
   animation: slideUp 0.8s ease-out;
@@ -56,7 +56,7 @@ fieldset {
   
 .form label {
   font-size: 1.2rem;
-  color: #3d3d3d;
+  color: var(--grisOscuro);
   margin-bottom: 10px;
   display: block;
 }
@@ -154,4 +154,32 @@ button:hover {
   text-align: center;
   font-size: 1rem;
   margin-top: 6px;
+}
+
+/* 🌙 Modo Oscuro */
+.dark .form {
+  background: rgba(26, 32, 39, 0.95);
+  border: 1px solid var(--grisClaro);
+  box-shadow: 0 12px 28px rgba(255, 255, 255, 0.1);
+  color: var(--blanco);
+  /* ✅ Esto hace que todos los textos hereden blanco */
+}
+
+.dark .form label,
+.dark .form input,
+.dark .form p,
+.dark .form span,
+.dark .text-img {
+  color: var(--blanco);
+}
+
+.dark .form input[type="text"] {
+  background-color: #1e1e1e;
+  color: var(--blanco);
+  border-color: #555;
+}
+
+.dark .form input[type="text"]:focus {
+  background-color: #2c2c2c;
+  border-color: var(--verde);
 }

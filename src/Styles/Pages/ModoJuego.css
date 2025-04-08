@@ -178,3 +178,14 @@
         font-size: 1.1rem;
     }
 }
+
+
+.dark .modojuego-container {
+    background: linear-gradient(135deg, #212121, #424242);
+    color: var(--blanco);
+}
+
+.dark .btn-opcion span {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--blanco);
+}

@@ -116,8 +116,17 @@
 }
 
 
+.dark .contenido {
+    background-color: rgba(20, 20, 20, 0.95);
+    color: var(--blanco);
+}
 
-  
+.dark .btn-aventura {
+    background-color: var(--verde);
+}
+
+
+
 
 
 

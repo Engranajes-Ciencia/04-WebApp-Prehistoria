@@ -90,3 +90,22 @@
         transform: translateY(0);
     }
 }
+
+
+.dark .final-container {
+    background: linear-gradient(to bottom, #1c1c1c, #2d2d2d);
+    color: var(--blanco);
+}
+
+.dark .nombre-final {
+    color: var(--verde);
+}
+
+.dark .btn-descargar {
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+.dark .btn-reiniciar {
+    background-color: #b71c1c;
+}

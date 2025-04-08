@@ -2,6 +2,7 @@
 import { useNavigate } from "react-router-dom";
 import { Html5QrcodeScanner } from "html5-qrcode";
 import { useEffect, useState } from "react";
+import confetti from "canvas-confetti";
 import "../../Styles/Pages/EscanerQR.css";
 
 function EscanerQR() {
@@ -32,6 +33,15 @@ function EscanerQR() {
                     alert(" QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número");
                     return;
                 }
+
+                //  confeti al validar QR
+                confetti({
+                    particleCount: 100,
+                    spread: 90,
+                    origin: { y: 0.6 },
+                    colors: ['#79a981', '#fdd835', '#66bb6a', '#9b9b9b']
+                });
+
 
                 //  Marcamos acceso como válido
                 localStorage.setItem("accesoQR", "true");
