@@ -1,6 +1,7 @@
  /* Estilos de la cabecera */
 .header {
-    width: 100%;
+    width: 300%;
+    right: 100%;
     padding: 40px 20px 30px;
     background: linear-gradient(120deg, #f5f5f5, #d1f2eb);
     text-align: center;
@@ -25,16 +26,18 @@
   .branding {
     position: absolute;
     top: 15px;
-    right: 20px;
+    min-width: 15%;
+    max-width: 25%;
+    right: 8%;
     display: flex;
     align-items: center;
     gap: 10px;
     background-color: #ffffffcc;
-    padding: 8px 14px;
+    padding: 8px;
     border-radius: 8px;
     font-size: 15px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(4px);
+    --webkit-backdrop-filter: blur(4px);
     color: #37474f;
   }
   
@@ -82,8 +85,8 @@
   
     .branding {
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 0;
+      right: 35%;
       font-size: 12px;
       gap: 8px;
     }

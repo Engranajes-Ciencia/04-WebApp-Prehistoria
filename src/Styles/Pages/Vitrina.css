@@ -10,7 +10,7 @@
     max-width: 600px;
     min-height: 350px;
     margin: 20px auto;
-    border: 8px solid #333;
+    border: 8px solid var(--grisOscuro);
     border-radius: 10px;
     box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.2);
     overflow: hidden;

@@ -110,3 +110,10 @@ body {
     margin: 0 20px 0 0;
   }
   
+:root { /* Paleta colores corporativos */
+  --verde: #79a981;
+  --grisClaro: #9b9b9b;
+  --grisOscuro: #333333;
+  --blanco: #ffffff;
+  --negro: #000000;
+}

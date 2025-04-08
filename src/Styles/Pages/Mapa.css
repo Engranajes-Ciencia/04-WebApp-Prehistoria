@@ -24,6 +24,7 @@
     z-index: 1;
     background: rgba(255, 255, 255, 0.726);
     padding: 40px 30px;
+    margin-bottom: 17.3%;
     border-radius: 20px;
     max-width: 650px;
     box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
@@ -68,7 +69,7 @@
 
 .saludo h2 {
     font-size: 28px;
-    color: #333;
+    color: var(--grisOscuro);
     margin-bottom: 15px;
 }
 
@@ -80,7 +81,7 @@
 
 .qr-button {
     background-color: #4CAF50;
-    color: white;
+    color: var(--blanco);
     font-size: 18px;
     padding: 12px 24px;
     border: none;

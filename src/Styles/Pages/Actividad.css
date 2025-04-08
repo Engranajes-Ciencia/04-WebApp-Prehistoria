@@ -1,4 +1,4 @@
-/* src/components/Actividad.css */
+/* src/components/pages/Actividad.css */
 
 /* Animación de entrada suave */
 @keyframes fadeSlideIn {
@@ -42,7 +42,7 @@
     height: 70px;
     border-radius: 50%;
     border: 2px solid #2196f3;
-    background-color: white;
+    background-color: var(--blanco);
     padding: 4px;
 }
 

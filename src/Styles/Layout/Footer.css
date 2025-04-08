@@ -1,9 +1,11 @@
-/* Estilos Footer */
 .footer {
     background: linear-gradient(135deg, #43a047, #1b5e20);
-    color: #ffffff;
+    color: var(--blanco);
+    max-width: 80%;
+    min-width: 25%;
+    justify-self: center;
     text-align: center;
-    padding: 25px 20px;
+    padding: 30px 20px;
     font-family: 'Milford', sans-serif;
     font-size: 15px;
     margin-top: auto;
@@ -38,7 +40,7 @@
   /* Media Queries */
   @media (max-width: 768px) {
     .footer {
-      padding: 20px;
+      padding: 50px;
       font-size: 14px;
     }
   
