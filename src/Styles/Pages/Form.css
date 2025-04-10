@@ -8,6 +8,7 @@
   z-index: -1;
   background-size: cover;
   background-position: center;
+  background-attachment: fixed;
   transition: background-image 1s ease-in-out;
 }
 
