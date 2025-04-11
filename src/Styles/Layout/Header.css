@@ -46,6 +46,14 @@
       font-size: 0.95rem;
       transition: all 0.3s ease;
     }
+
+    .btn-tema.claro {
+      background-color: #4a90e2;
+    }
+    
+    .btn-tema:hover {
+      background-color: #5f8b6a;
+    }
   
     .btn-tema:hover {
       background-color: #5f8b6a;

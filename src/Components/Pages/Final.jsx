@@ -20,7 +20,7 @@ function Final() {
         if (avatarGuardado) setAvatar(avatarGuardado);
         if (nombreGuardado) setNombre(nombreGuardado);
 
-        resetActividadesCompletadas(); // Limpieza para siguiente usuario
+         resetActividadesCompletadas(); // Limpieza para siguiente usuario
 
         //  confeti al cargar la página final
         confetti({
