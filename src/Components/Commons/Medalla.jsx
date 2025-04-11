@@ -1,6 +1,6 @@
-// src/Components/Medalla.jsx
+// src/Components/Commons/Medalla.jsx
 import React from "react";
-import "../styles/Medalla.css";  
+import "../../Styles/Commons/Medalla.css";  
 
 const Medalla = ({ id, completada }) => {
     // Se utiliza una clase CSS diferente según si la medalla está completada o no

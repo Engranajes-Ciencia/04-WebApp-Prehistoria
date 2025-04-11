@@ -1,0 +1,126 @@
+.fondo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('/04-WebApp-Prehistoria/assets/images/Mapa.png');
+    background-size: cover;
+    background-position: center;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+/* CONTENEDOR PRINCIPAL */
+.mapa-container {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    font-family: 'Milford', sans-serif;
+    font-weight: bold;
+    z-index: 1;
+}
+
+/* TARJETA DE SALUDO */
+.saludo {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 40px 30px;
+    border-radius: 20px;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: aparecer 0.7s ease;
+}
+
+/* TARJETA DE SALUDO */
+.saludo {
+    background: rgba(255, 255, 255, 0.92);
+    padding: 40px 30px;
+    border-radius: 20px;
+    max-width: 650px;
+    width: 100%;
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    animation: aparecer 0.7s ease;
+}
+
+/* AVATAR Y TEXTO */
+.guia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.avatar-mini {
+    width: 115px;
+    height: 195px;
+    border-radius: 25px;
+    border: 2px solid #4CAF50;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* TEXTO */
+.saludo h2 {
+    font-size: 28px;
+    color: var(--grisOscuro);
+    margin-bottom: 15px;
+}
+
+.saludo p {
+    font-size: 18px;
+    margin: 8px 0;
+    color: #444;
+}
+
+/* BOTÓN */
+.qr-button {
+    background-color: #4CAF50;
+    color: var(--blanco);
+    font-size: 18px;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.qr-button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+/* ANIMACIÓN */
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/*  MODO OSCURO */
+.dark .saludo {
+    background-color: rgba(20, 20, 20, 0.85);
+    color: var(--blanco);
+}
+
+.dark .saludo p {
+    color: var(--blanco);
+}
+
+.dark .qr-button {
+    background-color: #4caf50;
+    color: var(--blanco);
+}

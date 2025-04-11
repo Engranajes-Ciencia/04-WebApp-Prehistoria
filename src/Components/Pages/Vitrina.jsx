@@ -1,7 +1,7 @@
-// src/Components/Vitrina.jsx
+// src/Components/Pages/Vitrina.jsx
 import React from "react";
-import "../styles/Vitrina.css";
-import Medalla from "./Medalla";
+import "../../Styles/Pages/Vitrina.css";
+import Medalla from "../Commons/Medalla";
 
 const Vitrina = () => {
     const medallas = [

@@ -1,9 +1,9 @@
-// src/Components/EntreActividades.jsx
+// src/Components/Pages/EntreActividades.jsx
 
-import { getActividadesCompletadas } from "../utils/localStorage";
-import actividades from "../data/actividades.json";
+import { getActividadesCompletadas } from "../../config/utils/localStorage";
+import actividades from "../../config/data/actividades.json";
 import { useNavigate } from "react-router-dom";
-import "../Styles/EntreActividades.css";
+import "../../Styles/Pages/EntreActividades.css";
 
 function EntreActividades() {
     const completadas = getActividadesCompletadas();

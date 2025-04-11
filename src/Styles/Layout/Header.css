@@ -1,36 +1,75 @@
  /* Estilos de la cabecera */
 .header {
-    width: 100%;
+    width: 100vw;
+    max-width: 100%;
+    box-sizing: border-box;
     padding: 40px 20px 30px;
-    background: linear-gradient(120deg, #f5f5f5, #d1f2eb);
+    background: var(--bg-header);
     text-align: center;
     font-size: 24px;
     font-weight: bold;
     color: #2e3c40;
-    position: relative;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     animation: fadeInDown 0.8s ease-in-out;
+    position: relative;
   }
   
   /* Estilos de la cabecera */
   .header h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 900;
-    color: #00796b;
+    color: var(--verde);
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
-    margin-top: 30px;
+    margin-bottom: 20px;
     animation: fadeInUp 1s ease-in-out;
   }
+
+  /* Contenedor común para los botones */
+  .botones-header {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
   
+    /* Estilo individual */
+    .btn-tema,
+    .btn-kiosco {
+      background-color: var(--verde);
+      color: var(--blanco);
+      border: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 0.95rem;
+      transition: all 0.3s ease;
+    }
+  
+    .btn-tema:hover {
+      background-color: #5f8b6a;
+    }
+  
+    .btn-kiosco {
+      background-color: #ffca28;
+      color: #212121;
+    }
+  
+    .btn-kiosco:hover {
+      background-color: #fbc02d;
+    }
+
+
   .branding {
     position: absolute;
     top: 15px;
-    right: 20px;
+    right: 8%;
     display: flex;
     align-items: center;
     gap: 10px;
     background-color: #ffffffcc;
-    padding: 8px 14px;
+    padding: 8px 12px;
     border-radius: 8px;
     font-size: 15px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
@@ -43,6 +82,7 @@
     height: 36px;
     object-fit: contain;
   }
+
   
   /* Animaciones suaves */
   @keyframes fadeInUp {
@@ -82,8 +122,8 @@
   
     .branding {
       position: absolute;
-      top: 10px;
-      right: 10px;
+      top: 0;
+      right: 35%;
       font-size: 12px;
       gap: 8px;
     }
@@ -93,5 +133,32 @@
       height: 30px;
     }
   }
+    .btn-tema,
+    .btn-kiosco {
+      position: relative;
+      display: block;
+      margin: 0 auto;
+      top: auto;
+      left: auto;
+      margin-top: 10px;
+    }
   
+    .btn-kiosco {
+      margin-bottom: 10px;
+    }
+  
+
+.dark .header {
+  background: linear-gradient(120deg, #1f1f1f, #2a2a2a);
+  color: var(--blanco);
+}
+
+.dark .header h1 {
+  color: var(--verde);
+}
+
+.dark .branding {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--blanco);
+}
 

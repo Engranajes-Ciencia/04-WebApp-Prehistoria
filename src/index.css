@@ -85,28 +85,74 @@
 }
 
 /*Estilos para elementos generales (App.jsx)*/
-body {
-  font-family: 'Milford', sans-serif;
-  background-color: #eff7eb63;
+body,
+html {
   margin: 0;
   padding: 0;
+  font-family: 'Milford', sans-serif;
+  background-color: transparent;
+  color: var(--text-general);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
+
+
+html,
 #root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  height: 100vh;
 }
-  
-  .contenido-principal {
-    display: flex;
-    flex: 1;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-    margin: 0 20px 0 0;
-  }
-  
+
+
+/* ==================== PALETA CORPORATIVA ==================== */
+:root {
+  --verde: #79a981;
+  --grisClaro: #9b9b9b;
+  --grisOscuro: #333333;
+  --blanco: #ffffff;
+  --negro: #000000;
+
+  --bg-general: #f9f9f9;
+  --text-general: #333;
+  --bg-input: #f5f5f5;
+  --bg-header: linear-gradient(120deg, #f5f5f5, #d1f2eb);
+}
+
+:root.dark {
+  --verde: #a8d5ba;
+  --grisClaro: #777;
+  --grisOscuro: #eeeeee;
+  --blanco: #1a1a1a;
+  --negro: #f5f5f5;
+
+  --bg-general: #121212;
+  --text-general: #eeeeee;
+  --bg-input: #1e1e1e;
+  --bg-header: linear-gradient(120deg, #1a1a1a, #2c2c2c);
+}
+
+/* 🌙 Ajuste global modo oscuro */
+.dark * {
+  color: var(--text-general) !important;
+}
+
+/* EXCEPCIÓN: evita que botones verdes se vuelvan blancos */
+.dark button {
+  color: var(--blanco) !important;
+}
+
+/* Opcional: herencia completa para textos */
+.dark h1,
+.dark h2,
+.dark h3,
+.dark p,
+.dark span,
+.dark label,
+.dark li,
+.dark div,
+.dark .titulo,
+.dark .subtitulo,
+.dark .btn-opcion span,
+.dark .nombre-final {
+  color: var(--text-general) !important;
+}

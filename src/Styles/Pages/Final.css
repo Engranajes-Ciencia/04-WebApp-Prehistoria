@@ -22,7 +22,7 @@
     height: 60px;
     border-radius: 50%;
     border: 2px solid #4caf50;
-    background-color: #fff;
+    background-color: var(--blanco);
     padding: 4px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
 }
@@ -63,7 +63,7 @@
 
 .btn-descargar {
     background-color: #2e7d32;
-    color: white;
+    color: var(--blanco);
 }
 
 .btn-descargar:hover {
@@ -89,4 +89,23 @@
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+
+.dark .final-container {
+    background: linear-gradient(to bottom, #1c1c1c, #2d2d2d);
+    color: var(--blanco);
+}
+
+.dark .nombre-final {
+    color: var(--verde);
+}
+
+.dark .btn-descargar {
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+
+.dark .btn-reiniciar {
+    background-color: #b71c1c;
 }

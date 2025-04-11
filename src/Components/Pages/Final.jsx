@@ -1,9 +1,10 @@
 
 import { useNavigate } from "react-router-dom" // Navegacion entre paginas 
 import { useEffect, useState } from "react";
-import { resetActividadesCompletadas } from "../utils/localStorage";
+import { resetActividadesCompletadas } from "../../config/utils/localStorage";
 import { jsPDF } from "jspdf";
-import "../Styles/Final.css";
+import confetti from "canvas-confetti";
+import "../../Styles/Pages/Final.css";
 
 
 
@@ -20,7 +21,16 @@ function Final() {
         if (nombreGuardado) setNombre(nombreGuardado);
 
         resetActividadesCompletadas(); // Limpieza para siguiente usuario
+
+        //  confeti al cargar la página final
+        confetti({
+            particleCount: 150,
+            spread: 100,
+            origin: { y: 0.6 },
+            colors: ['#79a981', '#fdd835', '#66bb6a']
+        });
     }, []);
+
 
     const handleDescargarDiploma = () => {
         const doc = new jsPDF({ orientation: "landscape" });
