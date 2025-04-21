@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../../Styles/Layout/Header.css";
+import MusicPlayer from "../Commons/MusicPlayer";
 
 function Header() {
 
@@ -39,6 +40,8 @@ function Header() {
         <button className="btn-tema" onClick={toggleModoOscuro}>
           {modoOscuro ? "🌞 Modo Claro" : "🌙 Modo Oscuro"}
         </button>
+
+        <MusicPlayer />
 
         <button
           className="btn-kiosco"

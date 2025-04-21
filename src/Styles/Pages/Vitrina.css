@@ -111,3 +111,20 @@
     transform-origin: center; 
 
 }
+.btn-back {
+    display: block;
+    margin: 20px auto;
+    background: linear-gradient(135deg, var(--verde), #5f8b6a);
+    color: var(--blanco);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-back:hover {
+    background: linear-gradient(135deg, #5f8b6a, #4f745a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }

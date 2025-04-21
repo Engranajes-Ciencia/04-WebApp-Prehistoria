@@ -2,6 +2,7 @@
 import React from "react";
 import "../../Styles/Pages/Vitrina.css";
 import Medalla from "../Commons/Medalla";
+import { useNavigate } from "react-router-dom";
 
 const Vitrina = () => {
     const medallas = [
@@ -16,6 +17,8 @@ const Vitrina = () => {
         "medalla9.png",
         "medalla10.png"
     ];
+
+const navigate = useNavigate();
 
     // Obtener actividades completadas del localStorage
     const completadas = JSON.parse(localStorage.getItem("actividadesCompletadas")) || [];
@@ -48,6 +51,7 @@ const Vitrina = () => {
                     </table>
                 </div>
             </div>
+            <button className="btn-back" onClick={() => navigate('/entre-actividad')}>Volver</button>
         </div>
     );
 };

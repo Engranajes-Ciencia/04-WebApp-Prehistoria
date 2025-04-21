@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import "../../Styles/Commons/MusicPlayer.css"
 
 const MusicPlayer = () => {
     const [isMuted, setIsMuted] = useState(false);
@@ -22,7 +23,7 @@ const MusicPlayer = () => {
     <div>
       <audio
       ref={audioRef}
-      src="public/sounds/musicafondo.mp3" // Ruta de la musica
+      src="./sounds/musica.mp3" // Ruta de la musica
       loop
       autoPlay
       muted={isMuted}
