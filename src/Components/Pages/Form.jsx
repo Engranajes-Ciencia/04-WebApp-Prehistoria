@@ -39,7 +39,7 @@ function Form() {
   //  Reproducir sonido de dinosaurio al cargar
   useEffect(() => {
     dinoRef.current = new Audio(`${import.meta.env.BASE_URL}sounds/dino.mp3`);
-    dinoRef.current.volume = 1.0;
+    dinoRef.current.volume = 0.5;
 
     const play = async () => {
       try {

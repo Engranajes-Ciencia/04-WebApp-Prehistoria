@@ -10,7 +10,7 @@ function Portada() {
         // Crear la referencia del audio solo si no existe
         if (!audioRef.current) {
             audioRef.current = new Audio(`${import.meta.env.BASE_URL}sounds/vozportada.wav`);
-            audioRef.current.volume = 1.0; // Ajustar volumen si es necesario
+            audioRef.current.volume = 0.5; // Ajustar volumen si es necesario
         }
 
         // Intentar reproducir el audio cuando la página se cargue
