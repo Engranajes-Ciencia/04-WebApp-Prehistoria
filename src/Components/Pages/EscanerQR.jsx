@@ -66,7 +66,7 @@ function EscanerQR() {
     }, [navigate]);
 
     return (
-        <div style={{ padding: 20, textAlign: "center" }}>
+        <div className="scanner-container" style={{ padding: 20, textAlign: "center" }}>
             <h2>Escanea el código QR</h2>
             <div id="qr-reader" style={{ width: "100%" }}></div>
 

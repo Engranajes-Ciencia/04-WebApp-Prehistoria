@@ -1,4 +1,5 @@
 /* Estilos Portada */
+
 .portada-container {
     background-image: url('/04-WebApp-Prehistoria/assets/images/portada-fondo.png');
     background-size: cover;
@@ -15,8 +16,6 @@
     min-height: 80vh;
     flex-grow: 1;
 }
-
-
 
 .contenido {
     background-color: rgba(255, 255, 255, 0.92);
@@ -64,7 +63,19 @@
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
-/* Animación */
+/* Estilos Modo Oscuro */
+
+.dark .contenido {
+    background-color: rgba(20, 20, 20, 0.95);
+    color: var(--blanco);
+}
+
+.dark .btn-aventura {
+    background-color: var(--verde);
+}
+
+/* Animaciones */
+
 @keyframes fadeInUp {
     from {
         opacity: 0;
@@ -78,6 +89,7 @@
 }
 
 /* Media Queries para pantallas pequeñas */
+
 @media (max-width: 768px) {
     .portada-container {
         padding: 10px;
@@ -104,6 +116,7 @@
 }
 
 /* Media Queries para pantallas de 769px o más */
+
 @media (min-width: 769px) {
     .portada-container {
         min-height: 60vh; 
@@ -116,14 +129,7 @@
 }
 
 
-.dark .contenido {
-    background-color: rgba(20, 20, 20, 0.95);
-    color: var(--blanco);
-}
 
-.dark .btn-aventura {
-    background-color: var(--verde);
-}
 
 
 

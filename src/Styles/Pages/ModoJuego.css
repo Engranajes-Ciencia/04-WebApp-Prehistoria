@@ -1,4 +1,5 @@
 /* Estilos generales */
+
 .modojuego-container { 
     display: absolute;
     align-items: center;
@@ -35,6 +36,7 @@
 }
 
 /* Botones de opciones */
+
 .btn-opcion {
     width: 400px;
     height: 320px;
@@ -104,6 +106,18 @@
     background-position: center;
     background-repeat: no-repeat; 
     background-attachment: fixed; 
+}
+
+/* Estilos Modo Oscuro */
+
+.dark .modojuego-container {
+    background: linear-gradient(135deg, #212121, #424242);
+    color: var(--blanco);
+}
+
+.dark .btn-opcion span {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--blanco);
 }
 
 /* ✅ Media queries */
@@ -180,12 +194,4 @@
 }
 
 
-.dark .modojuego-container {
-    background: linear-gradient(135deg, #212121, #424242);
-    color: var(--blanco);
-}
 
-.dark .btn-opcion span {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: var(--blanco);
-}

@@ -25,7 +25,20 @@
     margin: 6px 0;
     line-height: 1.5;
   }
+
+  /* Estilos Modo Oscuro */
+
+  .dark .footer {
+    background: linear-gradient(135deg, #263238, #1b1b1b);
+    color: var(--blanco);
+  }
   
+  .dark .footer strong {
+    color: #ffd54f;
+  }
+  
+  /* Animaciones */
+
   @keyframes fadeIn {
     from {
       opacity: 0;
@@ -39,6 +52,7 @@
   }
   
   /* Media Queries */
+  
   @media (max-width: 768px) {
     .footer {
         padding: 35px 20px;
