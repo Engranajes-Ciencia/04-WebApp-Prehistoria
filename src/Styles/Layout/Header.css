@@ -150,15 +150,11 @@
       padding: 20px;
     }
   
-    .header h1 {
-      font-size: 2rem;
-      margin-top: 20px;
-    }
-  
     .branding {
       position: absolute;
       top: 0;
-      right: 35%;
+      left: 50%;
+      transform: translateX(-50%);
       font-size: 12px;
       gap: 8px;
     }
@@ -166,6 +162,31 @@
     .logo {
       width: 30px;
       height: 30px;
+    }
+
+    .botones-header {
+      justify-content: center;  
+      gap: 10px;
+    }
+
+    .btn-tema,
+    .btn-home,
+    .btn-kiosco {
+      width: 45%;  
+      margin-bottom: 10px; 
+    }
+  }
+
+  @media (min-width: 769px) {
+    .botones-header {
+      justify-content: center; 
+      gap: 20px; 
+    }
+  
+    .btn-tema,
+    .btn-home,
+    .btn-kiosco {
+      width: auto; 
     }
   }
 
