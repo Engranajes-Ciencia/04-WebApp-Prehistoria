@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../../Styles/Layout/Header.css";
 import MusicPlayer from "../Commons/MusicPlayer";
 
 function Header() {
+  const navigate = useNavigate();
 
   const [modoOscuro, setModoOscuro] = useState(false);
 
@@ -40,6 +42,8 @@ function Header() {
         <button className="btn-tema" onClick={toggleModoOscuro}>
           {modoOscuro ? "🌞 Modo Claro" : "🌙 Modo Oscuro"}
         </button>
+
+        <button className="btn-home" onClick={() => navigate('/')}>🏠Inicio</button>
 
         <MusicPlayer />
 

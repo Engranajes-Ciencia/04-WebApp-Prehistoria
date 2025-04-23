@@ -30,15 +30,20 @@
 
   .botones-header {
     display: flex;
-    justify-content: center;
-    gap: 12px;
-    margin-top: 10px;
+    justify-content: space-evenly;
+    gap: 20px;
+    margin-top: 20px;
     flex-wrap: wrap;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
   }
   
     /* Estilo individual */
 
     .btn-tema,
+    .btn-home,
     .btn-kiosco {
       background-color: var(--verde);
       color: var(--blanco) !important; /* Asi se soluciona que el modo kiosco no se quede negro */
@@ -163,7 +168,9 @@
       height: 30px;
     }
   }
-    .btn-tema,
+
+  /* Se comenta este bloque por si hay que rehacer los cambios */
+    /*.btn-tema,
     .btn-kiosco {
       position: relative;
       display: block;
@@ -175,7 +182,7 @@
   
     .btn-kiosco {
       margin-bottom: 10px;
-    }
+    }*/ 
   
 
 
