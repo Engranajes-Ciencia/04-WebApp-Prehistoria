@@ -1,0 +1,24 @@
+.rotate-alert {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  color: #fff;
+  font-size: 1.5rem;
+  padding-top: 40vh;
+  text-align: center;
+}
+
+/*Mostrar solo si el dispositivo está en modo vertical*/
+@media screen and (orientation: portrait) {
+  .rotate-alert {
+    display: block;
+  }
+  body > *:not(#rotate-alert) {
+    display: none;
+  }
+}
