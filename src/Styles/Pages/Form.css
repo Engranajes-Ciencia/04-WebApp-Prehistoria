@@ -27,7 +27,7 @@
   border-radius: 30px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
   max-width: 480px;
-  border: 1px solid var(--grisClaro);
+  border: 5px solid var(--grisClaro);
   font-family: 'Milford', sans-serif;
   font-weight: bold;
   animation: slideUp 0.8s ease-out;
@@ -126,7 +126,7 @@ button:hover {
 
 .avatar-options img {
   width: 150px;
-  height: 220px;
+  height: 250px;
   border-radius: 20px;
   border: 3px solid gray;
   cursor: pointer;
@@ -153,7 +153,7 @@ button:hover {
 
 .dark .form {
   background: rgba(26, 32, 39, 0.95);
-  border: 1px solid var(--grisClaro);
+  border: 5px solid var(--grisClaro);
   box-shadow: 0 12px 28px rgba(255, 255, 255, 0.1);
   color: var(--blanco);
   /* ✅ Esto hace que todos los textos hereden blanco */

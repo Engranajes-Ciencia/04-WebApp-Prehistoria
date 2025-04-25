@@ -2,6 +2,7 @@ import React from "react";
 import { UseOrientation } from "./UseOrientation";
 import AppRouter from "./config/routes/AppRouter";
 import "./index.css";
+import Layout from "./Components/Layout/Layout";
 
 function App() {
   const orientation = UseOrientation(); //Detectamos la orientación
@@ -13,7 +14,7 @@ function App() {
           Por favor, gira tu dispositivo a modo vertical para ver el contenido
         </div>
       )}
-      {orientation === "landscape" && <AppRouter />}
+      {orientation === "landscape" && <Layout><AppRouter /></Layout>}
     </div>
   );
 }
