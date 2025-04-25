@@ -5,12 +5,14 @@
     align-items: center;
     justify-content: center; 
     min-height: 90vh; 
-    width: 100vw;
+    width: 100%;
     background: linear-gradient(135deg, #3c7a57, #b0e57c);
     text-align: center;
     padding: 20px;
     font-family: 'Milford', sans-serif;
     animation: fadeIn 1s ease-in-out;
+    box-sizing: border-box;
+
 }
 
 .titulo {
