@@ -23,7 +23,7 @@ const MusicPlayer = () => {
     <div>
       <audio
       ref={audioRef}
-      src="./sounds/musica.mp3" // Ruta de la musica
+      src="/sounds/musica.mp3" // Ruta de la musica
       loop
       autoPlay
       muted={isMuted}
