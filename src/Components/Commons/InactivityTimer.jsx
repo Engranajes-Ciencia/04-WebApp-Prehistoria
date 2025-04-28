@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-const InactivityTimer = ({ timeout = 600000, onTimeout }) => {
+const InactivityTimer = ({ timeout = 900000, onTimeout }) => {
   const timerRef = useRef(null);
 
   const resetTimer = () => {
