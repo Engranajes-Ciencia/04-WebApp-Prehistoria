@@ -1,7 +1,7 @@
 /* Estilos Portada */
 
 .portada-container {
-    background-image: url('/04-WebApp-Prehistoria/assets/images/portada-fondo.png');
+    background-image: url('/assets/images/portada-fondo.png');
     background-size: cover;
     background-position: center;
     position: relative;
