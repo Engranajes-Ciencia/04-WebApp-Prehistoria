@@ -4,7 +4,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('/04-WebApp-Prehistoria/assets/images/Mapa.png');
+    background-image: url('/assets/images/Mapa.png');
     background-size: cover;
     background-position: center;
     filter: blur(5px);
