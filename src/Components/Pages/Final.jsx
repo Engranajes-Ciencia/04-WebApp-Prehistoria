@@ -13,6 +13,10 @@ function Final() {
     const [avatar, setAvatar] = useState("");
     const [nombre, setNombre] = useState("");
 
+    // Nuevo estado para mostrar el popup
+    const [mostrarPopup, setMostrarPopup] = useState(false);
+
+
     useEffect(() => {
         const avatarGuardado = localStorage.getItem("avatar");
         const nombreGuardado = localStorage.getItem("nombre");
@@ -20,7 +24,6 @@ function Final() {
         if (avatarGuardado) setAvatar(avatarGuardado);
         if (nombreGuardado) setNombre(nombreGuardado);
 
-         resetActividadesCompletadas(); // Limpieza para siguiente usuario
 
         //  confeti al cargar la página final
         confetti({
@@ -51,6 +54,10 @@ function Final() {
             doc.setFontSize(16);
             doc.text(`Nombre: ${nombreValue}`, 20, 205);
             doc.save("diploma-aventura-prehistorica.pdf");
+
+            // Muestra popup
+            setMostrarPopup(true);
+            setTimeout(() => setMostrarPopup(false), 5000); // Ocultar en 3 segundos
         };
 
         img.onerror = () => {
@@ -61,13 +68,18 @@ function Final() {
 
 
     const handleReiniciarJuego = () => {
-        localStorage.clear();
-        navigate("/");
+        localStorage.clear();             //  Limpiar todo
+        resetActividadesCompletadas();     //  También limpiamos las actividades
+        navigate("/");                     //  Volver a la portada
     };
 
     return (
         <div className="final-container">
             <h1 className="titulo-final">🎉 ¡Enhorabuena!</h1>
+
+            <div className="barra-progreso-final">
+                <div className="relleno-final">100% Completado</div>
+            </div>
 
             <div className="nombre-avatar">
                 <img
@@ -88,7 +100,7 @@ function Final() {
             <img
                 src={`${import.meta.env.BASE_URL}assets/images/diploma_${avatar}.jpg`}
                 alt="Diploma"
-                className="diploma-img"
+                className="diploma-img-animada"
                 onError={(e) => {
                     e.target.src = `${import.meta.env.BASE_URL}assets/images/diploma_explorador.jpg`;
                 }}
@@ -107,6 +119,12 @@ function Final() {
                 </button>
 
             </div>
+
+            {mostrarPopup && (
+                <div className="popup-descarga">
+                    Diploma descargado con éxito
+                </div>
+            )}
         </div>
     );
 }
