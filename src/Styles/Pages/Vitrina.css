@@ -1,12 +1,15 @@
 .vitrina-container {
     text-align: center;
     margin: 20px;
+    min-height: 90vh; 
+    padding: 20px;
 }
 
 /* Marco con imagen de fondo */
 
 .vitrina-marco {
     position: relative;
+    padding: 20px;
     width: 135%;
     max-width: 600px;
     min-height: 350px;
@@ -136,4 +139,5 @@
   .dark .vitrina-container {
     background: linear-gradient(135deg, #212121, #424242);
     color: var(--blanco);
+    margin: auto;
   }
