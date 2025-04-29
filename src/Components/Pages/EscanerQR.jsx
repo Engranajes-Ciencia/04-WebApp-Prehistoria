@@ -77,14 +77,16 @@ function EscanerQR() {
           width: "40%",
           height: "40%",
           background: "white",
-          
+
           justifyContent: "center",
           alignItems: "center",
           boxShadow: "0 0 10px rgba(0,0,0,0.2)",
           borderRadius: "10px",
         }}
       ></div>
-
+      
+      
+      
       {scanning && (
         <div className="spinner-container">
           <div className="spinner"></div>

@@ -5,13 +5,17 @@
   gap: 20px;
 }
 
+#html5-qrcode-anchor-scan-type-change {
+  color: #007bff;
+  font-weight: bold;
+}
+
 .spinner-container {
-    display: flex;
+  display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 15px;
 }
-  
 
 .spinner {
   width: 40px;
@@ -28,6 +32,10 @@
 .dark .scanner-container {
   background: linear-gradient(135deg, #212121, #424242);
   color: var(--blanco);
+}
+
+.dark .html5-qrcode-anchor-scan-type-change {
+    color: #007bff;
 }
 
 /* Animaciones */
