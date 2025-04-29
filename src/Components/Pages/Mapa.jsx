@@ -8,15 +8,23 @@ const avatarMap = {
     exploradora: `${import.meta.env.BASE_URL}assets/avatars/exploradora.png`,
 };
 
+const avatarNameMap = {
+    explorador: "Kushim",
+    exploradora: "Enheduanna",
+}
+
 
 function Mapa() {
     const navigate = useNavigate();
     const [nombre, setNombre] = useState("");
     const [avatar, setAvatar] = useState("");
 
-    useEffect(() => {
+    useEffect(() => { 
         const nombreGuardado = localStorage.getItem("nombre");
         const avatarGuardado = localStorage.getItem("avatar");
+
+        console.log("nombreGuardado:", nombreGuardado);
+        console.log("avatarGuardado", avatarGuardado);
 
         if (!nombreGuardado || !avatarGuardado) {
             navigate("/");
@@ -25,6 +33,7 @@ function Mapa() {
 
         setNombre(nombreGuardado);
         setAvatar(avatarGuardado);
+        
     }, []);
 
     return (
@@ -39,7 +48,7 @@ function Mapa() {
                         className="avatar-mini"
                     />
                     <p>
-                        Yo ser guía <strong>{avatar}</strong>. Tú seguir <strong>{avatar}</strong>. <br/><br/><strong>{nombre}</strong> tener prendas raras. <br/> <br/>¿<strong>{nombre}</strong> no ser de aquí?<br/> <br/>No importar,<br/><br/> ¡<strong>{nombre}</strong> y <strong>{avatar}</strong> explorar tierras!
+                        Yo ser guía <strong>{avatarNameMap[avatar]}</strong>. Tú seguir <strong>{avatarNameMap[avatar]}</strong>. <br/><br/><strong>{nombre}</strong> tener prendas raras. <br/> <br/>¿<strong>{nombre}</strong> no ser de aquí?<br/> <br/>No importar,<br/><br/> ¡<strong>{nombre}</strong> y <strong>{avatarNameMap[avatar]}</strong> explorar tierras!
                     </p>
                 </div>
 
