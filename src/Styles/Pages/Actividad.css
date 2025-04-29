@@ -16,7 +16,7 @@
 
 .actividad-container {
     padding: 2rem;
-    max-width: 900px;
+    max-width: 100%;
     margin: auto;
     background: linear-gradient(145deg, #f9f9f9, #e7e7e7);
     border-radius: 16px;
@@ -94,6 +94,7 @@ p {
 .dark .actividad-container {
     background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
     color: var(--blanco);
+    
 }
 
 .dark .actividad-container .actividad-header h2 {
