@@ -54,9 +54,7 @@ function Actividad() {
             <p className="sabiasque">
                 <strong>¿Sabías que...?</strong> {avatarData.sabiasQue}
             </p>
-            <p className="pregunta">
-                <strong>Pregunta:</strong> {avatarData.pregunta}
-            </p>
+            
 
             <div className="actividad-genially">
                 <iframe

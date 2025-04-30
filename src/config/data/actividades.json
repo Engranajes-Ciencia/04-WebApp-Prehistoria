@@ -1,202 +1,182 @@
 [
-    {
-        "id": 1,
-        "titulo": "Fósiles prehistóricos",
-        "ubicacion": "Fósil de trilobite y helecho",
-        "avatarDialogo": {
-            "explorador": {
-                "mensaje": "¡Qué hallazgo! Este fósil tiene millones de años. Un trilobite, de los primeros animales con caparazón.",
-                "sabiasQue": "¿Sabías que los trilobites existieron antes que los dinosaurios?",
-                "pregunta": "¿Qué tipo de criatura era el trilobite?"
-            },
-            "exploradora": {
-                "mensaje": "Este helecho fosilizado es testigo del pasado. ¡Tiene más de 300 millones de años!",
-                "sabiasQue": "¿Sabías que las plantas fósiles ayudaron a formar el carbón que usamos hoy?",
-                "pregunta": "¿Qué tipo de planta es el helecho fosilizado?"
-            }
-        },
-        "respuestaCorrecta": "Animal marino / Planta del pasado",
-        "geniallyURL": "https://view.genially.com/67f3b57c32975f75b3e4e5ef/interactive-content-pregunta01",
-        "completada": false
+  {
+    "id": 1,
+    "titulo": "Fósiles prehistóricos",
+    "ubicacion": "Fósil de trilobite y helecho",
+    "avatarDialogo": {
+      "explorador": {
+        "mensaje": "¡Qué hallazgo! Este fósil tiene millones de años. Un trilobite, de los primeros animales con caparazón.",
+        "sabiasQue": "¿Sabías que los trilobites existieron antes que los dinosaurios?"
+      },
+      "exploradora": {
+        "mensaje": "Este helecho fosilizado es testigo del pasado. ¡Tiene más de 300 millones de años!",
+        "sabiasQue": "¿Sabías que las plantas fósiles ayudaron a formar el carbón que usamos hoy?"
+      }
     },
-    {
-        "id": 2,
-        "titulo": "Dinosaurios gigantes",
-        "ubicacion": "Triceratops, brontosaurio, velociraptor y alosaurio",
-        "avatarDialogo": {
-            "explorador": {
-                "mensaje": "El brontosaurio era tan largo como un autobús. ¡Qué bestia!",
-                "sabiasQue": "¿Sabías que el triceratops tenía tres cuernos para defenderse?",
-                "pregunta": "¿Cuántos cuernos tenía un triceratops?"
-            },
-            "exploradora": {
-                "mensaje": "Aunque el velociraptor era pequeño, ¡era súper veloz!",
-                "sabiasQue": "¿Sabías que el velociraptor tenía plumas?",
-                "pregunta": "¿Cuál de estos era un dinosaurio herbívoro gigante?"
-            }
-        },
-        "respuestaCorrecta": "Tres / Brontosaurio",
-        "geniallyURL": "https://view.genially.com/67f395c2cd8c8266c1f2ba62/interactive-content-pregunta02",
-        "completada": false
+    "respuestaCorrecta": "Animal marino / Planta del pasado",
+    "geniallyURL": "https://view.genially.com/67e134e5a75d54115e15f3f0/interactive-content-actividad-1",
+    "completada": false
+  },
+  {
+    "id": 2,
+    "titulo": "Dinosaurios gigantes",
+    "ubicacion": "Triceratops, brontosaurio, velociraptor y alosaurio",
+    "avatarDialogo": {
+      "explorador": {
+        "mensaje": "El brontosaurio era tan largo como un autobús. ¡Qué bestia!",
+        "sabiasQue": "¿Sabías que el triceratops tenía tres cuernos para defenderse?"
+      },
+      "exploradora": {
+        "mensaje": "Aunque el velociraptor era pequeño, ¡era súper veloz!",
+        "sabiasQue": "¿Sabías que el velociraptor tenía plumas?"
+      }
     },
-    {
-        "id": 3,
-        "titulo": "Tortuga de las Galápagos",
-        "ubicacion": "Zona de reptiles fósiles",
-        "avatarDialogo": {
-            "explorador": {
-                "mensaje": "Las tortugas de las Galápagos pueden vivir más de 100 años. ¡Increíble!",
-                "sabiasQue": "¿Sabías que pueden pesar más de 200 kilos?",
-                "pregunta": "¿Dónde viven estas tortugas gigantes?"
-            },
-            "exploradora": {
-                "mensaje": "Una de las especies más longevas del planeta. ¡Y súper lentas!",
-                "sabiasQue": "¿Sabías que su caparazón puede cambiar según la isla?",
-                "pregunta": "¿Qué parte de su cuerpo les da protección?"
-            }
-        },
-        "respuestaCorrecta": "Islas Galápagos / El caparazón",
-        "geniallyURL": "https://view.genially.com/67f3b7c729a2d0b06e8c6e10/interactive-content-pregunta03",
-        "completada": false
+    "respuestaCorrecta": "Tres / Brontosaurio",
+    "geniallyURL": "https://view.genially.com/67f395c2cd8c8266c1f2ba62/interactive-content-actividad2",
+    "completada": false
+  },
+  {
+    "id": 3,
+    "titulo": "Tortuga de las Galápagos",
+    "ubicacion": "Zona de reptiles fósiles",
+    "avatarDialogo": {
+      "explorador": {
+        "mensaje": "Las tortugas de las Galápagos pueden vivir más de 100 años. ¡Increíble!",
+        "sabiasQue": "¿Sabías que pueden pesar más de 200 kilos?"
+      },
+      "exploradora": {
+        "mensaje": "Una de las especies más longevas del planeta. ¡Y súper lentas!",
+        "sabiasQue": "¿Sabías que su caparazón puede cambiar según la isla?"
+      }
     },
-    {
-        "id": 4,
-        "titulo": "Huellas de Laetoli",
-        "ubicacion": "Descubrimiento de pisadas humanas fósiles",
-        "avatarDialogo": {
-            "explorador": {
-                "mensaje": "Estas huellas tienen más de 3 millones de años. ¡Nuestros antepasados ya caminaban erguidos!",
-                "sabiasQue": "¿Sabías que fueron descubiertas en Tanzania en 1978?",
-                "pregunta": "¿Quiénes dejaron estas huellas antiguas?"
-            },
-            "exploradora": {
-                "mensaje": "¡Increíble! Estas huellas fosilizadas muestran cómo caminaban nuestros ancestros.",
-                "sabiasQue": "¿Sabías que pertenecen a Australopithecus afarensis?",
-                "pregunta": "¿Qué indican estas huellas sobre el caminar humano?"
-            }
-        },
-        "respuestaCorrecta": "Australopithecus / Que caminaban erguidos",
-        "geniallyURL": "https://view.genially.com/67f3b86abb3c5b8adf440f80/interactive-content-pregunta04",
-        "completada": false
+    "respuestaCorrecta": "Islas Galápagos / El caparazón",
+    "geniallyURL": "https://view.genially.com/67f8f2f8b5b5ac75ac152d4e/interactive-content-actividad-3",
+    "completada": false
+  },
+  {
+    "id": 4,
+    "titulo": "Huellas de Laetoli",
+    "ubicacion": "Descubrimiento de pisadas humanas fósiles",
+    "avatarDialogo": {
+      "explorador": {
+        "mensaje": "Estas huellas tienen más de 3 millones de años. ¡Nuestros antepasados ya caminaban erguidos!",
+        "sabiasQue": "¿Sabías que fueron descubiertas en Tanzania en 1978?"
+      },
+      "exploradora": {
+        "mensaje": "¡Increíble! Estas huellas fosilizadas muestran cómo caminaban nuestros ancestros.",
+        "sabiasQue": "¿Sabías que pertenecen a Australopithecus afarensis?"
+      }
     },
-    {
-        "id": 5,
-        "titulo": "Cueva con pinturas rupestres",
-        "ubicacion": "Arte prehistórico",
-        "avatarDialogo": {
-            "explorador": {
-                "mensaje": "Mira estas pinturas rupestres. Así se comunicaban nuestros antepasados.",
-                "sabiasQue": "¿Sabías que usaban pigmentos naturales de rocas y carbón?",
-                "pregunta": "¿Qué representaban comúnmente estas pinturas?"
-            },
-            "exploradora": {
-                "mensaje": "¡Arte antiguo! Reflejan la vida cotidiana y los animales que cazaban.",
-                "sabiasQue": "¿Sabías que algunas tienen más de 30.000 años?",
-                "pregunta": "¿Qué materiales usaban para pintar en las cuevas?"
-            }
-        },
-        "respuestaCorrecta": "Animales y caza / Pigmentos naturales",
-        "geniallyURL": "https://view.genially.com/67f3b8cb2574f2ae03f55e15/interactive-content-pregunta05",
-        "completada": false
+    "respuestaCorrecta": "Australopithecus / Que caminaban erguidos",
+    "geniallyURL": "https://view.genially.com/67f8fa02c2e20bb7b0ca82c6/interactive-content-actividad-4",
+    "completada": false
+  },
+  {
+    "id": 5,
+    "titulo": "Cueva con pinturas rupestres",
+    "ubicacion": "Arte prehistórico",
+    "avatarDialogo": {
+      "explorador": {
+        "mensaje": "Mira estas pinturas rupestres. Así se comunicaban nuestros antepasados.",
+        "sabiasQue": "¿Sabías que usaban pigmentos naturales de rocas y carbón?"
+      },
+      "exploradora": {
+        "mensaje": "¡Arte antiguo! Reflejan la vida cotidiana y los animales que cazaban.",
+        "sabiasQue": "¿Sabías que algunas tienen más de 30.000 años?"
+      }
     },
-    {
-        "id": 6,
-        "titulo": "Poblado nómada",
-        "ubicacion": "Estilo de vida de los nómadas",
-        "avatarDialogo": {
-            "explorador": {
-                "mensaje": "Los nómadas viajaban de un lugar a otro buscando alimento.",
-                "sabiasQue": "¿Sabías que no tenían casas fijas y vivían en chozas?",
-                "pregunta": "¿Por qué se movían constantemente?"
-            },
-            "exploradora": {
-                "mensaje": "Vivían de la caza y la recolección, ¡siempre en movimiento!",
-                "sabiasQue": "¿Sabías que seguían a los animales y las estaciones?",
-                "pregunta": "¿Qué hacían cuando escaseaba la comida?"
-            }
-        },
-        "respuestaCorrecta": "Buscar alimentos / Cambiar de lugar",
-        "geniallyURL": "https://view.genially.com/67f3a35fb6a792c251152f08/interactive-content-pregunta06",
-        "completada": false
+    "respuestaCorrecta": "Animales y caza / Pigmentos naturales",
+    "geniallyURL": "https://view.genially.com/67e3cc8058a3eb22e678b730/interactive-content-actividad5",
+    "completada": false
+  },
+  {
+    "id": 6,
+    "titulo": "Poblado nómada",
+    "ubicacion": "Estilo de vida de los nómadas",
+    "avatarDialogo": {
+      "explorador": {
+        "mensaje": "Los nómadas viajaban de un lugar a otro buscando alimento.",
+        "sabiasQue": "¿Sabías que no tenían casas fijas y vivían en chozas?"
+      },
+      "exploradora": {
+        "mensaje": "Vivían de la caza y la recolección, ¡siempre en movimiento!",
+        "sabiasQue": "¿Sabías que seguían a los animales y las estaciones?"
+      }
     },
-    {
-        "id": 7,
-        "titulo": "Poblado sedentario",
-        "ubicacion": "Primeros asentamientos",
-        "avatarDialogo": {
-            "explorador": {
-                "mensaje": "Con la agricultura, los humanos se volvieron sedentarios.",
-                "sabiasQue": "¿Sabías que comenzaron a construir aldeas permanentes?",
-                "pregunta": "¿Qué permitió dejar de moverse de un sitio a otro?"
-            },
-            "exploradora": {
-                "mensaje": "¡Revolución Neolítica! Aquí nacen los pueblos y la domesticación.",
-                "sabiasQue": "¿Sabías que almacenaban grano en silos?",
-                "pregunta": "¿Qué actividad favoreció la vida sedentaria?"
-            }
-        },
-        "respuestaCorrecta": "Agricultura / Cultivo de alimentos",
-        "geniallyURL": "https://view.genially.com/67f3bcbfda254c6ee3dddbda/interactive-content-pregunta07",
-        "completada": false
+    "respuestaCorrecta": "Buscar alimentos / Cambiar de lugar",
+    "geniallyURL": "https://view.genially.com/67f8edffb7b2a9c007101174/interactive-content-actividad6",
+    "completada": false
+  },
+  {
+    "id": 7,
+    "titulo": "Poblado sedentario",
+    "ubicacion": "Primeros asentamientos",
+    "avatarDialogo": {
+      "explorador": {
+        "mensaje": "Con la agricultura, los humanos se volvieron sedentarios.",
+        "sabiasQue": "¿Sabías que comenzaron a construir aldeas permanentes?"
+      },
+      "exploradora": {
+        "mensaje": "¡Revolución Neolítica! Aquí nacen los pueblos y la domesticación.",
+        "sabiasQue": "¿Sabías que almacenaban grano en silos?"
+      }
     },
-    {
-        "id": 8,
-        "titulo": "Pozo",
-        "ubicacion": "Acceso al agua en la antigüedad",
-        "avatarDialogo": {
-            "explorador": {
-                "mensaje": "Los pozos eran esenciales para sobrevivir lejos de ríos.",
-                "sabiasQue": "¿Sabías que algunos tenían poleas para sacar el agua más fácil?",
-                "pregunta": "¿Para qué servía un pozo?"
-            },
-            "exploradora": {
-                "mensaje": "El agua era un tesoro. ¡Y sin grifo!",
-                "sabiasQue": "¿Sabías que los primeros pozos datan del Neolítico?",
-                "pregunta": "¿Cómo obtenían agua en lugares secos?"
-            }
-        },
-        "respuestaCorrecta": "Sacar agua / Usando poleas",
-        "geniallyURL": "https://view.genially.com/67f3bdce92a5b19fcd25ef3c/interactive-content-pregunta08",
-        "completada": false
+    "respuestaCorrecta": "Agricultura / Cultivo de alimentos",
+    "geniallyURL": "https://view.genially.com/67f8f638c08c8840c0b4fe3c/interactive-content-actividad7",
+    "completada": false
+  },
+  {
+    "id": 8,
+    "titulo": "Pozo",
+    "ubicacion": "Acceso al agua en la antigüedad",
+    "avatarDialogo": {
+      "explorador": {
+        "mensaje": "Los pozos eran esenciales para sobrevivir lejos de ríos.",
+        "sabiasQue": "¿Sabías que algunos tenían poleas para sacar el agua más fácil?"
+      },
+      "exploradora": {
+        "mensaje": "El agua era un tesoro. ¡Y sin grifo!",
+        "sabiasQue": "¿Sabías que los primeros pozos datan del Neolítico?"
+      }
     },
-    {
-        "id": 9,
-        "titulo": "Stonehenge",
-        "ubicacion": "Monumento megalítico",
-        "avatarDialogo": {
-            "explorador": {
-                "mensaje": "Estas piedras pesan toneladas y tienen más de 4.000 años.",
-                "sabiasQue": "¿Sabías que algunas alineaciones indican los solsticios?",
-                "pregunta": "¿Para qué se cree que se usaba Stonehenge?"
-            },
-            "exploradora": {
-                "mensaje": "Un misterio ancestral. Algunos creen que era un calendario solar.",
-                "sabiasQue": "¿Sabías que aún no sabemos cómo las transportaron?",
-                "pregunta": "¿Qué fenómeno astronómico marca?"
-            }
-        },
-        "respuestaCorrecta": "Ceremonias y calendario / Solsticio de verano",
-        "geniallyURL": "https://view.genially.com/67f3be3b29a2d0b06e9397b9/interactive-content-pregunta09",
-        "completada": false
+    "respuestaCorrecta": "Sacar agua / Usando poleas",
+    "geniallyURL": "https://view.genially.com/67f8fda123c430f481ddb5e6/interactive-content-actividad-8",
+    "completada": false
+  },
+  {
+    "id": 9,
+    "titulo": "Stonehenge",
+    "ubicacion": "Monumento megalítico",
+    "avatarDialogo": {
+      "explorador": {
+        "mensaje": "Estas piedras pesan toneladas y tienen más de 4.000 años.",
+        "sabiasQue": "¿Sabías que algunas alineaciones indican los solsticios?"
+      },
+      "exploradora": {
+        "mensaje": "Un misterio ancestral. Algunos creen que era un calendario solar.",
+        "sabiasQue": "¿Sabías que aún no sabemos cómo las transportaron?"
+      }
     },
-    {
-        "id": 10,
-        "titulo": "Templo de Karnak",
-        "ubicacion": "Antiguo Egipto",
-        "avatarDialogo": {
-            "explorador": {
-                "mensaje": "Este templo fue construido durante más de 1.000 años. ¡Impresionante!",
-                "sabiasQue": "¿Sabías que cada faraón dejaba su huella en Karnak?",
-                "pregunta": "¿En qué país se encuentra Karnak?"
-            },
-            "exploradora": {
-                "mensaje": "Un lugar sagrado lleno de historia, columnas y jeroglíficos.",
-                "sabiasQue": "¿Sabías que era el centro religioso más importante del antiguo Egipto?",
-                "pregunta": "¿Quiénes adoraban a los dioses aquí?"
-            }
-        },
-        "respuestaCorrecta": "Egipto / Los egipcios",
-        "geniallyURL": "https://view.genially.com/67f3be70a0ba296fdab62339/interactive-content-pregunta10",
-        "completada": false
-    }
+    "respuestaCorrecta": "Ceremonias y calendario / Solsticio de verano",
+    "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad9",
+    "completada": false
+  },
+  {
+    "id": 10,
+    "titulo": "Templo de Karnak",
+    "ubicacion": "Antiguo Egipto",
+    "avatarDialogo": {
+      "explorador": {
+        "mensaje": "Este templo fue construido durante más de 1.000 años. ¡Impresionante!",
+        "sabiasQue": "¿Sabías que cada faraón dejaba su huella en Karnak?"
+      },
+      "exploradora": {
+        "mensaje": "Un lugar sagrado lleno de historia, columnas y jeroglíficos.",
+        "sabiasQue": "¿Sabías que era el centro religioso más importante del antiguo Egipto?"
+      }
+    },
+    "respuestaCorrecta": "Egipto / Los egipcios",
+    "geniallyURL": "https://view.genially.com/67e283be994f4e3b61c714e9/interactive-content-actividad10",
+    "completada": false
+  }
 ]

@@ -1,4 +1,5 @@
 /* Fondo dinámico detrás del formulario */
+
 .fondo-cambiante {
   position: fixed;
   top: 0;
@@ -13,6 +14,7 @@
 }
 
 /* Estilo principal del formulario */
+
 .form {
   position: relative;
   display: flex;
@@ -25,7 +27,7 @@
   border-radius: 30px;
   box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
   max-width: 480px;
-  border: 1px solid var(--grisClaro);
+  border: 5px solid var(--grisClaro);
   font-family: 'Milford', sans-serif;
   font-weight: bold;
   animation: slideUp 0.8s ease-out;
@@ -49,6 +51,7 @@
 }
 
 /* Campos */
+
 fieldset {
   border: none;
   padding: 0;
@@ -84,6 +87,7 @@ fieldset {
 }
 
 /* Botón */
+
 button {
   margin-top: 20px;
   padding: 12px;
@@ -104,6 +108,7 @@ button:hover {
 }
 
 /* Avatares */
+
 .avatar-options {
   display: flex;
   justify-content: center;
@@ -113,6 +118,7 @@ button:hover {
 }
 
 /* Ocultar radio buttons */
+
 .avatar-options input[type="radio"] {
   display: none;
 }
@@ -120,7 +126,7 @@ button:hover {
 
 .avatar-options img {
   width: 150px;
-  height: 220px;
+  height: 250px;
   border-radius: 20px;
   border: 3px solid gray;
   cursor: pointer;
@@ -137,30 +143,17 @@ button:hover {
   animation: pulse 0.5s ease;
 }
 
-@keyframes pulse {
-  0% {
-    transform: scale(1);
-  }
-
-  50% {
-    transform: scale(1.08);
-  }
-
-  100% {
-    transform: scale(1);
-  }
-}
-
 .text-img {
   text-align: center;
   font-size: 1rem;
   margin-top: 6px;
 }
 
-/* 🌙 Modo Oscuro */
+/* Estilos Modo Oscuro */
+
 .dark .form {
   background: rgba(26, 32, 39, 0.95);
-  border: 1px solid var(--grisClaro);
+  border: 5px solid var(--grisClaro);
   box-shadow: 0 12px 28px rgba(255, 255, 255, 0.1);
   color: var(--blanco);
   /* ✅ Esto hace que todos los textos hereden blanco */
@@ -184,3 +177,22 @@ button:hover {
   background-color: #2c2c2c;
   border-color: var(--verde);
 }
+
+/* Animaciones */
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+

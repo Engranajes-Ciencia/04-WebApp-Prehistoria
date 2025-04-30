@@ -1,7 +1,7 @@
 .mapa-check-container {
     min-height: 100vh;
     padding: 2rem 1.5rem;
-    background: url('/04-WebApp-Prehistoria/assets/images/fondo-mapa.jpg') no-repeat center center fixed;
+    background: url('/assets/images/fondo-mapa.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -98,18 +98,6 @@
     transition: width 0.6s ease;
 }
 
-
-
-@keyframes tachado {
-    from {
-        background-color: #fff3e0;
-    }
-
-    to {
-        background-color: #e8f5e9;
-    }
-}
-
 .btn-scan,
 .btn-final {
     background-color: #33691e;
@@ -131,7 +119,48 @@
     transform: scale(1.05);
 }
 
+/* Estilos Modo Oscuro */
+
+.dark .mapa-check-container {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: var(--blanco);
+}
+
+.dark .mapa-check-container h2 {
+    color: var(--blanco) !important; /* Para que se implemente el color en modo oscuro */
+}
+
+.dark .guia-texto {
+    color: var(--blanco) !important; /* Para que se implemente el color en modo oscuro */
+}
+
+.dark .checkpoints {
+    background-color: var(--bg-general);
+}
+
+.dark .checkpoints li {
+    color: var(--negro);
+}
+
+.dark .checkpoints li.hecha {
+    color: var(--verde) !important; /* Para que se implemente el color en modo oscuro */
+    background-color: var(--bg-general);
+}
+
+/* Animaciones */
+
+@keyframes tachado {
+    from {
+        background-color: #fff3e0;
+    }
+
+    to {
+        background-color: #e8f5e9;
+    }
+}
+
 /* Transición suave al entrar */
+
 @keyframes fadeSlide {
     from {
         opacity: 0;
@@ -145,6 +174,7 @@
 }
 
 /* Responsive para móvil */
+
 @media (max-width: 600px) {
     .checkpoints li {
         font-size: 1.1rem;

@@ -4,14 +4,15 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-image: url('/04-WebApp-Prehistoria/assets/images/Mapa.png');
+    background-image: url('/assets/images/Mapa.png');
     background-size: cover;
     background-position: center;
     filter: blur(5px);
     z-index: -1;
 }
 
-/* CONTENEDOR PRINCIPAL */
+/* Contenedor Principal */
+
 .mapa-container {
     position: relative;
     min-height: 100vh;
@@ -24,7 +25,8 @@
     z-index: 1;
 }
 
-/* TARJETA DE SALUDO */
+/* Tarjeta de saludo */
+
 .saludo {
     background: rgba(255, 255, 255, 0.92);
     padding: 40px 30px;
@@ -36,19 +38,8 @@
     animation: aparecer 0.7s ease;
 }
 
-/* TARJETA DE SALUDO */
-.saludo {
-    background: rgba(255, 255, 255, 0.92);
-    padding: 40px 30px;
-    border-radius: 20px;
-    max-width: 650px;
-    width: 100%;
-    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    animation: aparecer 0.7s ease;
-}
+/* Avatar y Texto */
 
-/* AVATAR Y TEXTO */
 .guia {
     display: flex;
     align-items: center;
@@ -65,7 +56,8 @@
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
 }
 
-/* TEXTO */
+/* Texto */
+
 .saludo h2 {
     font-size: 28px;
     color: var(--grisOscuro);
@@ -78,7 +70,8 @@
     color: #444;
 }
 
-/* BOTÓN */
+/* Botón */
+
 .qr-button {
     background-color: #4CAF50;
     color: var(--blanco);
@@ -96,21 +89,8 @@
     transform: scale(1.05);
 }
 
-/* ANIMACIÓN */
-@keyframes aparecer {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
+/*  Estilos Modo Oscuro */
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-
-/*  MODO OSCURO */
 .dark .saludo {
     background-color: rgba(20, 20, 20, 0.85);
     color: var(--blanco);
@@ -124,3 +104,19 @@
     background-color: #4caf50;
     color: var(--blanco);
 }
+
+/* Animaciones */
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+

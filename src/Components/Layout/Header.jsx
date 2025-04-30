@@ -1,13 +1,29 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "../../Styles/Layout/Header.css";
+import MusicPlayer from "../Commons/MusicPlayer";
 
 function Header() {
+  const navigate = useNavigate();
+
+  const [modoOscuro, setModoOscuro] = useState(false);
+
   useEffect(() => {
     const savedTheme = localStorage.getItem("modoOscuro");
-    if (savedTheme === "true") {
+    const isDark = savedTheme === "true";
+
+    setModoOscuro(isDark);
+    if (isDark) {
       document.documentElement.classList.add("dark");
     }
   }, []);
+
+  const toggleModoOscuro = () => {
+    const nuevoEstado = !modoOscuro;
+    setModoOscuro(nuevoEstado);
+    document.documentElement.classList.toggle("dark", nuevoEstado);
+    localStorage.setItem("modoOscuro", nuevoEstado);
+  };
 
   return (
     <header className="header">
@@ -23,18 +39,13 @@ function Header() {
       <h1>¡Bienvenidos a esta aventura!</h1>
 
       <div className="botones-header">
-        <button
-          className="btn-tema"
-          onClick={() => {
-            document.documentElement.classList.toggle("dark");
-            localStorage.setItem(
-              "modoOscuro",
-              document.documentElement.classList.contains("dark")
-            );
-          }}
-        >
-          🌓 Modo Oscuro
+        <button className="btn-tema" onClick={toggleModoOscuro}>
+          {modoOscuro ? "🌞 Modo Claro" : "🌙 Modo Oscuro"}
         </button>
+
+        <button className="btn-home" onClick={() => navigate('/')}>🏠Inicio</button>
+
+        <MusicPlayer />
 
         <button
           className="btn-kiosco"

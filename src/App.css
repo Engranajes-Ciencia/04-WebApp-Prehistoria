@@ -1,2 +1,13 @@
+/* src/App.css */
 
-  
+.orientacion-alerta {
+  background: #fff3cd;
+  color: #444;
+  padding: 2rem;
+  font-size: 1.3rem;
+  text-align: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

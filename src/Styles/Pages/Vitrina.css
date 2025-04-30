@@ -1,11 +1,15 @@
 .vitrina-container {
     text-align: center;
     margin: 20px;
+    min-height: 90vh; 
+    padding: 20px;
 }
 
 /* Marco con imagen de fondo */
+
 .vitrina-marco {
     position: relative;
+    padding: 20px;
     width: 135%;
     max-width: 600px;
     min-height: 350px;
@@ -25,6 +29,7 @@
 }
 
 /* Tabla de medallas con fondo semitransparente */
+
 .vitrina-tabla {
     position: relative;
     z-index: 1;
@@ -111,3 +116,28 @@
     transform-origin: center; 
 
 }
+.btn-back {
+    display: block;
+    margin: 20px auto;
+    background: linear-gradient(135deg, var(--verde), #5f8b6a);
+    color: var(--blanco);
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.btn-back:hover {
+    background: linear-gradient(135deg, #5f8b6a, #4f745a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  }
+
+  /* Estilos Modo Oscuro */
+
+  .dark .vitrina-container {
+    background: linear-gradient(135deg, #212121, #424242);
+    color: var(--blanco);
+    margin: auto;
+  }
