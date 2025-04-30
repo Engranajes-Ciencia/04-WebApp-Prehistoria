@@ -114,8 +114,8 @@ function Final() {
                     Reiniciar Juego
                 </button>
 
-                <button className="btn-vitrina" onClick={() => navigate("/vitrina")}>
-                    Medallas disponibles
+                <button className="btn-vitrina" onClick={() => navigate("/vitrina-virtual")}>
+                    Ver Galería de Medallas
                 </button>
 
             </div>
