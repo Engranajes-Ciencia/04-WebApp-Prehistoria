@@ -20,12 +20,18 @@ function Form() {
   };
 
   const fondos = [
-    `${import.meta.env.BASE_URL}assets/form-fondo/foto1.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo1.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo2.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo3.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo4.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo5.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/fondo6.png`,
+   /* `${import.meta.env.BASE_URL}assets/form-fondo/foto1.png`,
     `${import.meta.env.BASE_URL}assets/form-fondo/foto2.jpg`,
     `${import.meta.env.BASE_URL}assets/form-fondo/foto3.jpg`,
     `${import.meta.env.BASE_URL}assets/form-fondo/foto4.jpg`,
     `${import.meta.env.BASE_URL}assets/form-fondo/foto5.png`,
-    `${import.meta.env.BASE_URL}assets/form-fondo/foto6.png`,
+    `${import.meta.env.BASE_URL}assets/form-fondo/foto6.png`,*/
   ];
 
   //  Cambio automático del fondo cada 5 segundos
