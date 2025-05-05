@@ -74,7 +74,7 @@ function Actividad() {
         <div className="actividad-container">
             <div className="actividad-header">
                 <img src={avatarImg} alt="avatar" className="avatar-actividad" />
-                <div className="texto-header">
+                <div >
                     <h2 className="saludo">¡Hola {nombre}!</h2>
                     <p className="dialogo">{avatarData.dialogo}</p>
                 </div>

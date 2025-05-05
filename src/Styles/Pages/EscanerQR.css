@@ -49,10 +49,14 @@
   background-color: #388e3c;
 }
 
-
-
 /* Cambiar botón de subir imagen */
 .texto-escaneo {
+
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+  transition: color 0.3s ease;
+
   font-size: 1.1rem;
   font-weight: 500;
   color: #2e7d32;
@@ -78,6 +82,19 @@
   margin-bottom: 10px;
 }
 
+/* Estilos Modo Oscuro */
+
+
+
+.dark .scanner-container {
+  background: linear-gradient(135deg, #212121, #424242);
+  color: var(--blanco);
+}
+
+.dark .html5-qrcode-anchor-scan-type-change.html5-qrcode-elemen {
+  color: #007bff;
+}
+
 
 /* Animaciones */
 
@@ -101,7 +118,6 @@
     transform: translateY(0);
   }
 }
-
 
 /* Estilos Modo Oscuro */
 
