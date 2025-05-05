@@ -6,15 +6,14 @@
     "audio": "/sounds/soundsParadas/audioParada1.mp3",
     "avatarDialogo": {
       "explorador": {
-        "mensaje": "¡Qué hallazgo! Este fósil tiene millones de años. Un trilobite, de los primeros animales con caparazón.",
+        "mensaje": "Bienvenido a tu primera parada. Aquí descubrirás datos asombrosos sobre cómo vivieron los trilobites. Fueron animales marinos que habitaron los océanos hace unos 500 millones de años.",
         "sabiasQue": "¿Sabías que los trilobites existieron antes que los dinosaurios?"
       },
       "exploradora": {
-        "mensaje": "Este helecho fosilizado es testigo del pasado. ¡Tiene más de 300 millones de años!",
+        "mensaje": "Bienvenido a tu primera parada. Aquí descubrirás datos asombrosos sobre cómo vivieron los trilobites. Fueron animales marinos que habitaron los océanos hace unos 500 millones de años.",
         "sabiasQue": "¿Sabías que las plantas fósiles ayudaron a formar el carbón que usamos hoy?"
       }
     },
-    "respuestaCorrecta": "Animal marino / Planta del pasado",
     "geniallyURL": "https://view.genially.com/67e134e5a75d54115e15f3f0/interactive-content-actividad-1",
     "completada": false
   },
@@ -25,15 +24,14 @@
     "audio": "/sounds/soundsParadas/audioParada2.mp3",
     "avatarDialogo": {
       "explorador": {
-        "mensaje": "El brontosaurio era tan largo como un autobús. ¡Qué bestia!",
+        "mensaje": "Bienvenido a tu segunda parada. Hoy conocerás a los dinosaurios, los gigantes que gobernaron la Tierra durante millones de años. Desde depredadores imponentes hasta pacíficos herbívoros, descubre cómo vivían y por qué desaparecieron.",
         "sabiasQue": "¿Sabías que el triceratops tenía tres cuernos para defenderse?"
       },
       "exploradora": {
-        "mensaje": "Aunque el velociraptor era pequeño, ¡era súper veloz!",
+        "mensaje": "Bienvenido a tu segunda parada. Hoy conocerás a los dinosaurios, los gigantes que gobernaron la Tierra durante millones de años. Desde depredadores imponentes hasta pacíficos herbívoros, descubre cómo vivían y por qué desaparecieron.",
         "sabiasQue": "¿Sabías que el velociraptor tenía plumas?"
       }
     },
-    "respuestaCorrecta": "Tres / Brontosaurio",
     "geniallyURL": "https://view.genially.com/67f395c2cd8c8266c1f2ba62/interactive-content-actividad2",
     "completada": false
   },
@@ -44,15 +42,14 @@
     "audio": "/sounds/soundsParadas/audioParada3.mp3",
     "avatarDialogo": {
       "explorador": {
-        "mensaje": "Las tortugas de las Galápagos pueden vivir más de 100 años. ¡Increíble!",
+        "mensaje": "Bienvenido a tu tercera parada. Aquí descubrirás a las increíbles tortugas de las Galápagos, famosas por su longevidad y tamaño impresionante. Estas majestuosas criaturas han sobrevivido por siglos en un ecosistema único, adaptándose a las condiciones extremas de las islas. Observa cómo se mueven lentamente, pero con gran determinación, recorriendo su hogar volcánico.",
         "sabiasQue": "¿Sabías que pueden pesar más de 200 kilos?"
       },
       "exploradora": {
-        "mensaje": "Una de las especies más longevas del planeta. ¡Y súper lentas!",
+        "mensaje": "Bienvenido a tu tercera parada. Aquí descubrirás a las increíbles tortugas de las Galápagos, famosas por su longevidad y tamaño impresionante. Estas majestuosas criaturas han sobrevivido por siglos en un ecosistema único, adaptándose a las condiciones extremas de las islas. Observa cómo se mueven lentamente, pero con gran determinación, recorriendo su hogar volcánico.",
         "sabiasQue": "¿Sabías que su caparazón puede cambiar según la isla?"
       }
     },
-    "respuestaCorrecta": "Islas Galápagos / El caparazón",
     "geniallyURL": "https://view.genially.com/67f8f2f8b5b5ac75ac152d4e/interactive-content-actividad-3",
     "completada": false
   },
@@ -63,15 +60,14 @@
     "audio": "/sounds/soundsParadas/audioParada4.mp3",
     "avatarDialogo": {
       "explorador": {
-        "mensaje": "Estas huellas tienen más de 3 millones de años. ¡Nuestros antepasados ya caminaban erguidos!",
+        "mensaje": "Bienvenido a tu cuarta parada. Aquí descubrirás las huellas de Laetoli, una evidencia clave de los primeros pasos de nuestros ancestros hace más de 3 millones y medio de años. Estas huellas fosilizadas revelan cómo los homínidos caminaban erguidos, marcando un hito en la evolución humana. Observa su forma y disposición, testigos silenciosos de un pasado lejano.",
         "sabiasQue": "¿Sabías que fueron descubiertas en Tanzania en 1978?"
       },
       "exploradora": {
-        "mensaje": "¡Increíble! Estas huellas fosilizadas muestran cómo caminaban nuestros ancestros.",
+        "mensaje": "Bienvenido a tu cuarta parada. Aquí descubrirás las huellas de Laetoli, una evidencia clave de los primeros pasos de nuestros ancestros hace más de 3 millones y medio de años. Estas huellas fosilizadas revelan cómo los homínidos caminaban erguidos, marcando un hito en la evolución humana. Observa su forma y disposición, testigos silenciosos de un pasado lejano.",
         "sabiasQue": "¿Sabías que pertenecen a Australopithecus afarensis?"
       }
     },
-    "respuestaCorrecta": "Australopithecus / Que caminaban erguidos",
     "geniallyURL": "https://view.genially.com/67f8fa02c2e20bb7b0ca82c6/interactive-content-actividad-4",
     "completada": false
   },
@@ -82,15 +78,14 @@
     "audio": "/sounds/soundsParadas/audioParada5.mp3",
     "avatarDialogo": {
       "explorador": {
-        "mensaje": "Mira estas pinturas rupestres. Así se comunicaban nuestros antepasados.",
+        "mensaje": "Bienvenido a tu quinta parada. Aquí explorarás las pinturas rupestres, un testimonio visual de las primeras expresiones artísticas de la humanidad. Con trazos simples pero llenos de significado, nuestros antepasados plasmaban escenas de caza, rituales y vida cotidiana en las paredes de cuevas. Estas obras, creadas hace miles de años, nos conectan con sus pensamientos y creencias.",
         "sabiasQue": "¿Sabías que usaban pigmentos naturales de rocas y carbón?"
       },
       "exploradora": {
-        "mensaje": "¡Arte antiguo! Reflejan la vida cotidiana y los animales que cazaban.",
+        "mensaje": "Bienvenido a tu quinta parada. Aquí explorarás las pinturas rupestres, un testimonio visual de las primeras expresiones artísticas de la humanidad. Con trazos simples pero llenos de significado, nuestros antepasados plasmaban escenas de caza, rituales y vida cotidiana en las paredes de cuevas. Estas obras, creadas hace miles de años, nos conectan con sus pensamientos y creencias.",
         "sabiasQue": "¿Sabías que algunas tienen más de 30.000 años?"
       }
     },
-    "respuestaCorrecta": "Animales y caza / Pigmentos naturales",
     "geniallyURL": "https://view.genially.com/67e3cc8058a3eb22e678b730/interactive-content-actividad5",
     "completada": false
   },
@@ -101,15 +96,14 @@
     "audio": "/sounds/soundsParadas/audioParada6.mp3",
     "avatarDialogo": {
       "explorador": {
-        "mensaje": "Los nómadas viajaban de un lugar a otro buscando alimento.",
+        "mensaje": "Bienvenido a tu sexta parada. Hoy viajarás al corazón de la vida nómada, donde las antiguas comunidades se desplazaban en busca de recursos y refugio. Sin asentamientos fijos, su supervivencia dependía de la caza, la recolección y el conocimiento del entorno. Descubre cómo construían sus refugios, se organizaban y transmitían sus tradiciones a través de generaciones.",
         "sabiasQue": "¿Sabías que no tenían casas fijas y vivían en chozas?"
       },
       "exploradora": {
-        "mensaje": "Vivían de la caza y la recolección, ¡siempre en movimiento!",
+        "mensaje": "Bienvenido a tu sexta parada. Hoy viajarás al corazón de la vida nómada, donde las antiguas comunidades se desplazaban en busca de recursos y refugio. Sin asentamientos fijos, su supervivencia dependía de la caza, la recolección y el conocimiento del entorno. Descubre cómo construían sus refugios, se organizaban y transmitían sus tradiciones a través de generaciones.",
         "sabiasQue": "¿Sabías que seguían a los animales y las estaciones?"
       }
     },
-    "respuestaCorrecta": "Buscar alimentos / Cambiar de lugar",
     "geniallyURL": "https://view.genially.com/67f8edffb7b2a9c007101174/interactive-content-actividad6",
     "completada": false
   },
@@ -120,15 +114,14 @@
     "audio": "/sounds/soundsParadas/audioParada7.mp3",
     "avatarDialogo": {
       "explorador": {
-        "mensaje": "Con la agricultura, los humanos se volvieron sedentarios.",
+        "mensaje": "Bienvenido a tu séptima parada. Aquí explorarás el poblado sedentario, donde las comunidades humanas comenzaron a establecerse de forma permanente. Gracias a la agricultura y la domesticación de animales, dejaron atrás la vida nómada y construyeron aldeas con viviendas más resistentes. Descubre cómo evolucionaron sus estructuras, su organización social y las primeras formas de comercio.",
         "sabiasQue": "¿Sabías que comenzaron a construir aldeas permanentes?"
       },
       "exploradora": {
-        "mensaje": "¡Revolución Neolítica! Aquí nacen los pueblos y la domesticación.",
+        "mensaje": "Bienvenido a tu séptima parada. Aquí explorarás el poblado sedentario, donde las comunidades humanas comenzaron a establecerse de forma permanente gracias a la agricultura y la domesticación de animales. Dejaron atrás la vida nómada y construyeron aldeas con viviendas más resistentes. Descubre cómo evolucionaron sus estructuras, su organización social y las primeras formas de comercio.",
         "sabiasQue": "¿Sabías que almacenaban grano en silos?"
       }
     },
-    "respuestaCorrecta": "Agricultura / Cultivo de alimentos",
     "geniallyURL": "https://view.genially.com/67f8f638c08c8840c0b4fe3c/interactive-content-actividad7",
     "completada": false
   },
@@ -139,15 +132,14 @@
     "audio": "/sounds/soundsParadas/audioParada8.mp3",
     "avatarDialogo": {
       "explorador": {
-        "mensaje": "Los pozos eran esenciales para sobrevivir lejos de ríos.",
+        "mensaje": "Bienvenido a tu octava parada. Aquí descubrirás el pozo prehistórico, una estructura clave para la supervivencia de las antiguas comunidades. Estos pozos eran utilizados para almacenar agua, un recurso vital en tiempos donde su acceso no siempre era fácil. Observa cómo fueron construidos y cómo jugaron un papel fundamental en la evolución de los asentamientos humanos.",
         "sabiasQue": "¿Sabías que algunos tenían poleas para sacar el agua más fácil?"
       },
       "exploradora": {
-        "mensaje": "El agua era un tesoro. ¡Y sin grifo!",
+        "mensaje": "Bienvenido a tu octava parada. Aquí descubrirás el pozo prehistórico, una estructura clave para la supervivencia de las antiguas comunidades. Estos pozos eran utilizados para almacenar agua, un recurso vital en tiempos donde su acceso no siempre era fácil. Observa cómo fueron construidos y cómo jugaron un papel fundamental en la evolución de los asentamientos humanos.",
         "sabiasQue": "¿Sabías que los primeros pozos datan del Neolítico?"
       }
     },
-    "respuestaCorrecta": "Sacar agua / Usando poleas",
     "geniallyURL": "https://view.genially.com/67f8fda123c430f481ddb5e6/interactive-content-actividad-8",
     "completada": false
   },
@@ -158,15 +150,14 @@
     "audio": "/sounds/soundsParadas/audioParada9.mp3",
     "avatarDialogo": {
       "explorador": {
-        "mensaje": "Estas piedras pesan toneladas y tienen más de 4.000 años.",
+        "mensaje": "Bienvenido a tu novena parada. Aquí te encontrarás con Stonehenge, uno de los monumentos más enigmáticos de la prehistoria. Construido hace miles de años, su propósito sigue siendo un misterio. Algunos creen que era un observatorio astronómico, otros lo ven como un lugar sagrado para rituales. Admira la disposición perfecta de sus enormes piedras y deja que su historia te envuelva.",
         "sabiasQue": "¿Sabías que algunas alineaciones indican los solsticios?"
       },
       "exploradora": {
-        "mensaje": "Un misterio ancestral. Algunos creen que era un calendario solar.",
+        "mensaje": "Bienvenido a tu novena parada. Aquí te encontrarás con Stonehenge, uno de los monumentos más enigmáticos de la prehistoria. Construido hace miles de años, su propósito sigue siendo un misterio. Algunos creen que era un observatorio astronómico, otros lo ven como un lugar sagrado para rituales. Admira la disposición perfecta de sus enormes piedras y deja que su historia te envuelva.",
         "sabiasQue": "¿Sabías que aún no sabemos cómo las transportaron?"
       }
     },
-    "respuestaCorrecta": "Ceremonias y calendario / Solsticio de verano",
     "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad9",
     "completada": false
   },
@@ -177,15 +168,14 @@
     "audio": "/sounds/soundsParadas/audioParada10.mp3",
     "avatarDialogo": {
       "explorador": {
-        "mensaje": "Este templo fue construido durante más de 1.000 años. ¡Impresionante!",
+        "mensaje": "Bienvenido a tu última parada. Has llegado al Templo de Karnak, uno de los complejos religiosos más impresionantes del antiguo Egipto. Construido a lo largo de más de dos mil años, este templo era un lugar de adoración dedicado a los dioses y faraones. Sus enormes columnas y relieves cuentan historias de batallas, rituales y ofrendas. Observa su grandiosidad y siente el poder de una civilización que dejó una huella imborrable en la historia.",
         "sabiasQue": "¿Sabías que cada faraón dejaba su huella en Karnak?"
       },
       "exploradora": {
-        "mensaje": "Un lugar sagrado lleno de historia, columnas y jeroglíficos.",
+        "mensaje": "Bienvenido a tu última parada. Has llegado al Templo de Karnak, uno de los complejos religiosos más impresionantes del antiguo Egipto. Construido a lo largo de más de dos mil años, este templo era un lugar de adoración dedicado a los dioses y faraones. Sus enormes columnas y relieves cuentan historias de batallas, rituales y ofrendas. Observa su grandiosidad y siente el poder de una civilización que dejó una huella imborrable en la historia.",
         "sabiasQue": "¿Sabías que era el centro religioso más importante del antiguo Egipto?"
       }
     },
-    "respuestaCorrecta": "Egipto / Los egipcios",
     "geniallyURL": "https://view.genially.com/67e283be994f4e3b61c714e9/interactive-content-actividad10",
     "completada": false
   }
