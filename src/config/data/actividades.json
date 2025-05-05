@@ -3,6 +3,7 @@
     "id": 1,
     "titulo": "Fósiles prehistóricos",
     "ubicacion": "Fósil de trilobite y helecho",
+    "audio": "/sounds/soundsParadas/audioParada1.mp3",
     "avatarDialogo": {
       "explorador": {
         "mensaje": "¡Qué hallazgo! Este fósil tiene millones de años. Un trilobite, de los primeros animales con caparazón.",
@@ -21,6 +22,7 @@
     "id": 2,
     "titulo": "Dinosaurios gigantes",
     "ubicacion": "Triceratops, brontosaurio, velociraptor y alosaurio",
+    "audio": "/sounds/soundsParadas/audioParada2.mp3",
     "avatarDialogo": {
       "explorador": {
         "mensaje": "El brontosaurio era tan largo como un autobús. ¡Qué bestia!",
@@ -39,6 +41,7 @@
     "id": 3,
     "titulo": "Tortuga de las Galápagos",
     "ubicacion": "Zona de reptiles fósiles",
+    "audio": "/sounds/soundsParadas/audioParada3.mp3",
     "avatarDialogo": {
       "explorador": {
         "mensaje": "Las tortugas de las Galápagos pueden vivir más de 100 años. ¡Increíble!",
@@ -57,6 +60,7 @@
     "id": 4,
     "titulo": "Huellas de Laetoli",
     "ubicacion": "Descubrimiento de pisadas humanas fósiles",
+    "audio": "/sounds/soundsParadas/audioParada4.mp3",
     "avatarDialogo": {
       "explorador": {
         "mensaje": "Estas huellas tienen más de 3 millones de años. ¡Nuestros antepasados ya caminaban erguidos!",
@@ -75,6 +79,7 @@
     "id": 5,
     "titulo": "Cueva con pinturas rupestres",
     "ubicacion": "Arte prehistórico",
+    "audio": "/sounds/soundsParadas/audioParada5.mp3",
     "avatarDialogo": {
       "explorador": {
         "mensaje": "Mira estas pinturas rupestres. Así se comunicaban nuestros antepasados.",
@@ -93,6 +98,7 @@
     "id": 6,
     "titulo": "Poblado nómada",
     "ubicacion": "Estilo de vida de los nómadas",
+    "audio": "/sounds/soundsParadas/audioParada6.mp3",
     "avatarDialogo": {
       "explorador": {
         "mensaje": "Los nómadas viajaban de un lugar a otro buscando alimento.",
@@ -111,6 +117,7 @@
     "id": 7,
     "titulo": "Poblado sedentario",
     "ubicacion": "Primeros asentamientos",
+    "audio": "/sounds/soundsParadas/audioParada7.mp3",
     "avatarDialogo": {
       "explorador": {
         "mensaje": "Con la agricultura, los humanos se volvieron sedentarios.",
@@ -129,6 +136,7 @@
     "id": 8,
     "titulo": "Pozo",
     "ubicacion": "Acceso al agua en la antigüedad",
+    "audio": "/sounds/soundsParadas/audioParada8.mp3",
     "avatarDialogo": {
       "explorador": {
         "mensaje": "Los pozos eran esenciales para sobrevivir lejos de ríos.",
@@ -147,6 +155,7 @@
     "id": 9,
     "titulo": "Stonehenge",
     "ubicacion": "Monumento megalítico",
+    "audio": "/sounds/soundsParadas/audioParada9.mp3",
     "avatarDialogo": {
       "explorador": {
         "mensaje": "Estas piedras pesan toneladas y tienen más de 4.000 años.",
@@ -165,6 +174,7 @@
     "id": 10,
     "titulo": "Templo de Karnak",
     "ubicacion": "Antiguo Egipto",
+    "audio": "/sounds/soundsParadas/audioParada10.mp3",
     "avatarDialogo": {
       "explorador": {
         "mensaje": "Este templo fue construido durante más de 1.000 años. ¡Impresionante!",
