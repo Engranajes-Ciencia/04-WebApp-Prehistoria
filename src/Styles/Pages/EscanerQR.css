@@ -24,7 +24,7 @@
 /* QR Reader Box */
 #qr-reader {
   width: 100%;
-  max-width: 380px;
+  max-width: 350px;
   aspect-ratio: 1 / 1;
   background-color: #ffffff;
   border-radius: 16px;
@@ -51,10 +51,18 @@
 
 /* Cambiar botón de subir imagen */
 .texto-escaneo {
+<<<<<<< HEAD
   margin-top: 20px;
   font-size: 1rem;
   color: #555;
   transition: color 0.3s ease;
+=======
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #2e7d32;
+  margin-top: 12px;
+  animation: fadeIn 1s ease;
+>>>>>>> f9b33f1f4fdfc0ed6bdb6f6b7b87a614b0d524f4
 }
 
 /* Spinner */
