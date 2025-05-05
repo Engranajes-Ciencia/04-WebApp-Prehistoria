@@ -3,26 +3,22 @@ import { UseOrientation } from "./UseOrientation";
 import AppRouter from "./config/routes/AppRouter";
 import "./index.css";
 import Layout from "./Components/Layout/Layout";
-
-
-
+import "./Styles/Commons/OrientationWarning.css";
 
 function App() {
-  const orientation = UseOrientation(); //Detectamos la orientación
-   return (
+  const orientation = UseOrientation(); //Detecta la orientación
+  return (
     <div>
-      {/*Mostrar mensaje solo en modo Landscape*/} 
+      {/*Mostrar alerta solo en modo vertical*/}
       {orientation === "portrait" && (
         <div className="orientacion-alerta">
-          Por favor, gira tu dispositivo a modo vertical para ver el contenido
+         ⚠️ Para una mejor experiencia recomendamos utilizar el dispositivo en
+          modo horizontal{" "}
         </div>
       )}
-      {orientation === "landscape" && (
-        <Layout>
-          <AppRouter />
-        </Layout>
-      )
-    }
+      <Layout>
+        <AppRouter />
+      </Layout>
     </div>
   );
 }
