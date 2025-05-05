@@ -55,6 +55,7 @@
 .texto-escaneo{
   margin-top: 20px;
   font-size: 1rem;
+  font-weight: bold;
   color: #555;
   transition: color 0.3s ease;
 }
