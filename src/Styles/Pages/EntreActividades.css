@@ -57,7 +57,6 @@
     animation: tachado 0.5s ease;
 }
 
-
 .guia-avatar {
     width: 80px;
     height: 80px;
@@ -98,8 +97,18 @@
     transition: width 0.6s ease;
 }
 
-.btn-scan,
-.btn-final {
+/* CONTENEDOR Y ESTILO UNIFICADO DE BOTONES */
+
+.botones-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.botones-container button {
     background-color: #33691e;
     color: var(--blanco);
     border: none;
@@ -109,14 +118,33 @@
     border-radius: 10px;
     cursor: pointer;
     transition: all 0.3s ease;
-    margin-top: 1rem;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    width: 300px;
+    max-width: 90%;
+    text-align: center;
 }
 
-.btn-scan:hover,
-.btn-final:hover {
+.botones-container button:hover {
     background-color: #1b5e20;
     transform: scale(1.05);
+}
+
+/* COLORES DIFERENTES PARA CADA BOTÓN SI QUIERES */
+
+.btn-final {
+    background-color: #33691e;
+}
+
+.btn-scan {
+    background-color: #33691e;
+}
+
+.btn-medallas {
+    background-color: #f57c00;
+}
+
+.btn-medallas:hover {
+    background-color: #ef6c00;
 }
 
 /* Estilos Modo Oscuro */
@@ -127,11 +155,11 @@
 }
 
 .dark .mapa-check-container h2 {
-    color: var(--blanco) !important; /* Para que se implemente el color en modo oscuro */
+    color: var(--blanco) !important;
 }
 
 .dark .guia-texto {
-    color: var(--blanco) !important; /* Para que se implemente el color en modo oscuro */
+    color: var(--blanco) !important;
 }
 
 .dark .checkpoints {
@@ -143,7 +171,7 @@
 }
 
 .dark .checkpoints li.hecha {
-    color: var(--verde) !important; /* Para que se implemente el color en modo oscuro */
+    color: var(--verde) !important;
     background-color: var(--bg-general);
 }
 
@@ -153,20 +181,16 @@
     from {
         background-color: #fff3e0;
     }
-
     to {
         background-color: #e8f5e9;
     }
 }
-
-/* Transición suave al entrar */
 
 @keyframes fadeSlide {
     from {
         opacity: 0;
         transform: translateY(40px);
     }
-
     to {
         opacity: 1;
         transform: translateY(0);
@@ -181,8 +205,7 @@
         padding: 10px 14px;
     }
 
-    .btn-scan,
-    .btn-final {
+    .botones-container button {
         width: 90%;
         font-size: 1rem;
     }
