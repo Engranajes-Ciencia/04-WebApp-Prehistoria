@@ -54,7 +54,7 @@ function Actividad() {
 
         // Eliminar solo tras navegación
         // localStorage.removeItem("accesoQR");
-        
+
     }, [id, navigate, avatar, nombre, accesoQR]);
 
     if (!actividad || !avatar || !nombre) {
@@ -83,15 +83,30 @@ function Actividad() {
 
             {actividad.audio && (
                 <div className="audio-button-container">
-                    <button onClick={toggleAudio} className="audio-button">
+                    <button
+                        onClick={() => {
+                            if (!audioRef.current) return;
+                            if (isPlaying) {
+                                audioRef.current.pause();
+                                setIsPlaying(false);
+                            } else {
+                                audioRef.current.muted = false;
+                                audioRef.current.play().catch((e) => {
+                                    console.warn("Error al reproducir el audio:", e);
+                                });
+                                setIsPlaying(true);
+                            }
+                        }}
+                        className="audio-button"
+                    >
                         {isPlaying ? "⏸️ Pausar audio" : "▶️ Reproducir audio"}
                     </button>
+
                     <audio
                         ref={audioRef}
-                        src={actividad.audio}
+                        src={`${import.meta.env.BASE_URL}${actividad.audio.replace(/^\/+/, "")}`}
                         preload="auto"
                     />
-
                 </div>
             )}
 
