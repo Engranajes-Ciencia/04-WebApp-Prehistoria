@@ -6,10 +6,12 @@
     "audio": "/sounds/soundsParadas/audioParada1.mp3",
     "avatarDialogo": {
       "explorador": {
+        "dialogo": " Estás en la parada 1: Fósiles prehistóricos. Prepárate para descubrir algo fascinante.",
         "mensaje": "¡Qué hallazgo! Este fósil tiene millones de años. Un trilobite, de los primeros animales con caparazón.",
         "sabiasQue": "¿Sabías que los trilobites existieron antes que los dinosaurios?"
       },
       "exploradora": {
+        "dialogo": "¡Estas en la parada 1 sobre fósiles prehistóricos! Te encantará lo que verás.",
         "mensaje": "Este helecho fosilizado es testigo del pasado. ¡Tiene más de 300 millones de años!",
         "sabiasQue": "¿Sabías que las plantas fósiles ayudaron a formar el carbón que usamos hoy?"
       }
@@ -25,10 +27,12 @@
     "audio": "/sounds/soundsParadas/audioParada2.mp3",
     "avatarDialogo": {
       "explorador": {
+        "dialogo": " Estás en la parada 2: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
         "mensaje": "El brontosaurio era tan largo como un autobús. ¡Qué bestia!",
         "sabiasQue": "¿Sabías que el triceratops tenía tres cuernos para defenderse?"
       },
       "exploradora": {
+        "dialogo": "¡Estas en la parada 2 sobre dinosaurios gigantes! Te encantará lo que verás.",
         "mensaje": "Aunque el velociraptor era pequeño, ¡era súper veloz!",
         "sabiasQue": "¿Sabías que el velociraptor tenía plumas?"
       }
@@ -44,10 +48,12 @@
     "audio": "/sounds/soundsParadas/audioParada3.mp3",
     "avatarDialogo": {
       "explorador": {
+        "dialogo": "¡ Estás en la parada 3: Tortuga de las Galápagos. Prepárate para descubrir algo fascinante.",
         "mensaje": "Las tortugas de las Galápagos pueden vivir más de 100 años. ¡Increíble!",
         "sabiasQue": "¿Sabías que pueden pesar más de 200 kilos?"
       },
       "exploradora": {
+        "dialogo": "¡Estas en la parada 3 sobre la tortuga de las Galápagos! Te encantará lo que verás.",
         "mensaje": "Una de las especies más longevas del planeta. ¡Y súper lentas!",
         "sabiasQue": "¿Sabías que su caparazón puede cambiar según la isla?"
       }
@@ -63,10 +69,12 @@
     "audio": "/sounds/soundsParadas/audioParada4.mp3",
     "avatarDialogo": {
       "explorador": {
+        "dialogo": "¡Parada 4! Vamos tras las huellas del pasado. ¿Listo para caminar con nuestros antecesores?",
         "mensaje": "Estas huellas tienen más de 3 millones de años. ¡Nuestros antepasados ya caminaban erguidos!",
         "sabiasQue": "¿Sabías que fueron descubiertas en Tanzania en 1978?"
       },
       "exploradora": {
+        "dialogo": "¡ Parada 4! Aquí empieza nuestro viaje por las primeras pisadas humanas.",
         "mensaje": "¡Increíble! Estas huellas fosilizadas muestran cómo caminaban nuestros ancestros.",
         "sabiasQue": "¿Sabías que pertenecen a Australopithecus afarensis?"
       }
@@ -82,10 +90,12 @@
     "audio": "/sounds/soundsParadas/audioParada5.mp3",
     "avatarDialogo": {
       "explorador": {
+        "dialogo": "Parada 5. ¿Ves esas pinturas? Son mensajes silenciosos de una humanidad muy antigua.",
         "mensaje": "Mira estas pinturas rupestres. Así se comunicaban nuestros antepasados.",
         "sabiasQue": "¿Sabías que usaban pigmentos naturales de rocas y carbón?"
       },
       "exploradora": {
+        "dialogo": "¡Parada 5! El arte prehistórico nos habla sin palabras. Escuchemos lo que nos cuenta.",
         "mensaje": "¡Arte antiguo! Reflejan la vida cotidiana y los animales que cazaban.",
         "sabiasQue": "¿Sabías que algunas tienen más de 30.000 años?"
       }
@@ -101,10 +111,12 @@
     "audio": "/sounds/soundsParadas/audioParada6.mp3",
     "avatarDialogo": {
       "explorador": {
+        "dialogo": "Llegamos a la parada 6. ¡Los nómadas eran exploradores como nosotros!",
         "mensaje": "Los nómadas viajaban de un lugar a otro buscando alimento.",
         "sabiasQue": "¿Sabías que no tenían casas fijas y vivían en chozas?"
       },
       "exploradora": {
+        "dialogo": "Parada 6 desbloqueada. Conozcamos cómo vivían sin un hogar fijo nuestros antepasados.",
         "mensaje": "Vivían de la caza y la recolección, ¡siempre en movimiento!",
         "sabiasQue": "¿Sabías que seguían a los animales y las estaciones?"
       }
@@ -120,10 +132,12 @@
     "audio": "/sounds/soundsParadas/audioParada7.mp3",
     "avatarDialogo": {
       "explorador": {
+        "dialogo": "¡Parada 7! Dejar de moverse y empezar a construir... ¡eso sí que fue un gran cambio!",
         "mensaje": "Con la agricultura, los humanos se volvieron sedentarios.",
         "sabiasQue": "¿Sabías que comenzaron a construir aldeas permanentes?"
       },
       "exploradora": {
+        "dialogo": "Estamos en la parada 7. La vida sedentaria trajo consigo aldeas, cultivos y muchas historias.",
         "mensaje": "¡Revolución Neolítica! Aquí nacen los pueblos y la domesticación.",
         "sabiasQue": "¿Sabías que almacenaban grano en silos?"
       }
@@ -139,10 +153,12 @@
     "audio": "/sounds/soundsParadas/audioParada8.mp3",
     "avatarDialogo": {
       "explorador": {
+        "dialogo": "Parada 8: El agua era más valiosa que el oro. Sin pozos, no había futuro.",
         "mensaje": "Los pozos eran esenciales para sobrevivir lejos de ríos.",
         "sabiasQue": "¿Sabías que algunos tenían poleas para sacar el agua más fácil?"
       },
       "exploradora": {
+        "dialogo": "Parada 8 activada. Cada gota contaba. Vamos a descubrir cómo sacaban el agua.",
         "mensaje": "El agua era un tesoro. ¡Y sin grifo!",
         "sabiasQue": "¿Sabías que los primeros pozos datan del Neolítico?"
       }
@@ -158,10 +174,12 @@
     "audio": "/sounds/soundsParadas/audioParada9.mp3",
     "avatarDialogo": {
       "explorador": {
+        "dialogo": "¡Mira estas piedras gigantes en la parada 9! ¿Quién las puso ahí? ¡Vamos a investigarlo!",
         "mensaje": "Estas piedras pesan toneladas y tienen más de 4.000 años.",
         "sabiasQue": "¿Sabías que algunas alineaciones indican los solsticios?"
       },
       "exploradora": {
+        "dialogo": "Estamos en la parada 9. Stonehenge guarda misterios que siguen sin resolverse.",
         "mensaje": "Un misterio ancestral. Algunos creen que era un calendario solar.",
         "sabiasQue": "¿Sabías que aún no sabemos cómo las transportaron?"
       }
@@ -177,10 +195,12 @@
     "audio": "/sounds/soundsParadas/audioParada10.mp3",
     "avatarDialogo": {
       "explorador": {
+        "dialogo": "¡Última parada! El Templo de Karnak es testigo de siglos de historia. Vamos a explorarlo juntos.",
         "mensaje": "Este templo fue construido durante más de 1.000 años. ¡Impresionante!",
         "sabiasQue": "¿Sabías que cada faraón dejaba su huella en Karnak?"
       },
       "exploradora": {
+        "dialogo": "Llegamos a la parada 10. Un lugar sagrado lleno de símbolos y leyendas del antiguo Egipto.",
         "mensaje": "Un lugar sagrado lleno de historia, columnas y jeroglíficos.",
         "sabiasQue": "¿Sabías que era el centro religioso más importante del antiguo Egipto?"
       }

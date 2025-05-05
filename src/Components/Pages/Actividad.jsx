@@ -65,7 +65,8 @@ function Actividad() {
         );
     }
 
-    const avatarData = actividad.avatarDialogo[avatar];
+    const avatarData = actividad.avatarDialogo[avatar];  // carga json segun avatar
+
     const avatarImg = `${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`;
 
 
@@ -73,7 +74,10 @@ function Actividad() {
         <div className="actividad-container">
             <div className="actividad-header">
                 <img src={avatarImg} alt="avatar" className="avatar-actividad" />
-                <h2>¡Hola {nombre}! Soy tu guía en esta parada</h2>
+                <div className="texto-header">
+                    <h2 className="saludo">¡Hola {nombre}!</h2>
+                    <p className="dialogo">{avatarData.dialogo}</p>
+                </div>
             </div>
 
             <h3>{actividad.titulo}</h3>
