@@ -21,13 +21,17 @@ function Actividad() {
     // Constantes del audio
     const audioRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
+
+
     const toggleAudio = () => {
         if (!audioRef.current) return;
     
         if (isPlaying) {
             audioRef.current.pause();
         } else {
-            audioRef.current.play();
+            audioRef.current.play().catch((e) => {
+                console.warn("Autoplay bloqueado por el navegador", e);
+            });
         }
     
         setIsPlaying(!isPlaying);
@@ -46,11 +50,19 @@ function Actividad() {
         }
 
         marcarActividadComoCompletada(Number(id));
-        localStorage.removeItem("accesoQR");
+
+
+        // Eliminar solo tras navegación
+        // localStorage.removeItem("accesoQR");
+
     }, [id, navigate, avatar, nombre, accesoQR]);
 
     if (!actividad || !avatar || !nombre) {
-        return <p className="error-msg">Actividad no encontrada o acceso no permitido.</p>;
+        return (
+            <p className="error-msg">
+                Actividad no encontrada o acceso no permitido.
+            </p>
+        );
     }
 
     const avatarData = actividad.avatarDialogo[avatar];
@@ -65,30 +77,59 @@ function Actividad() {
             </div>
 
             <h3>{actividad.titulo}</h3>
-            <p>{avatarData.mensaje}</p>
-            <div className="audio-button-container">
-                {actividad?.audio &&(
-                <button onClick={toggleAudio} className="audio-button">
-                    {isPlaying ? "⏸️ Pausar audio" : "▶️ Reproducir audio"}
-                </button>
-                )}
-                               
-            </div>
-            <p className="sabiasque">
-                <strong>¿Sabías que...?</strong> {avatarData.sabiasQue}
-            </p>
+
+            {avatarData?.mensaje && <p>{avatarData.mensaje}</p>}
+
+
+            {actividad.audio && (
+                <div className="audio-button-container">
+                    <button
+                        onClick={() => {
+                            if (!audioRef.current) return;
+                            if (isPlaying) {
+                                audioRef.current.pause();
+                                setIsPlaying(false);
+                            } else {
+                                audioRef.current.muted = false;
+                                audioRef.current.play().catch((e) => {
+                                    console.warn("Error al reproducir el audio:", e);
+                                });
+                                setIsPlaying(true);
+                            }
+                        }}
+                        className="audio-button"
+                    >
+                        {isPlaying ? "⏸️ Pausar audio" : "▶️ Reproducir audio"}
+                    </button>
+
+                    <audio
+                        ref={audioRef}
+                        src={`${import.meta.env.BASE_URL}${actividad.audio.replace(/^\/+/, "")}`}
+                        preload="auto"
+                    />
+                </div>
+            )}
+
+
+            {avatarData?.sabiasQue && (
+                <p className="sabiasque">
+                    <strong>¿Sabías que...?</strong> {avatarData.sabiasQue}
+                </p>
+            )}
             
 
-            <div className="actividad-genially">
-                <iframe
-                    src={actividad.geniallyURL}
-                    width="100%"
-                    height="500px"
-                    frameBorder="0"
-                    allowFullScreen
-                    title="Genially actividad"
-                ></iframe>
-            </div>
+            {actividad.geniallyURL && (
+                <div className="actividad-genially">
+                    <iframe
+                        src={actividad.geniallyURL}
+                        width="100%"
+                        height="500px"
+                        frameBorder="0"
+                        allowFullScreen
+                        title="Genially actividad"
+                    ></iframe>
+                </div>
+            )}
         </div>
     );
 }
