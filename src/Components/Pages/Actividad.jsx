@@ -1,5 +1,5 @@
 // src/Components/Pages/Actividad.jsx
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import actividades from "../../config/data/actividades.json";
 import { marcarActividadComoCompletada } from "../../config/utils/localStorage";
@@ -17,6 +17,21 @@ function Actividad() {
     const avatar = localStorage.getItem("avatar");
     const nombre = localStorage.getItem("nombre");
     const accesoQR = localStorage.getItem("accesoQR");
+
+    // Constantes del audio
+    const audioRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+    const toggleAudio = () => {
+        if (!audioRef.current) return;
+    
+        if (isPlaying) {
+            audioRef.current.pause();
+        } else {
+            audioRef.current.play();
+        }
+    
+        setIsPlaying(!isPlaying);
+    };
     
 
     useEffect(() => {
@@ -51,6 +66,14 @@ function Actividad() {
 
             <h3>{actividad.titulo}</h3>
             <p>{avatarData.mensaje}</p>
+            <div className="audio-button-container">
+                {actividad?.audio &&(
+                <button onClick={toggleAudio} className="audio-button">
+                    {isPlaying ? "⏸️ Pausar audio" : "▶️ Reproducir audio"}
+                </button>
+                )}
+                               
+            </div>
             <p className="sabiasque">
                 <strong>¿Sabías que...?</strong> {avatarData.sabiasQue}
             </p>
