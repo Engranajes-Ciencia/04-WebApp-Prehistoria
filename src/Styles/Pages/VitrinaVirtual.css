@@ -159,6 +159,10 @@
     margin-bottom: 10px;
 }
 
+.card-flip.flipped .card-inner {
+    transform: rotateY(180deg);
+}
+
 .curiosidad-text {
     font-style: italic;
     font-size: 0.95rem;

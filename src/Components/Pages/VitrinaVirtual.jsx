@@ -20,7 +20,7 @@ const medallas = [
 
 function VitrinaVirtual() {
     const completadas = JSON.parse(localStorage.getItem("actividadesCompletadas")) || [];
-    const [modalData, setModalData] = useState(null);
+    const [flippedId, setFlippedId] = useState(null);
     const navigate = useNavigate();
 
     return (
@@ -31,11 +31,14 @@ function VitrinaVirtual() {
             <div className="grid-medallas">
                 {medallas.map((medalla) => {
                     const completada = completadas.includes(medalla.id);
+                    const isFlipped = flippedId === medalla.id;
+
                     return (
 
                         <div
                             key={medalla.id}
-                            className={`card-flip ${completada ? "completada" : "bloqueada"}`}
+                            className={`card-flip ${completada ? "completada" : "bloqueada"} ${isFlipped ? "flipped" : ""}`}
+                            onClick={() => completada && setFlippedId(isFlipped ? null : medalla.id)}
                         >
                             <div className="card-inner">
                                 <div className="card-front">
