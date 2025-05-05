@@ -3,6 +3,17 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  padding: 40px 20px;
+  text-align: center;
+  background: linear-gradient(120deg, #f0fdf4, #e3f2fd);
+  animation: fadeIn 0.8s ease-in-out;
+  transition: background 0.4s ease;
+}
+
+.scanner-container h2 {
+  font-size: 2.2rem;
+  color: #2e7d32;
+  margin-bottom: 30px;
 }
 
 #html5-qrcode-anchor-scan-type-change {
@@ -10,11 +21,50 @@
   font-weight: bold;
 }
 
+/* QR Reader Box */
+#qr-reader {
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1 / 1;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  padding: 10px;
+}
+
+/* Cambiar botón de subir imagen */
+#qr-reader button {
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#qr-reader button:hover {
+  background-color: #388e3c;
+}
+
+
+
+/* Cambiar botón de subir imagen */
+.texto-escaneo{
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #555;
+  transition: color 0.3s ease;
+}
+
+/* Spinner */
 .spinner-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 15px;
+  margin-top: 10px;
 }
 
 .spinner {
@@ -27,16 +77,6 @@
   margin-bottom: 10px;
 }
 
-/* Estilos Modo Oscuro */
-
-.dark .scanner-container {
-  background: linear-gradient(135deg, #212121, #424242);
-  color: var(--blanco);
-}
-
-.dark .html5-qrcode-anchor-scan-type-change {
-    color: #007bff;
-}
 
 /* Animaciones */
 
@@ -48,4 +88,59 @@
   100% {
     transform: rotate(360deg);
   }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* Estilos Modo Oscuro */
+
+.dark .scanner-container {
+  background: linear-gradient(135deg, #212121, #424242);
+  color: var(--blanco);
+}
+
+.dark .html5-qrcode-anchor-scan-type-change {
+  color: #007bff;
+}
+
+.dark .scanner-container h2 {
+  color: #a5d6a7;
+}
+
+.dark #qr-reader {
+  background-color: #2a2a2a;
+  box-shadow: 0 0 25px rgba(0, 255, 120, 0.15);
+}
+
+/* Forzar todos los textos internos de html5-qrcode */
+.dark #qr-reader * {
+  color: #80d8ff !important;
+}
+
+.dark .spinner {
+  border-color: #888;
+  border-top-color: #80d8ff;
+}
+
+.dark .texto-escaneo {
+  color: #80d8ff;
+}
+
+/* Botones de librería */
+.dark #qr-reader button {
+  background-color: #26a69a;
+}
+
+.dark #qr-reader button:hover {
+  background-color: #00897b;
 }
