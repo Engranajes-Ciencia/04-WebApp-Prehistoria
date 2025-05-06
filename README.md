@@ -1,12 +1,26 @@
-# React + Vite
+# 🦖 Museo de la Prehistoria
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Museo de la Prehistoria** es una aplicación web interactiva desarrollada con React y Vite. Permite a los visitantes explorar un mapa del museo, acceder a juegos educativos mediante el escaneo de códigos QR y obtener información sobre las diferentes zonas y especies prehistóricas de forma intuitiva y visual.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🧭 Tabla de Contenidos
 
-## Expanding the ESLint configuration
+- [📷 Capturas de pantalla](#-capturas-de-pantalla)
+    En esta sección se adjunta una serie de imágenes sobre el contenido del Parque.
+    A continuación se hace referencia a cada parada (y su actividad correspondiente):
+    *Parada 1 : 
+- [🛠️ Tecnologías utilizadas](#-tecnologías-utilizadas)
+- [🚀 Instalación y ejecución](#-instalación-y-ejecución)
+- [📁 Estructura del proyecto](#-estructura-del-proyecto)
+- [⚙️ Funcionamiento](#️-funcionamiento)
+- [🤝 Contribuciones](#-contribuciones)
+- [📄 Licencia](#-licencia)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📷 Capturas de pantalla
+
+```md
+![Mapa interactivo](./docs/screenshots/mapa.png)
+![Zona de dinosaurios](./docs/screenshots/zona-dinos.png)
