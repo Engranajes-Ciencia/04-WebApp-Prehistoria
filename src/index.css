@@ -86,9 +86,10 @@
 
 /*Estilos para elementos generales (App.jsx)*/
 body,
-html {
+html, {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: 'Milford', sans-serif;
   background-color: transparent;
   color: var(--text-general);

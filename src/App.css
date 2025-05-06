@@ -11,3 +11,56 @@
   align-items: center;
   justify-content: center;
 }
+
+
+.preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height:70vh;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.preloader-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+
+}
+
+.cargando {
+  font-size: 22px;
+  color: #333;
+}
+
+.dots::after {
+  content: '';
+  animation: dots 1s steps(3, end) infinite;
+}
+@keyframes dots {
+  0%   { content: ''; }
+  33%  { content: '.'; }
+  66%  { content: '..'; }
+  100% { content: '...'; }
+}
+
+.spinner {
+  width: 60px;
+  height: 60px;
+  border: 10px solid #ccc;
+  border-top: 6px solid #3498db;
+  border-radius: 50%;
+  animation: spin 0,5 linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
