@@ -174,6 +174,7 @@ function Form() {
                 <img
                   src={avatars[tipo]}
                   alt={tipo}
+                  loading="lazy" 
                   className={`avatar-img ${avatar === tipo ? "selected" : ""}`}
                 />
                 <p className="text-img">
