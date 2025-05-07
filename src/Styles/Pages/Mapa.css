@@ -28,7 +28,7 @@
 /* Tarjeta de saludo */
 
 .saludo {
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.550);
     padding: 40px 30px;
     border-radius: 20px;
     max-width: 650px;
@@ -43,8 +43,8 @@
 .guia {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 50px;
     margin-bottom: 20px;
 }
 
@@ -59,15 +59,18 @@
 /* Texto */
 
 .saludo h2 {
-    font-size: 28px;
+    font-size: 2.5rem;
     color: var(--grisOscuro);
+    justify-content: center;
     margin-bottom: 15px;
+    margin-top: 0;
 }
 
 .saludo p {
-    font-size: 18px;
+    font-size: 1.6rem;
     margin: 8px 0;
     color: #444;
+    text-align: justify;
 }
 
 /* Botón */
@@ -92,7 +95,7 @@
 /*  Estilos Modo Oscuro */
 
 .dark .saludo {
-    background-color: rgba(20, 20, 20, 0.85);
+    background-color: rgba(20, 20, 20, 0.651);
     color: var(--blanco);
 }
 
