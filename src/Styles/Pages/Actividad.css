@@ -96,6 +96,7 @@ p {
 
 .sabiasque {
     position: relative;
+    max-width: 39.5vw;
     font-size: 18px;
     font-weight: bold;
     margin-top: 14px;
