@@ -42,21 +42,29 @@
     width: 120px;
     height: 120px;
     border-radius: 50%;
+    width: 60px;
+    height: 90px;
+    border-radius: 16px;
     border: 2px solid #2196f3;
     background-color: #fff;
     padding: 4px;
 }
 
 .saludo {
+    display: flex;
+    padding: 5px;
+    width: 20vw;
+    justify-content: center;
     font-size: 1.4rem;
     font-weight: 700;
     color: #1565c0;
     margin: 0;
+    white-space: nowrap;
 }
 
 
 .dialogo {
-    background: #fff;
+    background: var(--blanco);
     border-radius: 8px;
     padding: 10px 14px;
     margin-top: 8px;
@@ -91,6 +99,7 @@ p {
 
 .sabiasque {
     position: relative;
+    max-width: 39.5vw;
     font-size: 18px;
     font-weight: bold;
     margin-top: 14px;

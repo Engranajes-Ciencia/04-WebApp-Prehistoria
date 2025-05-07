@@ -34,7 +34,7 @@ function Final() {
         }
 
         const doc = new jsPDF({ orientation: "landscape" });
-        const nombreValue = nombre || "Explorador/a";
+        const nombreValue = nombre || "Explorador/a"; // Nombre del jugador o un valor predeterminado
         let imagePath = "";
 
         // Asignar correctamente la imagen según el tipo de diploma
@@ -46,9 +46,29 @@ function Final() {
         img.src = imagePath;
 
         img.onload = () => {
+            // Añadir la imagen del diploma
             doc.addImage(img, "JPEG", 10, 10, 277, 190);
-            doc.setFontSize(16);
-            doc.text(`Nombre: ${nombreValue}`, 20, 205);
+
+            // Solo añadir el nombre en el diploma de tipo "adultos"
+            if (tipoDiploma === "adultos") {
+                // Calcular el centro de la página para poner el nombre
+                const pageWidth = doc.internal.pageSize.width; // Ancho de la página
+                const pageHeight = doc.internal.pageSize.height; // Alto de la página
+                const textWidth = doc.getTextWidth(nombreValue); // Ancho del texto
+
+                // Calcular la posición X y Y para centrar el texto firma pdf X horizontal, Y vertical
+                const posX = (pageWidth - textWidth) / 2 -27;
+                const posY = pageHeight / 2 + 10;
+
+                // Establecer la fuente y el tamaño
+                doc.setFont("helvetica", "italic");
+                doc.setFontSize(35)
+
+                // Añadir el nombre con la nueva tipografía
+                doc.text(nombreValue, posX, posY);
+            }
+
+            // Guardar el documento
             doc.save("diploma-aventura-prehistorica.pdf");
             setMostrarPopup(true);
             setTimeout(() => setMostrarPopup(false), 5000);
@@ -118,8 +138,7 @@ function Final() {
                         alt="Vista previa"
                         className="diploma-img-animada"
                         onError={(e) =>
-                            (e.target.src = `${import.meta.env.BASE_URL}assets/images/diploma_explorador.jpg`)
-                        }
+                            (e.target.src = `${import.meta.env.BASE_URL}assets/images/diploma_explorador.jpg`)}
                     />
                 </div>
             )}
