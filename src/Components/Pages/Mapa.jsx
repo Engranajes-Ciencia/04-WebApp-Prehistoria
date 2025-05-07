@@ -54,9 +54,14 @@ function Mapa() {
 
                 <p>Escanea un código QR o selecciona una actividad para comenzar.</p>
 
+                <div className="botones">
                 <button className="qr-button" onClick={() => navigate("/EscanerQR")}> 
                     📷 Escanear Código QR
                 </button>
+                <button className="volver-button" onClick={() => navigate("/Form")}> 
+                    🔙volver
+                </button>
+                </div>
                 
             </div>
             <div className="fondo"></div>
