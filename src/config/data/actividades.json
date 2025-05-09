@@ -3,7 +3,7 @@
     "id": 1,
     "titulo": "Fósiles prehistóricos",
     "ubicacion": "Fósil de trilobite y helecho",
-    "audio": "/sounds/soundsParadas/audioParada1.mp3",
+    "audio": "/sounds/soundsParadas/Parada1Trilobitesv2,5.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " Estás en la parada 1: Fósiles prehistóricos. Prepárate para descubrir algo fascinante.",
@@ -23,7 +23,7 @@
     "id": 2,
     "titulo": "Dinosaurios gigantes",
     "ubicacion": "Triceratops, brontosaurio, velociraptor y alosaurio",
-    "audio": "/sounds/soundsParadas/audioParada2.mp3",
+    "audio": "/sounds/soundsParadas/Parada2Dinosauriosv2,5.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " Estás en la parada 2: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
@@ -43,7 +43,7 @@
     "id": 3,
     "titulo": "Tortuga de las Galápagos",
     "ubicacion": "Zona de reptiles fósiles",
-    "audio": "/sounds/soundsParadas/audioParada3.mp3",
+    "audio": "/sounds/soundsParadas/Parada3Tortugasv2,5.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "¡ Estás en la parada 3: Tortuga de las Galápagos. Prepárate para descubrir algo fascinante.",
@@ -64,7 +64,7 @@
     "id": 4,
     "titulo": "Huellas de Laetoli",
     "ubicacion": "Descubrimiento de pisadas humanas fósiles",
-    "audio": "/sounds/soundsParadas/audioParada4.mp3",
+    "audio": "/sounds/soundsParadas/Parada4Laetoliv2,5.mp3",
     "avatarDialogo": {
       "explorador": {
 
@@ -86,7 +86,7 @@
     "id": 5,
     "titulo": "Cueva con pinturas rupestres",
     "ubicacion": "Arte prehistórico",
-    "audio": "/sounds/soundsParadas/audioParada5.mp3",
+    "audio": "/sounds/soundsParadas/Parada5Pinturasv2,5.mp3",
     "avatarDialogo": {
       "explorador": {
 
@@ -109,7 +109,7 @@
     "id": 6,
     "titulo": "Poblado nómada",
     "ubicacion": "Estilo de vida de los nómadas",
-    "audio": "/sounds/soundsParadas/audioParada6.mp3",
+    "audio": "/sounds/soundsParadas/Parada6Nomadav2,5.mp3",
     "avatarDialogo": {
       "explorador": {
 
@@ -132,7 +132,7 @@
     "id": 7,
     "titulo": "Poblado sedentario",
     "ubicacion": "Primeros asentamientos",
-    "audio": "/sounds/soundsParadas/audioParada7.mp3",
+    "audio": "/sounds/soundsParadas/Parada7Sedentariov2,5.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "¡Parada 7! Dejar de moverse y empezar a construir... ¡eso sí que fue un gran cambio!",
@@ -154,7 +154,7 @@
     "id": 8,
     "titulo": "Pozo",
     "ubicacion": "Acceso al agua en la antigüedad",
-    "audio": "/sounds/soundsParadas/audioParada8.mp3",
+    "audio": "/sounds/soundsParadas/Parada8Pozov2,5.mp3",
     "avatarDialogo": {
       "explorador": {
 
@@ -176,7 +176,7 @@
     "id": 9,
     "titulo": "Stonehenge",
     "ubicacion": "Monumento megalítico",
-    "audio": "/sounds/soundsParadas/audioParada9.mp3",
+    "audio": "/sounds/soundsParadas/Parada9Stonev2,5.mp3",
     "avatarDialogo": {
       "explorador": {
 
@@ -199,7 +199,7 @@
     "id": 10,
     "titulo": "Templo de Karnak",
     "ubicacion": "Antiguo Egipto",
-    "audio": "/sounds/soundsParadas/audioParada10.mp3",
+    "audio": "/sounds/soundsParadas/Parada10Karnakv2,5.mp3",
     "avatarDialogo": {
       "explorador": {
 

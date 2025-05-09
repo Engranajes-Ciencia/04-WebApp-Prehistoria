@@ -31,7 +31,7 @@ function ModoJuego() {
         </button>
        
         <button
-          className="btn-opcion" 
+          className="btn-opcion" disabled
           id="grupo" 
           onClick={() => handleChoice("grupos")}
           style={{
@@ -41,6 +41,9 @@ function ModoJuego() {
           }} 
         >
           <span>Modo equipo</span>
+          <div className="hover-mensaje"> Proximamente
+
+          </div>
           
         </button>
       </div>
