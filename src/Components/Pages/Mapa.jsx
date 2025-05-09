@@ -59,7 +59,7 @@ function Mapa() {
                     📷 Escanear Código QR
                 </button>
                 <button className="volver-button" onClick={() => navigate("/Form")}> 
-                    🔙volver
+                    🔙Volver
                 </button>
                 </div>
                 
