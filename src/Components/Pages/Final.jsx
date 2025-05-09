@@ -14,6 +14,7 @@ function Final() {
 
 
 
+
     // 👉 POSICIONES AJUSTABLES PARA EL TEXTO
     const POSICION_NOMBRE_INFANTIL = { x: 100, y: 117}; // 👈 Aquí cambias la posición del nombre en diploma infantil
     const POSICION_NOMBRE_ADULTOS = { xOffset: 0, y: 117 }; // 👈 Aquí ajustas el desplazamiento y la altura en diploma adultos
