@@ -27,7 +27,6 @@
   color: #ffffffdd;
   margin-bottom: 40px;
   font-style: italic;
-  
 }
 
 .opciones {
@@ -39,7 +38,6 @@
 }
 
 .solo {
-  
 }
 
 /* Botones de opciones */
@@ -57,7 +55,7 @@
   align-items: flex-end;
   justify-content: center;
   text-align: center;
-  
+
   background-size: cover;
   background-position: center;
   position: relative;
@@ -82,6 +80,7 @@
   border-radius: 8px;
   transition: transform 1s ease, color 0.5s ease, background-color 0.5s ease,
     border-radius 0.5s ease;
+  padding: 10px 18px;
 }
 
 .btn-opcion:hover {
@@ -95,26 +94,25 @@
   background: rgba(255, 255, 255, 0.2); /* leve brillo blanco */
 }
 
-
 .btn-opcion {
   position: relative;
   overflow: hidden;
-  }
-/* Texto que aparece al hacer hover */
+}
+
 .hover-mensaje {
   position: absolute;
-  bottom: 10px;
+  top: 50%;
   left: 50%;
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.7);
   color: white;
-  padding: 6px 12px;
-  border-radius: 8px;
-  font-size: 14px;
+  padding: 10px 18px;
+  border-radius: 10px;
+  font-size: 18px;
   opacity: 0;
   transition: opacity 0.3s ease;
   pointer-events: none; /* no bloquea clics */
- 
+  padding: 10px 18px;
 }
 .btn-opcion:hover .hover-mensaje {
   opacity: 1;
@@ -135,7 +133,6 @@
   background-attachment: fixed;
   filter: brightness(1.1) contrast(1.1) saturate(1.2);
   transition: filter 0.3s ease, background-size 0.3s ease;
-  
 }
 
 #grupo:hover {
@@ -143,9 +140,9 @@
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  
+  filter: grayscale(60%);
+ opacity: 0.8;
 }
-
 
 
 /* Estilos Modo Oscuro */
