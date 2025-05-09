@@ -5,7 +5,6 @@ import MusicPlayer from "../Commons/MusicPlayer";
 
 function Header() {
   const navigate = useNavigate();
-
   const [modoOscuro, setModoOscuro] = useState(false);
 
   useEffect(() => {
@@ -27,23 +26,27 @@ function Header() {
 
   return (
     <header className="header">
-      <div className="branding">
-        <img
-          src={`${import.meta.env.BASE_URL}assets/images/Logo-principal.png`}
-          alt="Logo de la empresa"
-          className="logo"
-        />
-        <span>Proyecto desarrollado para la empresa</span>
+      <div className="header-top">
+        <div className="branding">
+          <img
+            src={`${import.meta.env.BASE_URL}assets/images/Logo-principal.png`}
+            alt="Logo empresa"
+            className="logo"
+          />
+          <span className="empresa-texto">Proyecto desarrollado para la empresa</span>
+        </div>
       </div>
 
-      <h1>¡Bienvenidos a esta aventura!</h1>
+      <h1 className="titulo-header">¡Bienvenidos a esta aventura!</h1>
 
       <div className="botones-header">
         <button className="btn-tema" onClick={toggleModoOscuro}>
           {modoOscuro ? "🌞 Modo Claro" : "🌙 Modo Oscuro"}
         </button>
 
-        <button className="btn-home" onClick={() => navigate('/')}>🏠Inicio</button>
+        <button className="btn-home" onClick={() => navigate("/")}>
+          🏠 Inicio
+        </button>
 
         <MusicPlayer />
 
@@ -59,9 +62,6 @@ function Header() {
           🖥 Modo Kiosco
         </button>
       </div>
-
-
-      
     </header>
   );
 }
