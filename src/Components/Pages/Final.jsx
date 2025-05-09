@@ -12,6 +12,11 @@ function Final() {
     const [mostrarPopup, setMostrarPopup] = useState(false);
     const [tipoDiploma, setTipoDiploma] = useState(null); // "infantil" o "adultos"
 
+    // 👉 POSICIONES AJUSTABLES PARA EL TEXTO
+    const POSICION_NOMBRE_INFANTIL = { x: 100, y: 117}; // 👈 Aquí cambias la posición del nombre en diploma infantil
+    const POSICION_NOMBRE_ADULTOS = { xOffset: 0, y: 117 }; // 👈 Aquí ajustas el desplazamiento y la altura en diploma adultos
+
+
     useEffect(() => {
         const avatarGuardado = localStorage.getItem("avatar");
         const nombreGuardado = localStorage.getItem("nombre");
@@ -34,41 +39,30 @@ function Final() {
         }
 
         const doc = new jsPDF({ orientation: "landscape" });
-        const nombreValue = nombre || "Explorador/a"; // Nombre del jugador o un valor predeterminado
-        let imagePath = "";
-
-        // Asignar correctamente la imagen según el tipo de diploma
-        imagePath = tipoDiploma === "infantil"
-            ? `${import.meta.env.BASE_URL}assets/images/diploma_explorador.jpg`
+        const nombreValue = nombre || "Explorador/a";
+        let imagePath = tipoDiploma === "infantil"
+            ? `${import.meta.env.BASE_URL}assets/images/diplomainfantil.png`
             : `${import.meta.env.BASE_URL}assets/images/diploma.jpg`;
 
         const img = new Image();
         img.src = imagePath;
 
         img.onload = () => {
-            // Añadir la imagen del diploma
             doc.addImage(img, "JPEG", 10, 10, 277, 190);
 
-            // Solo añadir el nombre en el diploma de tipo "adultos"
-            if (tipoDiploma === "adultos") {
-                // Calcular el centro de la página para poner el nombre
-                const pageWidth = doc.internal.pageSize.width; // Ancho de la página
-                const pageHeight = doc.internal.pageSize.height; // Alto de la página
-                const textWidth = doc.getTextWidth(nombreValue); // Ancho del texto
+            // Fuente y tamaño
+            doc.setFont("helvetica", "italic");
+            doc.setFontSize(35);
 
-                // Calcular la posición X y Y para centrar el texto firma pdf X horizontal, Y vertical
-                const posX = (pageWidth - textWidth) / 2 -27;
-                const posY = pageHeight / 2 + 10;
-
-                // Establecer la fuente y el tamaño
-                doc.setFont("helvetica", "italic");
-                doc.setFontSize(35)
-
-                // Añadir el nombre con la nueva tipografía
-                doc.text(nombreValue, posX, posY);
+            if (tipoDiploma === "infantil") {
+                doc.text(nombreValue, POSICION_NOMBRE_INFANTIL.x, POSICION_NOMBRE_INFANTIL.y);
+            } else if (tipoDiploma === "adultos") {
+                const pageWidth = doc.internal.pageSize.width;
+                const textWidth = doc.getTextWidth(nombreValue);
+                const posX = (pageWidth - textWidth) / 2 + POSICION_NOMBRE_ADULTOS.xOffset;
+                doc.text(nombreValue, posX, POSICION_NOMBRE_ADULTOS.y);
             }
 
-            // Guardar el documento
             doc.save("diploma-aventura-prehistorica.pdf");
             setMostrarPopup(true);
             setTimeout(() => setMostrarPopup(false), 5000);
@@ -81,7 +75,7 @@ function Final() {
 
     const getPreviewUrl = () => {
         return tipoDiploma === "infantil"
-            ? `${import.meta.env.BASE_URL}assets/images/diploma_explorador.jpg`
+            ? `${import.meta.env.BASE_URL}assets/images/diplomainfantil.png`
             : `${import.meta.env.BASE_URL}assets/images/diploma.jpg`;
     };
 
@@ -114,7 +108,6 @@ function Final() {
                 Has completado todas las paradas de la Aventura Prehistórica.
             </p>
 
-            {/* Selector de tipo de diploma */}
             <div className="selector-diploma">
                 <button
                     className={`btn-tipo-diploma ${tipoDiploma === "infantil" ? "activo" : ""}`}
@@ -130,7 +123,6 @@ function Final() {
                 </button>
             </div>
 
-            {/* Vista previa del diploma */}
             {tipoDiploma && (
                 <div className="preview-diploma">
                     <img
@@ -138,12 +130,11 @@ function Final() {
                         alt="Vista previa"
                         className="diploma-img-animada"
                         onError={(e) =>
-                            (e.target.src = `${import.meta.env.BASE_URL}assets/images/diploma_explorador.jpg`)}
+                            (e.target.src = `${import.meta.env.BASE_URL}assets/images/diplomainfantil.png`)}
                     />
                 </div>
             )}
 
-            {/* Botones de acción */}
             <div className="acciones-finales">
                 <button className="btn-descargar" onClick={handleDescargarDiploma}>
                     Descargar Diploma
