@@ -14,6 +14,7 @@ function EntreActividades() {
     const avatar = localStorage.getItem("avatar") || "explorador"; // o exploradora
     const nombre = localStorage.getItem("nombre") || "explorador/a";
 
+
     return (
         <div className="mapa-check-container">
             <h2>Mapa del Recorrido</h2>
@@ -56,10 +57,12 @@ function EntreActividades() {
                     </button>
                 )}
 
-                {/* Botón para Ver Medallas */}
-                <button className="btn-medallas" onClick={() => navigate("/Vitrina")}>
+                {/* muestra vitrina */}
+                <button className="btn-medallas" onClick={() => navigate("/vitrina-virtual")}>
                     Ver Medallas
                 </button>
+
+
             </div>
         </div>
     );

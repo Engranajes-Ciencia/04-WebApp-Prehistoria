@@ -13,8 +13,8 @@ import EntreActividades from "../../Components/Pages/EntreActividades";
 import LoadingSpinner from "../../Components/Commons/LoadingSpinner";
 
     // Carga componentes lentos, grandes, finales o de poco uso cuando se visitan para ganar velocidad en la app
-  const Final = lazy(() => import("../../Components/Pages/Final"));
-  const Actividad = lazy(() => import("../../Components/Pages/Actividad"));
+const Final = lazy(() => import("../../Components/Pages/Final"));
+const Actividad = lazy(() => import("../../Components/Pages/Actividad"));
 const Vitrina = lazy(() => import("../../Components/Pages/Vitrina"));
 const VitrinaVirtual = lazy(() => import("../../Components/Pages/VitrinaVirtual"));
 

@@ -12,9 +12,11 @@ function Final() {
     const [mostrarPopup, setMostrarPopup] = useState(false);
     const [tipoDiploma, setTipoDiploma] = useState(null); // "infantil" o "adultos"
 
+
     // 👉 POSICIONES AJUSTABLES PARA EL TEXTO
     const POSICION_NOMBRE_INFANTIL = { x: 100, y: 117}; // 👈 Aquí cambias la posición del nombre en diploma infantil
     const POSICION_NOMBRE_ADULTOS = { xOffset: 0, y: 117 }; // 👈 Aquí ajustas el desplazamiento y la altura en diploma adultos
+
 
 
     useEffect(() => {
@@ -23,6 +25,7 @@ function Final() {
 
         if (avatarGuardado) setAvatar(avatarGuardado);
         if (nombreGuardado) setNombre(nombreGuardado);
+
 
         confetti({
             particleCount: 150,
@@ -142,9 +145,13 @@ function Final() {
                 <button className="btn-reiniciar" onClick={handleReiniciarJuego}>
                     Reiniciar Juego
                 </button>
+
+                
+                {/* muestra  vitrina */}
                 <button className="btn-vitrina" onClick={() => navigate("/vitrina-virtual")}>
                     Ver Galería de Medallas
                 </button>
+
             </div>
 
             {mostrarPopup && <div className="popup-descarga">Diploma descargado con éxito</div>}

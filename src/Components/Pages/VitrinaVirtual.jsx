@@ -59,8 +59,18 @@ function VitrinaVirtual() {
                 })}
             </div>
 
-            <button className="btn-volver-final" onClick={() => navigate("/final")}>
-                Volver 
+            <button
+                className="btn-volver-final"
+                onClick={() => {
+                    const completadas = JSON.parse(localStorage.getItem("actividadesCompletadas")) || [];
+                    if (completadas.length >= 10) {
+                        navigate("/final");
+                    } else {
+                        navigate("/entre-actividad");
+                    }
+                }}
+            >
+                Volver
             </button>
 
         </div>
