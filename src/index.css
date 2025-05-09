@@ -86,7 +86,7 @@
 
 /*Estilos para elementos generales (App.jsx)*/
 body,
-html, {
+html {
   margin: 0;
   padding: 0;
   height: 100%;
