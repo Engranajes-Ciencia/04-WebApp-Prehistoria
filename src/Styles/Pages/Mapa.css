@@ -44,13 +44,13 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    gap: 50px;
+    gap: 30px;
     margin-bottom: 20px;
 }
 
 .avatar-mini {
-    width: 115px;
-    height: 195px;
+    width: 30%;
+    height: 40%;
     border-radius: 25px;
     border: 2px solid #4CAF50;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -78,17 +78,22 @@
 .botones {
     display: flex;
     justify-content: center;
-    gap: 20px;
+    gap: 30px;
     margin-top: 20px;
     flex-wrap: wrap; /* para que se ajusten en pantallas pequeñas */    
     color: var(--blanco);
     font-size: 18px;
-    padding: 12px 24px;
+    padding: 16px 32px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
     margin-top: 20px;
     transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.qr-button,
+.volver-button {
+    padding: 16px 32px;
 }
 
 .qr-button:hover {
