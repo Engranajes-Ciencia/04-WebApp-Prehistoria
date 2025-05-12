@@ -3,7 +3,7 @@
     "id": 1,
     "titulo": "Bienvenida – Comienza la aventura",
     "ubicacion": "Entrada principal del parque",
-    "audio": "/sounds/soundsParadas/Parada1.mp3",
+    "audio": "/sounds/paradasaudio/parada1.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "¡Hola aventureros! Yo seré vuestro guía en este recorrido por la historia de la humanidad.",
@@ -23,7 +23,7 @@
   "id": 2,
   "titulo": "El origen de la vida",
   "ubicacion": "Zona de fósiles marinos",
-  "audio": "/sounds/soundsParadas/Parada2.mp3",
+  "audio": "/sounds/paradasaudio/parada2.mp3",
   "avatarDialogo": {
     "explorador": {
       "dialogo": " Estás en la parada 2. Mira a tu alrededor… aquí comenzó todo.",
@@ -44,7 +44,7 @@
   "id": 3,
   "titulo": "Las primeras plantas",
   "ubicacion": "Área de musgos y helechos antiguos",
-  "audio": "/sounds/soundsParadas/Parada3.mp3",
+  "audio": "/sounds/paradasaudio/parada3.mp3",
   "avatarDialogo": {
     "explorador": {
       "dialogo":  "Parada 3. ¡Mira estos vegetales! Son los primeros habitantes verdes del planeta.",
@@ -65,7 +65,7 @@
 "id": 4,
 "titulo": "Prototaxiles y Meganeuras",
 "ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada4.mp3",
+"audio": "/sounds/paradasaudio/parada4.mp3",
 "avatarDialogo": {
   "explorador": {
     "dialogo": " #",
@@ -86,7 +86,7 @@
 "id": 5,
 "titulo": "Los primeros árboles",
 "ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada5.mp3",
+"audio": "/sounds/paradasaudio/parada5.mp3",
 "avatarDialogo": {
   "explorador": {
     "dialogo": " #",
@@ -107,7 +107,7 @@
 "id": 6,
 "titulo": "Las primeras flores",
 "ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada6.mp3",
+"audio": "/sounds/paradasaudio/parada6.mp3",
 "avatarDialogo": {
   "explorador": {
     "dialogo": "#",
@@ -118,17 +118,17 @@
     "dialogo": "#",
     "mensaje": "Durante millones de años, las plantas no tuvieron flores. Pero hace unos 150 millones de años aparecieron las angiospermas, es decir, las plantas con flor. Gracias a las flores y a los polinizadores, como las abejas, las plantas pudieron reproducirse más fácilmente y expandirse con rapidez. El mundo vegetal ya empezaba a parecerse al que conocemos hoy.",
     "sabiasQue": "#"
-  }
 },
 "geniallyURL": "#",
 "completada": false
+}
 },
 
 {
 "id": 7,
 "titulo": "Los primeros dinosaurios",
 "ubicacion": "  # ",
-"audio": "/sounds/soundsParadas/Parada7",
+"audio": "/sounds/paradasaudio/parada7.mp3",
 "avatarDialogo": {
   "explorador": {
     "dialogo": " #",
@@ -149,7 +149,7 @@
 "id": 8,
 "titulo": "La deriva continental",
 "ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada8.mp3",
+"audio": "/sounds/paradasaudio/parada8.mp3",
 "avatarDialogo": {
   "explorador": {
     "dialogo": " #",
@@ -170,7 +170,7 @@
 "id": 9,
 "titulo": "Los segundos dinosaurios",
 "ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada9.mp3",
+"audio": "/sounds/paradasaudio/parada9.mp3",
 "avatarDialogo": {
   "explorador": {
     "dialogo": " Estás en la parada 2: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
@@ -183,7 +183,7 @@
     "sabiasQue": "¿Sabías que el velociraptor tenía plumas?"
   }
 },
-"geniallyURL": "https://view.genially.com/67f395c2cd8c8266c1f2ba62/interactive-content-actividad2",
+"geniallyURL": "https://view.genially.com/67f395c2cd8c8266c1f2ba62/interactive-content-actividad9",
 "completada": false
 },
 
@@ -191,7 +191,7 @@
 "id": 10,
 "titulo": "Galápagos y Darwin",
 "ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada10.mp3",
+"audio": "/sounds/paradasaudio/parada.mp3",
 "avatarDialogo": {
   "explorador": {
     "dialogo": " #",
@@ -212,7 +212,7 @@
   "id": 11,
   "titulo": "Huellas de Laetoli",
   "ubicacion": "Descubrimiento de pisadas humanas fósiles",
-  "audio": "/sounds/soundsParadas/Parada11.mp3",
+  "audio": "/sounds/paradasaudio/parada11.mp3",
   "avatarDialogo": {
     "explorador": {
       "dialogo": "¡Parada 11! Vamos tras las huellas del pasado. ¿Listo para caminar con nuestros antecesores?",
@@ -233,7 +233,7 @@
   "id": 12,
   "titulo": "Atapuerca",
   "ubicacion": "#",
-  "audio": "/sounds/soundsParadas/Parada12.mp3",
+  "audio": "/sounds/paradasaudio/parada12.mp3",
   "avatarDialogo": {
     "explorador": {
       "dialogo": " #",
@@ -255,7 +255,7 @@
   "id": 13,
   "titulo": "El hombre de Neandertal",
   "ubicacion": "#",
-  "audio": "/sounds/soundsParadas/Parada13.mp3",
+  "audio": "/sounds/paradasaudio/parada13.mp3",
   "avatarDialogo": {
     "explorador": {
       "dialogo": "#",
@@ -276,7 +276,7 @@
   "id": 14,
   "titulo": "Cráneos y evolución humana",
   "ubicacion": "#",
-  "audio": "/sounds/soundsParadas/Parada14.mp3",
+  "audio": "/sounds/paradasaudio/parada14.mp3",
   "avatarDialogo": {
     "explorador": {
       "dialogo": "#",
@@ -318,7 +318,7 @@
   "id": 16,
   "titulo": "Los poblados nómadas",
   "ubicacion": "Estilo de vida de los nómadas",
-  "audio": "/sounds/soundsParadas/Parada16.mp3",
+  "audio": "/sounds/paradasaudio/parada16.mp3",
   "avatarDialogo": {
     "explorador": {
       "dialogo": "Llegamos a la parada 16. ¡Los nómadas eran exploradores como nosotros!",
@@ -339,7 +339,7 @@
   "id": 17,
   "titulo": "Primeros poblados sedentarios",
   "ubicacion": "Primeros asentamientos",
-  "audio": "/sounds/soundsParadas/Parada17.mp3",
+  "audio": "/sounds/paradasaudio/parada17.mp3",
   "avatarDialogo": {
     "explorador": {
       "dialogo": "¡Parada 17! Dejar de moverse y empezar a construir... ¡eso sí que fue un gran cambio!",
@@ -360,7 +360,7 @@
   "id": 18,
   "titulo": "Pinturas del Sáhara y de Laja Alta",
   "ubicacion": "#",
-  "audio": "/sounds/soundsParadas/Parada18.mp3",
+  "audio": "/sounds/paradasaudio/parada18.mp3",
   "avatarDialogo": {
     "explorador": {
       "dialogo": "#",
@@ -381,7 +381,7 @@
   "id": 19,
   "titulo": "Çatalhöyük",
   "ubicacion": "#",
-  "audio": "/sounds/soundsParadas/Parada19.mp3",
+  "audio": "/sounds/paradasaudio/parada19.mp3",
   "avatarDialogo": {
     "explorador": {
       "dialogo": "#",
@@ -394,7 +394,7 @@
       "sabiasQue": "#"
     }
   },
-  "geniallyURL": "#",
+  "geniallyURL": "https://view.genially.com/67f8f638c08c8840c0b4fe3c/interactive-content-actividad19",
   "completada": false
 },
 
@@ -403,7 +403,7 @@
   "id": 20,
   "titulo": "Stonehenge",
   "ubicacion": "Monumento megalítico",
-  "audio": "/sounds/soundsParadas/Parada20.mp3",
+  "audio": "/sounds/paradasaudio/parada20.mp3",
   "avatarDialogo": {
     "explorador": {
       "dialogo": "¡Mira estas piedras gigantes en la ultima parada! ¿Quién las puso ahí? ¡Vamos a investigarlo!",
