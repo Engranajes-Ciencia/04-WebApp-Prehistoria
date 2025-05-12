@@ -100,6 +100,11 @@
 
   /* Estilos Modo Oscuro */
 
+  .dark .btn-home, .dark .btn-tema, .dark .btn-kiosco, .dark .btn-music, .dark .btn-home:hover, .dark .btn-tema:hover, .dark .btn-kiosco:hover, .dark .btn-music:hover {
+    background: linear-gradient(135deg, #464646, #1b1b1b);
+    color: #ffffff !important;
+  }
+
   .dark .header {
     background: linear-gradient(120deg, #1f1f1f, #2a2a2a);
     color: var(--blanco);

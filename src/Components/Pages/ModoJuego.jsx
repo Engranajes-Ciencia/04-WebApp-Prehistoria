@@ -15,7 +15,7 @@ function ModoJuego() {
   return (
     <div className="modojuego-container">
       <h1 className="titulo">Elige tu estilo de juego</h1>
-      <p className="subtitulo">¿Exploras solo o acompañado?</p>
+      <p className="subtitulo"><strong>¿Exploras solo o acompañado?</strong></p>
       <div className="opciones">
         <button
           className="btn-opcion"
@@ -41,7 +41,7 @@ function ModoJuego() {
           }} 
         >
           <span>Modo equipo</span>
-          <div className="hover-mensaje"> Proximamente
+          <div className="hover-mensaje"> Próximamente
 
           </div>
           
