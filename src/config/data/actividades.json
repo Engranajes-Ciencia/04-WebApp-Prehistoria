@@ -64,18 +64,18 @@
 {
 "id": 4,
 "titulo": "Prototaxiles y Meganeuras",
-"ubicacion": "#",
+"ubicacion": "Zona de insectos y hongos gigantes",
 "audio": "/sounds/soundsParadas/Parada4.mp3",
 "avatarDialogo": {
   "explorador": {
-    "dialogo": " #",
+    "dialogo": "¡Increíble! Un hongo gigante y una libélula depredadora. ¿Te atreves a acercarte?",
     "mensaje": "En esta zona vemos dos seres muy distintos, pero igual de sorprendentes. Los Prototaxites eran hongos gigantes que podían alcanzar los 8 metros de altura. A su lado, una criatura que parece una libélula enorme: la Meganeura, un insecto que vivió en el periodo carbonífero y que podía cazar pequeños reptiles. Antes de los dinosaurios, estos eran los reyes de la Tierra.",
-    "sabiasQue": "#"
+    "sabiasQue": "¿Sabías que la Meganeura podía tener una envergadura de hasta 70 centímetros?"
   },
   "exploradora": {
-    "dialogo": "#",
+    "dialogo": "Parece una escena de película… pero existieron de verdad. ¡Y eran enormes!",
     "mensaje": "En esta zona vemos dos seres muy distintos, pero igual de sorprendentes. Los Prototaxites eran hongos gigantes que podían alcanzar los 8 metros de altura. A su lado, una criatura que parece una libélula enorme: la Meganeura, un insecto que vivió en el periodo carbonífero y que podía cazar pequeños reptiles. Antes de los dinosaurios, estos eran los reyes de la Tierra.",
-    "sabiasQue": "#"
+    "sabiasQue": "¿Sabías que los altos niveles de oxígeno permitían a los insectos crecer tanto?"
   }
 },
 "geniallyURL": "#",
@@ -85,18 +85,18 @@
 {
 "id": 5,
 "titulo": "Los primeros árboles",
-"ubicacion": "#",
+"ubicacion": "Área de árboles fósiles",
 "audio": "/sounds/soundsParadas/Parada5.mp3",
 "avatarDialogo": {
   "explorador": {
-    "dialogo": " #",
+    "dialogo": " Estos no son árboles cualquiera… son los primeros que poblaron el planeta.",
     "mensaje": "Con el paso del tiempo, las plantas se hicieron más complejas. Aparecieron los primeros árboles como los pinos, los ginkgos o las araucarias. Algunos desarrollaron frutos, lo que permitía que los animales ayudaran a esparcir sus semillas por nuevos territorios. Estos árboles dieron forma a los grandes bosques prehistóricos que cubrirían el planeta.",
-    "sabiasQue": "#"
+    "sabiasQue": "¿Sabías que los ginkgos actuales son casi idénticos a los de hace 200 millones de años?"
   },
   "exploradora": {
-    "dialogo": "#",
+    "dialogo": "¡Vaya bosque! Estos árboles fueron los gigantes verdes de la antigüedad.",
     "mensaje": "Con el paso del tiempo, las plantas se hicieron más complejas. Aparecieron los primeros árboles como los pinos, los ginkgos o las araucarias. Algunos desarrollaron frutos, lo que permitía que los animales ayudaran a esparcir sus semillas por nuevos territorios. Estos árboles dieron forma a los grandes bosques prehistóricos que cubrirían el planeta.",
-    "sabiasQue": "#"
+    "sabiasQue": "¿Sabías que algunos árboles fósiles se han encontrado petrificados?"
   }
 },
 "geniallyURL": "#",
@@ -104,40 +104,40 @@
 },
 
 {
-"id": 6,
-"titulo": "Las primeras flores",
-"ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada6.mp3",
-"avatarDialogo": {
-  "explorador": {
-    "dialogo": "#",
-    "mensaje": "Durante millones de años, las plantas no tuvieron flores. Pero hace unos 150 millones de años aparecieron las angiospermas, es decir, las plantas con flor. Gracias a las flores y a los polinizadores, como las abejas, las plantas pudieron reproducirse más fácilmente y expandirse con rapidez. El mundo vegetal ya empezaba a parecerse al que conocemos hoy.",
-    "sabiasQue": "#"
+  "id": 6,
+  "titulo": "Las primeras flores",
+  "ubicacion": "Zona de evolución floral",
+  "audio": "/sounds/soundsParadas/Parada6.mp3",
+  "avatarDialogo": {
+    "explorador": {
+      "dialogo": "Mira estas flores... ¡las tatarabuelas de las margaritas!",
+      "mensaje": "Durante millones de años, las plantas no tuvieron flores. Pero hace unos 150 millones de años aparecieron las angiospermas, es decir, las plantas con flor. Gracias a las flores y a los polinizadores, como las abejas, las plantas pudieron reproducirse más fácilmente y expandirse con rapidez. El mundo vegetal ya empezaba a parecerse al que conocemos hoy.",
+      "sabiasQue": "¿Sabías que las abejas y las flores evolucionaron al mismo tiempo?"
   },
   "exploradora": {
-    "dialogo": "#",
+    "dialogo": "El mundo se llenó de color gracias a estas pioneras florales.",
     "mensaje": "Durante millones de años, las plantas no tuvieron flores. Pero hace unos 150 millones de años aparecieron las angiospermas, es decir, las plantas con flor. Gracias a las flores y a los polinizadores, como las abejas, las plantas pudieron reproducirse más fácilmente y expandirse con rapidez. El mundo vegetal ya empezaba a parecerse al que conocemos hoy.",
-    "sabiasQue": "#"
-},
-"geniallyURL": "#",
-"completada": false
+    "sabiasQue": "¿Sabías que las flores han evolucionado para atraer a los polinizadores con colores y aromas?"
+  },
+  "geniallyURL": "#",
+  "completada": false
 },
 
 {
 "id": 7,
 "titulo": "Los primeros dinosaurios",
-"ubicacion": "  # ",
+"ubicacion": "  Zona del Jurásico: Dinosaurios herbívoros ",
 "audio": "/sounds/soundsParadas/Parada7",
 "avatarDialogo": {
   "explorador": {
-    "dialogo": " #",
+    "dialogo": "¡Parada 7 desbloqueada! Los gigantes herbívoros del Jurásico nos esperan.",
     "mensaje": "Ahora entramos en el Jurásico, la era de los grandes dinosaurios. Aquí encontramos al Triceratops, que comía plantas bajas como los helechos, y al Brontosaurio, que podía alcanzar las copas de los árboles. Todos estos gigantes eran herbívoros, y su tamaño asombroso estaba adaptado a un mundo donde las plantas crecían en abundancia.",
-    "sabiasQue": "#"
+    "sabiasQue": "¿Sabías que el Brontosaurio medía más de 20 metros y pesaba más de 15 toneladas?"
   },
   "exploradora": {
-    "dialogo": "#",
+    "dialogo": "¡Qué emocionante! Estamos en el mundo de los herbívoros colosales.",
     "mensaje": "Ahora entramos en el Jurásico, la era de los grandes dinosaurios. Aquí encontramos al Triceratops, que comía plantas bajas como los helechos, y al Brontosaurio, que podía alcanzar las copas de los árboles. Todos estos gigantes eran herbívoros, y su tamaño asombroso estaba adaptado a un mundo donde las plantas crecían en abundancia.",
-    "sabiasQue": "#"
+    "sabiasQue": "¿Sabías que el Triceratops tenía un cuello con placas óseas para protegerse?"
   }
 },
 "geniallyURL": "#",
@@ -147,18 +147,18 @@
 {
 "id": 8,
 "titulo": "La deriva continental",
-"ubicacion": "#",
+"ubicacion": "Panel sobre tectónica de placas",
 "audio": "/sounds/soundsParadas/Parada8.mp3",
 "avatarDialogo": {
   "explorador": {
-    "dialogo": " #",
+    "dialogo": " ¡Mira el mapa! La Tierra no siempre fue así.",
     "mensaje": "Hace millones de años, todos los continentes estaban unidos en una gran masa de tierra llamada Pangea. Con el tiempo, esta gran “isla” se fue fragmentando por el movimiento de las placas tectónicas. ¿Cómo lo sabemos? Gracias a los fósiles, que nos muestran restos idénticos en lugares hoy separados por océanos. La deriva continental aún continúa hoy.",
-    "sabiasQue": "#"
+    "sabiasQue": "¿Sabías que América del Sur y África encajan como un puzle por la forma de sus costas?"
   },
   "exploradora": {
-    "dialogo": "#",
+    "dialogo": "¡Increíble! Los continentes viajan como si flotaran en un mar de roca.",
     "mensaje": "BHace millones de años, todos los continentes estaban unidos en una gran masa de tierra llamada Pangea. Con el tiempo, esta gran “isla” se fue fragmentando por el movimiento de las placas tectónicas. ¿Cómo lo sabemos? Gracias a los fósiles, que nos muestran restos idénticos en lugares hoy separados por océanos. La deriva continental aún continúa hoy.",
-    "sabiasQue": "#"
+    "sabiasQue": "¿Sabías que las placas tectónicas pueden moverse varios centímetros al año?"
   }
 },
 "geniallyURL": "#",
@@ -168,18 +168,18 @@
 {
 "id": 9,
 "titulo": "Los segundos dinosaurios",
-"ubicacion": "#",
+"ubicacion": "Zona de dinosaurios depredadores",
 "audio": "/sounds/soundsParadas/Parada9.mp3",
 "avatarDialogo": {
   "explorador": {
-    "dialogo": " Estás en la parada 2: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
+    "dialogo": " ¡Cuidado! Aquí vivían los grandes cazadores del pasado.",
     "mensaje": "En esta zona encontramos dinosaurios carnívoros, como los alosaurios y los dromeosaurios, que cazaban sobre dos patas. Algunos, como los velociraptores, tenían plumas y compartían rasgos con las aves actuales. Estos dinosaurios nos muestran que la evolución no siempre desaparece, a veces... ¡se transforma!",
-    "sabiasQue": "¿Sabías que el triceratops tenía tres cuernos para defenderse?"
+    "sabiasQue": "¿Sabías que los velociraptores medían solo 2 metros y eran muy ágiles?"
   },
   "exploradora": {
-    "dialogo": "¡Estas en la parada 9 sobre dinosaurios gigantes! Te encantará lo que verás.",
+    "dialogo": "Estos dinosaurios eran rápidos, feroces… ¡y algunos tenían plumas!",
     "mensaje": "En esta zona encontramos dinosaurios carnívoros, como los alosaurios y los dromeosaurios, que cazaban sobre dos patas. Algunos, como los velociraptores, tenían plumas y compartían rasgos con las aves actuales. Estos dinosaurios nos muestran que la evolución no siempre desaparece, a veces... ¡se transforma!",
-    "sabiasQue": "¿Sabías que el velociraptor tenía plumas?"
+    "sabiasQue": "¿Sabías que las aves actuales son descendientes directas de ciertos dinosaurios?"
   }
 },
 "geniallyURL": "https://view.genially.com/67f395c2cd8c8266c1f2ba62/interactive-content-actividad2",
@@ -189,18 +189,18 @@
 {
 "id": 10,
 "titulo": "Galápagos y Darwin",
-"ubicacion": "#",
+"ubicacion": "Zona de evolución y biodiversidad",
 "audio": "/sounds/soundsParadas/Parada10.mp3",
 "avatarDialogo": {
   "explorador": {
-    "dialogo": " #",
+    "dialogo": " ¡Nos adentramos en uno de los descubrimientos más importantes de la ciencia!",
     "mensaje": "Charles Darwin viajó a las islas Galápagos en el siglo XIX y descubrió allí algo fascinante: animales muy parecidos entre sí, pero con pequeñas diferencias que les ayudaban a sobrevivir en cada isla. Esto le llevó a formular la teoría de la evolución por selección natural: sólo sobrevive quien mejor se adapta al entorno. Una idea que cambió la ciencia para siempre.",
-    "sabiasQue": "#"
+    "sabiasQue": "¿Sabías que Darwin estudió especialmente a los pinzones? ¡Sus picos variaban según la isla!"
   },
   "exploradora": {
-    "dialogo": "#",
+    "dialogo": "Parada 10 desbloqueada. Aquí empezó una revolución científica.",
     "mensaje": "Charles Darwin viajó a las islas Galápagos en el siglo XIX y descubrió allí algo fascinante: animales muy parecidos entre sí, pero con pequeñas diferencias que les ayudaban a sobrevivir en cada isla. Esto le llevó a formular la teoría de la evolución por selección natural: sólo sobrevive quien mejor se adapta al entorno. Una idea que cambió la ciencia para siempre.",
-    "sabiasQue": "#"
+    "sabiasQue": "¿Sabías que Darwin tardó más de 20 años en publicar su teoría tras regresar del viaje?"
   }
 },
 "geniallyURL": "#",
@@ -231,18 +231,18 @@
 {
   "id": 12,
   "titulo": "Atapuerca",
-  "ubicacion": "#",
+  "ubicacion": "Yacimientos arqueológicos de España",
   "audio": "/sounds/soundsParadas/Parada12.mp3",
   "avatarDialogo": {
     "explorador": {
-      "dialogo": " #",
+      "dialogo": " ¡Llegamos a uno de los lugares más importantes de la prehistoria en Europa!",
       "mensaje": "En España, en el yacimiento de Atapuerca, se han encontrado restos de varios tipos de homínidos. Es uno de los lugares más importantes del mundo para entender cómo hemos evolucionado. Allí aparecieron los restos de especies como el Homo antecessor, que nos ayuda a reconstruir el árbol genealógico de la humanidad.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que Atapuerca es Patrimonio de la Humanidad desde el año 2000?"
     },
     "exploradora": {
-      "dialogo": "#",
+      "dialogo": "Parada 12 activa. En Atapuerca, cada fósil es una página de nuestra historia.",
       "mensaje": "En España, en el yacimiento de Atapuerca, se han encontrado restos de varios tipos de homínidos. Es uno de los lugares más importantes del mundo para entender cómo hemos evolucionado. Allí aparecieron los restos de especies como el Homo antecessor, que nos ayuda a reconstruir el árbol genealógico de la humanidad.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que en Atapuerca se han hallado restos con más de 1 millón de años de antigüedad?"
     }
   },
   "geniallyURL": "#",
@@ -253,18 +253,18 @@
 {
   "id": 13,
   "titulo": "El hombre de Neandertal",
-  "ubicacion": "#",
+  "ubicacion": "Zona de homínidos",
   "audio": "/sounds/soundsParadas/Parada13.mp3",
   "avatarDialogo": {
     "explorador": {
-      "dialogo": "#",
+      "dialogo": "¡Parada 13! Vamos a conocer a nuestros primos más cercanos.",
       "mensaje": "Durante mucho tiempo convivimos con otra especie humana: el Hombre de Neandertal. Fueron grandes cazadores, vivieron en climas fríos, y también usaban herramientas. Hoy sabemos que no se extinguieron del todo: muchas personas todavía conservan un pequeño porcentaje de ADN neandertal.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que los humanos actuales compartimos hasta un 2% de ADN con los neandertales?"
     },
     "exploradora": {
-      "dialogo": "#",
+      "dialogo": "Parada 13 desbloqueada. Viaja al pasado con nuestros parientes más antiguos.",
       "mensaje": "Durante mucho tiempo convivimos con otra especie humana: el Hombre de Neandertal. Fueron grandes cazadores, vivieron en climas fríos, y también usaban herramientas. Hoy sabemos que no se extinguieron del todo: muchas personas todavía conservan un pequeño porcentaje de ADN neandertal.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que vivieron en Europa y Asia hace más de 40.000 años?"
     }
   },
   "geniallyURL": "#",
@@ -274,18 +274,18 @@
 {
   "id": 14,
   "titulo": "Cráneos y evolución humana",
-  "ubicacion": "#",
+  "ubicacion": "Exposición de cráneos",
   "audio": "/sounds/soundsParadas/Parada14.mp3",
   "avatarDialogo": {
     "explorador": {
-      "dialogo": "#",
+      "dialogo": "¡Parada 14! Observa cómo ha cambiado nuestra cabeza a lo largo de los siglos.",
       "mensaje": "En este museo verás cráneos de distintas especies humanas y de otros primates. Fíjate en cómo ha cambiado la forma del cráneo para dejar espacio al cerebro, que en los humanos modernos es mucho más grande. Ese cerebro nos permitió comunicarnos, crear herramientas, formar grupos… y dar paso a la cultura y la sociedad.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que el cerebro del Homo sapiens es casi tres veces más grande que el de un chimpancé?"
     },
     "exploradora": {
-      "dialogo": "#",
+      "dialogo": "Parada 14 desbloqueada. Nuestra evolución se esconde... ¡en el cráneo!",
       "mensaje": "En este museo verás cráneos de distintas especies humanas y de otros primates. Fíjate en cómo ha cambiado la forma del cráneo para dejar espacio al cerebro, que en los humanos modernos es mucho más grande. Ese cerebro nos permitió comunicarnos, crear herramientas, formar grupos… y dar paso a la cultura y la sociedad.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que el cráneo del Homo habilis era mucho más pequeño que el nuestro?"
     }
   },
   "geniallyURL": "#",
@@ -358,18 +358,18 @@
 {
   "id": 18,
   "titulo": "Pinturas del Sáhara y de Laja Alta",
-  "ubicacion": "#",
+  "ubicacion": "Mural de arte prehistórico",
   "audio": "/sounds/soundsParadas/Parada18.mp3",
   "avatarDialogo": {
     "explorador": {
-      "dialogo": "#",
+      "dialogo": "Parada 18. Viajamos a dos puntos muy distintos… pero con algo en común: ¡el arte prehistórico!",
       "mensaje": "En este mural vemos escenas de la vida cotidiana en la Prehistoria. Destacan unas pinturas del Sáhara, en las que aparece un grupo cuidando del ganado, un reflejo realista de las primeras sociedades organizadas. Junto a la casa de Çatalhöyük se representa otra escena sorprendente: barcos de vela encontrados en Laja Alta, Cádiz. Aunque se pensó que eran fenicios, hoy sabemos que son mucho más antiguos, de la Edad del Cobre, y nos muestran que ya entonces… ¡navegaban los mares!",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que estas pinturas del Sáhara fueron hechas cuando era una sabana verde y no un desierto?"
     },
     "exploradora": {
-      "dialogo": "#",
+      "dialogo": "Parada 18 desbloqueada. El arte es testigo de que el ser humano siempre quiso contar su historia.",
       "mensaje": "En este mural vemos escenas de la vida cotidiana en la Prehistoria. Destacan unas pinturas del Sáhara, en las que aparece un grupo cuidando del ganado, un reflejo realista de las primeras sociedades organizadas. Junto a la casa de Çatalhöyük se representa otra escena sorprendente: barcos de vela encontrados en Laja Alta, Cádiz. Aunque se pensó que eran fenicios, hoy sabemos que son mucho más antiguos, de la Edad del Cobre, y nos muestran que ya entonces… ¡navegaban los mares!",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que los barcos de Laja Alta son una de las representaciones navales más antiguas de Europa?"
     }
   },
   "geniallyURL": "#",
@@ -379,18 +379,18 @@
 {
   "id": 19,
   "titulo": "Çatalhöyük",
-  "ubicacion": "#",
+  "ubicacion": "Maqueta de ciudad neolítica",
   "audio": "/sounds/soundsParadas/Parada19.mp3",
   "avatarDialogo": {
     "explorador": {
-      "dialogo": "#",
+      "dialogo": "Parada 19. ¡Bienvenidos a una de las primeras ciudades de la historia!",
       "mensaje": "Çatalhöyük, en Turquía, fue una de las primeras ciudades del mundo. Las casas no tenían puertas a ras del suelo, se entraba por el tejado. Allí ya había hornos, vasijas y hasta figuras religiosas, como la Diosa Madre, que protegía la fertilidad y la caza. Esta ciudad nos habla de espiritualidad, organización social… y del comienzo de las grandes civilizaciones.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que Çatalhöyük tenía más de 8.000 habitantes hace más de 9.000 años?"
     },
     "exploradora": {
-      "dialogo": "#",
+      "dialogo": "Parada 19 desbloqueada. Vamos a conocer cómo vivían las primeras civilizaciones.",
       "mensaje": "Çatalhöyük, en Turquía, fue una de las primeras ciudades del mundo. Las casas no tenían puertas a ras del suelo, se entraba por el tejado. Allí ya había hornos, vasijas y hasta figuras religiosas, como la Diosa Madre, que protegía la fertilidad y la caza. Esta ciudad nos habla de espiritualidad, organización social… y del comienzo de las grandes civilizaciones.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que las casas estaban tan juntas que se caminaba por los tejados?"
     }
   },
   "geniallyURL": "#",
