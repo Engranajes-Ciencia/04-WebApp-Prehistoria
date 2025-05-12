@@ -11,8 +11,99 @@
     En esta sección se adjunta una serie de imágenes sobre el contenido del Parque.
     A continuación se hace referencia a cada parada (y su actividad correspondiente):
     *Parada 1 : 
+
+    *Parada 2 : 
+    *Parada 3 : 
+    *Parada 4 : 
+    *Parada 5 : 
+    *Parada 6 : 
+    *Parada 7 : 
+    *Parada 8 : 
+    *Parada 9 : 
+    *Parada 10 : 
+    *Parada 11: 
+    *Parada 12 : 
+    *Parada 13 : 
+    *Parada 14 : 
+    *Parada 15 : 
+    *Parada 16 : 
+    *Parada 17 : 
+    *Parada 18 : 
+    *Parada 19 : 
+    *Parada 20 : 
+    
 - [🛠️ Tecnologías utilizadas](#-tecnologías-utilizadas)
+
+    La aplicación web desarrollada para el Parque de la Prehistoria ha sido construida utilizando las siguientes tecnologías y herramientas:
+
+        🔹 React.js
+        Framework de JavaScript utilizado para construir toda la interfaz web de la aplicación. React permite una navegación fluida entre las distintas secciones del parque y gestiona la lógica necesaria para mostrar la información de las paradas, las actividades y el sistema de recompensas.
+
+        🔹 Genially
+        Herramienta externa empleada para la creación de juegos interactivos y actividades educativas.
+
+        En el parque hay un total de 20 paradas:
+
+        10 paradas ofrecen actividades interactivas desarrolladas en Genially.
+
+        10 paradas cuentan únicamente con una audio guía.
+
+        Todas las actividades también incluyen la opción de escuchar una guía en audio.
+
+        Los usuarios acceden a estas actividades escaneando códigos QR distribuidos a lo largo del recorrido.
+
+        🔹 Sistema de medallas y recompensas
+        Al completar cada actividad en el recorrido, el usuario obtiene una medalla digital que se guarda automáticamente en su vitrina virtual.
+        Al finalizar el recorrido, la aplicación muestra:
+
+        Un resumen con todas las medallas recogidas.
+
+        Dos diplomas personalizables (modo infantil y modo adulto), generados automáticamente con el nombre del usuario.
+
+        🔹 jsPDF
+        Biblioteca JavaScript utilizada para generar y firmar automáticamente los diplomas en PDF según el nombre introducido al comienzo del recorrido. Esto permite a los visitantes descargar y conservar su diploma como recuerdo de la experiencia.
+
+
 - [🚀 Instalación y ejecución](#-instalación-y-ejecución)
+            🔧 Requisitos previos
+        Para poder ejecutar el proyecto en local, necesitas tener instalado en tu ordenador:
+
+        *Node.js (versión recomendada: 18 o superior)
+
+        *npm (gestor de paquetes que se instala con Node.js)
+
+        *Git (para clonar el repositorio desde GitHub)
+
+        *Editor de código recomendado: Visual Studio Code
+
+            📥 Clonación del repositorio
+
+        *Cada desarrollador debe seguir estos pasos para obtener el proyecto en su equipo:
+
+        
+        git clone https://github.com/usuario/nombre-del-repositorio.git
+
+        Luego, entra en la carpeta del proyecto:
+
+        
+        cd nombre-del-repositorio
+
+            📦 Instalación de dependencias
+        Una vez dentro del proyecto, instala las dependencias necesarias con el siguiente comando:
+
+       
+        npm install
+
+            ▶️ Ejecución del proyecto
+        Para iniciar la aplicación en modo desarrollo:
+
+        
+        npm run dev
+
+
+        ⚠️ Nota: El puerto puede variar si usas Vite o alguna otra herramienta. Ajusta según el caso.
+
+
 - [📁 Estructura del proyecto](#-estructura-del-proyecto)
 - [⚙️ Funcionamiento](#️-funcionamiento)
 - [🤝 Contribuciones](#-contribuciones)
