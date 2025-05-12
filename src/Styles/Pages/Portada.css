@@ -34,15 +34,16 @@
 }
 
 
-.titulo {
+.titulo1 {
     font-size: 3.2rem;
     color: #1b5e20;
     margin: 0;
     margin-bottom: 20px;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.1);
+    text-decoration: underline;
 }
 
-.subtitulo {
+.subtitulo1 {
     text-align: justify;
     font-size: 1.5rem;
     color: #444;
@@ -78,7 +79,8 @@
 }
 
 .dark .btn-aventura {
-    background-color: var(--verde);
+    background: linear-gradient(135deg, #464646, #1b1b1b);
+    color: #ffffff !important;
 }
 
 /* Animaciones */
@@ -108,11 +110,11 @@
         padding: 30px 20px;
     }
 
-    .titulo {
+    .titulo1 {
         font-size: 2rem;
     }
 
-    .subtitulo {
+    .subtitulo1 {
         font-size: 1.1rem;
     }
 

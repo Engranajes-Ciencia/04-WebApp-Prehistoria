@@ -40,8 +40,8 @@ function Portada() {
     return (
         <div className="portada-container">
             <div className="contenido">
-                <h1 className="titulo">Aventura Prehistórica</h1>
-                <p className="subtitulo">
+                <h1 className="titulo1">Aventura Prehistórica</h1>
+                <p className="subtitulo1">
                     ¡Bienvenido a la Aventura Prehistórica!
                     Acabas de embarcarte en un viaje en el tiempo donde descubrirás los secretos mejor guardados de la historia de la humanidad y de la Tierra.
                     Guiado por tu fiel compañero o compañera (¡tú eliges!), recorrerás 10 lugares sagrados, fósiles milenarios, civilizaciones ancestrales y monumentos asombrosos.

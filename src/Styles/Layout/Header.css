@@ -100,9 +100,13 @@
 
   /* Estilos Modo Oscuro */
 
-  .dark .btn-home, .dark .btn-tema, .dark .btn-kiosco, .dark .btn-music, .dark .btn-home:hover, .dark .btn-tema:hover, .dark .btn-kiosco:hover, .dark .btn-music:hover {
+  .dark .btn-home, .dark .btn-tema, .dark .btn-kiosco, .dark .btn-music {
     background: linear-gradient(135deg, #464646, #1b1b1b);
     color: #ffffff !important;
+  }
+
+  .dark .btn-home:hover, .dark .btn-tema:hover, .dark .btn-kiosco:hover, .dark .btn-music:hover {
+    background: #3a3a3a !important;
   }
 
   .dark .header {
