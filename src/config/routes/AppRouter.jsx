@@ -13,9 +13,10 @@ import EntreActividades from "../../Components/Pages/EntreActividades";
 import LoadingSpinner from "../../Components/Commons/LoadingSpinner";
 
     // Carga componentes lentos, grandes, finales o de poco uso cuando se visitan para ganar velocidad en la app
-  const Final = lazy(() => import("../../Components/Pages/Final"));
-  const Actividad = lazy(() => import("../../Components/Pages/Actividad"));
-  const Vitrina = lazy(() => import("../../Components/Pages/Vitrina"));
+const Final = lazy(() => import("../../Components/Pages/Final"));
+const Actividad = lazy(() => import("../../Components/Pages/Actividad"));
+const Vitrina = lazy(() => import("../../Components/Pages/Vitrina"));
+const VitrinaVirtual = lazy(() => import("../../Components/Pages/VitrinaVirtual"));
 
 function AppRouter() {
     return(
@@ -26,24 +27,33 @@ function AppRouter() {
             <Route path={ROUTES.MAPA} element={<Mapa />} />
             <Route path={ROUTES.ENTREACTIVIDADES} element={<EntreActividades />} />
             <Route path={ROUTES.ESCANERQR} element={<EscanerQR />} />
+
             <Route path={ROUTES.ACTIVIDAD} element={
                 <Suspense fallback={<LoadingSpinner />}>
                     
                         <Actividad />
                     
-                    </Suspense>} />
+                </Suspense>} />
+            
             <Route path={ROUTES.FINAL} element={
                 <Suspense fallback={<LoadingSpinner />}>
                     
                         <Final />
                     
-                    </Suspense>} />
+                </Suspense>} />
+            
             <Route path={ROUTES.VITRINA} element={
                 <Suspense fallback={<LoadingSpinner />}>
                 
                     <Vitrina />
                 
                 </Suspense>} />
+            
+            <Route path={ROUTES.VITRINA_VIRTUAL} element={
+                <Suspense fallback={<LoadingSpinner />}>
+                    <VitrinaVirtual />
+                </Suspense>
+            } />
         </Routes>
     );
 }

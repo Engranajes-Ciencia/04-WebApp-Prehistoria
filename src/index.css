@@ -79,7 +79,7 @@
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordLightitalic.woff2') format('truwoff2etype');
+  src: url('/04-WebApp-Prehistoria/fonts/MilfordLightitalic.woff2') format('woff2');
   font-weight: 300;
   font-style: italic;
 }
@@ -89,6 +89,7 @@ body,
 html {
   margin: 0;
   padding: 0;
+  height: 100%;
   font-family: 'Milford', sans-serif;
   background-color: transparent;
   color: var(--text-general);

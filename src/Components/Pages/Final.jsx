@@ -1,20 +1,24 @@
-
-import { useNavigate } from "react-router-dom" // Navegacion entre paginas 
+import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { resetActividadesCompletadas } from "../../config/utils/localStorage";
 import { jsPDF } from "jspdf";
 import confetti from "canvas-confetti";
 import "../../Styles/Pages/Final.css";
 
-
-
 function Final() {
-    const  navigate  = useNavigate();
+    const navigate = useNavigate();
     const [avatar, setAvatar] = useState("");
     const [nombre, setNombre] = useState("");
-
-    // Nuevo estado para mostrar el popup
     const [mostrarPopup, setMostrarPopup] = useState(false);
+    const [tipoDiploma, setTipoDiploma] = useState(null); // "infantil" o "adultos"
+
+
+
+
+    // 👉 POSICIONES AJUSTABLES PARA EL TEXTO
+    const POSICION_NOMBRE_INFANTIL = { x: 100, y: 117}; // 👈 Aquí cambias la posición del nombre en diploma infantil
+    const POSICION_NOMBRE_ADULTOS = { xOffset: 0, y: 117 }; // 👈 Aquí ajustas el desplazamiento y la altura en diploma adultos
+
 
 
     useEffect(() => {
@@ -25,7 +29,6 @@ function Final() {
         if (nombreGuardado) setNombre(nombreGuardado);
 
 
-        //  confeti al cargar la página final
         confetti({
             particleCount: 150,
             spread: 100,
@@ -34,30 +37,40 @@ function Final() {
         });
     }, []);
 
-
     const handleDescargarDiploma = () => {
+        if (!tipoDiploma) {
+            alert("Selecciona un tipo de diploma.");
+            return;
+        }
+
         const doc = new jsPDF({ orientation: "landscape" });
-
-        const avatarValue = avatar || "explorador"; // Por si no se ha cargado aún
         const nombreValue = nombre || "Explorador/a";
-
-        const imagePath =
-            avatarValue === "exploradora"
-                ? `${import.meta.env.BASE_URL}assets/images/diploma_exploradora.jpg`
-                : `${import.meta.env.BASE_URL}assets/images/diploma_explorador.jpg`;
+        let imagePath = tipoDiploma === "infantil"
+            ? `${import.meta.env.BASE_URL}assets/images/diplomainfantil.png`
+            : `${import.meta.env.BASE_URL}assets/images/diploma.jpg`;
 
         const img = new Image();
         img.src = imagePath;
 
         img.onload = () => {
             doc.addImage(img, "JPEG", 10, 10, 277, 190);
-            doc.setFontSize(16);
-            doc.text(`Nombre: ${nombreValue}`, 20, 205);
-            doc.save("diploma-aventura-prehistorica.pdf");
 
-            // Muestra popup
+            // Fuente y tamaño
+            doc.setFont("helvetica", "italic");
+            doc.setFontSize(35);
+
+            if (tipoDiploma === "infantil") {
+                doc.text(nombreValue, POSICION_NOMBRE_INFANTIL.x, POSICION_NOMBRE_INFANTIL.y);
+            } else if (tipoDiploma === "adultos") {
+                const pageWidth = doc.internal.pageSize.width;
+                const textWidth = doc.getTextWidth(nombreValue);
+                const posX = (pageWidth - textWidth) / 2 + POSICION_NOMBRE_ADULTOS.xOffset;
+                doc.text(nombreValue, posX, POSICION_NOMBRE_ADULTOS.y);
+            }
+
+            doc.save("diploma-aventura-prehistorica.pdf");
             setMostrarPopup(true);
-            setTimeout(() => setMostrarPopup(false), 5000); // Ocultar en 3 segundos
+            setTimeout(() => setMostrarPopup(false), 5000);
         };
 
         img.onerror = () => {
@@ -65,12 +78,16 @@ function Final() {
         };
     };
 
-
+    const getPreviewUrl = () => {
+        return tipoDiploma === "infantil"
+            ? `${import.meta.env.BASE_URL}assets/images/diplomainfantil.png`
+            : `${import.meta.env.BASE_URL}assets/images/diploma.jpg`;
+    };
 
     const handleReiniciarJuego = () => {
-        localStorage.clear();             //  Limpiar todo
-        resetActividadesCompletadas();     //  También limpiamos las actividades
-        navigate("/");                     //  Volver a la portada
+        localStorage.clear();
+        resetActividadesCompletadas();
+        navigate("/");
     };
 
     return (
@@ -96,15 +113,32 @@ function Final() {
                 Has completado todas las paradas de la Aventura Prehistórica.
             </p>
 
+            <div className="selector-diploma">
+                <button
+                    className={`btn-tipo-diploma ${tipoDiploma === "infantil" ? "activo" : ""}`}
+                    onClick={() => setTipoDiploma("infantil")}
+                >
+                    Diploma Infantil
+                </button>
+                <button
+                    className={`btn-tipo-diploma ${tipoDiploma === "adultos" ? "activo" : ""}`}
+                    onClick={() => setTipoDiploma("adultos")}
+                >
+                    Diploma Adultos
+                </button>
+            </div>
 
-            <img
-                src={`${import.meta.env.BASE_URL}assets/images/diploma_${avatar}.jpg`}
-                alt="Diploma"
-                className="diploma-img-animada"
-                onError={(e) => {
-                    e.target.src = `${import.meta.env.BASE_URL}assets/images/diploma_explorador.jpg`;
-                }}
-            />
+            {tipoDiploma && (
+                <div className="preview-diploma">
+                    <img
+                        src={getPreviewUrl()}
+                        alt="Vista previa"
+                        className="diploma-img-animada"
+                        onError={(e) =>
+                            (e.target.src = `${import.meta.env.BASE_URL}assets/images/diplomainfantil.png`)}
+                    />
+                </div>
+            )}
 
             <div className="acciones-finales">
                 <button className="btn-descargar" onClick={handleDescargarDiploma}>
@@ -114,17 +148,15 @@ function Final() {
                     Reiniciar Juego
                 </button>
 
-                <button className="btn-vitrina" onClick={() => navigate("/vitrina")}>
-                    Medallas disponibles
+                
+                {/* muestra  vitrina */}
+                <button className="btn-vitrina" onClick={() => navigate("/vitrina-virtual")}>
+                    Ver Galería de Medallas
                 </button>
 
             </div>
 
-            {mostrarPopup && (
-                <div className="popup-descarga">
-                    Diploma descargado con éxito
-                </div>
-            )}
+            {mostrarPopup && <div className="popup-descarga">Diploma descargado con éxito</div>}
         </div>
     );
 }

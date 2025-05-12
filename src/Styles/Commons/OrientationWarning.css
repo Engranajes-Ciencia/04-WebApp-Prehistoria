@@ -1,0 +1,11 @@
+.orientacion-alerta {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(60, 150, 203);
+  text-align: center;
+  padding: 10px;
+  z-index: 1000;
+  font-weight: bold;
+}

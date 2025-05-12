@@ -9,7 +9,8 @@ const ROUTES = {
     ESCANERQR: '/escanerQR',
     ACTIVIDAD: '/actividad/:id',
     FINAL: '/final',
-    VITRINA: '/vitrina'
+    VITRINA: '/vitrina',
+    VITRINA_VIRTUAL: '/vitrina-virtual',
 };
 
 export default ROUTES;

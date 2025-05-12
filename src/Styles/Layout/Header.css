@@ -1,10 +1,9 @@
  /* Estilos de la cabecera */
- 
+
 .header {
     width: 100vw;
-    max-width: 100%;
     box-sizing: border-box;
-    padding: 40px 20px 30px;
+    padding: 20px 12px;
     background: var(--bg-header);
     text-align: center;
     font-size: 24px;
@@ -15,19 +14,45 @@
     position: relative;
   }
   
-  /* Estilos de la cabecera */
+    .header-top {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 10px;
+      padding-right: 10px;
+    }
 
-  .header h1 {
-    font-size: 2.5rem;
-    font-weight: 900;
-    color: var(--verde);
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.15);
-    margin-bottom: 20px;
-    animation: fadeInUp 1s ease-in-out;
-  }
+  /* Estilos de la cabecera */
+    .botones-header {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+
+    /* Branding (logo + texto) */
+        .branding {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          background-color: #ffffffcc;
+          padding: 6px 10px;
+          border-radius: 8px;
+          font-size: 14px;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+          backdrop-filter: blur(4px);
+          color: #37474f;
+        }
+  
+    .logo {
+      width: 36px;
+      height: 36px;
+      object-fit: contain;
+    }
+
 
   /* Contenedor común para los botones */
-
   .botones-header {
     display: flex;
     justify-content: space-evenly;
@@ -56,16 +81,10 @@
       transition: all 0.3s ease;
     }
 
-    .btn-tema.claro {
-      background-color: #4a90e2;
-    }
     
     .btn-tema:hover {
       background-color: #5f8b6a;
-    }
-  
-    .btn-tema:hover {
-      background-color: #5f8b6a;
+      transform: scale(1.03);
     }
   
     .btn-kiosco {
@@ -78,27 +97,6 @@
     }
 
 
-  .branding {
-    position: absolute;
-    top: 15px;
-    right: 8%;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    background-color: #ffffffcc;
-    padding: 8px 12px;
-    border-radius: 8px;
-    font-size: 15px;
-    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
-    backdrop-filter: blur(4px);
-    color: #37474f;
-  }
-  
-  .logo {
-    width: 36px;
-    height: 36px;
-    object-fit: contain;
-  }
 
   /* Estilos Modo Oscuro */
 
@@ -107,7 +105,7 @@
     color: var(--blanco);
   }
   
-  .dark .header h1 {
+  .dark .titulo-header {
     color: var(--verde);
   }
   
@@ -146,9 +144,6 @@
   /* Media Queries */
   
   @media (max-width: 768px) {
-    .header {
-      padding: 20px;
-    }
   
     .branding {
       position: absolute;
@@ -169,26 +164,12 @@
       gap: 10px;
     }
 
-    .btn-tema,
-    .btn-home,
-    .btn-kiosco {
-      width: 45%;  
-      margin-bottom: 10px; 
+    .btn {
+      width: 80%;
     }
   }
 
-  @media (min-width: 769px) {
-    .botones-header {
-      justify-content: center; 
-      gap: 20px; 
-    }
-  
-    .btn-tema,
-    .btn-home,
-    .btn-kiosco {
-      width: auto; 
-    }
-  }
+
 
   /* Se comenta este bloque por si hay que rehacer los cambios */
     /*.btn-tema,

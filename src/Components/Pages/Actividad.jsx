@@ -1,5 +1,5 @@
 // src/Components/Pages/Actividad.jsx
-import { useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import actividades from "../../config/data/actividades.json";
 import { marcarActividadComoCompletada } from "../../config/utils/localStorage";
@@ -17,6 +17,25 @@ function Actividad() {
     const avatar = localStorage.getItem("avatar");
     const nombre = localStorage.getItem("nombre");
     const accesoQR = localStorage.getItem("accesoQR");
+
+    // Constantes del audio
+    const audioRef = useRef(null);
+    const [isPlaying, setIsPlaying] = useState(false);
+
+
+    const toggleAudio = () => {
+        if (!audioRef.current) return;
+    
+        if (isPlaying) {
+            audioRef.current.pause();
+        } else {
+            audioRef.current.play().catch((e) => {
+                console.warn("Autoplay bloqueado por el navegador", e);
+            });
+        }
+    
+        setIsPlaying(!isPlaying);
+    };
     
 
     useEffect(() => {
@@ -31,14 +50,23 @@ function Actividad() {
         }
 
         marcarActividadComoCompletada(Number(id));
-        localStorage.removeItem("accesoQR");
+
+
+        // Eliminar solo tras navegación
+        // localStorage.removeItem("accesoQR");
+
     }, [id, navigate, avatar, nombre, accesoQR]);
 
     if (!actividad || !avatar || !nombre) {
-        return <p className="error-msg">Actividad no encontrada o acceso no permitido.</p>;
+        return (
+            <p className="error-msg">
+                Actividad no encontrada o acceso no permitido.
+            </p>
+        );
     }
 
-    const avatarData = actividad.avatarDialogo[avatar];
+    const avatarData = actividad.avatarDialogo[avatar];  // carga json segun avatar
+
     const avatarImg = `${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`;
 
 
@@ -46,26 +74,66 @@ function Actividad() {
         <div className="actividad-container">
             <div className="actividad-header">
                 <img src={avatarImg} alt="avatar" className="avatar-actividad" />
-                <h2>¡Hola {nombre}! Soy tu guía en esta parada</h2>
+                <div >
+                    <h2 className="saludo">¡Hola {nombre}!</h2>
+                    <p className="dialogo">{avatarData.dialogo}</p>
+                </div>
             </div>
 
             <h3>{actividad.titulo}</h3>
-            <p>{avatarData.mensaje}</p>
-            <p className="sabiasque">
-                <strong>¿Sabías que...?</strong> {avatarData.sabiasQue}
-            </p>
+
+            {avatarData?.mensaje && <p>{avatarData.mensaje}</p>}
+
+
+            {actividad.audio && (
+                <div className="audio-button-container">
+                    <button
+                        onClick={() => {
+                            if (!audioRef.current) return;
+                            if (isPlaying) {
+                                audioRef.current.pause();
+                                setIsPlaying(false);
+                            } else {
+                                audioRef.current.muted = false;
+                                audioRef.current.play().catch((e) => {
+                                    console.warn("Error al reproducir el audio:", e);
+                                });
+                                setIsPlaying(true);
+                            }
+                        }}
+                        className="audio-button"
+                    >
+                        {isPlaying ? "⏸️ Pausar audio" : "▶️ Reproducir audio"}
+                    </button>
+
+                    <audio
+                        ref={audioRef}
+                        src={`${import.meta.env.BASE_URL}${actividad.audio.replace(/^\/+/, "")}`}
+                        preload="auto"
+                    />
+                </div>
+            )}
+
+
+            {avatarData?.sabiasQue && (
+                <p className="sabiasque">
+                    <strong>¿Sabías que...?</strong> {avatarData.sabiasQue}
+                </p>
+            )}
             
 
-            <div className="actividad-genially">
-                <iframe
-                    src={actividad.geniallyURL}
-                    width="100%"
-                    height="500px"
-                    frameBorder="0"
-                    allowFullScreen
-                    title="Genially actividad"
-                ></iframe>
-            </div>
+            {actividad.geniallyURL && (
+                <div className="actividad-genially">
+                    <iframe
+                        src={actividad.geniallyURL}
+                        width="100%"
+                        height="500px"
+                        frameBorder="0"
+                        allowFullScreen
+                        title="Genially actividad"
+                    ></iframe>
+                </div>
+            )}
         </div>
     );
 }

@@ -66,33 +66,22 @@ function EscanerQR() {
   }, [navigate]);
 
   return (
-    <div
-      className="scanner-container"
-      style={{ padding: 20, textAlign: "center" }}
-    >
-      <h2>Escanea el código QR</h2>
-      <div
-        id="qr-reader"
-        style={{
-          width: "40%",
-          height: "40%",
-          background: "white",
+    <div className="scanner-container">
 
-          justifyContent: "center",
-          alignItems: "center",
-          boxShadow: "0 0 10px rgba(0,0,0,0.2)",
-          borderRadius: "10px",
-        }}
-      ></div>
+    
+
+      {/* TÍTULO */}
+      <h2 className="scanner-title">Escanea el código QR</h2>
+
+      {/*  ESCÁNER */}
+      <div id="qr-reader" className="qr-reader-box"></div>
       
       
-      
+      {/* SPINNER */}
       {scanning && (
         <div className="spinner-container">
           <div className="spinner"></div>
-          <p style={{ marginTop: 10, fontStyle: "italic", color: "#666" }}>
-            Escaneando... apunta con la cámara al QR
-          </p>
+          <p className="texto-escaneo">Escaneando... apunta con la cámara al QR</p>
         </div>
       )}
     </div>

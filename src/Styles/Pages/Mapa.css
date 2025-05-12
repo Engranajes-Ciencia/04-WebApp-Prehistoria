@@ -28,7 +28,7 @@
 /* Tarjeta de saludo */
 
 .saludo {
-    background: rgba(255, 255, 255, 0.92);
+    background: rgba(255, 255, 255, 0.550);
     padding: 40px 30px;
     border-radius: 20px;
     max-width: 650px;
@@ -43,14 +43,14 @@
 .guia {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    justify-content: flex-start;
+    gap: 30px;
     margin-bottom: 20px;
 }
 
 .avatar-mini {
-    width: 115px;
-    height: 195px;
+    width: 45%;
+    height: 60%;
     border-radius: 25px;
     border: 2px solid #4CAF50;
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
@@ -59,24 +59,31 @@
 /* Texto */
 
 .saludo h2 {
-    font-size: 28px;
+    font-size: 2.5rem;
     color: var(--grisOscuro);
+    justify-content: center;
     margin-bottom: 15px;
+    margin-top: 0;
 }
 
 .saludo p {
-    font-size: 18px;
+    font-size: 1.6rem;
     margin: 8px 0;
     color: #444;
+    text-align: justify;
 }
 
-/* Botón */
+/* Botónes */
 
-.qr-button {
-    background-color: #4CAF50;
+.botones {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 20px;
+    flex-wrap: wrap; /* para que se ajusten en pantallas pequeñas */    
     color: var(--blanco);
     font-size: 18px;
-    padding: 12px 24px;
+    padding: 16px 32px;
     border: none;
     border-radius: 12px;
     cursor: pointer;
@@ -84,7 +91,17 @@
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
+.qr-button,
+.volver-button {
+    padding: 16px 32px;
+}
+
 .qr-button:hover {
+    background-color: #3e8e41;
+    transform: scale(1.05);
+}
+
+.volver-button:hover {
     background-color: #3e8e41;
     transform: scale(1.05);
 }
@@ -92,7 +109,7 @@
 /*  Estilos Modo Oscuro */
 
 .dark .saludo {
-    background-color: rgba(20, 20, 20, 0.85);
+    background-color: rgba(20, 20, 20, 0.651);
     color: var(--blanco);
 }
 

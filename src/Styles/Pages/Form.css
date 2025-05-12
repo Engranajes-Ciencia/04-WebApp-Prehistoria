@@ -11,6 +11,7 @@
   background-position: center;
   background-attachment: fixed;
   transition: background-image 1s ease-in-out;
+  filter: blur(0.5px) brightness(0.98);
 }
 
 /* Estilo principal del formulario */
@@ -23,15 +24,18 @@
   justify-content: center;
   margin: 80px auto;
   padding: 50px;
-  background: rgba(255, 255, 255, 0.85);
-  border-radius: 30px;
-  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.25);
-  max-width: 480px;
+  background: rgba(255, 255, 255, 0.30);
+  border-radius: 38px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.26), 0 1.5px 6px rgba(80, 80, 80, 0.05);
+  max-width: 520px;
   border: 5px solid var(--grisClaro);
   font-family: 'Milford', sans-serif;
   font-weight: bold;
-  animation: slideUp 0.8s ease-out;
-  transition: all 0.3s ease;
+  animation: slideUp 0.8s cubic-bezier(.25, .8, .25, 1);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+    backdrop-filter: blur(6px) saturate(1.12); /* EFECTO VIDRIO */
+    -webkit-backdrop-filter: blur(6px) saturate(1.12);
+    box-sizing: border-box;
 }
 
 @keyframes slideUp {
@@ -47,7 +51,8 @@
 }
 
 .form:hover{
-  transform: scale(1.05);
+  transform: scale(1.045) rotate(-0.2deg);
+    box-shadow: 0 24px 40px rgba(0, 0, 0, 0.32);
 }
 
 /* Campos */
@@ -63,16 +68,19 @@ fieldset {
   color: var(--grisOscuro);
   margin-bottom: 10px;
   display: block;
+  letter-spacing: 0.01em;
 }
   
 .form input[type="text"] {
   padding: 15px;
-  font-size: 15px;
-  border-radius: 10px;
-  width: 90%;
+  font-size: 16px;
+  border-radius: 12px;
+  width: 92%;
   border: 2px solid #ccc;
   background-color: #f9f9f9;
-  transition: all 0.3s ease;
+  box-shadow: 0 1px 3.5px rgba(150, 150, 150, 0.05);
+  transition: all 0.3s;
+  outline: none;
 }
 
 .form input[type="text"]:focus {
@@ -91,20 +99,22 @@ fieldset {
 button {
   margin-top: 20px;
   padding: 12px;
-  background: linear-gradient(135deg, var(--verde), #5f8b6a);
+  background: linear-gradient(135deg, var(--verde), #5f8b6a 80%);
   color: var(--blanco);
   border: none;
-  border-radius: 10px;
-  font-size: 1rem;
+  border-radius: 12px;
+  font-size: 1.09rem;
   font-weight: bold;
   cursor: pointer;
-  transition: all 0.3s ease;
+  letter-spacing: 0.02em;
+  transition: all 0.3s;
+  box-shadow: 0 2px 8px rgba(80, 150, 100, 0.10);
 }
 
 button:hover {
-  background: linear-gradient(135deg, #5f8b6a, #4f745a);
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #5f8b6a 60%, #4f745a 100%);
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
 }
 
 /* Avatares */
@@ -128,35 +138,48 @@ button:hover {
   width: 150px;
   height: 250px;
   border-radius: 20px;
-  border: 3px solid gray;
+  border: 3.3px solid #94949499;
   cursor: pointer;
-  transition: all 0.3s ease;
+  transition: all 0.26s cubic-bezier(.4, .3, .2, 1.08);
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.18);
+  filter: drop-shadow(0 1px 2px #3332);
 }
 .avatar-options img:hover {
-  transform: scale(1.08);
+  transform: scale(1.10);
+  box-shadow: 0 7px 18px rgba(30, 180, 90, 0.10);
 }
 
 .avatar-options img.selected {
   border: 4px solid var(--verde);
   animation: pulse 0.5s ease;
+  filter: drop-shadow(0 2px 8px var(--verde));
 }
 
 .text-img {
   text-align: center;
   font-size: 1rem;
   margin-top: 6px;
+  color: var(--grisOscuro);
+  text-shadow: 0 1px 2px #fff8;
 }
 
 /* Estilos Modo Oscuro */
 
+/* Oscurecer texto en fondo muy claro */
+.form,
+.text-img,
+.form label {
+  text-shadow: 0 1.5px 6px #fff5, 0 1px 2px #0001;
+}
+
 .dark .form {
-  background: rgba(26, 32, 39, 0.95);
+  background: rgba(26, 32, 39, 0.70);
   border: 5px solid var(--grisClaro);
   box-shadow: 0 12px 28px rgba(255, 255, 255, 0.1);
   color: var(--blanco);
-  /* ✅ Esto hace que todos los textos hereden blanco */
+  backdrop-filter: blur(8px) saturate(1.08);
 }
 
 .dark .form label,
@@ -165,6 +188,7 @@ button:hover {
 .dark .form span,
 .dark .text-img {
   color: var(--blanco);
+  text-shadow: 0 2px 6px #252f2f99, 0 1px 2px #fff2;
 }
 
 .dark .form input[type="text"] {
@@ -195,4 +219,24 @@ button:hover {
 }
 
 
+@media (max-width: 700px) {
+  .form {
+    padding: 26px 8vw;
+    margin: 36px 0;
+    max-width: 98vw;
+    border-radius: 22px;
+  }
 
+  .avatar-options img {
+    width: 100px;
+    height: 160px;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 12px 2vw;
+    margin: 18px 0;
+    border-radius: 14px;
+  }
+}
