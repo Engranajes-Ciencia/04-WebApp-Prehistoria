@@ -33,22 +33,22 @@ function Header() {
             alt="Logo empresa"
             className="logo"
           />
-          <span className="empresa-texto">Proyecto desarrollado para la empresa</span>
         </div>
       </div>
 
-      <h1 className="titulo-header">¡Bienvenidos a esta aventura!</h1>
+      <h1 className="titulo-header">Parque <br/>Prehistórico</h1>
 
       <div className="botones-header">
-        <button className="btn-tema" onClick={toggleModoOscuro}>
-          {modoOscuro ? "🌞 Modo Claro" : "🌙 Modo Oscuro"}
-        </button>
 
         <button className="btn-home" onClick={() => navigate("/")}>
-          🏠 Inicio
+          Inicio
         </button>
 
-        <MusicPlayer />
+        <button className="btn-tema" onClick={toggleModoOscuro}>
+          {modoOscuro ? "Modo Claro" : "Modo Oscuro"}
+        </button>
+        
+        <MusicPlayer/>
 
         <button
           className="btn-kiosco"
@@ -59,7 +59,7 @@ function Header() {
             else if (el.msRequestFullscreen) el.msRequestFullscreen();
           }}
         >
-          🖥 Modo Kiosco
+          Modo Kiosco
         </button>
       </div>
     </header>
@@ -67,4 +67,3 @@ function Header() {
 }
 
 export default Header;
-

@@ -1,4 +1,7 @@
-button {
+.btn-music {
+    width: 168px;
+    min-height: 47px;
+    min-width: 105px;
     background-color: var(--verde);
     color: var(--blanco);
     border: none;
@@ -10,6 +13,6 @@ button {
     transition: all 0.3s ease;
   }
   
-  button:hover {
+  .btn-music:hover {
     background-color: #5f8b6a;
   }

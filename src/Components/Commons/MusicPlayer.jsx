@@ -31,7 +31,7 @@ const MusicPlayer = () => {
     
 
     <button className="btn-music" onClick={toggleMute}>
-        {isMuted ? "🔊Activar música" : "🔇Silenciar música"}
+        {isMuted ? "Activar música" : "Silenciar música"}
     </button>    
     </div>
   );
