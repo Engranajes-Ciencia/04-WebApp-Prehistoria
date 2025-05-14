@@ -1,11 +1,18 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../../Styles/Layout/Header.css";
 import MusicPlayer from "../Commons/MusicPlayer";
 
 function Header() {
   const navigate = useNavigate();
   const [modoOscuro, setModoOscuro] = useState(false);
+  const { i18n, t } = useTranslation();
+
+  const toggleLanguage = () => {
+    const nuevoIdioma = i18n.language === "es" ? "en" : "es";
+    i18n.changeLanguage(nuevoIdioma);
+  };
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("modoOscuro");
@@ -41,11 +48,11 @@ function Header() {
       <div className="botones-header">
 
         <button className="btn-home" onClick={() => navigate("/")}>
-          Inicio
+          {t("home")}
         </button>
 
         <button className="btn-tema" onClick={toggleModoOscuro}>
-          {modoOscuro ? "Modo Claro" : "Modo Oscuro"}
+          {modoOscuro ? t("modoClaro") : t("modoOscuro")}
         </button>
         
         <MusicPlayer/>
@@ -59,7 +66,11 @@ function Header() {
             else if (el.msRequestFullscreen) el.msRequestFullscreen();
           }}
         >
-          Modo Kiosco
+          {t("modoKiosco")}
+        </button>
+
+        <button className="btn-idioma" onClick={toggleLanguage}>
+          {t("cambiarIdioma")}
         </button>
       </div>
     </header>

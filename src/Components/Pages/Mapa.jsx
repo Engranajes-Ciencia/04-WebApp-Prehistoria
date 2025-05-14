@@ -1,6 +1,7 @@
 // src/Components/Pages/Mapa.jsx
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../../Styles/Pages/Mapa.css";
 
 const avatarMap = {
@@ -15,6 +16,7 @@ const avatarNameMap = {
 
 
 function Mapa() {
+    const { t } = useTranslation("pages");
     const navigate = useNavigate();
     const [nombre, setNombre] = useState("");
     const [avatar, setAvatar] = useState("");
@@ -39,7 +41,7 @@ function Mapa() {
     return (
         <div className="mapa-container">
             <div className="saludo">
-                <h2>¡Saludos {nombre}!</h2>
+                <h2>{t("mapa.saludo", { nombre })}</h2>
 
                 <div className="guia">
                     <img
@@ -48,18 +50,21 @@ function Mapa() {
                         className="avatar-mini"
                     />
                     <p>
-                        Yo ser guía <strong>{avatarNameMap[avatar]}</strong>. Tú seguir <strong>{avatarNameMap[avatar]}</strong>. <br/><br/><strong>{nombre}</strong> tener prendas raras. <br/> <br/>¿<strong>{nombre}</strong> no ser de aquí?<br/> <br/>No importar,<br/><br/> ¡<strong>{nombre}</strong> y <strong>{avatarNameMap[avatar]}</strong> explorar tierras!
+                       {t("mapa.dialogo", {
+                            nombre,
+                            guia: avatarNameMap[avatar],
+                        })}
                     </p>
                 </div>
 
-                <p>Escanea un código QR o selecciona una actividad para comenzar.</p>
+                <p>{t("mapa.instruccion")}</p>
 
                 <div className="botones">
                 <button className="qr-button" onClick={() => navigate("/EscanerQR")}> 
-                    📷 Escanear Código QR
+                    📷 {t("mapa.botonQR")}
                 </button>
                 <button className="volver-button" onClick={() => navigate("/Form")}> 
-                    🔙Volver
+                    🔙 {t("mapa.botonVolver")}
                 </button>
                 </div>
                 

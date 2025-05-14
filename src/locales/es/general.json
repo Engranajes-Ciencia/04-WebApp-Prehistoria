@@ -1,0 +1,13 @@
+{
+  "home": "Inicio",
+  "modoClaro": "Modo Claro",
+  "modoOscuro": "Modo Oscuro",
+  "modoKiosco": "Modo Kiosko",
+  "cambiarIdioma": "Cambiar Idioma",
+
+  "footer": {
+    "proyecto": "🌍 Proyecto educativo para el Parque de la Prehistoria",
+    "desarrolladoPor": "🧠 Desarrollado por <1>Engranajes Ciencia</1> & Equipo FCT 💻",
+    "derechos": "© {{year}} Todos los derechos reservados"
+  }
+}

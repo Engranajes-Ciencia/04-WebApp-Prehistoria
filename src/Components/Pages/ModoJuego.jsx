@@ -1,7 +1,9 @@
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../../Styles/Pages/ModoJuego.css";
 
 function ModoJuego() {
+  const { t } = useTranslation("pages");
   const navigate = useNavigate();
 
   const handleChoice = (choice) => {
@@ -14,8 +16,8 @@ function ModoJuego() {
 
   return (
     <div className="modojuego-container">
-      <h1 className="titulo">Elige tu estilo de juego</h1>
-      <p className="subtitulo"><strong>¿Exploras solo o acompañado?</strong></p>
+      <h1 className="titulo">{t("modojuego.titulo")}</h1>
+      <p className="subtitulo"><strong>{t("modojuego.subtitulo")}</strong></p>
       <div className="opciones">
         <button
           className="btn-opcion"
@@ -27,7 +29,7 @@ function ModoJuego() {
             }assets/images/solo_3d.png)`,
           }}
         >
-          <span>Modo individual</span>
+          <span>{t("modojuego.modoIndividual")}</span>
         </button>
        
         <button
@@ -40,8 +42,8 @@ function ModoJuego() {
             }assets/images/grupo_3d.png)`,
           }} 
         >
-          <span>Modo equipo</span>
-          <div className="hover-mensaje"> Próximamente
+          <span>{t("modojuego.modoEquipo")}</span>
+          <div className="hover-mensaje"> {t("modojuego.proximamente")}
 
           </div>
           
