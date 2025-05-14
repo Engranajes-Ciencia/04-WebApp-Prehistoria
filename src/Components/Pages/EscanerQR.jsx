@@ -1,11 +1,13 @@
 // src/Components/Pages/EscanerQR.jsx
 import { useNavigate } from "react-router-dom";
 import { Html5QrcodeScanner } from "html5-qrcode";
+import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 import "../../Styles/Pages/EscanerQR.css";
 
 function EscanerQR() {
+  const { t } = useTranslation("pages");
   const navigate = useNavigate();
   const [scanning, setScanning] = useState(true);
 
@@ -30,9 +32,7 @@ function EscanerQR() {
           const index = cleanText.indexOf("/actividad/");
           ruta = cleanText.substring(index); // devuelve: /actividad/1
         } else {
-          alert(
-            " QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número"
-          );
+          alert(t("escaner.qrInvalido"));
           return;
         }
 
@@ -71,7 +71,7 @@ function EscanerQR() {
     
 
       {/* TÍTULO */}
-      <h2 className="scanner-title">Escanea el código QR</h2>
+      <h2 className="scanner-title">{t("escaner.titulo")}</h2>
 
       {/*  ESCÁNER */}
       <div id="qr-reader" className="qr-reader-box"></div>
@@ -81,7 +81,7 @@ function EscanerQR() {
       {scanning && (
         <div className="spinner-container">
           <div className="spinner"></div>
-          <p className="texto-escaneo">Escaneando... apunta con la cámara al QR</p>
+          <p className="texto-escaneo">{t("escaner.escaneando")}</p>
         </div>
       )}
     </div>

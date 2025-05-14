@@ -1,0 +1,45 @@
+
+{
+  "modojuego": {
+    "titulo": "Elige tu estilo de juego",
+    "subtitulo": "¿Exploras solo o acompañado?",
+    "modoIndividual": "Modo individual",
+    "modoEquipo": "Modo equipo",
+    "proximamente": "Próximamente"
+  },
+
+  "portada": {
+    "titulo": "Aventura Prehistórica",
+    "descripcion": "¡Bienvenido a la Aventura Prehistórica! Acabas de embarcarte en un viaje en el tiempo donde descubrirás los secretos mejor guardados de la historia de la humanidad y de la Tierra. Guiado por tu fiel compañero o compañera (¡tú eliges!), recorrerás 10 lugares sagrados, fósiles milenarios, civilizaciones ancestrales y monumentos asombrosos. En cada parada encontrarás un código QR que activará una misión: una actividad interactiva que te hará pensar, aprender y superar retos. ¿Estás preparado para convertirte en un auténtico explorador del tiempo? 🧭 ¡Tu aventura comienza ya!",
+    "empezar": "Empezar Aventura"
+  },
+
+  "form": {
+  "nombre": "Nombre de explorador/a:",
+  "placeholderNombre": "Escribe tu nombre...",
+  "guia": "Elige a tu guía:",
+  "botonAventura": "Empezar Aventura",
+  "alertaNombreInvalido": "El nombre solo puede contener letras, números y espacios.",
+  "alertaFaltanDatos": "Por favor, escribe tu nombre y elige un avatar."
+  },
+
+  
+  "mapa": {
+    "saludo": "¡Saludos {{nombre}}!",
+    "dialogo": "Yo ser guía {{guia}}. Tú seguir {{guia}}. \n\n{{nombre}} tener prendas raras. \n\n¿{{nombre}} no ser de aquí? \n\nNo importar, \n\n¡{{nombre}} y {{guia}} explorar tierras!",
+    "instruccion": "Escanea un código QR o selecciona una actividad para comenzar.",
+    "botonQR": "Escanear Código QR",
+    "botonVolver": "Volver"
+  },
+
+  "escaner": {
+    "titulo": "Escanea el código QR",
+    "escaneando": "Escaneando... apunta con la cámara al QR",
+    "qrInvalido": "QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número"
+  }
+
+}   
+
+
+
+
