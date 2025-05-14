@@ -1,13 +1,9 @@
-// src/Components/Pages/Actividad.jsx
 import { useEffect, useRef, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import actividades from "../../config/data/actividades.json";
 import { marcarActividadComoCompletada } from "../../config/utils/localStorage";
 import { validarAvatar, validarNombre } from "../../config/utils/validations";
 import "../../Styles/Pages/Actividad.css";
-
-
-
 
 function Actividad() {
     const { id } = useParams();
@@ -22,7 +18,6 @@ function Actividad() {
     const audioRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
-
     const toggleAudio = () => {
         if (!audioRef.current) return;
     
@@ -36,7 +31,6 @@ function Actividad() {
     
         setIsPlaying(!isPlaying);
     };
-    
 
     useEffect(() => {
         if (
@@ -50,31 +44,46 @@ function Actividad() {
         }
 
         marcarActividadComoCompletada(Number(id));
-
-
-        // Eliminar solo tras navegación
-        // localStorage.removeItem("accesoQR");
-
     }, [id, navigate, avatar, nombre, accesoQR]);
 
     if (!actividad || !avatar || !nombre) {
         return (
-            <p className="error-msg">
-                Actividad no encontrada o acceso no permitido.
-            </p>
+            <div 
+                className="actividad-container" 
+                style={{ 
+                    backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/nogenially/bienvenida.jpeg)`,
+                    backgroundSize: "cover",
+                    backgroundPosition: "center"
+                }}
+            >
+                <p className="error-msg">
+                    Actividad no encontrada o acceso no permitido.
+                </p>
+            </div>
         );
     }
 
-    const avatarData = actividad.avatarDialogo[avatar];  // carga json segun avatar
-
+    const avatarData = actividad.avatarDialogo[avatar];  // carga json según avatar
     const avatarImg = `${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`;
 
+    const fondo = actividad.imagenFondo 
+        ? actividad.imagenFondo 
+        : `${import.meta.env.BASE_URL}assets/images/nogenially/bienvenida.jpeg`;
+
+    const tieneGenially = actividad.geniallyURL && actividad.geniallyURL.trim() !== "" && actividad.geniallyURL !== "#";
 
     return (
-        <div className="actividad-container">
+        <div 
+            className="actividad-container" 
+            style={{ 
+                backgroundImage: `url(${fondo})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center"
+            }}
+        >
             <div className="actividad-header">
                 <img src={avatarImg} alt="avatar" className="avatar-actividad" />
-                <div >
+                <div>
                     <h2 className="saludo">¡Hola {nombre}!</h2>
                     <p className="dialogo">{avatarData.dialogo}</p>
                 </div>
@@ -84,45 +93,26 @@ function Actividad() {
 
             {avatarData?.mensaje && <p>{avatarData.mensaje}</p>}
 
-
             {actividad.audio && (
                 <div className="audio-button-container">
-                    <button
-                        onClick={() => {
-                            if (!audioRef.current) return;
-                            if (isPlaying) {
-                                audioRef.current.pause();
-                                setIsPlaying(false);
-                            } else {
-                                audioRef.current.muted = false;
-                                audioRef.current.play().catch((e) => {
-                                    console.warn("Error al reproducir el audio:", e);
-                                });
-                                setIsPlaying(true);
-                            }
-                        }}
-                        className="audio-button"
-                    >
+                    <button onClick={toggleAudio} className="audio-button">
                         {isPlaying ? "⏸️ Pausar audio" : "▶️ Reproducir audio"}
                     </button>
-
-                    <audio
-                        ref={audioRef}
-                        src={`${import.meta.env.BASE_URL}${actividad.audio.replace(/^\/+/, "")}`}
-                        preload="auto"
+                    <audio 
+                        ref={audioRef} 
+                        src={`${import.meta.env.BASE_URL}${actividad.audio.replace(/^\/+/, "")}`} 
+                        preload="auto" 
                     />
                 </div>
             )}
-
 
             {avatarData?.sabiasQue && (
                 <p className="sabiasque">
                     <strong>¿Sabías que...?</strong> {avatarData.sabiasQue}
                 </p>
             )}
-            
 
-            {actividad.geniallyURL && (
+            {tieneGenially && (
                 <div className="actividad-genially">
                     <iframe
                         src={actividad.geniallyURL}
