@@ -1,0 +1,40 @@
+
+{
+  "modojuego": {
+    "titulo": "Choose your game style",
+    "subtitulo": "Do you explore solo or with others?",
+    "modoIndividual": "Single mode",
+    "modoEquipo": "Team mode",
+    "proximamente": "Coming soon"
+  },
+
+  "portada": {
+    "titulo": "Prehistoric Adventure",
+    "descripcion": "Welcome to the Prehistoric Adventure! You have just embarked on a journey through time where you will uncover the best-kept secrets of human history and Earth. Guided by your faithful companion (you choose!), you will visit 10 sacred places, ancient fossils, ancestral civilizations, and amazing monuments. At each stop, you will find a QR code that activates a mission: an interactive activity that will make you think, learn, and overcome challenges. Are you ready to become a true time explorer? 🧭 Your adventure starts now!",
+    "empezar": "Start Adventure"
+  },
+
+  "form": {
+  "nombre": "Explorer name:",
+  "placeholderNombre": "Enter your name...",
+  "guia": "Choose your guide:",
+  "botonAventura": "Start Adventure",
+  "alertaNombreInvalido": "The name can only contain letters, numbers, and spaces.",
+  "alertaFaltanDatos": "Please enter your name and choose an avatar."
+},
+
+"mapa": {
+    "saludo": "Greetings {{nombre}}!",
+    "dialogo": "I am guide {{guia}}. You follow {{guia}}. \n\n{{nombre}} wear strange clothes. \n\n{{nombre}} not from here? \n\nNo problem, \n\n{{nombre}} and {{guia}} explore lands!",
+    "instruccion": "Scan a QR code or select an activity to begin.",
+    "botonQR": "Scan QR Code",
+    "botonVolver": "Back"
+  },
+
+  "escaner": {
+    "titulo": "Scan the QR code",
+    "escaneando": "Scanning... point the camera at the QR code",
+    "qrInvalido": "Invalid QR. Make sure it contains a URL with /actividad/number"
+  }
+
+}
