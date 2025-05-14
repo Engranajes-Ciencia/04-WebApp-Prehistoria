@@ -66,9 +66,7 @@ function Actividad() {
     const avatarData = actividad.avatarDialogo[avatar];  // carga json según avatar
     const avatarImg = `${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`;
 
-    const fondo = actividad.imagenFondo 
-        ? actividad.imagenFondo 
-        : `${import.meta.env.BASE_URL}assets/images/nogenially/bienvenida.jpeg`;
+    const fondo = actividad.imagenFondo || actividad.imagenAlternativa;
 
     const tieneGenially = actividad.geniallyURL && actividad.geniallyURL.trim() !== "" && actividad.geniallyURL !== "#";
 
