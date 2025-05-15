@@ -36,8 +36,20 @@
     "titulo": "Escanea el código QR",
     "escaneando": "Escaneando... apunta con la cámara al QR",
     "qrInvalido": "QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número"
-  }
+  },
 
+  "final": {
+    "enhorabuena": "¡Enhorabuena!",
+    "completado": "100% completado",
+    "paradasCompletadas": "Has completado todas las paradas de la Aventura Prehistórica",
+    "diplomaInfantil": "Diploma infantil",
+    "diplomaAdulto": "Diploma Adulto",
+    "descarga": "Descargar Diploma",
+    "reiniciar": "Reiniciar juego",
+    "galeria": "Ver Galeria de Medallas",
+    "alertaSelecciona": "Selecciona un tipo de diploma",
+    "alertaNoCargaImagen": "No se pudo cargar la imagen del diploma"
+  }
 }   
 
 

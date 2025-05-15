@@ -35,6 +35,19 @@
     "titulo": "Scan the QR code",
     "escaneando": "Scanning... point the camera at the QR code",
     "qrInvalido": "Invalid QR. Make sure it contains a URL with /actividad/number"
+  },
+
+  "final": {
+    "enhorabuena": "Congratulations!",
+    "completado": "100% completed",
+    "paradasCompletadas": "You have completed all the stops of Prehistoric Adventure",
+    "diplomaInfantil": "Children's diploma",
+    "diplomaAdulto": "Adult diploma",
+    "descarga": "Download diploma",
+    "reiniciar": "Restart game",
+    "galeria": "See Medal Gallery",
+    "alertaSelecciona": "Select a type of diploma",
+    "alertaNoCargaImagen": "the image of the diploma could not be uploaded"
   }
 
 }

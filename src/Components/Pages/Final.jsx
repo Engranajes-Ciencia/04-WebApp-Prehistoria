@@ -4,8 +4,10 @@ import { resetActividadesCompletadas } from "../../config/utils/localStorage";
 import { jsPDF } from "jspdf";
 import confetti from "canvas-confetti";
 import "../../Styles/Pages/Final.css";
+import { useTranslation } from "react-i18next";
 
 function Final() {
+    const { t } = useTranslation ("pages");
     const navigate = useNavigate();
     const [avatar, setAvatar] = useState("");
     const [nombre, setNombre] = useState("");
@@ -39,7 +41,7 @@ function Final() {
 
     const handleDescargarDiploma = () => {
         if (!tipoDiploma) {
-            alert("Selecciona un tipo de diploma.");
+            alert(t("final.alertaSelecciona"));
             return;
         }
 
@@ -74,7 +76,7 @@ function Final() {
         };
 
         img.onerror = () => {
-            alert("No se pudo cargar la imagen del diploma.");
+            alert(t("final.alertaNoCargaImagen"));
         };
     };
 
@@ -92,10 +94,10 @@ function Final() {
 
     return (
         <div className="final-container">
-            <h1 className="titulo-final">🎉 ¡Enhorabuena!</h1>
+            <h1 className="titulo-final">🎉 {t("final.enhorabuena")}</h1>
 
             <div className="barra-progreso-final">
-                <div className="relleno-final">100% Completado</div>
+                <div className="relleno-final">{t("final.completado")}</div>
             </div>
 
             <div className="nombre-avatar">
@@ -110,7 +112,7 @@ function Final() {
             </div>
 
             <p className="subtitulo-final">
-                Has completado todas las paradas de la Aventura Prehistórica.
+                {t("final.paradasCompletadas")}
             </p>
 
             <div className="selector-diploma">
@@ -118,13 +120,13 @@ function Final() {
                     className={`btn-tipo-diploma ${tipoDiploma === "infantil" ? "activo" : ""}`}
                     onClick={() => setTipoDiploma("infantil")}
                 >
-                    Diploma Infantil
+                    {t("final.diplomaInfantil")}
                 </button>
                 <button
                     className={`btn-tipo-diploma ${tipoDiploma === "adultos" ? "activo" : ""}`}
                     onClick={() => setTipoDiploma("adultos")}
                 >
-                    Diploma Adultos
+                   {t("final.diplomaAdulto")}
                 </button>
             </div>
 
@@ -142,16 +144,16 @@ function Final() {
 
             <div className="acciones-finales">
                 <button className="btn-descargar" onClick={handleDescargarDiploma}>
-                    Descargar Diploma
+                    {t("final.descarga")}
                 </button>
                 <button className="btn-reiniciar" onClick={handleReiniciarJuego}>
-                    Reiniciar Juego
+                    {t("final.reiniciar")}
                 </button>
 
                 
                 {/* muestra  vitrina */}
                 <button className="btn-vitrina" onClick={() => navigate("/vitrina-virtual")}>
-                    Ver Galería de Medallas
+                    {t("final.galeria")}
                 </button>
 
             </div>
