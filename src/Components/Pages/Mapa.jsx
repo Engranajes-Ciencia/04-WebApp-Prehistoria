@@ -1,7 +1,7 @@
 // src/Components/Pages/Mapa.jsx
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next";
+import { useTranslation, Trans } from "react-i18next";
 import "../../Styles/Pages/Mapa.css";
 
 const avatarMap = {
@@ -49,13 +49,15 @@ function Mapa() {
                         alt={avatar}
                         className="avatar-mini"
                     />
-                    <p>
-                       {t("mapa.dialogo", {
-                            nombre,
-                            guia: avatarNameMap[avatar],
-                        })}
-                    </p>
-                </div>
+                    <div style={{ whiteSpace: 'pre-wrap' }}>
+                        <Trans
+                            i18nKey="mapa.dialogo"
+                            ns="pages"
+                            values={{ nombre, guia: avatarNameMap[avatar] }}
+                            components={[<br />]}
+                        />
+                        </div>
+                    </div>
 
                 <p>{t("mapa.instruccion")}</p>
 

@@ -26,7 +26,7 @@
   
   "mapa": {
     "saludo": "¡Saludos {{nombre}}!",
-    "dialogo": "Yo ser guía {{guia}}. Tú seguir {{guia}}. \n\n{{nombre}} tener prendas raras. \n\n¿{{nombre}} no ser de aquí? \n\nNo importar, \n\n¡{{nombre}} y {{guia}} explorar tierras!",
+    "dialogo": "Yo ser guía {{guia}}. Tú seguir {{guia}}.<0></0><0></0>{{nombre}} tener prendas raras.<0></0><0></0>¿{{nombre}} no ser de aquí?<0></0><0></0>No importar,<0></0><0></0>¡{{nombre}} y {{guia}} explorar tierras!",
     "instruccion": "Escanea un código QR o selecciona una actividad para comenzar.",
     "botonQR": "Escanear Código QR",
     "botonVolver": "Volver"
