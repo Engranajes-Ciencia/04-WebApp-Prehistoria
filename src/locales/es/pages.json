@@ -75,7 +75,7 @@
     "titulo": "Bienvenida – Comienza la aventura",
     "avatarDialogo": {
       "dialogo": "¡Hola aventureros! Yo seré vuestro guía en este recorrido por la historia de la humanidad.",
-      "mensaje": "Bienvenidos y bienvenidas al Parque de las Ciencias de la Prehistoria...",
+      "mensaje": "Bienvenidos y bienvenidas al Parque de las Ciencias de la Prehistoria. Soy X y os invito a acompañarme en este viaje a través del tiempo, desde los orígenes de la vida en la Tierra hasta las primeras civilizaciones humanas. Aquí aprenderemos cómo evolucionaron las plantas, los animales y también nosotros, los seres humanos. Recordad: no toquéis las maquetas, cuidad el entorno y sobre todo… ¡disfrutad aprendiendo!",
       "sabiasQue": "¿Sabías que la vida en la Tierra comenzó hace más de 3.500 millones de años?"
     }
   },
@@ -138,7 +138,7 @@
   "9": {
     "titulo": "#",
     "avatarDialogo": {
-      "dialogo": " Estás en la parada 9: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
+      "dialogo": "Estás en la parada 9: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
       "mensaje": "En esta zona encontramos dinosaurios carnívoros, como los alosaurios y los dromeosaurios, que cazaban sobre dos patas. Algunos, como los velociraptores, tenían plumas y compartían rasgos con las aves actuales. Estos dinosaurios nos muestran que la evolución no siempre desaparece, a veces... ¡se transforma!",
       "sabiasQue": "¿Sabías que el triceratops tenía tres cuernos para defenderse?"
     }
