@@ -10,7 +10,7 @@ function Actividad() {
     const { id } = useParams();
     const navigate = useNavigate();
     const { t } = useTranslation("pages");
-    
+
     const actividad = actividades.find((a) => a.id === parseInt(id));
     const avatar = localStorage.getItem("avatar");
     const nombre = localStorage.getItem("nombre");
@@ -22,7 +22,7 @@ function Actividad() {
 
     const toggleAudio = () => {
         if (!audioRef.current) return;
-    
+
         if (isPlaying) {
             audioRef.current.pause();
         } else {
@@ -30,7 +30,7 @@ function Actividad() {
                 console.warn("Autoplay bloqueado por el navegador", e);
             });
         }
-    
+
         setIsPlaying(!isPlaying);
     };
 
@@ -50,67 +50,70 @@ function Actividad() {
 
     if (!actividad || !avatar || !nombre) {
         return (
-            <div 
-                className="actividad-container" 
-                style={{ 
+            <div
+                className="actividad-container"
+                style={{
                     backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/nogenially/bienvenida.jpeg)`,
                     backgroundSize: "cover",
                     backgroundPosition: "center"
                 }}
             >
-                <p className="error-msg">
-                    {t("actividad.error")}
-                </p>
+                <p className="error-msg">{t("actividad.error")}</p>
             </div>
         );
     }
 
-    const avatarData = actividad.avatarDialogo[avatar];  // carga json según avatar
     const avatarImg = `${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`;
-
     const fondo = actividad.imagenFondo || actividad.imagenAlternativa;
-
     const tieneGenially = actividad.geniallyURL && actividad.geniallyURL.trim() !== "" && actividad.geniallyURL !== "#";
 
+    // Traducciones específicas de la parada
+    const traduccionActividad = t(`${id}`, { returnObjects: true });
+
     return (
-        <div 
-            className="actividad-container" 
-            style={{ 
+        <div
+            className="actividad-container"
+            style={{
                 backgroundImage: `url(${fondo})`,
                 backgroundSize: "cover",
                 backgroundPosition: "center"
             }}
         >
             <div className="saludo-titulo">
+            <div className="titulo-mensaje">
+
+            <h3>{traduccionActividad.titulo}</h3>
+
+            {traduccionActividad.avatarDialogo.mensaje !== "#" && (
+                <p>{traduccionActividad.avatarDialogo.mensaje}</p>
+            )}
+            </div>
             <div className="actividad-header">
                 <img src={avatarImg} alt="avatar" className="avatar-actividad" />
                 <div>
                     <h2 className="saludo1">{t("actividad.saludo", { nombre })}</h2>
-                    <p className="dialogo">{avatarData.dialogo}</p>
+                    <p className="dialogo">{traduccionActividad.avatarDialogo.dialogo}</p>
                 </div>
             </div>
-            <div className="titulo-mensaje">
-            <h3>{actividad.titulo}</h3>
-
-            {avatarData?.mensaje && <p>{avatarData.mensaje}</p>}
-            </div>
+            
+            
             </div>
             {actividad.audio && (
                 <div className="audio-button-container">
                     <button onClick={toggleAudio} className="audio-button">
-                         {isPlaying ? t("actividad.pausarAudio") : t("actividad.reproducirAudio")}
+                        {isPlaying ? t("actividad.pausarAudio") : t("actividad.reproducirAudio")}
                     </button>
-                    <audio 
-                        ref={audioRef} 
-                        src={`${import.meta.env.BASE_URL}${actividad.audio.replace(/^\/+/, "")}`} 
-                        preload="auto" 
+                    <audio
+                        ref={audioRef}
+                        src={`${import.meta.env.BASE_URL}${actividad.audio.replace(/^\/+/, "")}`}
+                        preload="auto"
                     />
                 </div>
             )}
 
-            {avatarData?.sabiasQue && (
+            {traduccionActividad.avatarDialogo.sabiasQue !== "#" && (
                 <p className="sabiasque">
-                    <strong>{t("actividad.sabiasQue")}</strong> {avatarData.sabiasQue}
+                    <strong>{t("actividad.sabiasQue")}</strong> {traduccionActividad.avatarDialogo.sabiasQue}
                 </p>
             )}
 
@@ -131,3 +134,4 @@ function Actividad() {
 }
 
 export default Actividad;
+
