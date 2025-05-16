@@ -38,6 +38,280 @@
     "qrInvalido": "QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número"
   },
 
+  "actividad": {
+    "accesoDenegado": "Acceso no autorizado. Por favor, escanea un QR válido.",
+    "error": "Actividad no encontrada o acceso no permitido.",
+    "saludo": "¡Hola {{nombre}}!",
+    "pausarAudio": "⏸️ Pausar audio",
+    "reproducirAudio": "▶️ Reproducir audio",
+    "sabiasQue": "¿Sabías que...?"
+  },
+
+
+  "actividades": {
+    "1": {
+      "titulo": "Bienvenida – Comienza la aventura",
+      "explorador": {
+        "dialogo": "¡Hola aventureros! Yo seré vuestro guía en este recorrido por la historia de la humanidad.",
+        "mensaje": "Bienvenidos y bienvenidas al Parque de las Ciencias de la Prehistoria...",
+        "sabiasQue": "¿Sabías que la vida en la Tierra comenzó hace más de 3.500 millones de años?"
+      },
+      "exploradora": {
+        "dialogo": "#",
+        "mensaje": "Bienvenidos y bienvenidas al Parque de las Ciencias de la Prehistoria...",
+        "sabiasQue": "¿Sabías que las primeras formas de vida eran invisibles al ojo humano?"
+      }
+    },
+    "2": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "3": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "4": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "5": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "6": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "7": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "8": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "9": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "10": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "11": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "12": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "13": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "14": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "15": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "16": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "17": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "18": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "19": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    },
+    "20": {
+      "titulo": "",
+      "explorador": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      },
+      "exploradora": {
+        "dialogo": "",
+        "mensaje": "",
+        "sabiasQue": ""
+      }
+    }
+  },
+
+
   "final": {
     "enhorabuena": "¡Enhorabuena!",
     "completado": "100% completado",
@@ -51,6 +325,9 @@
     "alertaNoCargaImagen": "No se pudo cargar la imagen del diploma"
   }
 }   
+
+
+
 
 
 

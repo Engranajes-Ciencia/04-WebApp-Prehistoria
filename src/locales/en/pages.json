@@ -15,15 +15,15 @@
   },
 
   "form": {
-  "nombre": "Explorer name:",
-  "placeholderNombre": "Enter your name...",
-  "guia": "Choose your guide:",
-  "botonAventura": "Start Adventure",
-  "alertaNombreInvalido": "The name can only contain letters, numbers, and spaces.",
-  "alertaFaltanDatos": "Please enter your name and choose an avatar."
+    "nombre": "Explorer name:",
+    "placeholderNombre": "Enter your name...",
+    "guia": "Choose your guide:",
+    "botonAventura": "Start Adventure",
+    "alertaNombreInvalido": "The name can only contain letters, numbers, and spaces.",
+    "alertaFaltanDatos": "Please enter your name and choose an avatar."
 },
 
-"mapa": {
+  "mapa": {
     "saludo": "Greetings {{nombre}}!",
     "dialogo": "I am guide {{guia}}. You follow {{guia}}.<0></0><0></0>{{nombre}} wear strange clothes.<0></0><0></0>{{nombre}} not from here?<0></0><0></0>No problem,<0></0><0></0>{{nombre}} and {{guia}} explore lands!",
     "instruccion": "Scan a QR code or select an activity to begin.",
@@ -48,6 +48,282 @@
     "galeria": "See Medal Gallery",
     "alertaSelecciona": "Select a type of diploma",
     "alertaNoCargaImagen": "the image of the diploma could not be uploaded"
-  }
+  },
 
+  "actividad": {
+    "accesoDenegado": "Unauthorized access. Please scan a valid QR code.",
+    "error": "Activity not found or access not allowed.",
+    "saludo": "Hi {{nombre}}!",
+    "pausarAudio": "⏸️ Pause audio",
+    "reproducirAudio": "▶️ Play audio",
+    "sabiasQue": "Did you know...?"
+  },
+
+
+
+  "actividades": {
+    "actividad": {
+      "1": {
+        "titulo": "Welcome – Let the Adventure Begin",
+        "explorador": {
+          "dialogo": "Hello adventurers! I will be your guide on this journey...",
+          "mensaje": "Welcome to the Prehistoric Science Park...",
+          "sabiasQue": "Did you know that life on Earth began more than 3.5 billion years ago?"
+        },
+        "exploradora": {
+          "dialogo": "#",
+          "mensaje": "Welcome to the Prehistoric Science Park...",
+          "sabiasQue": "Did you know that the first forms of life were invisible to the human eye?"
+        }
+      },
+      "2": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "3": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "4": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "5": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "6": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "7": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "8": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "9": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "10": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "11": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "12": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "13": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "14": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "15": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "16": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "17": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "18": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "19": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      },
+      "20": {
+        "titulo": "",
+        "explorador": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        },
+        "exploradora": {
+          "dialogo": "",
+          "mensaje": "",
+          "sabiasQue": ""
+        }
+      }
+    }
+
+  }
 }
