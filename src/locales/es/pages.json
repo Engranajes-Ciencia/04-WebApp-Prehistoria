@@ -1,4 +1,3 @@
-
 {
   "modojuego": {
     "titulo": "Elige tu estilo de juego",
@@ -7,23 +6,19 @@
     "modoEquipo": "Modo equipo",
     "proximamente": "Próximamente"
   },
-
   "portada": {
     "titulo": "Aventura Prehistórica",
     "descripcion": "¡Bienvenido a la Aventura Prehistórica! Acabas de embarcarte en un viaje en el tiempo donde descubrirás los secretos mejor guardados de la historia de la humanidad y de la Tierra. Guiado por tu fiel compañero o compañera (¡tú eliges!), recorrerás 10 lugares sagrados, fósiles milenarios, civilizaciones ancestrales y monumentos asombrosos. En cada parada encontrarás un código QR que activará una misión: una actividad interactiva que te hará pensar, aprender y superar retos. ¿Estás preparado para convertirte en un auténtico explorador del tiempo? 🧭 ¡Tu aventura comienza ya!",
     "empezar": "Empezar Aventura"
   },
-
   "form": {
-  "nombre": "Nombre de explorador/a:",
-  "placeholderNombre": "Escribe tu nombre...",
-  "guia": "Elige a tu guía:",
-  "botonAventura": "Empezar Aventura",
-  "alertaNombreInvalido": "El nombre solo puede contener letras, números y espacios.",
-  "alertaFaltanDatos": "Por favor, escribe tu nombre y elige un avatar."
+    "nombre": "Nombre de explorador/a:",
+    "placeholderNombre": "Escribe tu nombre...",
+    "guia": "Elige a tu guía:",
+    "botonAventura": "Empezar Aventura",
+    "alertaNombreInvalido": "El nombre solo puede contener letras, números y espacios.",
+    "alertaFaltanDatos": "Por favor, escribe tu nombre y elige un avatar."
   },
-
-  
   "mapa": {
     "saludo": "¡Saludos {{nombre}}!",
     "dialogo": "Yo ser guía {{guia}}. Tú seguir {{guia}}.<0></0><0></0>{{nombre}} tener prendas raras.<0></0><0></0>¿{{nombre}} no ser de aquí?<0></0><0></0>No importar,<0></0><0></0>¡{{nombre}} y {{guia}} explorar tierras!",
@@ -31,13 +26,11 @@
     "botonQR": "Escanear Código QR",
     "botonVolver": "Volver"
   },
-
   "escaner": {
     "titulo": "Escanea el código QR",
     "escaneando": "Escaneando... apunta con la cámara al QR",
     "qrInvalido": "QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número"
   },
-
   "entreActividades": {
     "mapa": "Mapa del recorrido",
     "buenTrabajo": "Buen trabajo",
@@ -46,9 +39,7 @@
     "escanear": "Escanear siguiente parada",
     "pantallaFinal": "Ver pantalla final",
     "medallas": "Ver medallas"
-    
   },
-
   "final": {
     "enhorabuena": "¡Enhorabuena!",
     "completado": "100% completado",
@@ -61,12 +52,10 @@
     "alertaSelecciona": "Selecciona un tipo de diploma",
     "alertaNoCargaImagen": "No se pudo cargar la imagen del diploma"
   },
-
-
   "actividad": {
     "accesoDenegado": "Acceso denegado. Escanea el código QR.",
     "error": "Ha ocurrido un error al cargar la actividad.",
-    "saludo": "Hola {{nombre}}",
+    "saludo": "¡Hola {{nombre}}!",
     "pausarAudio": "Pausar audio",
     "reproducirAudio": "Reproducir audio",
     "sabiasQue": "¿Sabías que...?"
@@ -75,12 +64,12 @@
     "titulo": "Bienvenida – Comienza la aventura",
     "avatarDialogo": {
       "dialogo": "¡Hola aventureros! Yo seré vuestro guía en este recorrido por la historia de la humanidad.",
-      "mensaje": "Bienvenidos y bienvenidas al Parque de las Ciencias de la Prehistoria...",
+      "mensaje": "Bienvenidos y bienvenidas al Parque de las Ciencias de la Prehistoria. Soy X y os invito a acompañarme en este viaje a través del tiempo, desde los orígenes de la vida en la Tierra hasta las primeras civilizaciones humanas. Aquí aprenderemos cómo evolucionaron las plantas, los animales y también nosotros, los seres humanos. Recordad: no toquéis las maquetas, cuidad el entorno y sobre todo… ¡disfrutad aprendiendo!",
       "sabiasQue": "¿Sabías que la vida en la Tierra comenzó hace más de 3.500 millones de años?"
     }
   },
   "2": {
-    "titulo": "#",
+    "titulo": "El origen de la vida",
     "avatarDialogo": {
       "dialogo": " Estás en la parada 2. Mira a tu alrededor… aquí comenzó todo.",
       "mensaje": "La Tierra se formó hace unos 4.500 millones de años. Al principio era un lugar sin vida con volcanes, océanos hirvientes y una atmósfera irrespirable. Pero con el tiempo, aparecieron las primeras formas de vida en el agua: bacterias y algas microscópicas. Aunque parezcan simples, estos seres diminutos fueron el primer paso en una larga cadena evolutiva… que nos lleva hasta hoy.",
@@ -88,7 +77,7 @@
     }
   },
   "3": {
-    "titulo": "#",
+    "titulo": "Las primeras plantas",
     "avatarDialogo": {
       "dialogo": "Parada 3. ¡Mira estos vegetales! Son los primeros habitantes verdes del planeta.",
       "mensaje": " Hace unos 500 millones de años, la vida dio un salto muy importante: ¡salió del agua y conquistó la tierra firme! Las primeras plantas en hacerlo fueron los musgos, que no tenían tallo ni raíces y absorbían el agua directamente del suelo. Fueron los primeros pobladores verdes del planeta… y gracias a ellas, después pudieron llegar los animales.",
@@ -96,23 +85,23 @@
     }
   },
   "4": {
-    "titulo": "#",
+    "titulo": "Prototaxiles y Meganeuras",
     "avatarDialogo": {
       "dialogo": " #",
       "mensaje": "En esta zona vemos dos seres muy distintos, pero igual de sorprendentes. Los Prototaxites eran hongos gigantes que podían alcanzar los 8 metros de altura. A su lado, una criatura que parece una libélula enorme: la Meganeura, un insecto que vivió en el periodo carbonífero y que podía cazar pequeños reptiles. Antes de los dinosaurios, estos eran los reyes de la Tierra.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que hace más de 300 millones de años existieron hongos de 8 metros y libélulas gigantes que cazaban reptiles? ¡Eran los reyes antes de los dinosaurios!"
     }
   },
   "5": {
-    "titulo": "#",
+    "titulo": "Los primeros árboles",
     "avatarDialogo": {
       "dialogo": " #",
       "mensaje": "Con el paso del tiempo, las plantas se hicieron más complejas. Aparecieron los primeros árboles como los pinos, los ginkgos o las araucarias. Algunos desarrollaron frutos, lo que permitía que los animales ayudaran a esparcir sus semillas por nuevos territorios. Estos árboles dieron forma a los grandes bosques prehistóricos que cubrirían el planeta.",
-      "sabiasQue": "#"
+      "sabiasQue": ""
     }
   },
   "6": {
-    "titulo": "#",
+    "titulo": "Las primeras flores",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "Durante millones de años, las plantas no tuvieron flores. Pero hace unos 150 millones de años aparecieron las angiospermas, es decir, las plantas con flor. Gracias a las flores y a los polinizadores, como las abejas, las plantas pudieron reproducirse más fácilmente y expandirse con rapidez. El mundo vegetal ya empezaba a parecerse al que conocemos hoy.",
@@ -120,7 +109,7 @@
     }
   },
   "7": {
-    "titulo": "#",
+    "titulo": "Los primeros dinosaurios",
     "avatarDialogo": {
       "dialogo": " #",
       "mensaje": "Ahora entramos en el Jurásico, la era de los grandes dinosaurios. Aquí encontramos al Triceratops, que comía plantas bajas como los helechos, y al Brontosaurio, que podía alcanzar las copas de los árboles. Todos estos gigantes eran herbívoros, y su tamaño asombroso estaba adaptado a un mundo donde las plantas crecían en abundancia.",
@@ -128,7 +117,7 @@
     }
   },
   "8": {
-    "titulo": "#",
+    "titulo": "La deriva continental",
     "avatarDialogo": {
       "dialogo": " #",
       "mensaje": "Hace millones de años, todos los continentes estaban unidos en una gran masa de tierra llamada Pangea. Con el tiempo, esta gran “isla” se fue fragmentando por el movimiento de las placas tectónicas. ¿Cómo lo sabemos? Gracias a los fósiles, que nos muestran restos idénticos en lugares hoy separados por océanos. La deriva continental aún continúa hoy.",
@@ -136,15 +125,15 @@
     }
   },
   "9": {
-    "titulo": "#",
+    "titulo": "Los segundos dinosaurios",
     "avatarDialogo": {
-      "dialogo": " Estás en la parada 9: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
+      "dialogo": "Estás en la parada 9: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
       "mensaje": "En esta zona encontramos dinosaurios carnívoros, como los alosaurios y los dromeosaurios, que cazaban sobre dos patas. Algunos, como los velociraptores, tenían plumas y compartían rasgos con las aves actuales. Estos dinosaurios nos muestran que la evolución no siempre desaparece, a veces... ¡se transforma!",
       "sabiasQue": "¿Sabías que el triceratops tenía tres cuernos para defenderse?"
     }
   },
   "10": {
-    "titulo": "#",
+    "titulo": "Galápagos y Darwin",
     "avatarDialogo": {
       "dialogo": " #",
       "mensaje": "Charles Darwin viajó a las islas Galápagos en el siglo XIX y descubrió allí algo fascinante: animales muy parecidos entre sí, pero con pequeñas diferencias que les ayudaban a sobrevivir en cada isla. Esto le llevó a formular la teoría de la evolución por selección natural: sólo sobrevive quien mejor se adapta al entorno. Una idea que cambió la ciencia para siempre.",
@@ -152,7 +141,7 @@
     }
   },
   "11": {
-    "titulo": "#",
+    "titulo": "Las huellas de Laetoli",
     "avatarDialogo": {
       "dialogo": "¡Parada 11! Vamos tras las huellas del pasado. ¿Listo para caminar con nuestros antecesores?",
       "mensaje": "En Tanzania, África, se encontraron unas huellas muy especiales: las huellas de Laetoli, con más de 3 millones de años. Pertenecen a un Australopithecus, un antepasado lejano del ser humano. Estas huellas demuestran que ya caminaban erguidos sobre dos piernas, como nosotros. Un gran paso en la evolución hacia el Homo sapiens.",
@@ -160,7 +149,7 @@
     }
   },
   "12": {
-    "titulo": "#",
+    "titulo": "Atapuerca",
     "avatarDialogo": {
       "dialogo": " #",
       "mensaje": "En España, en el yacimiento de Atapuerca, se han encontrado restos de varios tipos de homínidos. Es uno de los lugares más importantes del mundo para entender cómo hemos evolucionado. Allí aparecieron los restos de especies como el Homo antecessor, que nos ayuda a reconstruir el árbol genealógico de la humanidad.",
@@ -168,7 +157,7 @@
     }
   },
   "13": {
-    "titulo": "#",
+    "titulo": "El hombre de Neandertal",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "Durante mucho tiempo convivimos con otra especie humana: el Hombre de Neandertal. Fueron grandes cazadores, vivieron en climas fríos, y también usaban herramientas. Hoy sabemos que no se extinguieron del todo: muchas personas todavía conservan un pequeño porcentaje de ADN neandertal.",
@@ -176,7 +165,7 @@
     }
   },
   "14": {
-    "titulo": "#",
+    "titulo": "Cráneos y evolución humana",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "En este museo verás cráneos de distintas especies humanas y de otros primates. Fíjate en cómo ha cambiado la forma del cráneo para dejar espacio al cerebro, que en los humanos modernos es mucho más grande. Ese cerebro nos permitió comunicarnos, crear herramientas, formar grupos… y dar paso a la cultura y la sociedad.",
@@ -184,7 +173,7 @@
     }
   },
   "15": {
-    "titulo": "#",
+    "titulo": "Cuevas y arte rupestre",
     "avatarDialogo": {
       "dialogo": "Parada 15. ¿Ves esas pinturas? Son mensajes silenciosos de una humanidad muy antigua.",
       "mensaje": "Las pinturas que encontrarás aquí son copias de las que se hicieron en cuevas como Lascaux, Chauvet o Nerja. Con pigmentos naturales y candiles, nuestros antepasados decoraban las paredes con animales, figuras humanas… y hasta manos sopladas. Estas pinturas no eran solo arte: también eran enseñanza, ritual y memoria colectiva.",
@@ -192,7 +181,7 @@
     }
   },
   "16": {
-    "titulo": "#",
+    "titulo": "Los poblados nómadas",
     "avatarDialogo": {
       "dialogo": "Llegamos a la parada 16. ¡Los nómadas eran exploradores como nosotros!",
       "mensaje": "Antes de construir casas, nuestros antepasados eran nómadas: se movían buscando comida y refugio. Vivían en tiendas como los tipis, fáciles de desmontar y transportar. Cazaban, recolectaban y decoraban sus cuerpos con plumas y collares. Lejos de ser primitivos, eran expertos en adaptarse al entorno.",
@@ -200,7 +189,7 @@
     }
   },
   "17": {
-    "titulo": "#",
+    "titulo": "Primeros poblados sedentarios",
     "avatarDialogo": {
       "dialogo": "¡Parada 17! Dejar de moverse y empezar a construir... ¡eso sí que fue un gran cambio!",
       "mensaje": "Con el cambio climático y el descubrimiento de la agricultura, algunas tribus dejaron de moverse y comenzaron a construir los primeros asentamientos fijos. Sembraban, criaban animales y almacenaban comida. Así surgieron los primeros pueblos, los templos, los líderes… y una nueva forma de vida: el sedentarismo.",
@@ -208,7 +197,7 @@
     }
   },
   "18": {
-    "titulo": "#",
+    "titulo": "Pinturas del Sáhara y de Laja Alta",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "En este mural vemos escenas de la vida cotidiana en la Prehistoria. Destacan unas pinturas del Sáhara, en las que aparece un grupo cuidando del ganado, un reflejo realista de las primeras sociedades organizadas. Junto a la casa de Çatalhöyük se representa otra escena sorprendente: barcos de vela encontrados en Laja Alta, Cádiz. Aunque se pensó que eran fenicios, hoy sabemos que son mucho más antiguos, de la Edad del Cobre, y nos muestran que ya entonces… ¡navegaban los mares!",
@@ -216,7 +205,7 @@
     }
   },
   "19": {
-    "titulo": "#",
+    "titulo": "Çatalhöyük",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "Çatalhöyük, en Turquía, fue una de las primeras ciudades del mundo. Las casas no tenían puertas a ras del suelo, se entraba por el tejado. Allí ya había hornos, vasijas y hasta figuras religiosas, como la Diosa Madre, que protegía la fertilidad y la caza. Esta ciudad nos habla de espiritualidad, organización social… y del comienzo de las grandes civilizaciones.",
@@ -224,19 +213,11 @@
     }
   },
   "20": {
-    "titulo": "#",
+    "titulo": "Stonehenge",
     "avatarDialogo": {
       "dialogo": "¡Mira estas piedras gigantes en la ultima parada! ¿Quién las puso ahí? ¡Vamos a investigarlo!",
       "mensaje": "Ante vosotros tenéis una réplica de Stonehenge, un conjunto de piedras gigantes alineadas con la salida del sol en el solsticio de verano. Fue construido hace más de 4.000 años en Inglaterra y aún hoy no sabemos con certeza para qué servía. ¿Templo, calendario, lugar de reunión? Sea cual sea su función, nos recuerda que desde hace milenios, el ser humano observa el cielo, piensa en el tiempo… y construye en común.",
       "sabiasQue": "¿Sabías que algunas alineaciones indican los solsticios?"
     }
   }
- 
-}   
-
-
-
-
-
-
-
+}

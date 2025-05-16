@@ -17,6 +17,7 @@ function Actividad() {
     const accesoQR = localStorage.getItem("accesoQR");
 
     // Constantes del audio
+    // Constantes del audio para el primer botón 🇪🇸
     const audioRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
@@ -32,6 +33,20 @@ function Actividad() {
         }
 
         setIsPlaying(!isPlaying);
+    };
+
+    // Constantes del audio para el segundo botón 🇬🇧
+    const audioAltRef = useRef(null);
+    const [isAudioAltPlaying, setIsAudioAltPlaying] = useState(false);
+
+    const toggleAudioAlt = () => {
+        if (!audioAltRef.current) return;
+        if (isAudioAltPlaying) {
+            audioAltRef.current.pause();
+        } else {
+            audioAltRef.current.play().catch((e) => console.warn("Autoplay bloqueado", e));
+        }
+        setIsAudioAltPlaying(!isAudioAltPlaying);
     };
 
     useEffect(() => {
@@ -79,22 +94,28 @@ function Actividad() {
                 backgroundPosition: "center"
             }}
         >
-            <div className="actividad-header">
-                <img src={avatarImg} alt="avatar" className="avatar-actividad" />
-                <div>
-                    <h2 className="saludo">{t("actividad.saludo", { nombre })}</h2>
-                    <p className="dialogo">{traduccionActividad.avatarDialogo.dialogo}</p>
-                </div>
-            </div>
+            <div className="saludo-titulo">
+            <div className="titulo-mensaje">
 
             <h3>{traduccionActividad.titulo}</h3>
 
             {traduccionActividad.avatarDialogo.mensaje !== "#" && (
                 <p>{traduccionActividad.avatarDialogo.mensaje}</p>
             )}
-
+            </div>
+            <div className="actividad-header">
+                <img src={avatarImg} alt="avatar" className="avatar-actividad" />
+                <div>
+                    <h2 className="saludo1">{t("actividad.saludo", { nombre })}</h2>
+                    <p className="dialogo">{traduccionActividad.avatarDialogo.dialogo}</p>
+                </div>
+            </div>
+            
+            
+            </div>
             {actividad.audio && (
                 <div className="audio-button-container">
+                    {/* Botón para el primer audio 🎵 */}
                     <button onClick={toggleAudio} className="audio-button">
                         {isPlaying ? t("actividad.pausarAudio") : t("actividad.reproducirAudio")}
                     </button>
@@ -103,6 +124,22 @@ function Actividad() {
                         src={`${import.meta.env.BASE_URL}${actividad.audio.replace(/^\/+/, "")}`}
                         preload="auto"
                     />
+
+                    {/* Botón para el segundo audio 🇬🇧 */}
+                    {actividad.audioENG && (
+                        <>
+                            <button onClick={toggleAudioAlt} className="audio-button-alt">
+                                {isAudioAltPlaying ? "Pause" : "Play"}
+                            </button>
+                            <audio
+                                ref={audioAltRef}
+                                src={`${import.meta.env.BASE_URL}${actividad.audioENG.replace(/^\/+/, "")}`}
+                                preload="auto"
+                            />
+                        </>
+
+                    )}
+
                 </div>
             )}
 
@@ -129,4 +166,3 @@ function Actividad() {
 }
 
 export default Actividad;
-
