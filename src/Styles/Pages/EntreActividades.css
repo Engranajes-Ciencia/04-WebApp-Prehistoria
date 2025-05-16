@@ -45,10 +45,26 @@
     background-color: #4caf50;
 }
 
-/* Si es la siguiente parada */
-.marcador.actual {
-    background-color: #2196f3;
-    animation: marcadorPulse 1.2s infinite; }
+.marcador-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* -- Siguiente parada (amarillo claro) */
+.marcador.siguiente {
+    background-color: #ffeb3b;
+    border-color: #fbc02d;
+    box-shadow: 0 0 8px rgba(255, 235, 59, 0.6);
+}
 
 .mapa-real {
     max-width: 95%;
