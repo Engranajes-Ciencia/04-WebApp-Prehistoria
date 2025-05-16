@@ -3,11 +3,13 @@ import { useParams, useNavigate } from "react-router-dom";
 import actividades from "../../config/data/actividades.json";
 import { marcarActividadComoCompletada } from "../../config/utils/localStorage";
 import { validarAvatar, validarNombre } from "../../config/utils/validations";
+import { useTranslation } from "react-i18next";
 import "../../Styles/Pages/Actividad.css";
 
 function Actividad() {
     const { id } = useParams();
     const navigate = useNavigate();
+    const { t } = useTranslation("pages");
     
     const actividad = actividades.find((a) => a.id === parseInt(id));
     const avatar = localStorage.getItem("avatar");
@@ -38,7 +40,7 @@ function Actividad() {
             !validarNombre(nombre) ||
             !validarAvatar(avatar)
         ) {
-            alert("Acceso no autorizado. Por favor, escanea un QR válido.");
+            alert(t("actividad.accesoDenegado"));
             navigate("/EscanerQR");
             return;
         }
@@ -57,7 +59,7 @@ function Actividad() {
                 }}
             >
                 <p className="error-msg">
-                    Actividad no encontrada o acceso no permitido.
+                    {t("actividad.error")}
                 </p>
             </div>
         );
@@ -82,7 +84,7 @@ function Actividad() {
             <div className="actividad-header">
                 <img src={avatarImg} alt="avatar" className="avatar-actividad" />
                 <div>
-                    <h2 className="saludo">¡Hola {nombre}!</h2>
+                    <h2 className="saludo">{t("actividad.saludo", { nombre })}</h2>
                     <p className="dialogo">{avatarData.dialogo}</p>
                 </div>
             </div>
@@ -94,7 +96,7 @@ function Actividad() {
             {actividad.audio && (
                 <div className="audio-button-container">
                     <button onClick={toggleAudio} className="audio-button">
-                        {isPlaying ? "⏸️ Pausar audio" : "▶️ Reproducir audio"}
+                         {isPlaying ? t("actividad.pausarAudio") : t("actividad.reproducirAudio")}
                     </button>
                     <audio 
                         ref={audioRef} 
@@ -106,7 +108,7 @@ function Actividad() {
 
             {avatarData?.sabiasQue && (
                 <p className="sabiasque">
-                    <strong>¿Sabías que...?</strong> {avatarData.sabiasQue}
+                    <strong>{t("actividad.sabiasQue")}</strong> {avatarData.sabiasQue}
                 </p>
             )}
 

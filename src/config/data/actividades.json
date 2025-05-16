@@ -5,7 +5,7 @@
     "ubicacion": "Entrada principal del parque",
     "posX": 370,
     "posY": 760,
-    "audio": "/sounds/paradasaudio/parada1.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada1.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "¡Hola aventureros! Yo seré vuestro guía en este recorrido por la historia de la humanidad.",
@@ -28,7 +28,7 @@
     "ubicacion": "Zona de fósiles marinos",
     "posX": 570,
     "posY": 700,
-    "audio": "/sounds/paradasaudio/parada2.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada2.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " Estás en la parada 2. Mira a tu alrededor… aquí comenzó todo.",
@@ -49,7 +49,7 @@
     "id": 3,
     "titulo": "Las primeras plantas",
     "ubicacion": "Área de musgos y helechos antiguos",
-    "audio": "/sounds/paradasaudio/parada3.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada3.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "Parada 3. ¡Mira estos vegetales! Son los primeros habitantes verdes del planeta.",
@@ -69,7 +69,7 @@
     "id": 4,
     "titulo": "Prototaxiles y Meganeuras",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada4.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada4.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -90,7 +90,7 @@
     "id": 5,
     "titulo": "Los primeros árboles",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada5.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada5.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -110,7 +110,7 @@
     "id": 6,
     "titulo": "Las primeras flores",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada6.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada6.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "#",
@@ -132,7 +132,7 @@
     "ubicacion": "  # ",
     "posX": 370,
     "posY": 600,
-    "audio": "/sounds/paradasaudio/parada7.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada7.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -153,7 +153,7 @@
     "id": 8,
     "titulo": "La deriva continental",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada8.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada8.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -162,7 +162,7 @@
       },
       "exploradora": {
         "dialogo": "#",
-        "mensaje": "BHace millones de años, todos los continentes estaban unidos en una gran masa de tierra llamada Pangea. Con el tiempo, esta gran “isla” se fue fragmentando por el movimiento de las placas tectónicas. ¿Cómo lo sabemos? Gracias a los fósiles, que nos muestran restos idénticos en lugares hoy separados por océanos. La deriva continental aún continúa hoy.",
+        "mensaje": "Hace millones de años, todos los continentes estaban unidos en una gran masa de tierra llamada Pangea. Con el tiempo, esta gran “isla” se fue fragmentando por el movimiento de las placas tectónicas. ¿Cómo lo sabemos? Gracias a los fósiles, que nos muestran restos idénticos en lugares hoy separados por océanos. La deriva continental aún continúa hoy.",
         "sabiasQue": "#"
       }
     },
@@ -176,7 +176,7 @@
     "ubicacion": "#",
     "posX": 400,
     "posY": 450,
-    "audio": "/sounds/paradasaudio/parada9.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada9.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " Estás en la parada 9: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
@@ -198,7 +198,7 @@
     "ubicacion": "#",
     "posX": 470,
     "posY": 370,
-    "audio": "/sounds/paradasaudio/parada.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada10.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -220,7 +220,7 @@
     "ubicacion": "Descubrimiento de pisadas humanas fósiles",
     "posX": 380,
     "posY": 340,
-    "audio": "/sounds/paradasaudio/parada11.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada11.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "¡Parada 11! Vamos tras las huellas del pasado. ¿Listo para caminar con nuestros antecesores?",
@@ -241,7 +241,7 @@
     "id": 12,
     "titulo": "Atapuerca",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada12.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada12.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -261,7 +261,7 @@
     "id": 13,
     "titulo": "El hombre de Neandertal",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada13.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada13.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "#",
@@ -281,7 +281,7 @@
     "id": 14,
     "titulo": "Cráneos y evolución humana",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada14.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada14.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "#",
@@ -304,7 +304,7 @@
     "ubicacion": "Arte prehistórico",
     "posX": 350,
     "posY": 230,
-    "audio": "/sounds/soundsParadas/Parada15.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada15.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "Parada 15. ¿Ves esas pinturas? Son mensajes silenciosos de una humanidad muy antigua.",
@@ -326,7 +326,7 @@
     "ubicacion": "Estilo de vida de los nómadas",
     "posX": 340,
     "posY": 150,
-    "audio": "/sounds/paradasaudio/parada16.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada16.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "Llegamos a la parada 16. ¡Los nómadas eran exploradores como nosotros!",
@@ -346,7 +346,7 @@
     "id": 17,
     "titulo": "Primeros poblados sedentarios",
     "ubicacion": "Primeros asentamientos",
-    "audio": "/sounds/paradasaudio/parada17.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada17.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "¡Parada 17! Dejar de moverse y empezar a construir... ¡eso sí que fue un gran cambio!",
@@ -367,7 +367,7 @@
     "id": 18,
     "titulo": "Pinturas del Sáhara y de Laja Alta",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada18.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada18.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "#",
@@ -388,7 +388,7 @@
     "id": 19,
     "titulo": "Çatalhöyük",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada19.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada19.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "#",
@@ -408,9 +408,10 @@
     "id": 20,
     "titulo": "Stonehenge",
     "ubicacion": "Monumento megalítico",
+
     "posX": 320,
     "posY": 380,
-    "audio": "/sounds/paradasaudio/parada20.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada20.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "¡Mira estas piedras gigantes en la ultima parada! ¿Quién las puso ahí? ¡Vamos a investigarlo!",
@@ -425,6 +426,7 @@
     },
     "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad9",
     "completada": false
+
   },
 
 
@@ -514,5 +516,6 @@
     },
     "geniallyURL": "https://view.genially.com/67e283be994f4e3b61c714e9/interactive-content-actividad10",
     "completada": false
+
   }
 ]
