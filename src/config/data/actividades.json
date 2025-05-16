@@ -6,6 +6,7 @@
     "posX": 370,
     "posY": 760,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada1.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada1ENG.mp3",
     "geniallyURL": "#",
     "imagenAlternativa": "/assets/images/nogenially/bienvenida.jpeg",
     "completada": false
@@ -17,6 +18,7 @@
     "posX": 570,
     "posY": 700,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada2.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada2ENG.mp3",
     "geniallyURL": "#",
     "imagenAlternativa": "/assets/images/nogenially/origen.png",
     "completada": false

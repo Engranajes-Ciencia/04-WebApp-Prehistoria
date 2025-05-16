@@ -13,6 +13,35 @@
     transform: translateY(0);
   }
 }
+.audio-button-container {
+  display: flex;
+  justify-content: center;     
+  align-items: center;
+  gap: 20px;                   
+  padding: 20px;               
+  margin: 20px auto;           
+  background: transparent;
+  background-size: cover;      
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.audio-button,
+.audio-button-alt {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1976d2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
 
 .actividad-container {
   padding: 2rem;

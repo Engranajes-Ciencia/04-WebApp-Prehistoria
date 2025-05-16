@@ -1,4 +1,3 @@
-
 {
   "modojuego": {
     "titulo": "Elige tu estilo de juego",
@@ -7,23 +6,19 @@
     "modoEquipo": "Modo equipo",
     "proximamente": "Próximamente"
   },
-
   "portada": {
     "titulo": "Aventura Prehistórica",
     "descripcion": "¡Bienvenido a la Aventura Prehistórica! Acabas de embarcarte en un viaje en el tiempo donde descubrirás los secretos mejor guardados de la historia de la humanidad y de la Tierra. Guiado por tu fiel compañero o compañera (¡tú eliges!), recorrerás 10 lugares sagrados, fósiles milenarios, civilizaciones ancestrales y monumentos asombrosos. En cada parada encontrarás un código QR que activará una misión: una actividad interactiva que te hará pensar, aprender y superar retos. ¿Estás preparado para convertirte en un auténtico explorador del tiempo? 🧭 ¡Tu aventura comienza ya!",
     "empezar": "Empezar Aventura"
   },
-
   "form": {
-  "nombre": "Nombre de explorador/a:",
-  "placeholderNombre": "Escribe tu nombre...",
-  "guia": "Elige a tu guía:",
-  "botonAventura": "Empezar Aventura",
-  "alertaNombreInvalido": "El nombre solo puede contener letras, números y espacios.",
-  "alertaFaltanDatos": "Por favor, escribe tu nombre y elige un avatar."
+    "nombre": "Nombre de explorador/a:",
+    "placeholderNombre": "Escribe tu nombre...",
+    "guia": "Elige a tu guía:",
+    "botonAventura": "Empezar Aventura",
+    "alertaNombreInvalido": "El nombre solo puede contener letras, números y espacios.",
+    "alertaFaltanDatos": "Por favor, escribe tu nombre y elige un avatar."
   },
-
-  
   "mapa": {
     "saludo": "¡Saludos {{nombre}}!",
     "dialogo": "Yo ser guía {{guia}}. Tú seguir {{guia}}.<0></0><0></0>{{nombre}} tener prendas raras.<0></0><0></0>¿{{nombre}} no ser de aquí?<0></0><0></0>No importar,<0></0><0></0>¡{{nombre}} y {{guia}} explorar tierras!",
@@ -31,13 +26,11 @@
     "botonQR": "Escanear Código QR",
     "botonVolver": "Volver"
   },
-
   "escaner": {
     "titulo": "Escanea el código QR",
     "escaneando": "Escaneando... apunta con la cámara al QR",
     "qrInvalido": "QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número"
   },
-
   "entreActividades": {
     "mapa": "Mapa del recorrido",
     "buenTrabajo": "Buen trabajo",
@@ -46,9 +39,7 @@
     "escanear": "Escanear siguiente parada",
     "pantallaFinal": "Ver pantalla final",
     "medallas": "Ver medallas"
-    
   },
-
   "final": {
     "enhorabuena": "¡Enhorabuena!",
     "completado": "100% completado",
@@ -61,8 +52,6 @@
     "alertaSelecciona": "Selecciona un tipo de diploma",
     "alertaNoCargaImagen": "No se pudo cargar la imagen del diploma"
   },
-
-
   "actividad": {
     "accesoDenegado": "Acceso denegado. Escanea el código QR.",
     "error": "Ha ocurrido un error al cargar la actividad.",
@@ -231,12 +220,4 @@
       "sabiasQue": "¿Sabías que algunas alineaciones indican los solsticios?"
     }
   }
- 
-}   
-
-
-
-
-
-
-
+}
