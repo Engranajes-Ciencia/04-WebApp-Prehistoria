@@ -9,6 +9,7 @@ import Form from "../../Components/Pages/Form";
 import Mapa from "../../Components/Pages/Mapa";
 import EscanerQR from '../../Components/Pages/EscanerQR';
 import EntreActividades from "../../Components/Pages/EntreActividades";
+import ModoSecreto from "../../Components/Pages/ModoSecreto";
 
 import LoadingSpinner from "../../Components/Commons/LoadingSpinner";
 
@@ -27,6 +28,7 @@ function AppRouter() {
             <Route path={ROUTES.MAPA} element={<Mapa />} />
             <Route path={ROUTES.ENTREACTIVIDADES} element={<EntreActividades />} />
             <Route path={ROUTES.ESCANERQR} element={<EscanerQR />} />
+            <Route path={ROUTES.MODO_SECRETO} element={<ModoSecreto />} />
 
             <Route path={ROUTES.ACTIVIDAD} element={
                 <Suspense fallback={<LoadingSpinner />}>

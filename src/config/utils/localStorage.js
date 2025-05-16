@@ -16,3 +16,12 @@ export function marcarActividadComoCompletada(id) {
 export function resetActividadesCompletadas() {
     localStorage.removeItem("actividadesCompletadas");
 }
+
+
+export function marcarModoSecretoDesbloqueado() {
+    localStorage.setItem("modoSecretoDesbloqueado", "true");
+}
+
+export function getModoSecretoDesbloqueado() {
+    return localStorage.getItem("modoSecretoDesbloqueado") === "true";
+}

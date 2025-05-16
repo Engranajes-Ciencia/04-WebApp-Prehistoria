@@ -21,6 +21,24 @@ function EscanerQR() {
       rememberLastUsedCamera: true,
     });
 
+
+    const handleScan = (data) => {
+      if (!data) return;
+
+      // Si el QR escaneado es el código secreto:
+      if (data === "codigo-secreto") {
+        marcarModoSecretoDesbloqueado();     // ✔ Marca como desbloqueado
+        navigate("/modo-secreto");           // ✔ Redirige a la pantalla especial
+      }
+
+      // Si es una parada normal:
+      else if (data.startsWith("parada-")) {
+        const id = data.split("-")[1];
+        navigate(`/actividad/${id}`);
+      }
+    };
+
+    
     scanner.render(
       (decodedText) => {
         console.log(" QR detectado:", decodedText);
