@@ -20,11 +20,12 @@
   gap: 20px;                   
   padding: 20px;               
   margin: 20px auto;           
-  background: url('/assets/images/background-audio.jpg') no-repeat center;
+  background: transparent;
   background-size: cover;      
   border-radius: 12px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
+
 .audio-button,
 .audio-button-alt {
   padding: 12px 24px;
