@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../../Styles/Layout/Header.css";
 import MusicPlayer from "../Commons/MusicPlayer";
+import { Link } from "react-router-dom";
 
 function Header() {
   const navigate = useNavigate();
@@ -43,10 +44,12 @@ function Header() {
         </div>
       </div>
 
-      <h1 className="titulo-header">Parque <br/>Prehistórico</h1>
+      <h1 className="titulo-header">
+        Parque <br />
+        Prehistórico
+      </h1>
 
       <div className="botones-header">
-
         <button className="btn-home" onClick={() => navigate("/")}>
           {t("home")}
         </button>
@@ -54,8 +57,8 @@ function Header() {
         <button className="btn-tema" onClick={toggleModoOscuro}>
           {modoOscuro ? t("modoClaro") : t("modoOscuro")}
         </button>
-        
-        <MusicPlayer/>
+
+        <MusicPlayer />
 
         <button
           className="btn-kiosco"
@@ -73,6 +76,25 @@ function Header() {
           {t("cambiarIdioma")}
         </button>
       </div>
+      <div
+        className="branding"
+        onClick={() => navigate("/")}
+        style={{ cursor: "pointer" }}
+      >
+        <img
+          src={`${import.meta.env.BASE_URL}assets/images/Logo-principal.png`}
+          alt="Logo empresa"
+          className="logo"
+        />
+      </div>
+
+      <h1
+        className="titulo-header"
+        onClick={() => navigate("/")}
+        style={{ cursor: "pointer" }}
+      >
+        Parque <br /> Prehistórico
+      </h1>
     </header>
   );
 }
