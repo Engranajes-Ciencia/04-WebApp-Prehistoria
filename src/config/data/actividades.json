@@ -3,7 +3,7 @@
     "id": 1,
     "titulo": "Bienvenida – Comienza la aventura",
     "ubicacion": "Entrada principal del parque",
-    "audio": "/sounds/paradasaudio/parada1.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada1.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "¡Hola aventureros! Yo seré vuestro guía en este recorrido por la historia de la humanidad.",
@@ -24,7 +24,7 @@
     "id": 2,
     "titulo": "El origen de la vida",
     "ubicacion": "Zona de fósiles marinos",
-    "audio": "/sounds/paradasaudio/parada2.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada2.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " Estás en la parada 2. Mira a tu alrededor… aquí comenzó todo.",
@@ -45,7 +45,7 @@
     "id": 3,
     "titulo": "Las primeras plantas",
     "ubicacion": "Área de musgos y helechos antiguos",
-    "audio": "/sounds/paradasaudio/parada3.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada3.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "Parada 3. ¡Mira estos vegetales! Son los primeros habitantes verdes del planeta.",
@@ -65,7 +65,7 @@
     "id": 4,
     "titulo": "Prototaxiles y Meganeuras",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada4.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada4.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -86,7 +86,7 @@
     "id": 5,
     "titulo": "Los primeros árboles",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada5.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada5.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -106,7 +106,7 @@
     "id": 6,
     "titulo": "Las primeras flores",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada6.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada6.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "#",
@@ -126,7 +126,7 @@
     "id": 7,
     "titulo": "Los primeros dinosaurios",
     "ubicacion": "  # ",
-    "audio": "/sounds/paradasaudio/parada7.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada7.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -147,7 +147,7 @@
     "id": 8,
     "titulo": "La deriva continental",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada8.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada8.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -156,7 +156,7 @@
       },
       "exploradora": {
         "dialogo": "#",
-        "mensaje": "BHace millones de años, todos los continentes estaban unidos en una gran masa de tierra llamada Pangea. Con el tiempo, esta gran “isla” se fue fragmentando por el movimiento de las placas tectónicas. ¿Cómo lo sabemos? Gracias a los fósiles, que nos muestran restos idénticos en lugares hoy separados por océanos. La deriva continental aún continúa hoy.",
+        "mensaje": "Hace millones de años, todos los continentes estaban unidos en una gran masa de tierra llamada Pangea. Con el tiempo, esta gran “isla” se fue fragmentando por el movimiento de las placas tectónicas. ¿Cómo lo sabemos? Gracias a los fósiles, que nos muestran restos idénticos en lugares hoy separados por océanos. La deriva continental aún continúa hoy.",
         "sabiasQue": "#"
       }
     },
@@ -168,7 +168,7 @@
     "id": 9,
     "titulo": "Los segundos dinosaurios",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada9.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada9.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " Estás en la parada 9: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
@@ -188,7 +188,7 @@
     "id": 10,
     "titulo": "Galápagos y Darwin",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada10.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -208,7 +208,7 @@
     "id": 11,
     "titulo": "Huellas de Laetoli",
     "ubicacion": "Descubrimiento de pisadas humanas fósiles",
-    "audio": "/sounds/paradasaudio/parada11.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada11.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "¡Parada 11! Vamos tras las huellas del pasado. ¿Listo para caminar con nuestros antecesores?",
@@ -229,7 +229,7 @@
     "id": 12,
     "titulo": "Atapuerca",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada12.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada12.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": " #",
@@ -249,7 +249,7 @@
     "id": 13,
     "titulo": "El hombre de Neandertal",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada13.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada13.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "#",
@@ -269,7 +269,7 @@
     "id": 14,
     "titulo": "Cráneos y evolución humana",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada14.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada14.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "#",
@@ -290,7 +290,7 @@
     "id": 15,
     "titulo": "Cuevas y arte rupestre",
     "ubicacion": "Arte prehistórico",
-    "audio": "/sounds/soundsParadas/Parada15.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada15.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "Parada 15. ¿Ves esas pinturas? Son mensajes silenciosos de una humanidad muy antigua.",
@@ -310,7 +310,7 @@
     "id": 16,
     "titulo": "Los poblados nómadas",
     "ubicacion": "Estilo de vida de los nómadas",
-    "audio": "/sounds/paradasaudio/parada16.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada16.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "Llegamos a la parada 16. ¡Los nómadas eran exploradores como nosotros!",
@@ -330,7 +330,7 @@
     "id": 17,
     "titulo": "Primeros poblados sedentarios",
     "ubicacion": "Primeros asentamientos",
-    "audio": "/sounds/paradasaudio/parada17.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada17.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "¡Parada 17! Dejar de moverse y empezar a construir... ¡eso sí que fue un gran cambio!",
@@ -351,7 +351,7 @@
     "id": 18,
     "titulo": "Pinturas del Sáhara y de Laja Alta",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada18.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada18.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "#",
@@ -372,7 +372,7 @@
     "id": 19,
     "titulo": "Çatalhöyük",
     "ubicacion": "#",
-    "audio": "/sounds/paradasaudio/parada19.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada19.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "#",
@@ -392,7 +392,7 @@
     "id": 20,
     "titulo": "Stonehenge",
     "ubicacion": "Monumento megalítico",
-    "audio": "/sounds/paradasaudio/parada20.mp3",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada20.mp3",
     "avatarDialogo": {
       "explorador": {
         "dialogo": "¡Mira estas piedras gigantes en la ultima parada! ¿Quién las puso ahí? ¡Vamos a investigarlo!",
@@ -407,85 +407,6 @@
     },
     "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad9",
     "completada": false
-  },
-  {
-    "id": 11,
-    "titulo": "Fósiles prehistóricos",
-    "ubicacion": "Fósil de trilobite y helecho",
-    "audio": "/sounds/soundsParadas/Parada1Trilobitesv2,5.mp3",
-    "avatarDialogo": {
-      "explorador": {
-        "dialogo": " Estás en la parada 1: Fósiles prehistóricos. Prepárate para descubrir algo fascinante.",
-        "mensaje": "Bienvenido a tu primera parada. Aquí descubrirás datos asombrosos sobre cómo vivieron los trilobites. Fueron animales marinos que habitaron los océanos hace unos 500 millones de años.",
-        "sabiasQue": "¿Sabías que los trilobites existieron antes que los dinosaurios?"
-      },
-      "exploradora": {
-        "dialogo": "¡Estas en la parada 1 sobre fósiles prehistóricos! Te encantará lo que verás.",
-        "mensaje": "Bienvenido a tu primera parada. Aquí descubrirás datos asombrosos sobre cómo vivieron los trilobites. Fueron animales marinos que habitaron los océanos hace unos 500 millones de años.",
-        "sabiasQue": "¿Sabías que las plantas fósiles ayudaron a formar el carbón que usamos hoy?"
-      }
-    },
-    "geniallyURL": "https://view.genially.com/67e134e5a75d54115e15f3f0/interactive-content-actividad-1",
-    "completada": false
-  },
-  {
-    "id": 13,
-    "titulo": "Tortuga de las Galápagos",
-    "ubicacion": "Zona de reptiles fósiles",
-    "audio": "/sounds/soundsParadas/Parada3Tortugasv2,5.mp3",
-    "avatarDialogo": {
-      "explorador": {
-        "dialogo": "¡ Estás en la parada 3: Tortuga de las Galápagos. Prepárate para descubrir algo fascinante.",
-        "mensaje": "Bienvenido a tu tercera parada. Aquí descubrirás a las increíbles tortugas de las Galápagos, famosas por su longevidad y tamaño impresionante. Estas majestuosas criaturas han sobrevivido por siglos en un ecosistema único, adaptándose a las condiciones extremas de las islas. Observa cómo se mueven lentamente, pero con gran determinación, recorriendo su hogar volcánico.",
-        "sabiasQue": "¿Sabías que pueden pesar más de 200 kilos?"
-      },
-      "exploradora": {
-        "dialogo": "¡Estas en la parada 3 sobre la tortuga de las Galápagos! Te encantará lo que verás.",
-        "mensaje": "Bienvenido a tu tercera parada. Aquí descubrirás a las increíbles tortugas de las Galápagos, famosas por su longevidad y tamaño impresionante. Estas majestuosas criaturas han sobrevivido por siglos en un ecosistema único, adaptándose a las condiciones extremas de las islas. Observa cómo se mueven lentamente, pero con gran determinación, recorriendo su hogar volcánico.",
-        "sabiasQue": "¿Sabías que su caparazón puede cambiar según la isla?"
-      }
-    },
-    "geniallyURL": "https://view.genially.com/67f8f2f8b5b5ac75ac152d4e/interactive-content-actividad-3",
-    "completada": false
-  },
-  {
-    "id": 18,
-    "titulo": "Pozo",
-    "ubicacion": "Acceso al agua en la antigüedad",
-    "audio": "/sounds/soundsParadas/Parada8Pozov2,5.mp3",
-    "avatarDialogo": {
-      "explorador": {
-        "dialogo": "Parada 8: El agua era más valiosa que el oro. Sin pozos, no había futuro.",
-        "mensaje": "Bienvenido a tu octava parada. Aquí descubrirás el pozo prehistórico, una estructura clave para la supervivencia de las antiguas comunidades. Estos pozos eran utilizados para almacenar agua, un recurso vital en tiempos donde su acceso no siempre era fácil. Observa cómo fueron construidos y cómo jugaron un papel fundamental en la evolución de los asentamientos humanos.",
-        "sabiasQue": "¿Sabías que algunos tenían poleas para sacar el agua más fácil?"
-      },
-      "exploradora": {
-        "dialogo": "Parada 8 activada. Cada gota contaba. Vamos a descubrir cómo sacaban el agua.",
-        "mensaje": "Bienvenido a tu octava parada. Aquí descubrirás el pozo prehistórico, una estructura clave para la supervivencia de las antiguas comunidades. Estos pozos eran utilizados para almacenar agua, un recurso vital en tiempos donde su acceso no siempre era fácil. Observa cómo fueron construidos y cómo jugaron un papel fundamental en la evolución de los asentamientos humanos.",
-        "sabiasQue": "¿Sabías que los primeros pozos datan del Neolítico?"
-      }
-    },
-    "geniallyURL": "https://view.genially.com/67f8fda123c430f481ddb5e6/interactive-content-actividad-8",
-    "completada": false
-  },
-  {
-    "id": 20,
-    "titulo": "Templo de Karnak",
-    "ubicacion": "Antiguo Egipto",
-    "audio": "/sounds/soundsParadas/Parada10Karnakv2,5.mp3",
-    "avatarDialogo": {
-      "explorador": {
-        "dialogo": "¡Última parada! El Templo de Karnak es testigo de siglos de historia. Vamos a explorarlo juntos.",
-        "mensaje": "Bienvenido a tu última parada. Has llegado al Templo de Karnak, uno de los complejos religiosos más impresionantes del antiguo Egipto. Construido a lo largo de más de dos mil años, este templo era un lugar de adoración dedicado a los dioses y faraones. Sus enormes columnas y relieves cuentan historias de batallas, rituales y ofrendas. Observa su grandiosidad y siente el poder de una civilización que dejó una huella imborrable en la historia.",
-        "sabiasQue": "¿Sabías que cada faraón dejaba su huella en Karnak?"
-      },
-      "exploradora": {
-        "dialogo": "Llegamos a la parada 10. Un lugar sagrado lleno de símbolos y leyendas del antiguo Egipto.",
-        "mensaje": "Bienvenido a tu última parada. Has llegado al Templo de Karnak, uno de los complejos religiosos más impresionantes del antiguo Egipto. Construido a lo largo de más de dos mil años, este templo era un lugar de adoración dedicado a los dioses y faraones. Sus enormes columnas y relieves cuentan historias de batallas, rituales y ofrendas. Observa su grandiosidad y siente el poder de una civilización que dejó una huella imborrable en la historia.",
-        "sabiasQue": "¿Sabías que era el centro religioso más importante del antiguo Egipto?"
-      }
-    },
-    "geniallyURL": "https://view.genially.com/67e283be994f4e3b61c714e9/interactive-content-actividad10",
-    "completada": false
   }
 ]
+ 
