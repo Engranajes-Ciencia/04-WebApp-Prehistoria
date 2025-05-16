@@ -3,6 +3,8 @@
     "id": 1,
     "titulo": "Bienvenida – Comienza la aventura",
     "ubicacion": "Entrada principal del parque",
+    "posX": 370,
+    "posY": 760,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada1.mp3",
     "geniallyURL": "#",
     "imagenAlternativa": "/assets/images/nogenially/bienvenida.jpeg",
@@ -12,6 +14,8 @@
     "id": 2,
     "titulo": "El origen de la vida",
     "ubicacion": "Zona de fósiles marinos",
+    "posX": 570,
+    "posY": 700,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada2.mp3",
     "geniallyURL": "#",
     "imagenAlternativa": "/assets/images/nogenially/origen.png",
@@ -54,6 +58,8 @@
     "id": 7,
     "titulo": "Los primeros dinosaurios",
     "ubicacion": "  # ",
+    "posX": 370,
+    "posY": 600,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada7.mp3",
     "geniallyURL": "#",
     "imagenAlternativa": "/assets/images/nogenially/dinos.png",
@@ -72,6 +78,8 @@
     "id": 9,
     "titulo": "Los segundos dinosaurios",
     "ubicacion": "#",
+    "posX": 400,
+    "posY": 450,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada9.mp3",
     "geniallyURL": "https://view.genially.com/68231bb7256d2888593fbd73/interactive-content-actividad2",
     "completada": false
@@ -80,6 +88,8 @@
     "id": 10,
     "titulo": "Galápagos y Darwin",
     "ubicacion": "#",
+    "posX": 470,
+    "posY": 370,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada10.mp3",
     "geniallyURL": "https://view.genially.com/68231bb7256d2888593fbd73/interactive-content-actividad3",
     "completada": false
@@ -88,6 +98,8 @@
     "id": 11,
     "titulo": "Huellas de Laetoli",
     "ubicacion": "Descubrimiento de pisadas humanas fósiles",
+    "posX": 380,
+    "posY": 340,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada11.mp3",
     "geniallyURL": "https://view.genially.com/67f8fa02c2e20bb7b0ca82c6/interactive-content-actividad-4",
     "imagenAlternativa": "/assets/images/nogenially/laetoli.png",
@@ -122,6 +134,8 @@
     "id": 15,
     "titulo": "Cuevas y arte rupestre",
     "ubicacion": "Arte prehistórico",
+    "posX": 350,
+    "posY": 230,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada15.mp3",
     "geniallyURL": "https://view.genially.com/67e3cc8058a3eb22e678b730/interactive-content-actividad15",
     "completada": false
@@ -130,6 +144,8 @@
     "id": 16,
     "titulo": "Los poblados nómadas",
     "ubicacion": "Estilo de vida de los nómadas",
+    "posX": 340,
+    "posY": 150,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada16.mp3",
     "geniallyURL": "https://view.genially.com/67f8edffb7b2a9c007101174/interactive-content-actividad6",
     "completada": false
@@ -164,9 +180,102 @@
     "id": 20,
     "titulo": "Stonehenge",
     "ubicacion": "Monumento megalítico",
+
+    "posX": 320,
+    "posY": 380,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada20.mp3",
     "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad9",
     "completada": false
+
+  },
+
+
+
+
+  {
+    "id": 111,
+    "titulo": "Fósiles prehistóricos",
+    "ubicacion": "Fósil de trilobite y helecho",
+    "audio": "/sounds/soundsParadas/Parada1Trilobitesv2,5.mp3",
+    "avatarDialogo": {
+      "explorador": {
+        "dialogo": " Estás en la parada 1: Fósiles prehistóricos. Prepárate para descubrir algo fascinante.",
+        "mensaje": "Bienvenido a tu primera parada. Aquí descubrirás datos asombrosos sobre cómo vivieron los trilobites. Fueron animales marinos que habitaron los océanos hace unos 500 millones de años.",
+        "sabiasQue": "¿Sabías que los trilobites existieron antes que los dinosaurios?"
+      },
+      "exploradora": {
+        "dialogo": "¡Estas en la parada 1 sobre fósiles prehistóricos! Te encantará lo que verás.",
+        "mensaje": "Bienvenido a tu primera parada. Aquí descubrirás datos asombrosos sobre cómo vivieron los trilobites. Fueron animales marinos que habitaron los océanos hace unos 500 millones de años.",
+        "sabiasQue": "¿Sabías que las plantas fósiles ayudaron a formar el carbón que usamos hoy?"
+      }
+    },
+    "geniallyURL": "https://view.genially.com/67e134e5a75d54115e15f3f0/interactive-content-actividad-1",
+    "completada": false
+  },
+  {
+    "id": 113,
+    "titulo": "Tortuga de las Galápagos",
+    "ubicacion": "Zona de reptiles fósiles",
+    "posX": 200,
+    "posY": 130,
+    "audio": "/sounds/soundsParadas/Parada3Tortugasv2,5.mp3",
+    "avatarDialogo": {
+      "explorador": {
+        "dialogo": "¡ Estás en la parada 3: Tortuga de las Galápagos. Prepárate para descubrir algo fascinante.",
+        "mensaje": "Bienvenido a tu tercera parada. Aquí descubrirás a las increíbles tortugas de las Galápagos, famosas por su longevidad y tamaño impresionante. Estas majestuosas criaturas han sobrevivido por siglos en un ecosistema único, adaptándose a las condiciones extremas de las islas. Observa cómo se mueven lentamente, pero con gran determinación, recorriendo su hogar volcánico.",
+        "sabiasQue": "¿Sabías que pueden pesar más de 200 kilos?"
+      },
+      "exploradora": {
+        "dialogo": "¡Estas en la parada 3 sobre la tortuga de las Galápagos! Te encantará lo que verás.",
+        "mensaje": "Bienvenido a tu tercera parada. Aquí descubrirás a las increíbles tortugas de las Galápagos, famosas por su longevidad y tamaño impresionante. Estas majestuosas criaturas han sobrevivido por siglos en un ecosistema único, adaptándose a las condiciones extremas de las islas. Observa cómo se mueven lentamente, pero con gran determinación, recorriendo su hogar volcánico.",
+        "sabiasQue": "¿Sabías que su caparazón puede cambiar según la isla?"
+      }
+    },
+    "geniallyURL": "https://view.genially.com/67f8f2f8b5b5ac75ac152d4e/interactive-content-actividad-3",
+    "completada": false
+  },
+  {
+    "id": 118,
+    "titulo": "Pozo",
+    "ubicacion": "Acceso al agua en la antigüedad",
+    "posX": 200,
+    "posY": 130,
+    "audio": "/sounds/soundsParadas/Parada8Pozov2,5.mp3",
+    "avatarDialogo": {
+      "explorador": {
+        "dialogo": "Parada 8: El agua era más valiosa que el oro. Sin pozos, no había futuro.",
+        "mensaje": "Bienvenido a tu octava parada. Aquí descubrirás el pozo prehistórico, una estructura clave para la supervivencia de las antiguas comunidades. Estos pozos eran utilizados para almacenar agua, un recurso vital en tiempos donde su acceso no siempre era fácil. Observa cómo fueron construidos y cómo jugaron un papel fundamental en la evolución de los asentamientos humanos.",
+        "sabiasQue": "¿Sabías que algunos tenían poleas para sacar el agua más fácil?"
+      },
+      "exploradora": {
+        "dialogo": "Parada 8 activada. Cada gota contaba. Vamos a descubrir cómo sacaban el agua.",
+        "mensaje": "Bienvenido a tu octava parada. Aquí descubrirás el pozo prehistórico, una estructura clave para la supervivencia de las antiguas comunidades. Estos pozos eran utilizados para almacenar agua, un recurso vital en tiempos donde su acceso no siempre era fácil. Observa cómo fueron construidos y cómo jugaron un papel fundamental en la evolución de los asentamientos humanos.",
+        "sabiasQue": "¿Sabías que los primeros pozos datan del Neolítico?"
+      }
+    },
+    "geniallyURL": "https://view.genially.com/67f8fda123c430f481ddb5e6/interactive-content-actividad-8",
+    "completada": false
+  },
+  {
+    "id": 120,
+    "titulo": "Templo de Karnak",
+    "ubicacion": "Antiguo Egipto",
+    
+    "audio": "/sounds/soundsParadas/Parada10Karnakv2,5.mp3",
+    "avatarDialogo": {
+      "explorador": {
+        "dialogo": "¡Última parada! El Templo de Karnak es testigo de siglos de historia. Vamos a explorarlo juntos.",
+        "mensaje": "Bienvenido a tu última parada. Has llegado al Templo de Karnak, uno de los complejos religiosos más impresionantes del antiguo Egipto. Construido a lo largo de más de dos mil años, este templo era un lugar de adoración dedicado a los dioses y faraones. Sus enormes columnas y relieves cuentan historias de batallas, rituales y ofrendas. Observa su grandiosidad y siente el poder de una civilización que dejó una huella imborrable en la historia.",
+        "sabiasQue": "¿Sabías que cada faraón dejaba su huella en Karnak?"
+      },
+      "exploradora": {
+        "dialogo": "Llegamos a la parada 10. Un lugar sagrado lleno de símbolos y leyendas del antiguo Egipto.",
+        "mensaje": "Bienvenido a tu última parada. Has llegado al Templo de Karnak, uno de los complejos religiosos más impresionantes del antiguo Egipto. Construido a lo largo de más de dos mil años, este templo era un lugar de adoración dedicado a los dioses y faraones. Sus enormes columnas y relieves cuentan historias de batallas, rituales y ofrendas. Observa su grandiosidad y siente el poder de una civilización que dejó una huella imborrable en la historia.",
+        "sabiasQue": "¿Sabías que era el centro religioso más importante del antiguo Egipto?"
+      }
+    },
+    "geniallyURL": "https://view.genially.com/67e283be994f4e3b61c714e9/interactive-content-actividad10",
+    "completada": false
+
   }
 ]
- 

@@ -2,8 +2,9 @@
 import { useNavigate } from "react-router-dom";
 import { Html5QrcodeScanner } from "html5-qrcode";
 import { useTranslation } from "react-i18next";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import confetti from "canvas-confetti";
+import i18n from "../../i18n/i18n";
 import "../../Styles/Pages/EscanerQR.css";
 
 function EscanerQR() {
@@ -58,17 +59,62 @@ function EscanerQR() {
       }
     );
 
+
+    // 🌍 Traducción automática de textos del scanner con MutationObserver
+    let observer;
+    if (i18n.language === "es") {
+      const translations = {
+        "Scan QR Code": "Escanea el código QR",
+        "Request Camera Permissions": "Solicitar permisos de cámara",
+        "Scan an Image File": "Escanear desde imagen",
+        "Stop Scanning": "Detener escaneo",
+        "Camera permissions denied. Please reset permission and refresh the page.":
+          "Permiso de cámara denegado. Por favor, revisa los ajustes y recarga la página.",
+        "No camera found.": "No se encontró ninguna cámara.",
+        "Choose image - No image choosen": "Cargar imagen",
+      };
+
+      const translateNode = (node) => {
+        if (node.nodeType === 3) {
+          const text = node.textContent.trim();
+          if (translations[text]) {
+            node.textContent = translations[text];
+          }
+        }
+        node.childNodes?.forEach(translateNode);
+      };
+
+      const translateAll = () => {
+        const container = document.getElementById(qrReaderId);
+        if (container) translateNode(container);
+      };
+
+      observer = new MutationObserver(() => {
+        translateAll();
+      });
+
+      setTimeout(() => {
+        const container = document.getElementById(qrReaderId);
+        if (container) {
+          observer.observe(container, { childList: true, subtree: true });
+          translateAll();
+        }
+      }, 200); // delay para asegurar que el scanner esté en el DOM
+    }
+
+
+
     return () => {
       scanner
         .clear()
         .catch((err) => console.error(" Error al limpiar scanner", err));
+      if (observer) observer.disconnect();
     };
-  }, [navigate]);
+  }, [navigate, i18n.language]);
 
   return (
     <div className="scanner-container">
 
-    
 
       {/* TÍTULO */}
       <h2 className="scanner-title">{t("escaner.titulo")}</h2>

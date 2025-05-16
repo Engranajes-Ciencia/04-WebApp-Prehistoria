@@ -94,25 +94,24 @@ p {
 }
 
 .sabiasque {
-  position: relative;
-  max-width: 39.5vw;
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 14px;
-  background: #fff8e1;
-  padding: 18px 20px;
-  border-left: 6px solid #ffc107;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
-  animation: aparecerSabias 0.6s ease-in;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 3px solid var(--verde);
-  animation: typing 4s steps(60, end), blink 0.75s step-end infinite;
+    position: relative;
+    max-width: 95%;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 14px;
+    background: #fff8e1;
+    padding: 18px 20px;
+    border-left: 6px solid #ffc107;
+    border-right: 3px solid var(--verde);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    animation: aparecerSabias 0.8s ease-in;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    white-space: normal;
+    overflow: visible;
 }
 
 .sabiasque:hover {
@@ -120,24 +119,22 @@ p {
 }
 
 .sabiasque::before {
-  content: "💡";
-  font-size: 28px;
+
+    content: "💡";
+    font-size: 28px;
+    margin-right: 10px;
 }
 
-@keyframes typing {
-  from {
-    width: 0;
-  }
+@keyframes aparecerSabias {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
 
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .actividad-genially {

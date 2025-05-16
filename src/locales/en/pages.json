@@ -74,39 +74,40 @@
     "titulo": "Welcome – The adventure begins",
     "avatarDialogo": {
       "dialogo": "Hello adventurers! I will be your guide on this journey through the history of humankind.",
-      "mensaje": "Welcome to the Prehistoric Science Park...",
+      "mensaje": "Welcome to the Prehistoric Science Park. I'm X, and I invite you to join me on this journey through time, from the origins of life on Earth to the first human civilizations. Here, we’ll learn how plants, animals, and humans evolved. Remember: don’t touch the models, take care of the environment, and above all… enjoy learning!",
       "sabiasQue": "Did you know that life on Earth began more than 3.5 billion years ago?"
     }
   },
   "2": {
     "titulo": "The origin of life",
     "avatarDialogo": {
-      "dialogo": "#",
-      "mensaje": "#",
-      "sabiasQue": "#"
+      "dialogo": "You are at stop 2. Look around… this is where it all started.",
+      "mensaje": "Earth formed about 4.5 billion years ago. At first, it was lifeless, with volcanoes, boiling oceans, and an unbreathable atmosphere. But over time, the first forms of life appeared in the water: bacteria and microscopic algae. Though simple, these tiny beings were the first step in a long evolutionary chain… that leads us to today.",
+      "sabiasQue": "Did you know that the first life forms were capable of living without oxygen?"
     }
   },
   "3": {
     "titulo": "The first plants",
     "avatarDialogo": {
-      "dialogo": "#",
-      "mensaje": "#",
-      "sabiasQue": "#"
+      "dialogo": "Stop 3. Look at these vegetables! They are the first green inhabitants of the planet.",
+      "mensaje": "About 500 million years ago, life took a giant leap: it left the water and conquered dry land! The first plants to do so were mosses, which had no stems or roots and absorbed water directly from the ground. They were the first green settlers of the planet… and thanks to them, animals could follow.",
+      "sabiasQue": "Did you know that without these plants, animals could never have lived on land?"
     }
   },
   "4": {
     "titulo": "Prototaxiles and Meganeuras",
     "avatarDialogo": {
       "dialogo": "#",
-      "mensaje": "#",
-      "sabiasQue": "Did you know that over 300 million years ago there were 8-meter-tall fungi and giant dragonflies that hunted reptiles? They were the rulers before the dinosaurs!"
+      "mensaje": "In this area, we see two very different yet equally amazing creatures. Prototaxites were giant fungi that could reach up to 8 meters in height. Next to them, a creature that looks like a huge dragonfly: the Meganeura, an insect from the Carboniferous period that could hunt small reptiles. Before the dinosaurs, these were the rulers of the Earth.",
+      "sabiasQue": "#"
+
     }
   },
   "5": {
     "titulo": "The first trees",
     "avatarDialogo": {
       "dialogo": "#",
-      "mensaje": "#",
+      "mensaje": "Over time, plants became more complex. The first trees appeared, like pines, ginkgos, and araucarias. Some developed fruits, allowing animals to help spread their seeds to new territories. These trees gave rise to the great prehistoric forests that covered the planet.",
       "sabiasQue": "#"
     }
   },
@@ -114,7 +115,7 @@
     "titulo": "The first flowers",
     "avatarDialogo": {
       "dialogo": "#",
-      "mensaje": "#",
+      "mensaje": "For millions of years, plants had no flowers. But around 150 million years ago, flowering plants—called angiosperms—appeared. Thanks to flowers and pollinators like bees, plants could reproduce more easily and spread quickly. The plant world was beginning to resemble the one we know today.",
       "sabiasQue": "#"
     }
   },
@@ -122,7 +123,7 @@
     "titulo": "The first dinosaurs",
     "avatarDialogo": {
       "dialogo": "#",
-      "mensaje": "#",
+      "mensaje": "Now we enter the Jurassic, the era of the great dinosaurs. Here we find the Triceratops, which ate low plants like ferns, and the Brontosaurus, which could reach the treetops. All these giants were herbivores, and their amazing size was suited to a world where plants grew in abundance.",
       "sabiasQue": "#"
     }
   },
@@ -130,39 +131,39 @@
     "titulo": "The continental drift",
     "avatarDialogo": {
       "dialogo": "#",
-      "mensaje": "#",
+      "mensaje": "Millions of years ago, all the continents were united in a single landmass called Pangaea. Over time, this giant “island” broke apart due to the movement of tectonic plates. How do we know? Thanks to fossils that show identical remains in places now separated by oceans. Continental drift is still happening today.",
       "sabiasQue": "#"
     }
   },
   "9": {
     "titulo": "The second dinosaurs",
     "avatarDialogo": {
-      "dialogo": "#",
-      "mensaje": "#",
-      "sabiasQue": "#"
+      "dialogo": "You are at stop 9: Giant Dinosaurs. Get ready to discover something fascinating.",
+      "mensaje": "In this area, we find carnivorous dinosaurs, like Allosaurus and Dromaeosaurs, which hunted on two legs. Some, like Velociraptors, had feathers and shared traits with modern birds. These dinosaurs show us that evolution doesn’t always disappear—sometimes, it transforms!",
+      "sabiasQue": "Did you know that the triceratops had three horns to defend itself?"
     }
   },
   "10": {
     "titulo": "Galapagos and Darwin",
     "avatarDialogo": {
       "dialogo": "#",
-      "mensaje": "#",
+      "mensaje": "Charles Darwin traveled to the Galápagos Islands in the 19th century and discovered something fascinating: animals that looked similar but had small differences that helped them survive on each island. This led him to formulate the theory of evolution by natural selection: only those best adapted to their environment survive. An idea that changed science forever.",
       "sabiasQue": "#"
     }
   },
   "11": {
     "titulo": "The footprints of Laetoli",
     "avatarDialogo": {
-      "dialogo": "#",
-      "mensaje": "#",
-      "sabiasQue": "#"
+      "dialogo": "Stop 11! We are following in the footsteps of the past. Ready to walk with our ancestors?",
+      "mensaje": "In Tanzania, Africa, some very special footprints were found: the Laetoli footprints, over 3 million years old. They belong to an Australopithecus, a distant human ancestor. These footprints show that they were already walking upright on two legs, like us. A big step in the evolution toward Homo sapiens.",
+      "sabiasQue": "Did you know that they were discovered in Tanzania in 1978?"
     }
   },
   "12": {
     "titulo": "Atapuerca",
     "avatarDialogo": {
       "dialogo": "#",
-      "mensaje": "#",
+      "mensaje": "In Spain, at the Atapuerca archaeological site, remains of various types of hominids have been found. It’s one of the most important places in the world for understanding our evolution. There, scientists discovered species like Homo antecessor, which helps us reconstruct humanity’s family tree.",
       "sabiasQue": "#"
     }
   },
@@ -170,7 +171,7 @@
     "titulo": "The Neandertal man",
     "avatarDialogo": {
       "dialogo": "#",
-      "mensaje": "#",
+      "mensaje": "For a long time, we coexisted with another human species: the Neanderthals. They were great hunters, lived in cold climates, and also used tools. Today we know they didn’t completely disappear: many people still carry a small percentage of Neanderthal DNA.",
       "sabiasQue": "#"
     }
   },
@@ -178,39 +179,39 @@
     "titulo": "Skulls and human evolution",
     "avatarDialogo": {
       "dialogo": "#",
-      "mensaje": "#",
+      "mensaje": "In this museum, you’ll see skulls from different human species and other primates. Notice how the skull’s shape has changed to make room for the brain, which is much larger in modern humans. That brain allowed us to communicate, create tools, form groups… and give rise to culture and society.",
       "sabiasQue": "#"
     }
   },
   "15": {
     "titulo": "Caves and rock art",
     "avatarDialogo": {
-      "dialogo": "#",
-      "mensaje": "#",
-      "sabiasQue": "#"
+      "dialogo": "Stop 15. See those paintings? They are silent messages from a very ancient humanity.",
+      "mensaje": "The paintings you see here are copies of those made in caves like Lascaux, Chauvet, or Nerja. Using natural pigments and oil lamps, our ancestors decorated the walls with animals, human figures… and even blown handprints. These paintings weren’t just art: they were also teaching, ritual, and collective memory.",
+      "sabiasQue": "Did you know they used natural pigments from rocks and charcoal?"
     }
   },
   "16": {
     "titulo": "The nomadic villages",
     "avatarDialogo": {
-      "dialogo": "#",
-      "mensaje": "#",
-      "sabiasQue": "#"
+      "dialogo": "We arrived at stop 16. The nomads were explorers like us!",
+      "mensaje": "Before building houses, our ancestors were nomads: they moved in search of food and shelter. They lived in tents like tipis, which were easy to take down and transport. They hunted, gathered, and decorated their bodies with feathers and necklaces. Far from primitive, they were experts at adapting to their environment.",
+      "sabiasQue": "Did you know that they did not have permanent homes and lived in huts?"
     }
   },
   "17": {
     "titulo": "Firts sedentary settlements",
     "avatarDialogo": {
-      "dialogo": "#",
-      "mensaje": "#",
-      "sabiasQue": "#"
+      "dialogo": "Stop 17! Stop moving and start building...now that was a big change!",
+      "mensaje": "With climate change and the discovery of agriculture, some tribes stopped moving and began building permanent settlements. They planted crops, raised animals, and stored food. That’s how the first villages, temples, leaders… and a new way of life—sedentarism—emerged.",
+      "sabiasQue": "Did you know that they began to build permanent villages?"
     }
   },
   "18": {
     "titulo": "Painting of the Sahara and Laja Alta",
     "avatarDialogo": {
       "dialogo": "#",
-      "mensaje": "#",
+      "mensaje": "This mural shows scenes from everyday life in Prehistoric times. Look at the Saharan paintings depicting a group caring for livestock, a realistic glimpse of early organized societies. Next to Çatalhöyük’s house, another surprising scene: sailboats found in Laja Alta, Cádiz. Once thought to be Phoenician, we now know they are much older—from the Copper Age—and show that even back then… they were already sailing the seas!",
       "sabiasQue": "#"
     }
   },
@@ -225,9 +226,9 @@
   "20": {
     "titulo": "Stonehenge",
     "avatarDialogo": {
-      "dialogo": "#",
-      "mensaje": "#",
-      "sabiasQue": "#"
+      "dialogo": "Check out these giant stones at the last stop! Who put them there? Let's investigate it!",
+      "mensaje": "Before you stands a replica of Stonehenge, a group of giant stones aligned with the sunrise on the summer solstice. It was built over 4,000 years ago in England, and we still don’t know exactly what it was for. A temple? A calendar? A gathering place? Whatever its purpose, it reminds us that for millennia, humans have looked at the sky, thought about time… and built together.",
+      "sabiasQue": "Did you know that some alignments indicate the solstices? Did you know that some alignments indicate the solstices?"
     }
   }
 }
