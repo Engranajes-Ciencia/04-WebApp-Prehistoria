@@ -37,6 +37,17 @@
     "qrInvalido": "Invalid QR. Make sure it contains a URL with /actividad/number"
   },
 
+  "entreActividades": {
+    "mapa": "Map of the route",
+    "buenTrabajo": "Good job",
+    "hasCompletado": "You have completed",
+    "paradas": "of 10 stops",
+    "escanear": "Scan next stop",
+    "pantallaFinal": "See final screen",
+    "medallas": "See medals"
+
+  },
+
   "final": {
     "enhorabuena": "Congratulations!",
     "completado": "100% completed",

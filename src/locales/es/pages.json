@@ -38,6 +38,17 @@
     "qrInvalido": "QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número"
   },
 
+  "entreActividades": {
+    "mapa": "Mapa del recorrido",
+    "buenTrabajo": "Buen trabajo",
+    "hasCompletado": "Has completado",
+    "paradas": "de 10 paradas",
+    "escanear": "Escanear siguiente parada",
+    "pantallaFinal": "Ver pantalla final",
+    "medallas": "Ver medallas"
+    
+  },
+
   "actividad": {
     "accesoDenegado": "Acceso no autorizado. Por favor, escanea un QR válido.",
     "error": "Actividad no encontrada o acceso no permitido.",

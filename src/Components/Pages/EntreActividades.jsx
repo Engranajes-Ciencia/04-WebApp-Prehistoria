@@ -4,8 +4,10 @@ import { getActividadesCompletadas } from "../../config/utils/localStorage";
 import actividades from "../../config/data/actividades.json";
 import { useNavigate } from "react-router-dom";
 import "../../Styles/Pages/EntreActividades.css";
+import { useTranslation } from "react-i18next";
 
 function EntreActividades() {
+    const { t } = useTranslation ("pages");
     const completadas = getActividadesCompletadas();
     const navigate = useNavigate();
 
@@ -17,7 +19,7 @@ function EntreActividades() {
 
     return (
         <div className="mapa-check-container">
-            <h2>Mapa del Recorrido</h2>
+            <h2>{t("entreActividades.mapa")}</h2>
 
             <img
                 src={`${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`}
@@ -25,7 +27,7 @@ function EntreActividades() {
                 className="guia-avatar"
             />
             <p className="guia-texto">
-                ¡Buen trabajo {nombre}! Has completado {completadas.length} de 10 paradas.
+                {t("entreActividades.buenTrabajo")} {nombre}. {t("entreActividades.hasCompletado")} {completadas.length} {t("entreActividades.paradas")}.
             </p>
 
             <div className="barra-progreso">
@@ -49,17 +51,17 @@ function EntreActividades() {
             <div className="botones-container">
                 {completadas.length >= 10 ? (
                     <button className="btn-final" onClick={() => navigate("/final")}>
-                        Ver pantalla final
+                        {t("entreActividades.pantallaFinal")}
                     </button>
                 ) : (
                     <button className="btn-scan" onClick={() => navigate("/EscanerQR")}>
-                        Escanear siguiente parada ({siguiente})
+                        {t("entreActividades.escanear")} ({siguiente})
                     </button>
                 )}
 
                 {/* muestra vitrina */}
                 <button className="btn-medallas" onClick={() => navigate("/vitrina-virtual")}>
-                    Ver Medallas
+                    {t("entreActividades.medallas")}
                 </button>
 
 
