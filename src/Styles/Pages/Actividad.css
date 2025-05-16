@@ -96,27 +96,25 @@ p {
     font-style: italic;
 }
 
-
 .sabiasque {
     position: relative;
-    max-width: 39.5vw;
+    max-width: 95%;
     font-size: 18px;
     font-weight: bold;
     margin-top: 14px;
     background: #fff8e1;
     padding: 18px 20px;
     border-left: 6px solid #ffc107;
+    border-right: 3px solid var(--verde);
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
-    animation: aparecerSabias 0.6s ease-in;
+    animation: aparecerSabias 0.8s ease-in;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     gap: 12px;
-    white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid var(--verde);
-        animation: typing 4s steps(60, end), blink 0.75s step-end infinite;
+    white-space: normal;
+    overflow: visible;
 }
 
 .sabiasque:hover {
@@ -126,21 +124,18 @@ p {
 .sabiasque::before {
     content: "💡";
     font-size: 28px;
+    margin-right: 10px;
 }
 
-@keyframes typing {
+@keyframes aparecerSabias {
     from {
-        width: 0
+        opacity: 0;
+        transform: translateY(10px);
     }
 
     to {
-        width: 100%
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 

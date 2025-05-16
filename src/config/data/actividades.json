@@ -3,6 +3,8 @@
     "id": 1,
     "titulo": "Bienvenida – Comienza la aventura",
     "ubicacion": "Entrada principal del parque",
+    "posX": 370,
+    "posY": 760,
     "audio": "/sounds/paradasaudio/parada1.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -24,6 +26,8 @@
     "id": 2,
     "titulo": "El origen de la vida",
     "ubicacion": "Zona de fósiles marinos",
+    "posX": 570,
+    "posY": 700,
     "audio": "/sounds/paradasaudio/parada2.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -126,6 +130,8 @@
     "id": 7,
     "titulo": "Los primeros dinosaurios",
     "ubicacion": "  # ",
+    "posX": 370,
+    "posY": 600,
     "audio": "/sounds/paradasaudio/parada7.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -168,6 +174,8 @@
     "id": 9,
     "titulo": "Los segundos dinosaurios",
     "ubicacion": "#",
+    "posX": 400,
+    "posY": 450,
     "audio": "/sounds/paradasaudio/parada9.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -188,6 +196,8 @@
     "id": 10,
     "titulo": "Galápagos y Darwin",
     "ubicacion": "#",
+    "posX": 470,
+    "posY": 370,
     "audio": "/sounds/paradasaudio/parada.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -208,6 +218,8 @@
     "id": 11,
     "titulo": "Huellas de Laetoli",
     "ubicacion": "Descubrimiento de pisadas humanas fósiles",
+    "posX": 380,
+    "posY": 340,
     "audio": "/sounds/paradasaudio/parada11.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -290,6 +302,8 @@
     "id": 15,
     "titulo": "Cuevas y arte rupestre",
     "ubicacion": "Arte prehistórico",
+    "posX": 350,
+    "posY": 230,
     "audio": "/sounds/soundsParadas/Parada15.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -310,6 +324,8 @@
     "id": 16,
     "titulo": "Los poblados nómadas",
     "ubicacion": "Estilo de vida de los nómadas",
+    "posX": 340,
+    "posY": 150,
     "audio": "/sounds/paradasaudio/parada16.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -392,6 +408,8 @@
     "id": 20,
     "titulo": "Stonehenge",
     "ubicacion": "Monumento megalítico",
+    "posX": 320,
+    "posY": 380,
     "audio": "/sounds/paradasaudio/parada20.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -408,8 +426,12 @@
     "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad9",
     "completada": false
   },
+
+
+
+
   {
-    "id": 11,
+    "id": 111,
     "titulo": "Fósiles prehistóricos",
     "ubicacion": "Fósil de trilobite y helecho",
     "audio": "/sounds/soundsParadas/Parada1Trilobitesv2,5.mp3",
@@ -429,9 +451,11 @@
     "completada": false
   },
   {
-    "id": 13,
+    "id": 113,
     "titulo": "Tortuga de las Galápagos",
     "ubicacion": "Zona de reptiles fósiles",
+    "posX": 200,
+    "posY": 130,
     "audio": "/sounds/soundsParadas/Parada3Tortugasv2,5.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -449,9 +473,11 @@
     "completada": false
   },
   {
-    "id": 18,
+    "id": 118,
     "titulo": "Pozo",
     "ubicacion": "Acceso al agua en la antigüedad",
+    "posX": 200,
+    "posY": 130,
     "audio": "/sounds/soundsParadas/Parada8Pozov2,5.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -469,9 +495,10 @@
     "completada": false
   },
   {
-    "id": 20,
+    "id": 120,
     "titulo": "Templo de Karnak",
     "ubicacion": "Antiguo Egipto",
+    
     "audio": "/sounds/soundsParadas/Parada10Karnakv2,5.mp3",
     "avatarDialogo": {
       "explorador": {
