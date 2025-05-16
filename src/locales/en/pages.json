@@ -79,7 +79,7 @@
     }
   },
   "2": {
-    "titulo": "#",
+    "titulo": "The origin of life",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -87,7 +87,7 @@
     }
   },
   "3": {
-    "titulo": "#",
+    "titulo": "The first plants",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -95,15 +95,15 @@
     }
   },
   "4": {
-    "titulo": "#",
+    "titulo": "Prototaxiles and Meganeuras",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that over 300 million years ago there were 8-meter-tall fungi and giant dragonflies that hunted reptiles? They were the rulers before the dinosaurs!"
     }
   },
   "5": {
-    "titulo": "#",
+    "titulo": "The first trees",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -111,7 +111,7 @@
     }
   },
   "6": {
-    "titulo": "#",
+    "titulo": "The first flowers",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -119,7 +119,7 @@
     }
   },
   "7": {
-    "titulo": "#",
+    "titulo": "The first dinosaurs",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -127,7 +127,7 @@
     }
   },
   "8": {
-    "titulo": "#",
+    "titulo": "The continental drift",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -135,7 +135,7 @@
     }
   },
   "9": {
-    "titulo": "#",
+    "titulo": "The second dinosaurs",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -143,7 +143,7 @@
     }
   },
   "10": {
-    "titulo": "#",
+    "titulo": "Galapagos and Darwin",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -151,7 +151,7 @@
     }
   },
   "11": {
-    "titulo": "#",
+    "titulo": "The footprints of Laetoli",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -159,7 +159,7 @@
     }
   },
   "12": {
-    "titulo": "#",
+    "titulo": "Atapuerca",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -167,7 +167,7 @@
     }
   },
   "13": {
-    "titulo": "#",
+    "titulo": "The Neandertal man",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -175,7 +175,7 @@
     }
   },
   "14": {
-    "titulo": "#",
+    "titulo": "Skulls and human evolution",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -183,7 +183,7 @@
     }
   },
   "15": {
-    "titulo": "#",
+    "titulo": "Caves and rock art",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -191,7 +191,7 @@
     }
   },
   "16": {
-    "titulo": "#",
+    "titulo": "The nomadic villages",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -199,7 +199,7 @@
     }
   },
   "17": {
-    "titulo": "#",
+    "titulo": "Firts sedentary settlements",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -207,7 +207,7 @@
     }
   },
   "18": {
-    "titulo": "#",
+    "titulo": "Painting of the Sahara and Laja Alta",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
@@ -215,7 +215,7 @@
     }
   },
   "19": {
-    "titulo": "#",
+    "titulo": "Çatalhöyük",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "Çatalhöyük, in Turkey, was one of the world’s first cities. The houses had no ground-level doors—you entered through the roof. There were ovens, pottery, and even religious figures like the Mother Goddess, who protected fertility and hunting. This city speaks to us of spirituality, social organization… and the beginnings of great civilizations.",
@@ -223,7 +223,7 @@
     }
   },
   "20": {
-    "titulo": "#",
+    "titulo": "Stonehenge",
     "avatarDialogo": {
       "dialogo": "#",
       "mensaje": "#",
