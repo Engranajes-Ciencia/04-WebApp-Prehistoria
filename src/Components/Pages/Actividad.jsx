@@ -81,18 +81,20 @@ function Actividad() {
                 backgroundPosition: "center"
             }}
         >
+            <div className="saludo-titulo">
             <div className="actividad-header">
                 <img src={avatarImg} alt="avatar" className="avatar-actividad" />
                 <div>
-                    <h2 className="saludo">{t("actividad.saludo", { nombre })}</h2>
+                    <h2 className="saludo1">{t("actividad.saludo", { nombre })}</h2>
                     <p className="dialogo">{avatarData.dialogo}</p>
                 </div>
             </div>
-
+            <div className="titulo-mensaje">
             <h3>{actividad.titulo}</h3>
 
             {avatarData?.mensaje && <p>{avatarData.mensaje}</p>}
-
+            </div>
+            </div>
             {actividad.audio && (
                 <div className="audio-button-container">
                     <button onClick={toggleAudio} className="audio-button">
