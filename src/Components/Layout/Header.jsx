@@ -68,10 +68,11 @@ function Header() {
 
   return (
     <header className="header">
+
       {/* Tooltip flotante */}
       {tooltip && <div className="tooltip-touch">{tooltip}</div>}
       <div className="header-top">
-        
+
         <div className="branding">
           <img
             src={`${import.meta.env.BASE_URL}assets/images/Logo-principal.png`}
@@ -87,6 +88,7 @@ function Header() {
       </h1>
 
       <div className="botones-header">
+
         <button className="icon-btn" data-tooltip="Inicio"  onClick={() => navigate("/")}>🏠</button>
 
         <button
@@ -97,23 +99,24 @@ function Header() {
           {modoOscuro ? "☀️" : "🌙"}
         </button>
 
-      <div>
-        <audio
-        ref={audioRef}
-        src="/sounds/musica.mp3" // Ruta de la musica
-        loop
-        autoPlay
-        muted={isMuted}
-        />
-    
-          <button className="icon-btn" data-tooltip="Música"  onClick={toggleMute}>{isMuted ? "🔇" : "🎵"}</button>    
-      </div>
+
+        <button className="icon-btn" data-tooltip="Música" onClick={toggleMute}>{isMuted ? "🔇" : "🎵"}</button> 
+
 
         <button className="icon-btn" data-tooltip="Kiosco" onClick={activarKiosco}>🖥️</button>
 
         <button className="icon-btn" data-tooltip="Idioma"  onClick={toggleLanguage}>
           {i18n.language === "es" ? "🇪🇸" : "🇬🇧"}
         </button>
+
+        <audio
+          ref={audioRef}
+          src="/sounds/musica.mp3" // Ruta de la musica
+          loop
+          autoPlay
+          muted={isMuted}>
+
+        </audio>
 
       </div>
 
