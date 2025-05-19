@@ -46,59 +46,57 @@
 .actividad-container {
   padding: 2rem;
   max-width: 100%;
-  height: 1000px;
-  margin: auto;
+  height: auto;
+  margin: 20px auto;
   background: linear-gradient(145deg, #f9f9f9, #e7e7e7);
   border-radius: 16px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
   font-family: "Milford", sans-serif;
   transition: all 0.3s ease-in-out;
   animation: fadeSlideIn 0.8s ease forwards;
-  opacity: 0;
+  opacity: 1;
+  box-sizing: border-box;
 }
 
 .saludo-titulo {
   display:flex;
   width: 100%;
+  gap: 20px;
+  margin-bottom: 2rem;
 }
 
 .actividad-header {
   display: flex;
   align-items: center;
-  width: 49%;
+  flex: 1;
+  min-width: 0;
   gap: 16px;
-  margin-bottom: 2rem;
   background-color: #e3f2fdd3;
   padding: 1.2rem 1.6rem;
   border-radius: 16px;
   box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-  margin-left: 1%;
+  box-sizing: border-box;
 }
 
 .avatar-actividad {
   width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  width: 60px;
-  height: 90px;
+  height: auto;
   border-radius: 16px;
   border: 2px solid #2196f3;
   background-color: #fff;
   padding: 4px;
+  object-fit: cover;
 }
 
 .saludo1 {
   display: flex;
-  padding: 5px;
-  width: 20vw;
-  border-radius: 12px;
-  justify-content: center;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   font-weight: 700;
   color: #146acc;
   margin: 0;
-  white-space: nowrap;
-  background-color: #2f6db591;
+  flex: 1;
+  min-width: 0;
+
 }
 
 .dialogo {
@@ -107,11 +105,14 @@
   padding: 10px 14px;
   margin-top: 8px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  text-shadow: 0 4px 12px #2e3c407e;
+  text-shadow: 0 4px 12px #acccf0c6;;
   font-style: italic;
   position: relative;
   background-color: #acccf0c6;
-  color:#3f6da0
+  color:#3f6da0;
+  white-space: normal;
+  flex: 1;
+  min-width: 0;
 }
 
 .dialogo::before {
@@ -120,18 +121,21 @@
   left: -8px;
   top: 10px;
   border: 8px solid transparent;
-  border-right-color: #fff;
+  border-right-color:#acccf0c6;;
 }
 
 .titulo-mensaje {
-  padding-bottom: 10px;
-  padding-left: 15px;
-  width: 100%;
-  height: 200px;
+  padding: 15px;
+  flex: 1;
+  min-width: 0;
+  height: auto;
+  min-height: 150px;
   border-radius: 16px;
   background-color: #ffffffc0;
   text-shadow: 0 4px 12px #2e3c407e;
   color: #2e3c40;
+  box-sizing: border-box;
+  white-space: normal;
 }
 
 h3 {
@@ -147,10 +151,11 @@ p {
 
 .sabiasque {
   position: relative;
-  max-width: 90%;
-  font-size: 18px;
+  max-width: 95%;
+  width: auto;
+  font-size: 1.1rem;
   font-weight: bold;
-  margin-top: 14px;
+  margin-top: 14px auto;
   background: #fff8e1df;
   padding: 18px 20px;
   border-left: 6px solid #ffc107;
@@ -159,10 +164,11 @@ p {
   transition: transform 0.3s ease;
   animation: aparecerSabias 0.6s ease-in;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
-  white-space: nowrap;
   overflow: visible;
+  box-sizing: border-box;
+  white-space: normal;
   border-right: 3px solid var(--verde);
 }
 
@@ -175,12 +181,14 @@ p {
     content: "💡";
     font-size: 28px;
     margin-right: 10px;
+    margin-right: 10px;
+      flex-shrink: 0;
 }
 
 @keyframes aparecerSabias {
     from {
         opacity: 0;
-        transform: translateY(10px);
+        transform: translateY(20px);
     }
 
     to {
@@ -194,7 +202,27 @@ p {
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+    /* Proporción 16:9 */
+    height: 0;
 }
+
+.actividad-genially iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Ahora ocupa el 100% del contenedor con padding-bottom */
+  border: none;
+  border-radius: 8px;
+  /* Bordes redondeados para el iframe interno */
+  opacity: 0;
+  animation: fadeIn 1.2s ease 0.5s forwards;
+}
+
 
 .actividad-siguiente {
   margin-top: 2rem;
@@ -221,12 +249,20 @@ p {
 
 /* Estilos Modo Oscuro */
 
+.dark .actividad-container {
+  background: linear-gradient(145deg, #1a1a1a, #282828);
+  color: #f5f5f5;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+}
+
 .dark .actividad-header {
-  background-color: #2e2e2edc;
+  background-color: #3a3a3ae0;
+  box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.05);
 }
 
 .dark .avatar-actividad {
   border: 2px solid #5e63ff;
+  background-color: #424242;
 }
 
 .dark .dialogo {
@@ -266,25 +302,157 @@ p {
   border-left-color: #ffc107;
   color:#ffe100f2!important;
   text-shadow: 0 4px 12px #ffffff7d;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+}
+
+.dark .actividad-genially {
+  box-shadow: 0 0 16px rgba(255, 255, 255, 0.1);
 }
 
 .dark iframe {
   filter: brightness(0.9);
 }
 
-iframe {
-  width: 100%;
-  height: 500px;
-  border: none;
-  border-radius: 8px;
-  opacity: 0;
-  animation: fadeIn 1.2s ease 0.5s forwards;
-}
+
 
 /* Animaciones */
 
 @keyframes fadeIn {
   to {
     opacity: 1;
+  }
+}
+
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  /* Usamos 768px como breakpoint común */
+
+  .actividad-container {
+    padding: 1.5rem;
+    min-height: auto;
+    /* Permitir que la altura se ajuste completamente */
+  }
+
+  .saludo-titulo {
+    flex-direction: column;
+    /* Apila el header y el título/mensaje */
+    gap: 15px;
+    /* Espacio reducido entre ellos */
+    margin-bottom: 1.5rem;
+  }
+
+  .actividad-header {
+    flex-direction: column;
+    /* Apila el avatar y el diálogo */
+    align-items: flex-start;
+    /* Alinea al inicio */
+    width: 100%;
+    /* Ocupa todo el ancho */
+    padding: 1rem;
+    gap: 10px;
+  }
+
+  .avatar-actividad {
+    width: 60px;
+    /* Avatar más pequeño en móvil */
+    height: auto;
+  }
+
+  .saludo1 {
+    font-size: 1.3rem;
+    /* Texto de saludo más pequeño */
+    width: 100%;
+    /* Ocupa todo el ancho si se apila */
+    /* Elimina justify-content: center si quieres alinearlo a la izquierda */
+  }
+
+  .dialogo {
+    margin-top: 5px;
+    padding: 8px 12px;
+  }
+
+  .dialogo::before {
+    top: 8px;
+  }
+
+
+  .titulo-mensaje {
+    width: 100%;
+    /* Ocupa todo el ancho si se apila */
+    padding: 1rem;
+    min-height: auto;
+    /* Altura automática */
+    height: auto;
+  }
+
+  h3 {
+    font-size: 28px;
+    /* Título h3 más pequeño */
+  }
+
+  p {
+    font-size: 1rem;
+    /* Texto p más pequeño */
+  }
+
+  .sabiasque {
+    font-size: 1rem;
+    /* Texto del sabías qué más pequeño */
+    padding: 14px 16px;
+    gap: 8px;
+  }
+
+  .sabiasque::before {
+    font-size: 24px;
+    /* Icono más pequeño */
+    margin-right: 8px;
+  }
+
+  .actividad-genially {
+    margin-top: 1.5rem;
+    border-radius: 12px;
+  }
+
+  .actividad-genially iframe {
+    /* Ya es 100% x 100% dentro del contenedor 16:9, no necesita ajuste de altura fija aquí */
+  }
+
+
+  .actividad-siguiente {
+    margin-top: 1.5rem;
+  }
+
+  .btn-siguiente {
+    padding: 12px 24px;
+    font-size: 1rem;
+    border-radius: 10px;
+  }
+}
+
+
+/* Breakpoint para pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .actividad-container {
+    padding: 1rem;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .sabiasque {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  .sabiasque::before {
+    font-size: 20px;
+  }
+
+  .btn-siguiente {
+    padding: 10px 20px;
+    font-size: 0.9rem;
   }
 }

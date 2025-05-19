@@ -153,9 +153,9 @@ function Actividad() {
             {tieneGenially ? ( // Si tiene Genially
                 <div className="actividad-genially">
                     <iframe
-                        src={traduccionActividad.geniallyURL} // Usa la URL traducida/correcta
+                        src={traduccionActividad.geniallyURL} 
                         width="100%"
-                        height="500px" // O usa el método responsive con padding del CSS anterior
+                        height="500px" 
                         frameBorder="0"
                         allowFullScreen
                         title="Genially actividad"
