@@ -171,39 +171,6 @@
 }
 
 
-<<<<<<< Updated upstream
-=======
-.btn-idioma {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  font-size: 40px;
-  /* Tamaño del emoji bandera */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #ffffff;
-  background-color: #f5f5f5;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  padding: 0;
-}
-
-/* Hover elegante */
-.btn-idioma:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Modo oscuro si usas una clase .dark */
-.dark .btn-idioma {
-  background-color: #333;
-  border-color: #ffc107;
-}
-
-
->>>>>>> Stashed changes
 /* Estilos Modo Oscuro */
 
 .dark .btn-home,
