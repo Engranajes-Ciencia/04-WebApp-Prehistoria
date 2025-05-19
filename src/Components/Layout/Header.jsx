@@ -100,6 +100,7 @@ function Header() {
         </button>
 
 
+
         <button className="icon-btn" data-tooltip="Música" onClick={toggleMute}>{isMuted ? "🔇" : "🎵"}</button> 
 
 
@@ -117,6 +118,7 @@ function Header() {
           muted={isMuted}>
 
         </audio>
+  
 
       </div>
 
