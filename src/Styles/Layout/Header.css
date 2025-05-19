@@ -79,7 +79,8 @@
 
 .btn-tema,
 .btn-home,
-.btn-kiosco {
+.btn-kiosco,
+.btn-music {
   background-color: var(--verde);
   color: var(
     --blanco
@@ -99,6 +100,10 @@
 .btn-tema:hover {
   background-color: #5f8b6a;
   transform: scale(1.03);
+}
+
+.btn-music {
+  width: 168px;
 }
 
 .btn-kiosco {

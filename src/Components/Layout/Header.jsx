@@ -1,14 +1,15 @@
-import { useEffect, useState } from "react";
+import { useRef, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../../Styles/Layout/Header.css";
-import MusicPlayer from "../Commons/MusicPlayer";
 import { Link } from "react-router-dom";
 
 function Header() {
   const navigate = useNavigate();
   const [modoOscuro, setModoOscuro] = useState(false);
   const { i18n, t } = useTranslation();
+  const [isMuted, setIsMuted] = useState(false);
+  const audioRef = useRef(null);
 
   const toggleLanguage = () => {
     const nuevoIdioma = i18n.language === "es" ? "en" : "es";
@@ -31,6 +32,19 @@ function Header() {
     document.documentElement.classList.toggle("dark", nuevoEstado);
     localStorage.setItem("modoOscuro", nuevoEstado);
   };
+
+  const toggleMute = () => {
+      setIsMuted(!isMuted);
+      if (audioRef.current) {
+          audioRef.current.muted = !isMuted;
+      }
+  };
+
+  useEffect(() => {
+      if (audioRef.current) {
+        audioRef.current.volume = 0.1; // Establece el volumen
+      }
+  }, []);
 
   return (
     <header className="header">
@@ -58,7 +72,19 @@ function Header() {
           {modoOscuro ? t("modoClaro") : t("modoOscuro")}
         </button>
 
-        <MusicPlayer />
+      <div>
+        <audio
+        ref={audioRef}
+        src="/sounds/musica.mp3" // Ruta de la musica
+        loop
+        autoPlay
+        muted={isMuted}
+      />
+    
+      <button className="btn-music" onClick={toggleMute}>
+        {isMuted ? "Activar música" : "Silenciar música"}
+      </button>    
+      </div>
 
         <button
           className="btn-kiosco"
