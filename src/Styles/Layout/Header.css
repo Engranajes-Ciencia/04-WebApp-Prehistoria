@@ -10,44 +10,23 @@
   font-size: 18px;
   font-weight: bold;
   color: #2e3c40;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
   animation: fadeInDown 0.8s ease-in-out;
   position: relative;
+  overflow: hidden;
 }
+
+
 
 .header-top {
   display: flex;
   justify-content: flex-end;
-  align-items: center;
   margin-bottom: 10px;
   padding-right: 10px;
 }
 
-.titulo-header {
-  position: absolute;
-  text-align: start;
-  font-size: 3em;
-  top: -15px;
-  width: 100%;
-  max-width: 35.9%;
-  left: 275px;
-  display: flex;
-  flex-wrap: wrap;
-
-  text-shadow: 2px 2px 26px rgba(107, 107, 107, 0.692);
-  white-space: nowrap;
-}
-
-/* Estilos de la cabecera */
-.botones-header {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-}
 
 .logo {
-  display: flex;
   position: absolute;
   padding-left: 15px;
   padding-right: 10px;
@@ -55,17 +34,36 @@
   border-radius: 16px;
   align-items: center;
   justify-content: center;
-  height: 138px;
+  height: 130px;
   object-fit: contain;
   left: 38px;
   top: 14px;
   flex-wrap: wrap;
 }
 
+.titulo-header {
+  position: absolute;
+  text-align: start;
+  font-size: 2.8em;
+  top: -15px;
+  width: 100%;
+  max-width: 35.9%;
+  left: 275px;
+  display: flex;
+  flex-wrap: wrap;
+  text-shadow: 2px 2px 26px rgba(107, 107, 107, 0.692);
+  white-space: nowrap;
+}
+
+/* Estilos de la cabecera */
+
+
+
 /* Contenedor común para los botones */
 .botones-header {
   display: flex;
   justify-content: end;
+  align-items: center;
   margin-top: 20px;
   gap: 15px;
   flex-wrap: wrap;
@@ -73,47 +71,74 @@
   margin-right: auto;
   padding: 0 20px;
   flex-wrap: wrap;
+  animation: fadeInUp 1s ease;
 }
 
-/* Estilo individual */
 
-.btn-tema,
-.btn-home,
-.btn-kiosco,
-.btn-music {
+
+.icon-btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(6px);
+  border: 2px solid rgba(255, 255, 255, 0.4);
   background-color: var(--verde);
-  color: var(
-    --blanco
-  ) !important; /* Asi se soluciona que el modo kiosco no se quede negro */
-  border: none;
-  width: 143px;
-  min-height: 47px;
-  min-width: 105px;
-  padding: 10px 18px;
-  border-radius: 8px;
+  color: white;
   cursor: pointer;
-  font-weight: bold;
+  transition: transform 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.icon-btn:hover {
+  transform: scale(1.15);
+  box-shadow: 0 0 10px #7fffbd, var(--hover-glow);
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/*  TOOLTIP   */
+.icon-btn::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: white;
+  font-size: 0.7rem;
+  padding: 5px 10px;
+  border-radius: 6px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 999;
+}
+
+.icon-btn:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) translateY(-5px);
+}
+
+/* Tooltip visible al pulsar */
+.tooltip-touch {
+  position: absolute;
+  top: 160px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #2e3c40;
+  color: white;
+  padding: 8px 18px;
+  border-radius: 8px;
   font-size: 1rem;
-  transition: all 0.3s ease;
+  z-index: 20;
+  animation: fadeTooltip 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
 }
 
-.btn-tema:hover {
-  background-color: #5f8b6a;
-  transform: scale(1.03);
-}
-
-.btn-music {
-  width: 168px;
-}
-
-.btn-kiosco {
-  background-color: #ffca28;
-  color: #212121;
-}
-
-.btn-kiosco:hover {
-  background-color: #fbc02d;
-}
 
 /* Estilos Modo Oscuro */
 
@@ -139,7 +164,8 @@
 }
 
 .dark .titulo-header {
-  text-shadow: 2px 2px 26px rgba(158, 158, 158, 0.692);
+  color: #fff;
+  text-shadow: 2px 2px 16px rgba(255, 255, 255, 0.2);
 }
 
 .dark .branding {
@@ -153,6 +179,20 @@
     #ffffff -90%,
     #202020 75%
   );
+}
+
+.dark .icon-btn {
+  background: linear-gradient(135deg, #464646, #1b1b1b);
+  color: var(--blanco);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.dark .icon-btn:hover {
+  background: rgba(66, 66, 66, 0.8);
+  box-shadow: 0 0 12px #00ffc3;
+}
+
+.dark .tooltip-touch {
+  background: #111;
 }
 
 /* Animaciones suaves */
@@ -181,17 +221,31 @@
   }
 }
 
-/* Se comenta este bloque por si hay que rehacer los cambios */
-/*.btn-tema,
-    .btn-kiosco {
-      position: relative;
-      display: block;
-      margin: 0 auto;
-      top: auto;
-      left: auto;
-      margin-top: 10px;
+@keyframes fadeTooltip {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .titulo-header {
+      font-size: 2rem;
+      top: 5px;
+      left: 160px;
     }
   
-    .btn-kiosco {
-      margin-bottom: 10px;
-    }*/
+    .logo {
+      height: 100px;
+    }
+  
+    .botones-header {
+      justify-content: center;
+    }
+  }
