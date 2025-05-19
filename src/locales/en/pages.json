@@ -102,42 +102,42 @@
   "4": {
     "titulo": "Prototaxiles and Meganeuras",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Stop 4. Fungal colossi and giant dragonflies, all in one view!",
       "mensaje": "In this area, we see two very different yet equally amazing creatures. Prototaxites were giant fungi that could reach up to 8 meters in height. Next to them, a creature that looks like a huge dragonfly: the Meganeura, an insect from the Carboniferous period that could hunt small reptiles. Before the dinosaurs, these were the rulers of the Earth.",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that over 300 million years ago, there were 8-meter-high mushrooms and giant dragonflies that hunted reptiles? They were kings before the dinosaurs!"
 
     }
   },
   "5": {
     "titulo": "The first trees",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Stop 5. See the first forests that debuted in the shadow of the planet!",
       "mensaje": "Over time, plants became more complex. The first trees appeared, like pines, ginkgos, and araucarias. Some developed fruits, allowing animals to help spread their seeds to new territories. These trees gave rise to the great prehistoric forests that covered the planet.",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that the first trees could grow up to 30 meters, long before the dinosaurs existed!"
     }
   },
   "6": {
     "titulo": "The first flowers",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Stop 6. 150 million years ago, flowers and their pollinators brought life to the world we recognize today.",
       "mensaje": "For millions of years, plants had no flowers. But around 150 million years ago, flowering plants—called angiosperms—appeared. Thanks to flowers and pollinators like bees, plants could reproduce more easily and spread quickly. The plant world was beginning to resemble the one we know today.",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that the first flowers emerged 150 million years ago and transformed plant reproduction?"
     }
   },
   "7": {
     "titulo": "The first dinosaurs",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Stop 7. Here began the era of the giants who ruled the Earth!",
       "mensaje": "Now we enter the Jurassic, the era of the great dinosaurs. Here we find the Triceratops, which ate low plants like ferns, and the Brontosaurus, which could reach the treetops. All these giants were herbivores, and their amazing size was suited to a world where plants grew in abundance.",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that the first dinosaurs appeared more than 230 million years ago and ruled the Earth for almost 170 million years?"
     }
   },
   "8": {
     "titulo": "The continental drift",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Stop 8. Continental drift created new paths for the first dinosaurs to conquer the Earth.",
       "mensaje": "Millions of years ago, all the continents were united in a single landmass called Pangaea. Over time, this giant “island” broke apart due to the movement of tectonic plates. How do we know? Thanks to fossils that show identical remains in places now separated by oceans. Continental drift is still happening today.",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that continental drift continues to move Europe and North America by about 2 cm per year?"
     }
   },
   "9": {
@@ -151,9 +151,9 @@
   "10": {
     "titulo": "Galapagos and Darwin",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Stop 10. Galapagos: the natural laboratory where Darwin revealed the secrets of evolution",
       "mensaje": "Charles Darwin traveled to the Galápagos Islands in the 19th century and discovered something fascinating: animals that looked similar but had small differences that helped them survive on each island. This led him to formulate the theory of evolution by natural selection: only those best adapted to their environment survive. An idea that changed science forever.",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that Darwin took more than 20 years to publish his theory, motivated in large part by what he learned in the Galapagos?"
     }
   },
   "11": {
@@ -167,25 +167,25 @@
   "12": {
     "titulo": "Atapuerca",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Stop 12. Atapuerca, where the legacy of the dinosaurs gave way to the first humans",
       "mensaje": "In Spain, at the Atapuerca archaeological site, remains of various types of hominids have been found. It’s one of the most important places in the world for understanding our evolution. There, scientists discovered species like Homo antecessor, which helps us reconstruct humanity’s family tree.",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that human remains so ancient that they helped rewrite the history of how humans came to Europe were found in Atapuerca?"
     }
   },
   "13": {
     "titulo": "The Neandertal man",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Stop 13. Neanderthal man, a strong ancestor who walked alongside early humans",
       "mensaje": "For a long time, we coexisted with another human species: the Neanderthals. They were great hunters, lived in cold climates, and also used tools. Today we know they didn’t completely disappear: many people still carry a small percentage of Neanderthal DNA.",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that Neanderthals had a brain as big as, or even bigger than, ours?"
     }
   },
   "14": {
     "titulo": "Skulls and human evolution",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Stop 14. Each skull tells the story of how our species evolved.",
       "mensaje": "In this museum, you’ll see skulls from different human species and other primates. Notice how the skull’s shape has changed to make room for the brain, which is much larger in modern humans. That brain allowed us to communicate, create tools, form groups… and give rise to culture and society.",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that studying ancient skulls allows us to understand how our abilities and behavior changed with evolution?"
     }
   },
   "15": {
@@ -215,17 +215,17 @@
   "18": {
     "titulo": "Painting of the Sahara and Laja Alta",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Stop 18. These paintings reveal how in prehistoric times they already tended their livestock and sailed the seas.",
       "mensaje": "This mural shows scenes from everyday life in Prehistoric times. Look at the Saharan paintings depicting a group caring for livestock, a realistic glimpse of early organized societies. Next to Çatalhöyük’s house, another surprising scene: sailboats found in Laja Alta, Cádiz. Once thought to be Phoenician, we now know they are much older—from the Copper Age—and show that even back then… they were already sailing the seas!",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that the paintings of the Sahara and La Laja Alta are some of the earliest evidence of organized societies and ancient navigation?"
     }
   },
   "19": {
     "titulo": "Çatalhöyük",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Stop 19. This is one of the first cities where community life began",
       "mensaje": "Çatalhöyük, in Turkey, was one of the world’s first cities. The houses had no ground-level doors—you entered through the roof. There were ovens, pottery, and even religious figures like the Mother Goddess, who protected fertility and hunting. This city speaks to us of spirituality, social organization… and the beginnings of great civilizations.",
-      "sabiasQue": "#"
+      "sabiasQue": "Did you know that in Çatalhöyük, houses were built next to each other without streets, and people entered through the roof?"
     }
   },
   "20": {
