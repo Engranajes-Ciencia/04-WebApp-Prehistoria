@@ -149,18 +149,29 @@ function Actividad() {
                 </p>
             )}
 
-            {tieneGenially && (
+            {/* Renderizar Genially si existe, o el botón para el siguiente QR */}
+            {tieneGenially ? ( // Si tiene Genially
                 <div className="actividad-genially">
                     <iframe
-                        src={actividad.geniallyURL}
+                        src={traduccionActividad.geniallyURL} // Usa la URL traducida/correcta
                         width="100%"
-                        height="500px"
+                        height="500px" // O usa el método responsive con padding del CSS anterior
                         frameBorder="0"
                         allowFullScreen
                         title="Genially actividad"
                     ></iframe>
                 </div>
+            ) : ( // Si NO tiene Genially, muestra el botón para el siguiente QR
+                <div className="actividad-siguiente">
+                    <button className="btn-siguiente" onClick={() => navigate("/EscanerQR")}>
+                        📲 {t("Escanear codigo QR")}
+                    </button>
+                </div>
             )}
+
+            {/* Opcional: Botón para volver al mapa o inicio */}
+            {/* <button onClick={() => navigate("/mapa")}>{t('volverMapa')}</button> */}
+
         </div>
     );
 }

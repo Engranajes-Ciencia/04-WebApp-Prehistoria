@@ -7,6 +7,11 @@
   "activarMusica": "🔊🎵",
   "silenciarMusica":"🔇🎵",
 
+
+  "actividad": {
+    "siguienteQR": "Ir al siguiente QR"
+  },
+  
   "footer": {
     "proyecto": "🌍 Proyecto educativo para el Parque de la Prehistoria",
     "desarrolladoPor": "🧠 Desarrollado por <1>Engranajes Ciencia</1> & Equipo FCT 💻",
