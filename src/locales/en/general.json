@@ -1,16 +1,10 @@
 {
-  "home": "Home",
-  "modoClaro": "Light Mode",
-  "modoOscuro": "Dark Mode",
-  "modoKiosco": "Kiosk Mode",
-  "cambiarIdioma": "Español",
-  "activarMusica": "🔊🎵",
-  "silenciarMusica":"🔇🎵",
 
 
   "actividad": {
   "siguienteQR": "Scanner QR"
   },
+
 
   "footer": {
     "proyecto": "🌍 Educational project for the Prehistoric Park",
