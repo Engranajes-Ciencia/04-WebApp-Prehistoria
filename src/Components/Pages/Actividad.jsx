@@ -129,7 +129,7 @@ function Actividad() {
                     {actividad.audioENG && (
                         <>
                             <button onClick={toggleAudioAlt} className="audio-button-alt">
-                                {isAudioAltPlaying ? "Pause" : "Play"}
+                                {isAudioAltPlaying ? t("actividad.pausarAudioENG") : t("actividad.reproducirAudioENG")}
                             </button>
                             <audio
                                 ref={audioAltRef}

@@ -82,7 +82,7 @@ function Header() {
       />
     
       <button className="btn-music" onClick={toggleMute}>
-        {isMuted ? "Activar música" : "Silenciar música"}
+        {isMuted ? t("activarMusica") : t("silenciarMusica")}
       </button>    
       </div>
 
