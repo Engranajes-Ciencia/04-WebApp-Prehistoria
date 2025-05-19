@@ -29,11 +29,7 @@ function EntreActividades() {
                 className="guia-avatar"
             />
             <p className="guia-texto">
-
-                ¡Buen trabajo {nombre}! Has completado {completadas.length} de 20 paradas.
-
-                {t("entreActividades.buenTrabajo")} {nombre}. {t("entreActividades.hasCompletado")} {completadas.length} {t("entreActividades.paradas")}.
-
+                {t("entreActividades.guiaTexto", { nombre, ultimaCompletada: completadas.length })}
             </p>
 
             <div className="barra-progreso">

@@ -10,16 +10,19 @@ function Header() {
   const { i18n, t } = useTranslation();
   const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef(null);
+  const [tooltip, setTooltip] = useState("");
 
-  const toggleLanguage = () => {
-    const nuevoIdioma = i18n.language === "es" ? "en" : "es";
-    i18n.changeLanguage(nuevoIdioma);
+
+  // Mostrar tooltip al pulsar
+  const showTooltip = (text) => {
+    setTooltip(text);
+    setTimeout(() => setTooltip(""), 3000);
   };
+
 
   useEffect(() => {
     const savedTheme = localStorage.getItem("modoOscuro");
     const isDark = savedTheme === "true";
-
     setModoOscuro(isDark);
     if (isDark) {
       document.documentElement.classList.add("dark");
@@ -31,14 +34,31 @@ function Header() {
     setModoOscuro(nuevoEstado);
     document.documentElement.classList.toggle("dark", nuevoEstado);
     localStorage.setItem("modoOscuro", nuevoEstado);
+    showTooltip(nuevo ? "Modo Oscuro" : "Modo Claro");
   };
 
   const toggleMute = () => {
-      setIsMuted(!isMuted);
-      if (audioRef.current) {
-          audioRef.current.muted = !isMuted;
-      }
+    setIsMuted(!isMuted);
+    if (audioRef.current) {
+      audioRef.current.muted = !isMuted;
+      showTooltip(isMuted ? "Música Activada" : "Música Silenciada");
+    }
   };
+
+  const toggleLanguage = () => {
+    const nuevoIdioma = i18n.language === "es" ? "en" : "es";
+    i18n.changeLanguage(nuevoIdioma);
+    showTooltip(nuevo === "es" ? "Español" : "English");
+  };
+
+  const activarKiosco = () => {
+    const el = document.documentElement;
+    if (el.requestFullscreen) el.requestFullscreen();
+    else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
+    else if (el.msRequestFullscreen) el.msRequestFullscreen();
+    showTooltip("Modo Kiosco");
+  };
+
 
   useEffect(() => {
       if (audioRef.current) {
@@ -48,7 +68,11 @@ function Header() {
 
   return (
     <header className="header">
+
+      {/* Tooltip flotante */}
+      {tooltip && <div className="tooltip-touch">{tooltip}</div>}
       <div className="header-top">
+
         <div className="branding">
           <img
             src={`${import.meta.env.BASE_URL}assets/images/Logo-principal.png`}
@@ -64,63 +88,40 @@ function Header() {
       </h1>
 
       <div className="botones-header">
-        <button className="btn-home" onClick={() => navigate("/")}>
-          {t("home")}
-        </button>
 
-        <button className="btn-tema" onClick={toggleModoOscuro}>
-          {modoOscuro ? t("modoClaro") : t("modoOscuro")}
-        </button>
-
-      <div>
-        <audio
-        ref={audioRef}
-        src="/sounds/musica.mp3" // Ruta de la musica
-        loop
-        autoPlay
-        muted={isMuted}
-      />
-    
-      <button className="btn-music" onClick={toggleMute}>
-        {isMuted ? t("activarMusica") : t("silenciarMusica")}
-      </button>    
-      </div>
+        <button className="icon-btn" data-tooltip="Inicio"  onClick={() => navigate("/")}>🏠</button>
 
         <button
-          className="btn-kiosco"
-          onClick={() => {
-            const el = document.documentElement;
-            if (el.requestFullscreen) el.requestFullscreen();
-            else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
-            else if (el.msRequestFullscreen) el.msRequestFullscreen();
-          }}
+          className="icon-btn"
+          data-tooltip={modoOscuro ? "Modo Claro" : "Modo Oscuro"}
+          onClick={toggleModoOscuro}
         >
-          {t("modoKiosco")}
+          {modoOscuro ? "☀️" : "🌙"}
         </button>
 
-        <button className="btn-idioma" onClick={toggleLanguage}>
-          {t("cambiarIdioma")}
+
+
+        <button className="icon-btn" data-tooltip="Música" onClick={toggleMute}>{isMuted ? "🔇" : "🎵"}</button> 
+
+
+        <button className="icon-btn" data-tooltip="Kiosco" onClick={activarKiosco}>🖥️</button>
+
+        <button className="icon-btn" data-tooltip="Idioma"  onClick={toggleLanguage}>
+          {i18n.language === "es" ? "🇪🇸" : "🇬🇧"}
         </button>
-      </div>
-      <div
-        className="branding"
-        onClick={() => navigate("/")}
-        style={{ cursor: "pointer" }}
-      >
-        <img
-          src={`${import.meta.env.BASE_URL}assets/images/Logo-principal.png`}
-          alt="Logo empresa"
-          className="logo"
-        />
+
+        <audio
+          ref={audioRef}
+          src="/sounds/musica.mp3" // Ruta de la musica
+          loop
+          autoPlay
+          muted={isMuted}>
+
+        </audio>
+  
+
       </div>
 
-      <h1
-        className="titulo-header"
-        onClick={() => navigate("/")}
-        style={{ cursor: "pointer" }}
-      >
-        Parque <br /> Prehistórico
-      </h1>
     </header>
   );
 }

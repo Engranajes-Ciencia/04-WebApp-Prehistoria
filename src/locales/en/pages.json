@@ -39,9 +39,7 @@
 
   "entreActividades": {
     "mapa": "Map of the route",
-    "buenTrabajo": "Good job",
-    "hasCompletado": "You have completed",
-    "paradas": "of 10 stops",
+    "guiaTexto": "Good job {{nombre}}! You have completed {{ultimaCompletada}} of 20 stops.",
     "escanear": "Scan next stop",
     "pantallaFinal": "See final screen",
     "medallas": "See medals"
