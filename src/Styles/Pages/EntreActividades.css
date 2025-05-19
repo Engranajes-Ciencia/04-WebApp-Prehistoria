@@ -184,7 +184,10 @@
 }
 
 .dark .guia-texto {
-    color: var(--blanco) !important;
+    background: #2e2e2edc;
+    border-left-color: #ffc107;
+    color:#ffe100f2!important;
+    text-shadow: 0 4px 12px #ffffff7d;
 }
 
 .dark .checkpoints {
