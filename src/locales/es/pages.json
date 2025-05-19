@@ -61,7 +61,7 @@
     "sabiasQue": "¿Sabías que...?"
   },
   "1": {
-    "titulo": "Bienvenida – Comienza la aventura",
+    "titulo": "Bienvenido. Comienza la aventura",
     "avatarDialogo": {
       "dialogo": "¡Hola aventureros! Yo seré vuestro guía en este recorrido por la historia de la humanidad.",
       "mensaje": "Bienvenidos y bienvenidas al Parque de las Ciencias de la Prehistoria. Soy X y os invito a acompañarme en este viaje a través del tiempo, desde los orígenes de la vida en la Tierra hasta las primeras civilizaciones humanas. Aquí aprenderemos cómo evolucionaron las plantas, los animales y también nosotros, los seres humanos. Recordad: no toquéis las maquetas, cuidad el entorno y sobre todo… ¡disfrutad aprendiendo!",
@@ -87,7 +87,7 @@
   "4": {
     "titulo": "Prototaxiles y Meganeuras",
     "avatarDialogo": {
-      "dialogo": " #",
+      "dialogo": "Parada 4. ¡Colosos fúngicos y libélulas gigantes, todo en un solo vistazo!",
       "mensaje": "En esta zona vemos dos seres muy distintos, pero igual de sorprendentes. Los Prototaxites eran hongos gigantes que podían alcanzar los 8 metros de altura. A su lado, una criatura que parece una libélula enorme: la Meganeura, un insecto que vivió en el periodo carbonífero y que podía cazar pequeños reptiles. Antes de los dinosaurios, estos eran los reyes de la Tierra.",
       "sabiasQue": "¿Sabías que hace más de 300 millones de años existieron hongos de 8 metros y libélulas gigantes que cazaban reptiles? ¡Eran los reyes antes de los dinosaurios!"
     }
@@ -95,39 +95,39 @@
   "5": {
     "titulo": "Los primeros árboles",
     "avatarDialogo": {
-      "dialogo": " #",
+      "dialogo": "Parada 5.¡Contempla los primeros bosques que estrenaron la sombra del planeta!",
       "mensaje": "Con el paso del tiempo, las plantas se hicieron más complejas. Aparecieron los primeros árboles como los pinos, los ginkgos o las araucarias. Algunos desarrollaron frutos, lo que permitía que los animales ayudaran a esparcir sus semillas por nuevos territorios. Estos árboles dieron forma a los grandes bosques prehistóricos que cubrirían el planeta.",
-      "sabiasQue": ""
+      "sabiasQue": "¿Sabías que los primeros árboles podían crecer hasta 30 metros, ¡mucho antes de que existieran los dinosaurios!"
     }
   },
   "6": {
     "titulo": "Las primeras flores",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Parada 6. Hace 150 millones de años, las flores y sus polinizadores pintaron de vida el mundo que hoy reconocemos.",
       "mensaje": "Durante millones de años, las plantas no tuvieron flores. Pero hace unos 150 millones de años aparecieron las angiospermas, es decir, las plantas con flor. Gracias a las flores y a los polinizadores, como las abejas, las plantas pudieron reproducirse más fácilmente y expandirse con rapidez. El mundo vegetal ya empezaba a parecerse al que conocemos hoy.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que las primeras flores surgieron hace 150 millones de años y transformaron la reproducción de las plantas?"
     }
   },
   "7": {
     "titulo": "Los primeros dinosaurios",
     "avatarDialogo": {
-      "dialogo": " #",
+      "dialogo": "Parada 7.¡Aquí comenzó la era de los gigantes que dominaron la Tierra!",
       "mensaje": "Ahora entramos en el Jurásico, la era de los grandes dinosaurios. Aquí encontramos al Triceratops, que comía plantas bajas como los helechos, y al Brontosaurio, que podía alcanzar las copas de los árboles. Todos estos gigantes eran herbívoros, y su tamaño asombroso estaba adaptado a un mundo donde las plantas crecían en abundancia.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que los primeros dinosaurios aparecieron hace más de 230 millones de años y dominaron la Tierra durante casi 170 millones de años?"
     }
   },
   "8": {
     "titulo": "La deriva continental",
     "avatarDialogo": {
-      "dialogo": " #",
+      "dialogo": "Parada 8. La deriva continental creó nuevos caminos para que los primeros dinosaurios conquistaran la Tierra",
       "mensaje": "Hace millones de años, todos los continentes estaban unidos en una gran masa de tierra llamada Pangea. Con el tiempo, esta gran “isla” se fue fragmentando por el movimiento de las placas tectónicas. ¿Cómo lo sabemos? Gracias a los fósiles, que nos muestran restos idénticos en lugares hoy separados por océanos. La deriva continental aún continúa hoy.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que la deriva continental sigue moviendo a Europa y Norteamérica unos 2 cm al año?"
     }
   },
   "9": {
     "titulo": "Los segundos dinosaurios",
     "avatarDialogo": {
-      "dialogo": "Estás en la parada 9: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
+      "dialogo": "Parada 9. Estás en la parada 9: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
       "mensaje": "En esta zona encontramos dinosaurios carnívoros, como los alosaurios y los dromeosaurios, que cazaban sobre dos patas. Algunos, como los velociraptores, tenían plumas y compartían rasgos con las aves actuales. Estos dinosaurios nos muestran que la evolución no siempre desaparece, a veces... ¡se transforma!",
       "sabiasQue": "¿Sabías que el triceratops tenía tres cuernos para defenderse?"
     }
@@ -135,9 +135,9 @@
   "10": {
     "titulo": "Galápagos y Darwin",
     "avatarDialogo": {
-      "dialogo": " #",
+      "dialogo": "Parada 10. Galápagos: el laboratorio natural donde Darwin reveló los secretos de la evolución",
       "mensaje": "Charles Darwin viajó a las islas Galápagos en el siglo XIX y descubrió allí algo fascinante: animales muy parecidos entre sí, pero con pequeñas diferencias que les ayudaban a sobrevivir en cada isla. Esto le llevó a formular la teoría de la evolución por selección natural: sólo sobrevive quien mejor se adapta al entorno. Una idea que cambió la ciencia para siempre.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que Darwin tardó más de 20 años en publicar su teoría, motivado en gran parte por lo que aprendió en Galápagos?"
     }
   },
   "11": {
@@ -151,25 +151,25 @@
   "12": {
     "titulo": "Atapuerca",
     "avatarDialogo": {
-      "dialogo": " #",
-      "mensaje": "En España, en el yacimiento de Atapuerca, se han encontrado restos de varios tipos de homínidos. Es uno de los lugares más importantes del mundo para entender cómo hemos evolucionado. Allí aparecieron los restos de especies como el Homo antecessor, que nos ayuda a reconstruir el árbol genealógico de la humanidad.",
-      "sabiasQue": "#"
+      "dialogo": "Parada 12. Atapuerca, donde el legado de los dinosaurios dio paso a los primeros humanos",
+      "mensaje": "En España, en el yacimiento arqueológico de Atapuerca, se han encontrado restos de varios tipos de homínidos. Es uno de los lugares más importantes del mundo para comprender nuestra evolución. Allí, los científicos descubrieron especies como el Homo antecessor, lo que nos ayuda a reconstruir el árbol genealógico de la humanidad.",
+      "sabiasQue": "¿Sabías que en Atapuerca se encontraron restos humanos tan antiguos que ayudaron a reescribir la historia de cómo llegó el hombre a Europa?"
     }
   },
   "13": {
     "titulo": "El hombre de Neandertal",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Parada 13. El hombre de Neandertal, un antepasado fuerte que caminó junto a los primeros humanos",
       "mensaje": "Durante mucho tiempo convivimos con otra especie humana: el Hombre de Neandertal. Fueron grandes cazadores, vivieron en climas fríos, y también usaban herramientas. Hoy sabemos que no se extinguieron del todo: muchas personas todavía conservan un pequeño porcentaje de ADN neandertal.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que el hombre de Neandertal tenía un cerebro tan grande o incluso más que el nuestro?"
     }
   },
   "14": {
     "titulo": "Cráneos y evolución humana",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Parada 14. Cada cráneo cuenta la historia de cómo evolucionó nuestra especie",
       "mensaje": "En este museo verás cráneos de distintas especies humanas y de otros primates. Fíjate en cómo ha cambiado la forma del cráneo para dejar espacio al cerebro, que en los humanos modernos es mucho más grande. Ese cerebro nos permitió comunicarnos, crear herramientas, formar grupos… y dar paso a la cultura y la sociedad.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que estudiar cráneos antiguos nos permite entender cómo cambiaron nuestras habilidades y comportamiento con la evolución?"
     }
   },
   "15": {
@@ -199,17 +199,17 @@
   "18": {
     "titulo": "Pinturas del Sáhara y de Laja Alta",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Parada 18. Estas pinturas revelan cómo en la Prehistoria ya cuidaban su ganado y surcaban los mares",
       "mensaje": "En este mural vemos escenas de la vida cotidiana en la Prehistoria. Destacan unas pinturas del Sáhara, en las que aparece un grupo cuidando del ganado, un reflejo realista de las primeras sociedades organizadas. Junto a la casa de Çatalhöyük se representa otra escena sorprendente: barcos de vela encontrados en Laja Alta, Cádiz. Aunque se pensó que eran fenicios, hoy sabemos que son mucho más antiguos, de la Edad del Cobre, y nos muestran que ya entonces… ¡navegaban los mares!",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que las pinturas del Sahara y La Laja Alta son algunas de las primeras evidencias de sociedades organizadas y navegación antigua?"
     }
   },
   "19": {
     "titulo": "Çatalhöyük",
     "avatarDialogo": {
-      "dialogo": "#",
+      "dialogo": "Parada 19. Esta es una de las primeras ciudades donde comenzó la vida en comunidad",
       "mensaje": "Çatalhöyük, en Turquía, fue una de las primeras ciudades del mundo. Las casas no tenían puertas a ras del suelo, se entraba por el tejado. Allí ya había hornos, vasijas y hasta figuras religiosas, como la Diosa Madre, que protegía la fertilidad y la caza. Esta ciudad nos habla de espiritualidad, organización social… y del comienzo de las grandes civilizaciones.",
-      "sabiasQue": "#"
+      "sabiasQue": "¿Sabías que en Çatalhöyük, las casas se construían unas junto a otras sin calles, y la gente entraba por el techo?"
     }
   },
   "20": {
