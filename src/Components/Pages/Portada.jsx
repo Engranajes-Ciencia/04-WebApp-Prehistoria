@@ -1,8 +1,10 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useRef } from "react";
+import { useTranslation } from "react-i18next";
 import "../../Styles/Pages/Portada.css";
 
 function Portada() {
+    const { t } = useTranslation("pages");
     const navigate = useNavigate();
     const audioRef = useRef(null);
 
@@ -40,17 +42,12 @@ function Portada() {
     return (
         <div className="portada-container">
             <div className="contenido">
-                <h1 className="titulo">Aventura Prehistórica</h1>
-                <p className="subtitulo">
-                    ¡Bienvenido a la Aventura Prehistórica!
-                    Acabas de embarcarte en un viaje en el tiempo donde descubrirás los secretos mejor guardados de la historia de la humanidad y de la Tierra.
-                    Guiado por tu fiel compañero o compañera (¡tú eliges!), recorrerás 10 lugares sagrados, fósiles milenarios, civilizaciones ancestrales y monumentos asombrosos.
-                    En cada parada encontrarás un código QR que activará una misión: una actividad interactiva que te hará pensar, aprender y superar retos.
-                    ¿Estás preparado para convertirte en un auténtico explorador del tiempo?
-                    🧭 ¡Tu aventura comienza ya!
+                <h1 className="titulo1">{t("portada.titulo")}</h1>
+                <p className="subtitulo1">
+                    {t("portada.descripcion")}
                 </p>
                 <button className="btn-aventura" onClick={handleStart}>
-                    Empezar Aventura
+                    {t("portada.empezar")}
                 </button>
             </div>
         </div>

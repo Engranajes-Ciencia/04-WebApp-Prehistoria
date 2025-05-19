@@ -3,9 +3,185 @@
 /* Animación de entrada suave */
 
 @keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.audio-button-container {
+  display: flex;
+  justify-content: center;     
+  align-items: center;
+  gap: 20px;                   
+  padding: 20px;               
+  margin: 20px auto;           
+  background: transparent;
+  background-size: cover;      
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.audio-button,
+.audio-button-alt {
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #1976d2;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px; 
+}
+
+
+.actividad-container {
+  padding: 2rem;
+  max-width: 100%;
+  height: 1000px;
+  margin: auto;
+  background: linear-gradient(145deg, #f9f9f9, #e7e7e7);
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  font-family: "Milford", sans-serif;
+  transition: all 0.3s ease-in-out;
+  animation: fadeSlideIn 0.8s ease forwards;
+  opacity: 0;
+}
+
+.saludo-titulo {
+  display:flex;
+  width: 100%;
+}
+
+.actividad-header {
+  display: flex;
+  align-items: center;
+  width: 49%;
+  gap: 16px;
+  margin-bottom: 2rem;
+  background-color: #e3f2fdd3;
+  padding: 1.2rem 1.6rem;
+  border-radius: 16px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+  margin-left: 1%;
+}
+
+.avatar-actividad {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  width: 60px;
+  height: 90px;
+  border-radius: 16px;
+  border: 2px solid #2196f3;
+  background-color: #fff;
+  padding: 4px;
+}
+
+.saludo1 {
+  display: flex;
+  padding: 5px;
+  width: 20vw;
+  border-radius: 12px;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #146acc;
+  margin: 0;
+  white-space: nowrap;
+  background-color: #2f6db591;
+}
+
+.dialogo {
+  background: var(--blanco);
+  border-radius: 8px;
+  padding: 10px 14px;
+  margin-top: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  text-shadow: 0 4px 12px #2e3c407e;
+  font-style: italic;
+  position: relative;
+  background-color: #acccf0c6;
+  color:#3f6da0
+}
+
+.dialogo::before {
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 10px;
+  border: 8px solid transparent;
+  border-right-color: #fff;
+}
+
+.titulo-mensaje {
+  padding-bottom: 10px;
+  padding-left: 15px;
+  width: 100%;
+  height: 200px;
+  border-radius: 16px;
+  background-color: #ffffffc0;
+  text-shadow: 0 4px 12px #2e3c407e;
+  color: #2e3c40;
+}
+
+h3 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.sabiasque {
+  position: relative;
+  max-width: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 14px;
+  background: #fff8e1df;
+  padding: 18px 20px;
+  border-left: 6px solid #ffc107;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+  animation: aparecerSabias 0.6s ease-in;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 3px solid var(--verde);
+  animation: typing 4s steps(60, end), blink 0.75s step-end infinite;
+}
+
+.sabiasque:hover {
+  transform: scale(1.03);
+}
+
+.sabiasque::before {
+
+    content: "💡";
+    font-size: 28px;
+    margin-right: 10px;
+}
+
+@keyframes aparecerSabias {
     from {
         opacity: 0;
-        transform: translateY(40px);
+        transform: translateY(10px);
     }
 
     to {
@@ -14,182 +190,79 @@
     }
 }
 
-.actividad-container {
-    padding: 2rem;
-    max-width: 100%;
-    margin: auto;
-    background: linear-gradient(145deg, #f9f9f9, #e7e7e7);
-    border-radius: 16px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    font-family: 'Milford', sans-serif;
-    transition: all 0.3s ease-in-out;
-    animation: fadeSlideIn 0.8s ease forwards;
-        opacity: 0;
-}
-
-.actividad-header {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 2rem;
-    background-color: #e3f2fd;
-    padding: 1.2rem 1.6rem;
-    border-radius: 12px;
-    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
-}
-
-.avatar-actividad {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    width: 60px;
-    height: 90px;
-    border-radius: 16px;
-    border: 2px solid #2196f3;
-    background-color: #fff;
-    padding: 4px;
-}
-
-.saludo {
-    display: flex;
-    padding: 5px;
-    width: 20vw;
-    justify-content: center;
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: #1565c0;
-    margin: 0;
-    white-space: nowrap;
-}
-
-
-.dialogo {
-    background: var(--blanco);
-    border-radius: 8px;
-    padding: 10px 14px;
-    margin-top: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    font-style: italic;
-    position: relative;
-}
-
-.dialogo::before {
-    content: "";
-    position: absolute;
-    left: -8px;
-    top: 10px;
-    border: 8px solid transparent;
-    border-right-color: #fff;
-}
-
-
-
-h3 {
-    font-size: 38px;
-    color: #2c3e50;
-    margin-bottom: 10px;
-}
-
-p {
-    font-size: 18px;
-    font-weight: bold;
-    font-style: italic;
-}
-
-
-.sabiasque {
-    position: relative;
-    max-width: 39.5vw;
-    font-size: 18px;
-    font-weight: bold;
-    margin-top: 14px;
-    background: #fff8e1;
-    padding: 18px 20px;
-    border-left: 6px solid #ffc107;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease;
-    animation: aparecerSabias 0.6s ease-in;
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    white-space: nowrap;
-        overflow: hidden;
-        border-right: 3px solid var(--verde);
-        animation: typing 4s steps(60, end), blink 0.75s step-end infinite;
-}
-
-.sabiasque:hover {
-    transform: scale(1.03);
-}
-
-.sabiasque::before {
-    content: "💡";
-    font-size: 28px;
-}
-
-@keyframes typing {
-    from {
-        width: 0
-    }
-
-    to {
-        width: 100%
-    }
-}
-
-@keyframes blink {
-    50% {
-        border-color: transparent
-    }
-}
-
-
-
 .actividad-genially {
-    margin-top: 2rem;
-    border-radius: 14px;
-    overflow: hidden;
-    box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
+  margin-top: 2rem;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
 }
 
 /* Estilos Modo Oscuro */
 
-.dark .actividad-container {
-    background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
-    color: var(--blanco);
-    
+.dark .actividad-header {
+  background-color: #2e2e2edc;
 }
 
-.dark .actividad-container .actividad-header h2 {
-    color: var(--blanco) !important;
+.dark .avatar-actividad {
+  border: 2px solid #5e63ff;
+}
+
+.dark .dialogo {
+  background-color: #2e2e2edc;
+  color: #a1d0ff!important;
+  text-shadow: 0 4px 12px #ffffff7d;
+}
+
+.dark .saludo1 {
+  background-color: #2e2e2edc;
+  color: #5e63ff!important;
+  text-shadow: 0 4px 12px #5b87ff7d;
+}
+
+.dark .actividad-container {
+  background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+  color: var(--blanco);
+}
+
+.dark .audio-button {
+  background: linear-gradient(135deg, #464646, #1b1b1b);
+  color: #ffffff !important;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692)
+}
+
+.dark .audio-button:hover {
+  background: #3a3a3a;
+}
+
+.dark .titulo-mensaje {
+  background-color: #2e2e2edc;
+  text-shadow: 0 4px 12px #ffffff7d;
 }
 
 .dark .sabiasque {
-    background: #2e2e2e;
-    border-left-color: var(--verde);
-    color: var(--blanco);
+  background: #2e2e2edc;
+  border-left-color: #ffc107;
+  color:#ffe100f2!important;
+  text-shadow: 0 4px 12px #ffffff7d;
 }
 
 .dark iframe {
-    filter: brightness(0.9);
+  filter: brightness(0.9);
 }
 
 iframe {
-    width: 100%;
-    height: 500px;
-    border: none;
-    border-radius: 8px;
-    opacity: 0;
-    animation: fadeIn 1.2s ease 0.5s forwards;
+  width: 100%;
+  height: 500px;
+  border: none;
+  border-radius: 8px;
+  opacity: 0;
+  animation: fadeIn 1.2s ease 0.5s forwards;
 }
 
 /* Animaciones */
 
 @keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
-
-

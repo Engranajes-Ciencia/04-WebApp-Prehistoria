@@ -1,9 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import { validarNombre, transformarAvatar } from "../../config/utils/validations";
 import "../../Styles/Pages/Form.css";
 
 function Form() {
+  const { t } = useTranslation("pages");
   const [name, setName] = useState("");
   const [avatar, setAvatar] = useState("");
   const [fondoActual, setFondoActual] = useState(0);
@@ -93,12 +95,12 @@ function Form() {
     e.preventDefault();
 
     if (!validarNombre(name)) {
-      alert("El nombre solo puede contener letras, números y espacios.");
+      alert(t("form.alertaNombreInvalido"));
       return;
     }
 
     if (!name || !avatar) {
-      alert("Por favor, escribe tu nombre y elige un avatar.");
+      alert(t("form.alertaFaltanDatos"));
       return;
     }
 
@@ -139,7 +141,7 @@ function Form() {
       {/* Formulario */}
       <form className="form" onSubmit={handleSubmit}>
         <fieldset>
-          <label htmlFor="name">Nombre de explorador/a:</label>
+          <label htmlFor="name">{t("form.nombre")}</label>
           <input
             type="text"
             id="name"
@@ -147,13 +149,13 @@ function Form() {
             onChange={handleName}
             maxLength="20"
             required
-            placeholder="Escribe tu nombre..."
+            placeholder={t("form.placeholderNombre")}
             autoFocus
           />
         </fieldset>
 
         <fieldset>
-          <label>Elige a tu guía:</label>
+          <label>{t("form.guia")}</label>
           <div className="avatar-options">
             {Object.keys(avatars).map((tipo) => (
               <label key={tipo}>
@@ -179,7 +181,7 @@ function Form() {
           </div>
         </fieldset>
 
-        <button type="submit">Empezar Aventura</button>
+        <button type="submit">{t("form.botonAventura")}</button>
       </form>
     </>
   );

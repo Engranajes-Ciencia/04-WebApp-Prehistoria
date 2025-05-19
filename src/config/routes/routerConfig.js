@@ -11,6 +11,8 @@ const ROUTES = {
     FINAL: '/final',
     VITRINA: '/vitrina',
     VITRINA_VIRTUAL: '/vitrina-virtual',
+    MODO_SECRETO: '/secreto',
+
 };
 
 export default ROUTES;

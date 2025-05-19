@@ -1,7 +1,8 @@
 .mapa-check-container {
     min-height: 100vh;
+    height: auto;
     padding: 2rem 1.5rem;
-    background: url('/assets/images/fondo-mapa.jpg') no-repeat center center fixed;
+    background: url('/assets/images/fondo-mapa.png') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -9,6 +10,7 @@
     text-align: center;
     font-family: 'Milford', sans-serif;
     animation: fadeSlide 0.8s ease;
+    overflow: hidden;
 }
 
 .mapa-check-container h2 {
@@ -18,6 +20,52 @@
     text-shadow: 2px 2px 5px var(--negro);
 }
 
+.mapa-contenedor {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2rem;
+}
+
+/* Marcador base */
+.marcador {
+    position: absolute;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #ff9800;
+    border: 3px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transform: translate(-50%, -50%);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    z-index: 10;
+}
+
+/* Si está completada */
+.marcador.completada {
+    background-color: #4caf50;
+}
+
+.marcador-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+/* -- Siguiente parada (amarillo claro) */
+.marcador.siguiente {
+    background-color: #ffeb3b;
+    border-color: #fbc02d;
+    box-shadow: 0 0 8px rgba(255, 235, 59, 0.6);
+}
+
 .mapa-real {
     max-width: 95%;
     width: 700px;
@@ -25,37 +73,10 @@
     margin-bottom: 2rem;
     border-radius: 12px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    border: 4px solid var(--blanco);
+    border: 4px dashed red;
 }
 
-.checkpoints {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 2rem;
-    max-width: 600px;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.85);
-    border-radius: 12px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
-}
 
-.checkpoints li {
-    font-size: 1.3rem;
-    padding: 12px 18px;
-    border-bottom: 1px solid #ddd;
-    position: relative;
-    transition: background 0.3s ease;
-    font-weight: bold;
-    color: #333;
-}
-
-.checkpoints li.hecha {
-    background-color: #e8f5e9;
-    color: #4caf50;
-    text-decoration: line-through;
-    animation: tachado 0.5s ease;
-}
 
 .guia-avatar {
     width: 80px;
@@ -96,6 +117,8 @@
     background-color: #388e3c;
     transition: width 0.6s ease;
 }
+
+
 
 /* CONTENEDOR Y ESTILO UNIFICADO DE BOTONES */
 
@@ -147,6 +170,8 @@
     background-color: #ef6c00;
 }
 
+
+
 /* Estilos Modo Oscuro */
 
 .dark .mapa-check-container {
@@ -159,7 +184,10 @@
 }
 
 .dark .guia-texto {
-    color: var(--blanco) !important;
+    background: #2e2e2edc;
+    border-left-color: #ffc107;
+    color:#ffe100f2!important;
+    text-shadow: 0 4px 12px #ffffff7d;
 }
 
 .dark .checkpoints {
@@ -196,6 +224,24 @@
         transform: translateY(0);
     }
 }
+
+@keyframes marcadorPulse {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 0 rgba(33, 150, 243, 0.4);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) scale(1.2);
+        box-shadow: 0 0 0 12px rgba(33, 150, 243, 0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
+    } }
+
+
 
 /* Responsive para móvil */
 

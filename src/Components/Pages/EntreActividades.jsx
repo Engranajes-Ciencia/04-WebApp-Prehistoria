@@ -4,12 +4,16 @@ import { getActividadesCompletadas } from "../../config/utils/localStorage";
 import actividades from "../../config/data/actividades.json";
 import { useNavigate } from "react-router-dom";
 import "../../Styles/Pages/EntreActividades.css";
+import { useTranslation } from "react-i18next";
 
 function EntreActividades() {
+    const { t } = useTranslation ("pages");
     const completadas = getActividadesCompletadas();
     const navigate = useNavigate();
 
+    const ultimaCompletada = completadas[completadas.length - 1];
     const siguiente = completadas.length + 1;
+
 
     const avatar = localStorage.getItem("avatar") || "explorador"; // o exploradora
     const nombre = localStorage.getItem("nombre") || "explorador/a";
@@ -17,7 +21,7 @@ function EntreActividades() {
 
     return (
         <div className="mapa-check-container">
-            <h2>Mapa del Recorrido</h2>
+            <h2>{t("entreActividades.mapa")}</h2>
 
             <img
                 src={`${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`}
@@ -25,44 +29,71 @@ function EntreActividades() {
                 className="guia-avatar"
             />
             <p className="guia-texto">
-                ¡Buen trabajo {nombre}! Has completado {completadas.length} de 10 paradas.
+                {t("entreActividades.guiaTexto", { nombre, ultimaCompletada: completadas.length })}
             </p>
 
             <div className="barra-progreso">
-                <div className="relleno" style={{ width: `${(completadas.length / 10) * 100}%` }}></div>
+                <div className="relleno" style={{ width: `${(completadas.length / 20) * 100}%` }}></div>
             </div>
 
-            <img
-                src={`${import.meta.env.BASE_URL}assets/images/fondo-mapa.jpg`}
-                alt="Mapa"
-                className="mapa-real"
-            />
+            {/* Imagen del mapa */}
+            <div className="mapa-contenedor">
+                <img
+                    src={`${import.meta.env.BASE_URL}assets/images/fondo-mapa.png`}
+                    alt="Mapa"
+                    className="mapa-real"
+                />
 
-            <ul className="checkpoints">
-                {actividades.map((act) => (
-                    <li key={act.id} className={completadas.includes(act.id) ? "hecha" : ""}>
-                        {act.id}. {act.titulo}
-                    </li>
-                ))}
-            </ul>
 
+                {/* Marcadores dinámicos sobre el mapa */}
+                {actividades.map((act) => {
+
+                    if (typeof act.posX !== "number" || typeof act.posY !== "number") return null;
+
+
+                    const isCompletada = completadas.includes(act.id);
+                    const isActual = act.id === ultimaCompletada;
+                    const isSiguiente = act.id === siguiente;
+
+                    return (
+                        <div
+                            key={act.id}
+                            className={`marcador 
+                                ${isCompletada ? "completada" : ""}
+                                ${isSiguiente ? "siguiente" : ""}
+                            `}
+                            style={{ top: `${act.posY}px`, left: `${act.posX}px` }}
+                            title={`Parada ${act.id}: ${act.titulo}`}
+                        >
+                            {isActual && (
+                                <img
+                                    src={`${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`}
+                                    alt="posición actual"
+                                    className="marcador-avatar"
+                                />
+                            )}
+                        </div>
+                    );
+                })}
+            </div>
+
+            
+
+            {/* Botones */}
             <div className="botones-container">
                 {completadas.length >= 10 ? (
                     <button className="btn-final" onClick={() => navigate("/final")}>
-                        Ver pantalla final
+                        {t("entreActividades.pantallaFinal")}
                     </button>
                 ) : (
                     <button className="btn-scan" onClick={() => navigate("/EscanerQR")}>
-                        Escanear siguiente parada ({siguiente})
+                        {t("entreActividades.escanear")} ({siguiente})
                     </button>
                 )}
 
-                {/* muestra vitrina */}
                 <button className="btn-medallas" onClick={() => navigate("/vitrina-virtual")}>
-                    Ver Medallas
+                    {t("entreActividades.medallas")}
                 </button>
-
-
             </div>
         </div>
     );

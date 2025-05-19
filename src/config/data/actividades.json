@@ -3,430 +3,216 @@
     "id": 1,
     "titulo": "Bienvenida – Comienza la aventura",
     "ubicacion": "Entrada principal del parque",
-    "audio": "/sounds/soundsParadas/Parada1.mp3",
-    "avatarDialogo": {
-      "explorador": {
-        "dialogo": "¡Hola aventureros! Yo seré vuestro guía en este recorrido por la historia de la humanidad.",
-        "mensaje": " Bienvenidos y bienvenidas al Parque de las Ciencias de la Prehistoria. Soy X y os invito a acompañarme en este viaje a través del tiempo, desde los orígenes de la vida en la Tierra hasta las primeras civilizaciones humanas. Aquí aprenderemos cómo evolucionaron las plantas, los animales y también nosotros, los seres humanos. Recordad: no toquéis las maquetas, cuidad el entorno y sobre todo… ¡disfrutad aprendiendo!",
-        "sabiasQue": "¿Sabías que la vida en la Tierra comenzó hace más de 3.500 millones de años?"
-      },
-      "exploradora": {
-        "dialogo": "#",
-        "mensaje": "Bienvenidos y bienvenidas al Parque de las Ciencias de la Prehistoria. Soy X y os invito a acompañarme en este viaje a través del tiempo, desde los orígenes de la vida en la Tierra hasta las primeras civilizaciones humanas. Aquí aprenderemos cómo evolucionaron las plantas, los animales y también nosotros, los seres humanos. Recordad: no toquéis las maquetas, cuidad el entorno y sobre todo… ¡disfrutad aprendiendo!",
-        "sabiasQue": "¿Sabías que las primeras formas de vida eran invisibles al ojo humano?"
-      }
-    },
+    "posX": 370,
+    "posY": 760,
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada1.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada1ENG.mp3",
+    "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/bienvenida.jpeg",
+    "completada": false
+  },
+  {
+    "id": 2,
+    "titulo": "El origen de la vida",
+    "ubicacion": "Zona de fósiles marinos",
+    "posX": 570,
+    "posY": 700,
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada2.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada2ENG.mp3",
+    "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/origen.png",
+    "completada": false
+  },
+  {
+    "id": 3,
+    "titulo": "Las primeras plantas",
+    "ubicacion": "Área de musgos y helechos antiguos",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada3.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada3ENG.mp3",
     "geniallyURL": "#",
     "completada": false
   },
   {
-  "id": 2,
-  "titulo": "El origen de la vida",
-  "ubicacion": "Zona de fósiles marinos",
-  "audio": "/sounds/soundsParadas/Parada2.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo": " Estás en la parada 2. Mira a tu alrededor… aquí comenzó todo.",
-      "mensaje": "La Tierra se formó hace unos 4.500 millones de años. Al principio era un lugar sin vida con volcanes, océanos hirvientes y una atmósfera irrespirable. Pero con el tiempo, aparecieron las primeras formas de vida en el agua: bacterias y algas microscópicas. Aunque parezcan simples, estos seres diminutos fueron el primer paso en una larga cadena evolutiva… que nos lleva hasta hoy.",
-      "sabiasQue": "¿Sabías que las primeras formas de vida eran capaces de vivir sin oxígeno?"
-    },
-    "exploradora": {
-      "dialogo": "Aquí empezó la vida. ¡Imagina un mundo sin humanos, solo agua y microbios!",
-      "mensaje": "La Tierra se formó hace unos 4.500 millones de años. Al principio era un lugar sin vida con volcanes, océanos hirvientes y una atmósfera irrespirable. Pero con el tiempo, aparecieron las primeras formas de vida en el agua: bacterias y algas microscópicas. Aunque parezcan simples, estos seres diminutos fueron el primer paso en una larga cadena evolutiva… que nos lleva hasta hoy.",
-      "sabiasQue": "¿Sabías que estas bacterias contribuyeron a formar el oxígeno de nuestra atmósfera?"
-    }
+    "id": 4,
+    "titulo": "Prototaxiles y Meganeuras",
+    "ubicacion": "#",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada4.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada4ENG.mp3",
+    "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/meganeura.png",
+    "completada": false
   },
-  "geniallyURL": "#",
-  "completada": false
+  {
+    "id": 5,
+    "titulo": "Los primeros árboles",
+    "ubicacion": "#",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada5.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada5ENG.mp3",
+    "geniallyURL": "#",
+    "completada": false
   },
+  {
+    "id": 6,
+    "titulo": "Las primeras flores",
+    "ubicacion": "#",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada6.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada6ENG.mp3",
+    "geniallyURL": "#",
+    "completada": false
+  },  
+  {
+    "id": 7,
+    "titulo": "Los primeros dinosaurios",
+    "ubicacion": "  # ",
+    "posX": 370,
+    "posY": 600,
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada7.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada7ENG.mp3",
+    "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/dinos.png",
+    "completada": false
+  },
+  {
+    "id": 8,
+    "titulo": "La deriva continental",
+    "ubicacion": "#",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada8.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada8ENG.mp3",
+    "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/pangea.png",
+    "completada": false
+  },
+  {
+    "id": 9,
+    "titulo": "Los segundos dinosaurios",
+    "ubicacion": "#",
+    "posX": 400,
+    "posY": 450,
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada9.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada9ENG.mp3",
+    "geniallyURL": "https://view.genially.com/68231bb7256d2888593fbd73/interactive-content-actividad2",
+    "completada": false
+  },
+  {
+    "id": 10,
+    "titulo": "Galápagos y Darwin",
+    "ubicacion": "#",
+    "posX": 470,
+    "posY": 370,
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada10.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada10ENG.mp3",
+    "geniallyURL": "https://view.genially.com/68231bb7256d2888593fbd73/interactive-content-actividad3",
+    "completada": false
+  },
+  {
+    "id": 11,
+    "titulo": "Huellas de Laetoli",
+    "ubicacion": "Descubrimiento de pisadas humanas fósiles",
+    "posX": 380,
+    "posY": 340,
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada11.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada11ENG.mp3",
+    "geniallyURL": "https://view.genially.com/67f8fa02c2e20bb7b0ca82c6/interactive-content-actividad-4",
+    "imagenAlternativa": "/assets/images/nogenially/laetoli.png",
+    "completada": false
+  },
+  {
+    "id": 12,
+    "titulo": "Atapuerca",
+    "ubicacion": "#",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada12.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada12ENG.mp3",
+    "geniallyURL": "#",
+    "completada": false
+  },
+  {
+    "id": 13,
+    "titulo": "El hombre de Neandertal",
+    "ubicacion": "#",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada13.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada13ENG.mp3",
+    "geniallyURL": "https://view.genially.com/67e283be994f4e3b61c714e9/interactive-content-actividad13",
+    "completada": false
+  },
+  {
+    "id": 14,
+    "titulo": "Cráneos y evolución humana",
+    "ubicacion": "#",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada14.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada14ENG.mp3",
+    "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/craneos.png",
+    "completada": false
+  },
+  {
+    "id": 15,
+    "titulo": "Cuevas y arte rupestre",
+    "ubicacion": "Arte prehistórico",
+    "posX": 350,
+    "posY": 230,
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada15.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada15ENG.mp3",
+    "geniallyURL": "https://view.genially.com/67e3cc8058a3eb22e678b730/interactive-content-actividad15",
+    "completada": false
+  },
+  {
+    "id": 16,
+    "titulo": "Los poblados nómadas",
+    "ubicacion": "Estilo de vida de los nómadas",
+    "posX": 340,
+    "posY": 150,
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada16.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada16ENG.mp3",
+    "geniallyURL": "https://view.genially.com/67f8edffb7b2a9c007101174/interactive-content-actividad6",
+    "completada": false
+  },
+  {
+    "id": 17,
+    "titulo": "Primeros poblados sedentarios",
+    "ubicacion": "Primeros asentamientos",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada17.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada17ENG.mp3",
+    "geniallyURL": "https://view.genially.com/67f8f638c08c8840c0b4fe3c/interactive-content-actividad7",
+    "imagenAlternativa": "/assets/images/nogenially/sedentario.png",
+    "completada": false
+  },
+  {
+    "id": 18,
+    "titulo": "Pinturas del Sáhara y de Laja Alta",
+    "ubicacion": "#",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada18.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada18ENG.mp3",
+    "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/sahara.png",
+    "completada": false
+  },
+  {
+    "id": 19,
+    "titulo": "Çatalhöyük",
+    "ubicacion": "#",
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada19.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada19ENG.mp3",
+    "geniallyURL": "https://view.genially.com/67f8f638c08c8840c0b4fe3c/interactive-content-actividad19",
+    "completada": false
+  },
+  {
+    "id": 20,
+    "titulo": "Stonehenge",
+    "ubicacion": "Monumento megalítico",
+    "posX": 320,
+    "posY": 380,
+    "audio": "/sounds/paradasaudio/ESP/Adultos/parada20.mp3",
+    "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada20ENG.mp3",
+    "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad9",
+    "completada": false
+
+  },
+
+
+
 
   {
-  "id": 3,
-  "titulo": "Las primeras plantas",
-  "ubicacion": "Área de musgos y helechos antiguos",
-  "audio": "/sounds/soundsParadas/Parada3.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo":  "Parada 3. ¡Mira estos vegetales! Son los primeros habitantes verdes del planeta.",
-      "mensaje": " Hace unos 500 millones de años, la vida dio un salto muy importante: ¡salió del agua y conquistó la tierra firme! Las primeras plantas en hacerlo fueron los musgos, que no tenían tallo ni raíces y absorbían el agua directamente del suelo. Fueron los primeros pobladores verdes del planeta… y gracias a ellas, después pudieron llegar los animales.",
-      "sabiasQue": "¿Sabías que sin estas plantas, los animales nunca podrían haber vivido en tierra?"
-    },
-    "exploradora": {
-      "dialogo": "¡Estas plantas fueron las pioneras en colonizar la tierra!",
-      "mensaje": "Hace unos 500 millones de años, la vida dio un salto muy importante: ¡salió del agua y conquistó la tierra firme! Las primeras plantas en hacerlo fueron los musgos, que no tenían tallo ni raíces y absorbían el agua directamente del suelo. Fueron los primeros pobladores verdes del planeta… y gracias a ellas, después pudieron llegar los animales.",
-      "sabiasQue": "¿Sabías que los musgos no tienen flores ni semillas?"
-    }
-  },
-"geniallyURL": "#",
-"completada": false
-},
-
-{
-"id": 4,
-"titulo": "Prototaxiles y Meganeuras",
-"ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada4.mp3",
-"avatarDialogo": {
-  "explorador": {
-    "dialogo": " #",
-    "mensaje": "En esta zona vemos dos seres muy distintos, pero igual de sorprendentes. Los Prototaxites eran hongos gigantes que podían alcanzar los 8 metros de altura. A su lado, una criatura que parece una libélula enorme: la Meganeura, un insecto que vivió en el periodo carbonífero y que podía cazar pequeños reptiles. Antes de los dinosaurios, estos eran los reyes de la Tierra.",
-    "sabiasQue": "#"
-  },
-  "exploradora": {
-    "dialogo": "#",
-    "mensaje": "En esta zona vemos dos seres muy distintos, pero igual de sorprendentes. Los Prototaxites eran hongos gigantes que podían alcanzar los 8 metros de altura. A su lado, una criatura que parece una libélula enorme: la Meganeura, un insecto que vivió en el periodo carbonífero y que podía cazar pequeños reptiles. Antes de los dinosaurios, estos eran los reyes de la Tierra.",
-    "sabiasQue": "#"
-  }
-},
-"geniallyURL": "#",
-"completada": false
-},
-
-{
-"id": 5,
-"titulo": "Los primeros árboles",
-"ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada5.mp3",
-"avatarDialogo": {
-  "explorador": {
-    "dialogo": " #",
-    "mensaje": "Con el paso del tiempo, las plantas se hicieron más complejas. Aparecieron los primeros árboles como los pinos, los ginkgos o las araucarias. Algunos desarrollaron frutos, lo que permitía que los animales ayudaran a esparcir sus semillas por nuevos territorios. Estos árboles dieron forma a los grandes bosques prehistóricos que cubrirían el planeta.",
-    "sabiasQue": "#"
-  },
-  "exploradora": {
-    "dialogo": "#",
-    "mensaje": "Con el paso del tiempo, las plantas se hicieron más complejas. Aparecieron los primeros árboles como los pinos, los ginkgos o las araucarias. Algunos desarrollaron frutos, lo que permitía que los animales ayudaran a esparcir sus semillas por nuevos territorios. Estos árboles dieron forma a los grandes bosques prehistóricos que cubrirían el planeta.",
-    "sabiasQue": "#"
-  }
-},
-"geniallyURL": "#",
-"completada": false
-},
-
-{
-"id": 6,
-"titulo": "Las primeras flores",
-"ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada6.mp3",
-"avatarDialogo": {
-  "explorador": {
-    "dialogo": "#",
-    "mensaje": "Durante millones de años, las plantas no tuvieron flores. Pero hace unos 150 millones de años aparecieron las angiospermas, es decir, las plantas con flor. Gracias a las flores y a los polinizadores, como las abejas, las plantas pudieron reproducirse más fácilmente y expandirse con rapidez. El mundo vegetal ya empezaba a parecerse al que conocemos hoy.",
-    "sabiasQue": "#"
-  },
-  "exploradora": {
-    "dialogo": "#",
-    "mensaje": "Durante millones de años, las plantas no tuvieron flores. Pero hace unos 150 millones de años aparecieron las angiospermas, es decir, las plantas con flor. Gracias a las flores y a los polinizadores, como las abejas, las plantas pudieron reproducirse más fácilmente y expandirse con rapidez. El mundo vegetal ya empezaba a parecerse al que conocemos hoy.",
-    "sabiasQue": "#"
-},
-"geniallyURL": "#",
-"completada": false
-},
-
-{
-"id": 7,
-"titulo": "Los primeros dinosaurios",
-"ubicacion": "  # ",
-"audio": "/sounds/soundsParadas/Parada7",
-"avatarDialogo": {
-  "explorador": {
-    "dialogo": " #",
-    "mensaje": "Ahora entramos en el Jurásico, la era de los grandes dinosaurios. Aquí encontramos al Triceratops, que comía plantas bajas como los helechos, y al Brontosaurio, que podía alcanzar las copas de los árboles. Todos estos gigantes eran herbívoros, y su tamaño asombroso estaba adaptado a un mundo donde las plantas crecían en abundancia.",
-    "sabiasQue": "#"
-  },
-  "exploradora": {
-    "dialogo": "#",
-    "mensaje": "Ahora entramos en el Jurásico, la era de los grandes dinosaurios. Aquí encontramos al Triceratops, que comía plantas bajas como los helechos, y al Brontosaurio, que podía alcanzar las copas de los árboles. Todos estos gigantes eran herbívoros, y su tamaño asombroso estaba adaptado a un mundo donde las plantas crecían en abundancia.",
-    "sabiasQue": "#"
-  }
-},
-"geniallyURL": "#",
-"completada": false
-},
-
-{
-"id": 8,
-"titulo": "La deriva continental",
-"ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada8.mp3",
-"avatarDialogo": {
-  "explorador": {
-    "dialogo": " #",
-    "mensaje": "Hace millones de años, todos los continentes estaban unidos en una gran masa de tierra llamada Pangea. Con el tiempo, esta gran “isla” se fue fragmentando por el movimiento de las placas tectónicas. ¿Cómo lo sabemos? Gracias a los fósiles, que nos muestran restos idénticos en lugares hoy separados por océanos. La deriva continental aún continúa hoy.",
-    "sabiasQue": "#"
-  },
-  "exploradora": {
-    "dialogo": "#",
-    "mensaje": "BHace millones de años, todos los continentes estaban unidos en una gran masa de tierra llamada Pangea. Con el tiempo, esta gran “isla” se fue fragmentando por el movimiento de las placas tectónicas. ¿Cómo lo sabemos? Gracias a los fósiles, que nos muestran restos idénticos en lugares hoy separados por océanos. La deriva continental aún continúa hoy.",
-    "sabiasQue": "#"
-  }
-},
-"geniallyURL": "#",
-"completada": false
-},
-
-{
-"id": 9,
-"titulo": "Los segundos dinosaurios",
-"ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada9.mp3",
-"avatarDialogo": {
-  "explorador": {
-    "dialogo": " Estás en la parada 2: Dinosaurios gigantes. Prepárate para descubrir algo fascinante.",
-    "mensaje": "En esta zona encontramos dinosaurios carnívoros, como los alosaurios y los dromeosaurios, que cazaban sobre dos patas. Algunos, como los velociraptores, tenían plumas y compartían rasgos con las aves actuales. Estos dinosaurios nos muestran que la evolución no siempre desaparece, a veces... ¡se transforma!",
-    "sabiasQue": "¿Sabías que el triceratops tenía tres cuernos para defenderse?"
-  },
-  "exploradora": {
-    "dialogo": "¡Estas en la parada 9 sobre dinosaurios gigantes! Te encantará lo que verás.",
-    "mensaje": "En esta zona encontramos dinosaurios carnívoros, como los alosaurios y los dromeosaurios, que cazaban sobre dos patas. Algunos, como los velociraptores, tenían plumas y compartían rasgos con las aves actuales. Estos dinosaurios nos muestran que la evolución no siempre desaparece, a veces... ¡se transforma!",
-    "sabiasQue": "¿Sabías que el velociraptor tenía plumas?"
-  }
-},
-"geniallyURL": "https://view.genially.com/67f395c2cd8c8266c1f2ba62/interactive-content-actividad2",
-"completada": false
-},
-
-{
-"id": 10,
-"titulo": "Galápagos y Darwin",
-"ubicacion": "#",
-"audio": "/sounds/soundsParadas/Parada10.mp3",
-"avatarDialogo": {
-  "explorador": {
-    "dialogo": " #",
-    "mensaje": "Charles Darwin viajó a las islas Galápagos en el siglo XIX y descubrió allí algo fascinante: animales muy parecidos entre sí, pero con pequeñas diferencias que les ayudaban a sobrevivir en cada isla. Esto le llevó a formular la teoría de la evolución por selección natural: sólo sobrevive quien mejor se adapta al entorno. Una idea que cambió la ciencia para siempre.",
-    "sabiasQue": "#"
-  },
-  "exploradora": {
-    "dialogo": "#",
-    "mensaje": "Charles Darwin viajó a las islas Galápagos en el siglo XIX y descubrió allí algo fascinante: animales muy parecidos entre sí, pero con pequeñas diferencias que les ayudaban a sobrevivir en cada isla. Esto le llevó a formular la teoría de la evolución por selección natural: sólo sobrevive quien mejor se adapta al entorno. Una idea que cambió la ciencia para siempre.",
-    "sabiasQue": "#"
-  }
-},
-"geniallyURL": "#",
-"completada": false
-},
-
-{
-  "id": 11,
-  "titulo": "Huellas de Laetoli",
-  "ubicacion": "Descubrimiento de pisadas humanas fósiles",
-  "audio": "/sounds/soundsParadas/Parada11.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo": "¡Parada 11! Vamos tras las huellas del pasado. ¿Listo para caminar con nuestros antecesores?",
-      "mensaje": "En Tanzania, África, se encontraron unas huellas muy especiales: las huellas de Laetoli, con más de 3 millones de años. Pertenecen a un Australopithecus, un antepasado lejano del ser humano. Estas huellas demuestran que ya caminaban erguidos sobre dos piernas, como nosotros. Un gran paso en la evolución hacia el Homo sapiens.",
-      "sabiasQue": "¿Sabías que fueron descubiertas en Tanzania en 1978?"
-    },
-    "exploradora": {
-      "dialogo": "¡ Parada 11! Aquí empieza nuestro viaje por las primeras pisadas humanas.",
-      "mensaje": "En Tanzania, África, se encontraron unas huellas muy especiales: las huellas de Laetoli, con más de 3 millones de años. Pertenecen a un Australopithecus, un antepasado lejano del ser humano. Estas huellas demuestran que ya caminaban erguidos sobre dos piernas, como nosotros. Un gran paso en la evolución hacia el Homo sapiens.",
-      "sabiasQue": "¿Sabías que pertenecen a Australopithecus afarensis?"
-    }
-  },
-  "geniallyURL": "https://view.genially.com/67f8fa02c2e20bb7b0ca82c6/interactive-content-actividad-4",
-  "completada": false
-},
-
-{
-  "id": 12,
-  "titulo": "Atapuerca",
-  "ubicacion": "#",
-  "audio": "/sounds/soundsParadas/Parada12.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo": " #",
-      "mensaje": "En España, en el yacimiento de Atapuerca, se han encontrado restos de varios tipos de homínidos. Es uno de los lugares más importantes del mundo para entender cómo hemos evolucionado. Allí aparecieron los restos de especies como el Homo antecessor, que nos ayuda a reconstruir el árbol genealógico de la humanidad.",
-      "sabiasQue": "#"
-    },
-    "exploradora": {
-      "dialogo": "#",
-      "mensaje": "En España, en el yacimiento de Atapuerca, se han encontrado restos de varios tipos de homínidos. Es uno de los lugares más importantes del mundo para entender cómo hemos evolucionado. Allí aparecieron los restos de especies como el Homo antecessor, que nos ayuda a reconstruir el árbol genealógico de la humanidad.",
-      "sabiasQue": "#"
-    }
-  },
-  "geniallyURL": "#",
-  "completada": false
-},
-
-
-{
-  "id": 13,
-  "titulo": "El hombre de Neandertal",
-  "ubicacion": "#",
-  "audio": "/sounds/soundsParadas/Parada13.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo": "#",
-      "mensaje": "Durante mucho tiempo convivimos con otra especie humana: el Hombre de Neandertal. Fueron grandes cazadores, vivieron en climas fríos, y también usaban herramientas. Hoy sabemos que no se extinguieron del todo: muchas personas todavía conservan un pequeño porcentaje de ADN neandertal.",
-      "sabiasQue": "#"
-    },
-    "exploradora": {
-      "dialogo": "#",
-      "mensaje": "Durante mucho tiempo convivimos con otra especie humana: el Hombre de Neandertal. Fueron grandes cazadores, vivieron en climas fríos, y también usaban herramientas. Hoy sabemos que no se extinguieron del todo: muchas personas todavía conservan un pequeño porcentaje de ADN neandertal.",
-      "sabiasQue": "#"
-    }
-  },
-  "geniallyURL": "#",
-  "completada": false
-},
-
-{
-  "id": 14,
-  "titulo": "Cráneos y evolución humana",
-  "ubicacion": "#",
-  "audio": "/sounds/soundsParadas/Parada14.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo": "#",
-      "mensaje": "En este museo verás cráneos de distintas especies humanas y de otros primates. Fíjate en cómo ha cambiado la forma del cráneo para dejar espacio al cerebro, que en los humanos modernos es mucho más grande. Ese cerebro nos permitió comunicarnos, crear herramientas, formar grupos… y dar paso a la cultura y la sociedad.",
-      "sabiasQue": "#"
-    },
-    "exploradora": {
-      "dialogo": "#",
-      "mensaje": "En este museo verás cráneos de distintas especies humanas y de otros primates. Fíjate en cómo ha cambiado la forma del cráneo para dejar espacio al cerebro, que en los humanos modernos es mucho más grande. Ese cerebro nos permitió comunicarnos, crear herramientas, formar grupos… y dar paso a la cultura y la sociedad.",
-      "sabiasQue": "#"
-    }
-  },
-  "geniallyURL": "#",
-  "completada": false
-},
-
-{
-  "id": 15,
-  "titulo": "Cuevas y arte rupestre",
-  "ubicacion": "Arte prehistórico",
-  "audio": "/sounds/soundsParadas/Parada15.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo": "Parada 15. ¿Ves esas pinturas? Son mensajes silenciosos de una humanidad muy antigua.",
-      "mensaje": "Las pinturas que encontrarás aquí son copias de las que se hicieron en cuevas como Lascaux, Chauvet o Nerja. Con pigmentos naturales y candiles, nuestros antepasados decoraban las paredes con animales, figuras humanas… y hasta manos sopladas. Estas pinturas no eran solo arte: también eran enseñanza, ritual y memoria colectiva.",
-      "sabiasQue": "¿Sabías que usaban pigmentos naturales de rocas y carbón?"
-    },
-    "exploradora": {
-      "dialogo": "¡Parada 15! El arte prehistórico nos habla sin palabras. Escuchemos lo que nos cuenta.",
-      "mensaje": "Las pinturas que encontrarás aquí son copias de las que se hicieron en cuevas como Lascaux, Chauvet o Nerja. Con pigmentos naturales y candiles, nuestros antepasados decoraban las paredes con animales, figuras humanas… y hasta manos sopladas. Estas pinturas no eran solo arte: también eran enseñanza, ritual y memoria colectiva.",
-      "sabiasQue": "¿Sabías que algunas tienen más de 30.000 años?"
-    }
-  },
-  "geniallyURL": "https://view.genially.com/67e3cc8058a3eb22e678b730/interactive-content-actividad5",
-  "completada": false
-},
-
-{
-  "id": 16,
-  "titulo": "Los poblados nómadas",
-  "ubicacion": "Estilo de vida de los nómadas",
-  "audio": "/sounds/soundsParadas/Parada16.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo": "Llegamos a la parada 16. ¡Los nómadas eran exploradores como nosotros!",
-      "mensaje": "Antes de construir casas, nuestros antepasados eran nómadas: se movían buscando comida y refugio. Vivían en tiendas como los tipis, fáciles de desmontar y transportar. Cazaban, recolectaban y decoraban sus cuerpos con plumas y collares. Lejos de ser primitivos, eran expertos en adaptarse al entorno.",
-      "sabiasQue": "¿Sabías que no tenían casas fijas y vivían en chozas?"
-    },
-    "exploradora": {
-      "dialogo": "Parada 16 desbloqueada. Conozcamos cómo vivían sin un hogar fijo nuestros antepasados.",
-      "mensaje": "Antes de construir casas, nuestros antepasados eran nómadas: se movían buscando comida y refugio. Vivían en tiendas como los tipis, fáciles de desmontar y transportar. Cazaban, recolectaban y decoraban sus cuerpos con plumas y collares. Lejos de ser primitivos, eran expertos en adaptarse al entorno.",
-      "sabiasQue": "¿Sabías que seguían a los animales y las estaciones?"
-    }
-  },
-  "geniallyURL": "https://view.genially.com/67f8edffb7b2a9c007101174/interactive-content-actividad6",
-  "completada": false
-},
-
-{
-  "id": 17,
-  "titulo": "Primeros poblados sedentarios",
-  "ubicacion": "Primeros asentamientos",
-  "audio": "/sounds/soundsParadas/Parada17.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo": "¡Parada 17! Dejar de moverse y empezar a construir... ¡eso sí que fue un gran cambio!",
-      "mensaje": "Con el cambio climático y el descubrimiento de la agricultura, algunas tribus dejaron de moverse y comenzaron a construir los primeros asentamientos fijos. Sembraban, criaban animales y almacenaban comida. Así surgieron los primeros pueblos, los templos, los líderes… y una nueva forma de vida: el sedentarismo.",
-      "sabiasQue": "¿Sabías que comenzaron a construir aldeas permanentes?"
-    },
-    "exploradora": {
-      "dialogo": "Estamos en la parada 17. La vida sedentaria trajo consigo aldeas, cultivos y muchas historias.",
-      "mensaje": "Con el cambio climático y el descubrimiento de la agricultura, algunas tribus dejaron de moverse y comenzaron a construir los primeros asentamientos fijos. Sembraban, criaban animales y almacenaban comida. Así surgieron los primeros pueblos, los templos, los líderes… y una nueva forma de vida: el sedentarismo.",
-      "sabiasQue": "¿Sabías que almacenaban grano en silos?"
-    }
-  },
-  "geniallyURL": "https://view.genially.com/67f8f638c08c8840c0b4fe3c/interactive-content-actividad7",
-  "completada": false
-},
-
-{
-  "id": 18,
-  "titulo": "Pinturas del Sáhara y de Laja Alta",
-  "ubicacion": "#",
-  "audio": "/sounds/soundsParadas/Parada18.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo": "#",
-      "mensaje": "En este mural vemos escenas de la vida cotidiana en la Prehistoria. Destacan unas pinturas del Sáhara, en las que aparece un grupo cuidando del ganado, un reflejo realista de las primeras sociedades organizadas. Junto a la casa de Çatalhöyük se representa otra escena sorprendente: barcos de vela encontrados en Laja Alta, Cádiz. Aunque se pensó que eran fenicios, hoy sabemos que son mucho más antiguos, de la Edad del Cobre, y nos muestran que ya entonces… ¡navegaban los mares!",
-      "sabiasQue": "#"
-    },
-    "exploradora": {
-      "dialogo": "#",
-      "mensaje": "En este mural vemos escenas de la vida cotidiana en la Prehistoria. Destacan unas pinturas del Sáhara, en las que aparece un grupo cuidando del ganado, un reflejo realista de las primeras sociedades organizadas. Junto a la casa de Çatalhöyük se representa otra escena sorprendente: barcos de vela encontrados en Laja Alta, Cádiz. Aunque se pensó que eran fenicios, hoy sabemos que son mucho más antiguos, de la Edad del Cobre, y nos muestran que ya entonces… ¡navegaban los mares!",
-      "sabiasQue": "#"
-    }
-  },
-  "geniallyURL": "#",
-  "completada": false
-},
-
-{
-  "id": 19,
-  "titulo": "Çatalhöyük",
-  "ubicacion": "#",
-  "audio": "/sounds/soundsParadas/Parada19.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo": "#",
-      "mensaje": "Çatalhöyük, en Turquía, fue una de las primeras ciudades del mundo. Las casas no tenían puertas a ras del suelo, se entraba por el tejado. Allí ya había hornos, vasijas y hasta figuras religiosas, como la Diosa Madre, que protegía la fertilidad y la caza. Esta ciudad nos habla de espiritualidad, organización social… y del comienzo de las grandes civilizaciones.",
-      "sabiasQue": "#"
-    },
-    "exploradora": {
-      "dialogo": "#",
-      "mensaje": "Çatalhöyük, en Turquía, fue una de las primeras ciudades del mundo. Las casas no tenían puertas a ras del suelo, se entraba por el tejado. Allí ya había hornos, vasijas y hasta figuras religiosas, como la Diosa Madre, que protegía la fertilidad y la caza. Esta ciudad nos habla de espiritualidad, organización social… y del comienzo de las grandes civilizaciones.",
-      "sabiasQue": "#"
-    }
-  },
-  "geniallyURL": "#",
-  "completada": false
-},
-
-
-{
-  "id": 20,
-  "titulo": "Stonehenge",
-  "ubicacion": "Monumento megalítico",
-  "audio": "/sounds/soundsParadas/Parada20.mp3",
-  "avatarDialogo": {
-    "explorador": {
-      "dialogo": "¡Mira estas piedras gigantes en la ultima parada! ¿Quién las puso ahí? ¡Vamos a investigarlo!",
-      "mensaje": "Ante vosotros tenéis una réplica de Stonehenge, un conjunto de piedras gigantes alineadas con la salida del sol en el solsticio de verano. Fue construido hace más de 4.000 años en Inglaterra y aún hoy no sabemos con certeza para qué servía. ¿Templo, calendario, lugar de reunión? Sea cual sea su función, nos recuerda que desde hace milenios, el ser humano observa el cielo, piensa en el tiempo… y construye en común.",
-      "sabiasQue": "¿Sabías que algunas alineaciones indican los solsticios?"
-    },
-    "exploradora": {
-      "dialogo": "Estamos en la ultima parada. Stonehenge guarda misterios que siguen sin resolverse.",
-      "mensaje": "Ante vosotros tenéis una réplica de Stonehenge, un conjunto de piedras gigantes alineadas con la salida del sol en el solsticio de verano. Fue construido hace más de 4.000 años en Inglaterra y aún hoy no sabemos con certeza para qué servía. ¿Templo, calendario, lugar de reunión? Sea cual sea su función, nos recuerda que desde hace milenios, el ser humano observa el cielo, piensa en el tiempo… y construye en común.",
-      "sabiasQue": "¿Sabías que aún no sabemos cómo las transportaron?"
-    }
-  },
-  "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad9",
-  "completada": false
-},
-
-
-
-
-
-
-{
-
-    "id": 11,
+    "id": 111,
     "titulo": "Fósiles prehistóricos",
     "ubicacion": "Fósil de trilobite y helecho",
     "audio": "/sounds/soundsParadas/Parada1Trilobitesv2,5.mp3",
@@ -445,14 +231,12 @@
     "geniallyURL": "https://view.genially.com/67e134e5a75d54115e15f3f0/interactive-content-actividad-1",
     "completada": false
   },
-
-
-
-
   {
-    "id": 13,
+    "id": 113,
     "titulo": "Tortuga de las Galápagos",
     "ubicacion": "Zona de reptiles fósiles",
+    "posX": 200,
+    "posY": 130,
     "audio": "/sounds/soundsParadas/Parada3Tortugasv2,5.mp3",
     "avatarDialogo": {
       "explorador": {
@@ -460,7 +244,6 @@
         "mensaje": "Bienvenido a tu tercera parada. Aquí descubrirás a las increíbles tortugas de las Galápagos, famosas por su longevidad y tamaño impresionante. Estas majestuosas criaturas han sobrevivido por siglos en un ecosistema único, adaptándose a las condiciones extremas de las islas. Observa cómo se mueven lentamente, pero con gran determinación, recorriendo su hogar volcánico.",
         "sabiasQue": "¿Sabías que pueden pesar más de 200 kilos?"
       },
-      
       "exploradora": {
         "dialogo": "¡Estas en la parada 3 sobre la tortuga de las Galápagos! Te encantará lo que verás.",
         "mensaje": "Bienvenido a tu tercera parada. Aquí descubrirás a las increíbles tortugas de las Galápagos, famosas por su longevidad y tamaño impresionante. Estas majestuosas criaturas han sobrevivido por siglos en un ecosistema único, adaptándose a las condiciones extremas de las islas. Observa cómo se mueven lentamente, pero con gran determinación, recorriendo su hogar volcánico.",
@@ -470,22 +253,19 @@
     "geniallyURL": "https://view.genially.com/67f8f2f8b5b5ac75ac152d4e/interactive-content-actividad-3",
     "completada": false
   },
-  
-
-
   {
-    "id": 18,
+    "id": 118,
     "titulo": "Pozo",
     "ubicacion": "Acceso al agua en la antigüedad",
+    "posX": 200,
+    "posY": 130,
     "audio": "/sounds/soundsParadas/Parada8Pozov2,5.mp3",
     "avatarDialogo": {
       "explorador": {
-
         "dialogo": "Parada 8: El agua era más valiosa que el oro. Sin pozos, no había futuro.",
         "mensaje": "Bienvenido a tu octava parada. Aquí descubrirás el pozo prehistórico, una estructura clave para la supervivencia de las antiguas comunidades. Estos pozos eran utilizados para almacenar agua, un recurso vital en tiempos donde su acceso no siempre era fácil. Observa cómo fueron construidos y cómo jugaron un papel fundamental en la evolución de los asentamientos humanos.",
         "sabiasQue": "¿Sabías que algunos tenían poleas para sacar el agua más fácil?"
       },
-      
       "exploradora": {
         "dialogo": "Parada 8 activada. Cada gota contaba. Vamos a descubrir cómo sacaban el agua.",
         "mensaje": "Bienvenido a tu octava parada. Aquí descubrirás el pozo prehistórico, una estructura clave para la supervivencia de las antiguas comunidades. Estos pozos eran utilizados para almacenar agua, un recurso vital en tiempos donde su acceso no siempre era fácil. Observa cómo fueron construidos y cómo jugaron un papel fundamental en la evolución de los asentamientos humanos.",
@@ -495,28 +275,26 @@
     "geniallyURL": "https://view.genially.com/67f8fda123c430f481ddb5e6/interactive-content-actividad-8",
     "completada": false
   },
-  
   {
-    "id": 20,
+    "id": 120,
     "titulo": "Templo de Karnak",
     "ubicacion": "Antiguo Egipto",
+    
     "audio": "/sounds/soundsParadas/Parada10Karnakv2,5.mp3",
     "avatarDialogo": {
       "explorador": {
-
         "dialogo": "¡Última parada! El Templo de Karnak es testigo de siglos de historia. Vamos a explorarlo juntos.",
         "mensaje": "Bienvenido a tu última parada. Has llegado al Templo de Karnak, uno de los complejos religiosos más impresionantes del antiguo Egipto. Construido a lo largo de más de dos mil años, este templo era un lugar de adoración dedicado a los dioses y faraones. Sus enormes columnas y relieves cuentan historias de batallas, rituales y ofrendas. Observa su grandiosidad y siente el poder de una civilización que dejó una huella imborrable en la historia.",
         "sabiasQue": "¿Sabías que cada faraón dejaba su huella en Karnak?"
       },
-      
       "exploradora": {
         "dialogo": "Llegamos a la parada 10. Un lugar sagrado lleno de símbolos y leyendas del antiguo Egipto.",
         "mensaje": "Bienvenido a tu última parada. Has llegado al Templo de Karnak, uno de los complejos religiosos más impresionantes del antiguo Egipto. Construido a lo largo de más de dos mil años, este templo era un lugar de adoración dedicado a los dioses y faraones. Sus enormes columnas y relieves cuentan historias de batallas, rituales y ofrendas. Observa su grandiosidad y siente el poder de una civilización que dejó una huella imborrable en la historia.",
-
         "sabiasQue": "¿Sabías que era el centro religioso más importante del antiguo Egipto?"
       }
     },
     "geniallyURL": "https://view.genially.com/67e283be994f4e3b61c714e9/interactive-content-actividad10",
     "completada": false
+
   }
 ]
