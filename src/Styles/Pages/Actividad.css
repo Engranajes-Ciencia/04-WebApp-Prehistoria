@@ -415,10 +415,6 @@ p {
     border-radius: 12px;
   }
 
-  .actividad-genially iframe {
-    /* Ya es 100% x 100% dentro del contenedor 16:9, no necesita ajuste de altura fija aquí */
-  }
-
 
   .actividad-siguiente {
     margin-top: 1.5rem;

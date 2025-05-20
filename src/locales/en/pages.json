@@ -234,7 +234,19 @@
       "sabiasQue": "Did you know that some alignments indicate the solstices? Did you know that some alignments indicate the solstices?"
     }
   },
-  "vitrina": {
+  "vitrinaVirtual": {
     "galeriaVirtual": "Virtual gallery of prehistoric medals"
-  }
+  },
+  
+    "medallas":{
+      "1":{
+        "titulo": "First plants",
+        "curiosidad": "They colonized the Earth more than 150 million years ago." 
+      },
+      "2":{
+
+      }
+      
+    }
 }
+
