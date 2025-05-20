@@ -2,9 +2,9 @@
 
 .header {
   width: 100%;
-  height: 157px;
+  min-height: clamp(120px, 18vh, 180px);  /* Altura mínima fluida: min-px, %vh, max-px */
   box-sizing: border-box;
-  padding: 20px 12px;
+  padding: clamp(10px, 2vw, 20px) clamp(10px, 3vw, 30px);  /* Padding fluido */
   background-color: #ffffff;
   text-align: center;
   font-size: 18px;
@@ -14,66 +14,83 @@
   animation: fadeInDown 0.8s ease-in-out;
   position: relative;
   overflow: hidden;
+
+  /* Flexbox para control de layout principal */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: clamp(10px, 2vw, 20px);
 }
 
 .header-top {
   display: flex;
-  justify-content: flex-end;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+    flex-wrap: wrap;
   margin-bottom: 10px;
   padding-right: 10px;
 }
 
-.logo {
-  position: absolute;
-  padding-left: 15px;
-  padding-right: 10px;
-  padding-top: 5px;
-  border-radius: 16px;
+/* Contenedor del logo y título - AHORA MÁS ROBUSTO */
+.header-left-section {
+  /* Nuevo contenedor para agrupar logo y título */
+  display: flex;
   align-items: center;
+  /* Alinear verticalmente en el centro */
+  gap: clamp(10px, 2vw, 20px);
+  /* Espacio entre logo y título */
+  flex-shrink: 0;
+  /* Evitar que se encoja demasiado */
+}
+
+.branding {
+  display: flex;
   justify-content: center;
-  height: 130px;
+  align-items: center;
+}
+
+.logo {
+  max-height: clamp(80px, 12vh, 130px);  /* Altura máxima fluida para el logo */
+  width: auto;
+  margin: 0;
+  border-radius: 16px;
   object-fit: contain;
-  left: 38px;
-  top: 14px;
-  flex-wrap: wrap;
 }
 
 .titulo-header {
-  position: absolute;
-  text-align: start;
-  font-size: 2.8em;
-  top: -15px;
-  width: 100%;
-  max-width: 35.9%;
-  left: 275px;
-  display: flex;
-  flex-wrap: wrap;
+  text-align: center;
+  font-size: clamp(1.8em, 5vw, 3.2em);
+  line-height: 1.1;
+  margin: 0;
   text-shadow: 2px 2px 26px rgba(107, 107, 107, 0.692);
-  white-space: nowrap;
+  white-space: normal;
+  text-shadow: 2px 2px 26px rgba(107, 107, 107, 0.692);
+  flex-shrink: 0;
 }
 
-/* Estilos de la cabecera */
 
-/* Contenedor común para los botones */
+/* Contenedor  botones */
 .botones-header {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  gap: 15px;
+  margin-top: clamp(10px, 2vw, 20px);
+  gap: clamp(10px, 2vw, 25px);
   flex-wrap: wrap;
-  max-width: 95%;
-  margin-right: auto;
-  padding: 0 20px;
+  max-width: 100%;
+  padding: 0 clamp(10px, 2vw, 20px);
   flex-wrap: wrap;
   animation: fadeInUp 1s ease;
+  flex-shrink: 0;
 }
 
 .icon-btn {
-  width: 48px;
-  height: 48px;
+  width: clamp(40px, 8vw, 55px);
+  height: clamp(40px, 8vw, 55px);
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3.5vw, 1.8rem);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -82,7 +99,7 @@
   background-color: var(--verde);
   color: white;
   cursor: pointer;
-  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
@@ -92,93 +109,15 @@
   background-color: rgba(255, 255, 255, 0.4);
 }
 
-/*  TOOLTIP   */
-.icon-btn::after {
-  content: attr(data-tooltip);
-  position: absolute;
-  bottom: -38px;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: #333;
-  color: white;
-  font-size: 0.7rem;
-  padding: 5px 10px;
-  border-radius: 6px;
-  opacity: 0;
-  pointer-events: none;
-  white-space: nowrap;
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  z-index: 999;
-}
-
 .icon-btn:hover::after {
   opacity: 1;
   transform: translateX(-50%) translateY(-5px);
+  /* Pequeño movimiento al aparecer */
 }
 
-/* Tooltip visible al pulsar */
-.tooltip-touch {
-  position: absolute;
-  top: 160px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: #2e3c40;
-  color: white;
-  padding: 8px 18px;
-  border-radius: 8px;
-  font-size: 1rem;
-  z-index: 20;
-  animation: fadeTooltip 0.3s ease;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-}
 
-.btn-idioma {
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  font-size: 40px;
-  /* Tamaño del emoji bandera */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 2px solid #ffffff;
-  background-color: #f5f5f5;
-  cursor: pointer;
-  transition: transform 0.2s ease, box-shadow 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
-  padding: 0;
-}
-
-/* Hover elegante */
-.btn-idioma:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
-}
-
-/* Modo oscuro si usas una clase .dark */
-.dark .btn-idioma {
-  background-color: #333;
-  border-color: #ffc107;
-}
 
 /* Estilos Modo Oscuro */
-
-.dark .btn-home,
-.dark .btn-tema,
-.dark .btn-kiosco,
-.dark .btn-music {
-  background: linear-gradient(135deg, #464646, #1b1b1b);
-  color: #ffffff !important;
-  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692);
-}
-
-.dark .btn-home:hover,
-.dark .btn-tema:hover,
-.dark .btn-kiosco:hover,
-.dark .btn-music:hover {
-  background: #3a3a3a !important;
-}
-
 .dark .header {
   background: linear-gradient(120deg, #1f1f1f, #2a2a2a);
   color: var(--blanco);
@@ -212,9 +151,6 @@
   box-shadow: 0 0 12px #00ffc3;
 }
 
-.dark .tooltip-touch {
-  background: #111;
-}
 
 /* Animaciones suaves */
 
@@ -242,31 +178,223 @@
   }
 }
 
-@keyframes fadeTooltip {
-  from {
-    opacity: 0;
-    transform: translateX(-50%) translateY(10px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateX(-50%) translateY(0);
-  }
-}
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
-  .titulo-header {
-    font-size: 2rem;
-    top: 5px;
-    left: 160px;
+/* General para pantallas pequeñas (móviles en vertical) */
+@media (max-width: 767px) {
+  .header {
+    flex-direction: column;
+    min-height: clamp(150px, 25vh, 200px);
+    padding: 10px;
+    gap: 15px;
+  }
+
+  .header-left-section {
+    /* Vuelve a columna para móvil */
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 0;
+    gap: 5px;
+    /* Menos espacio entre logo y título en móvil */
   }
 
   .logo {
-    height: 100px;
+    max-height: clamp(70px, 15vh, 100px);
+    margin: 0 auto 5px auto;
+    /* Centrar y añadir margen inferior pequeño */
+  }
+
+  .titulo-header {
+    font-size: clamp(1.6em, 8vw, 2.5em);
+    text-align: center;
+    white-space: normal;
+    max-width: 90%;
+    margin: 0 auto;
   }
 
   .botones-header {
+    flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    padding: 0 5px;
   }
+
+  .icon-btn {
+    width: clamp(45px, 12vw, 50px);
+    height: clamp(45px, 12vw, 50px);
+    font-size: clamp(1.3rem, 4vw, 1.6rem);
+  }
+}
+
+/* Media Query para pantallas medianas (Tablets y desktops pequeños) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .header {
+    flex-direction: row;
+    /* Diseño en fila */
+    justify-content: space-between;
+    /* Espacio entre la sección izquierda y los botones */
+    align-items: center;
+    padding: 15px 25px;
+    min-height: clamp(100px, 15vh, 150px);
+    gap: 20px;
+    /* Espacio entre secciones */
+  }
+
+  .header-left-section {
+    /* Logo y título en la misma fila */
+    flex-direction: row;
+    justify-content: flex-start;
+    /* Alinear a la izquierda */
+    gap: 15px;
+    flex-grow: 1;
+    /* Permitir que crezca para ocupar espacio */
+  }
+
+  .logo {
+    max-height: clamp(70px, 10vh, 100px);
+    margin: 0;
+  }
+
+  .titulo-header {
+    font-size: clamp(2em, 3.5vw, 2.8em);
+    text-align: left;
+    /* Alinear a la izquierda */
+    white-space: nowrap;
+    /* Intenta mantener en una línea si es posible */
+    max-width: none;
+    flex-basis: auto;
+    /* Permite que el título ocupe solo el espacio necesario */
+  }
+
+  .botones-header {
+    flex-wrap: nowrap;
+    /* Botones en una sola fila */
+    gap: 18px;
+    margin-top: 0;
+    padding: 0;
+    justify-content: flex-end;
+    /* Alinear a la derecha si hay espacio */
+  }
+
+  .icon-btn {
+    width: clamp(48px, 6vw, 55px);
+    height: clamp(48px, 6vw, 55px);
+    font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+  }
+}
+
+
+/* Media Query para Orientación Horizontal (Landscape) en móviles y tablets */
+@media (orientation: landscape) and (max-width: 1024px) {
+  .header {
+    flex-direction: row;
+    /* Siempre en fila en horizontal para aprovechar el ancho */
+    justify-content: space-around;
+    /* Espacio entre los elementos */
+    align-items: center;
+    min-height: clamp(80px, 15vh, 120px);
+    /* Reducir altura para aprovechar el ancho */
+    padding: 8px 15px;
+    gap: 10px;
+    /* Menos espacio entre elementos */
+  }
+
+  .header-left-section {
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10px;
+    flex-grow: 1;
+    /* Permitir que crezca */
+  }
+
+  .logo {
+    max-height: clamp(60px, 10vh, 80px);
+    /* Logo más pequeño */
+    margin-bottom: 0;
+  }
+
+  .titulo-header {
+    font-size: clamp(1.2em, 2.8vw, 2em);
+    text-align: left;
+    white-space: nowrap;
+    max-width: 40%;
+  }
+
+  .botones-header {
+    flex-wrap: nowrap;
+    gap: 10px;
+    margin-top: 0;
+    padding: 0;
+    justify-content: flex-end;
+  }
+
+  .icon-btn {
+    width: clamp(35px, 7vw, 45px);
+    height: clamp(35px, 7vw, 45px);
+    font-size: clamp(1rem, 2.5vw, 1.4rem);
+  }
+}
+
+/* Estilos para Desktop (opcional, si quieres estilos muy específicos por encima de 1025px) */
+@media (min-width: 1025px) {
+  .header {
+    min-height: 157px;
+    padding: 20px 50px;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .header-left-section {
+    flex-direction: row;
+    /* Asegura que logo y título estén en línea */
+    justify-content: flex-start;
+    gap: 30px;
+    flex-grow: 1;
+    /* Permitir que esta sección crezca */
+  }
+
+  .logo {
+    max-height: 130px;
+    margin-right: 20px;
+  }
+
+  .titulo-header {
+    font-size: 2.8em;
+    text-align: left;
+    white-space: nowrap;
+    /* Mantener en una sola línea */
+    width: auto;
+    max-width: none;
+  }
+
+  .botones-header {
+    gap: 25px;
+    margin-top: 0;
+    flex-wrap: nowrap;
+    /* Asegura que los botones estén en una sola línea */
+  }
+
+  .icon-btn {
+    width: 55px;
+    height: 55px;
+    font-size: 1.8rem;
+  }
+}
+
+/* Modo Oscuro - Agrupados para claridad */
+.dark .btn-home,
+.dark .btn-tema,
+.dark .btn-kiosco,
+.dark .btn-music {
+  background: linear-gradient(135deg, #464646, #1b1b1b);
+  color: #ffffff !important;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692);
+}
+
+.dark .btn-home:hover,
+.dark .btn-tema:hover,
+.dark .btn-kiosco:hover,
+.dark .btn-music:hover {
+  background: #3a3a3a !important;
 }
