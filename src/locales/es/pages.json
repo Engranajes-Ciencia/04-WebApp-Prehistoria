@@ -222,6 +222,13 @@
   },
   "vitrinaVirtual": {
     "galeriaVirtual": "Galería Virtual Medallas Prehistóricas"
-  }
+  },
   
+    "medallas":{
+      "1":{
+        "titulo": "Primeras plantas",
+        "curiosidad": "Colonizaron la tierra hace más de 450 millones de años." 
+      }
+
+    }
 }
