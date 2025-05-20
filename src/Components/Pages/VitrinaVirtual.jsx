@@ -5,16 +5,16 @@ import "../../Styles/Pages/VitrinaVirtual.css";
 
 
 const medallas = [
-    { id: 1, titulo: "Primeras plantas", imagen: "", curiosidad: "Los trilobites existieron antes que los dinosaurios." },
-    { id: 2, titulo: "Primeras flores", imagen: "", curiosidad: "El velociraptor tenía plumas." },
-    { id: 3, titulo: "Segundos dinosaurios", imagen: "medalla2.png", curiosidad: "Su caparazón puede cambiar según la isla." },
-    { id: 4, titulo: "Tortugas de las Galápagos", imagen: "medalla3.png", curiosidad: "Pertenecen a Australopithecus afarensis." },
-    { id: 5, titulo: "Atapuerca", imagen: "", curiosidad: "Algunas pinturas tienen más de 30.000 años." },
-    { id: 6, titulo: "Pinturas rupestres", imagen: "medalla5.png", curiosidad: "Vivían en chozas y seguían a los animales." },
+    { id: 1, titulo: "Primeras plantas", imagen: "", curiosidad: "Colonizaron la tierra hace más de 450 millones de años." },
+    { id: 2, titulo: "Primeras flores", imagen: "", curiosidad: "Aparecieron hace 150 millones de años." },
+    { id: 3, titulo: "Segundos dinosaurios", imagen: "medalla2.png", curiosidad: "Dominaron la tierra por millones de años." },
+    { id: 4, titulo: "Tortugas de las Galápagos", imagen: "medalla3.png", curiosidad: "Su caparazón puede cambiar según la isla." },
+    { id: 5, titulo: "Atapuerca", imagen: "", curiosidad: "Guarda huellas humanas de hace más de 800.000 años." },
+    { id: 6, titulo: "Pinturas rupestres", imagen: "medalla5.png", curiosidad: "Algunas pinturas tienen más de 30.000 años." },
     { id: 7, titulo: "Poblado sedentario", imagen: "medalla7.png", curiosidad: "Comenzaron a construir aldeas permanentes." },
-    { id: 8, titulo: "Poblados nómadas", imagen: "medalla6.png", curiosidad: "Los primeros pozos datan del Neolítico." },
-    { id: 9, titulo: "Çatalhöyük", imagen: "", curiosidad: "Algunas alineaciones indican los solsticios." },
-    { id: 10, titulo: "Stonehenge", imagen: "medalla9.png", curiosidad: "Cada faraón dejaba su huella en Karnak." }
+    { id: 8, titulo: "Poblados nómadas", imagen: "medalla6.png", curiosidad: "Vivían en chozas y seguían a los animales." },
+    { id: 9, titulo: "Çatalhöyük", imagen: "", curiosidad: "No había calles, el techo era la acera." },
+    { id: 10, titulo: "Stonehenge", imagen: "medalla9.png", curiosidad: "Fue construido hace más de 4500 años." }
 ];
 
 
@@ -25,7 +25,7 @@ function VitrinaVirtual() {
 
     return (
         <div className="vitrina-virtual-container">
-            <h1 className="titulo-virtual">"Galería Virtual Medallas Prehistóricas"</h1>
+            <h1 className="titulo-virtual">Galería Virtual Medallas Prehistóricas</h1>
             <p className="contador-medallas">Has conseguido {completadas.length} de {medallas.length} medallas</p>
 
             <div className="grid-medallas">
