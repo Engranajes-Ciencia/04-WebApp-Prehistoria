@@ -23,26 +23,14 @@
     gap: clamp(10px, 2vw, 20px);
 }
 
-.header-top {
-  display: flex;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-    flex-wrap: wrap;
-  margin-bottom: 10px;
-  padding-right: 10px;
-}
 
-/* Contenedor del logo y título - AHORA MÁS ROBUSTO */
+
+/* Contenedor del logo y título  */
 .header-left-section {
-  /* Nuevo contenedor para agrupar logo y título */
   display: flex;
   align-items: center;
-  /* Alinear verticalmente en el centro */
   gap: clamp(10px, 2vw, 20px);
-  /* Espacio entre logo y título */
   flex-shrink: 0;
-  /* Evitar que se encoja demasiado */
 }
 
 .branding {

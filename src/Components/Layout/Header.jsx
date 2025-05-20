@@ -70,7 +70,7 @@ function Header() {
   return (
     <header className="header">
 
-      <div className="header-top">
+      <div className="header-left-section">
         <div className="branding">
           {/* Usar import.meta.env.BASE_URL para rutas de assets estáticos */}
           <img
