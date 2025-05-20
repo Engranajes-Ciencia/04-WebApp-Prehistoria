@@ -5,16 +5,16 @@ import "../../Styles/Pages/VitrinaVirtual.css";
 
 
 const medallas = [
-    { id: 1, titulo: "Fósiles prehistóricos", imagen: "medalla1.png", curiosidad: "Los trilobites existieron antes que los dinosaurios." },
-    { id: 2, titulo: "Dinosaurios gigantes", imagen: "medalla2.png", curiosidad: "El velociraptor tenía plumas." },
-    { id: 3, titulo: "Tortuga de las Galápagos", imagen: "medalla3.png", curiosidad: "Su caparazón puede cambiar según la isla." },
-    { id: 4, titulo: "Huellas de Laetoli", imagen: "medalla4.png", curiosidad: "Pertenecen a Australopithecus afarensis." },
-    { id: 5, titulo: "Pinturas rupestres", imagen: "medalla5.png", curiosidad: "Algunas pinturas tienen más de 30.000 años." },
-    { id: 6, titulo: "Poblado nómada", imagen: "medalla6.png", curiosidad: "Vivían en chozas y seguían a los animales." },
+    { id: 1, titulo: "Primeras plantas", imagen: "", curiosidad: "Colonizaron la tierra hace más de 450 millones de años." },
+    { id: 2, titulo: "Primeras flores", imagen: "", curiosidad: "Aparecieron hace 150 millones de años." },
+    { id: 3, titulo: "Segundos dinosaurios", imagen: "medalla2.png", curiosidad: "Dominaron la tierra por millones de años." },
+    { id: 4, titulo: "Tortugas de las Galápagos", imagen: "medalla3.png", curiosidad: "Su caparazón puede cambiar según la isla." },
+    { id: 5, titulo: "Atapuerca", imagen: "", curiosidad: "Guarda huellas humanas de hace más de 800.000 años." },
+    { id: 6, titulo: "Pinturas rupestres", imagen: "medalla5.png", curiosidad: "Algunas pinturas tienen más de 30.000 años." },
     { id: 7, titulo: "Poblado sedentario", imagen: "medalla7.png", curiosidad: "Comenzaron a construir aldeas permanentes." },
-    { id: 8, titulo: "Pozo", imagen: "medalla8.png", curiosidad: "Los primeros pozos datan del Neolítico." },
-    { id: 9, titulo: "Stonehenge", imagen: "medalla9.png", curiosidad: "Algunas alineaciones indican los solsticios." },
-    { id: 10, titulo: "Templo de Karnak", imagen: "medalla10.png", curiosidad: "Cada faraón dejaba su huella en Karnak." }
+    { id: 8, titulo: "Poblados nómadas", imagen: "medalla6.png", curiosidad: "Vivían en chozas y seguían a los animales." },
+    { id: 9, titulo: "Çatalhöyük", imagen: "", curiosidad: "No había calles, el techo era la acera." },
+    { id: 10, titulo: "Stonehenge", imagen: "medalla9.png", curiosidad: "Fue construido hace más de 4500 años." }
 ];
 
 
@@ -63,7 +63,7 @@ function VitrinaVirtual() {
                 className="btn-volver-final"
                 onClick={() => {
                     const completadas = JSON.parse(localStorage.getItem("actividadesCompletadas")) || [];
-                    if (completadas.length >= 10) {
+                    if (completadas.length >= 20) {
                         navigate("/final");
                     } else {
                         navigate("/entre-actividad");

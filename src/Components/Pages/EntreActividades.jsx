@@ -29,8 +29,9 @@ function EntreActividades() {
                 className="guia-avatar"
             />
             <p className="guia-texto">
-                {t("entreActividades.guiaTexto", { nombre, ultimaCompletada: completadas.length })}
+                {t("entreActividades.guiaTexto", { nombre, ultimaCompletada })}
             </p>
+
 
             <div className="barra-progreso">
                 <div className="relleno" style={{ width: `${(completadas.length / 20) * 100}%` }}></div>
@@ -62,9 +63,16 @@ function EntreActividades() {
                                 ${isCompletada ? "completada" : ""}
                                 ${isSiguiente ? "siguiente" : ""}
                             `}
-                            style={{ top: `${act.posY}px`, left: `${act.posX}px` }}
-                            title={`Parada ${act.id}: ${act.titulo}`}
+                            style={{
+                                top: `${act.posY}px`,
+                                left: `${act.posX}px`,
+                                animationDelay: `${act.id * 0.05}s`
+                            }}
+                            title={`Parada ${act.id}: ${act.titulo}`
+                            }
+                        
                         >
+                            {act.id} {/* Añade el número de parada aquí */}
                             {isActual && (
                                 <img
                                     src={`${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`}

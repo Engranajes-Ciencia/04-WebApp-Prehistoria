@@ -132,12 +132,12 @@
     background: linear-gradient(135deg, #5f8b6a, #4f745a);
     transform: translateY(-2px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  }
+}
 
   /* Estilos Modo Oscuro */
 
-  .dark .vitrina-container {
+.dark .vitrina-container {
     background: linear-gradient(135deg, #212121, #424242);
     color: var(--blanco);
     margin: auto;
-  }
+}

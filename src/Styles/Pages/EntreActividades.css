@@ -11,82 +11,152 @@
     font-family: 'Milford', sans-serif;
     animation: fadeSlide 0.8s ease;
     overflow: hidden;
+    box-sizing: border-box;
 }
 
 .mapa-check-container h2 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
+    font-size: 3rem;
+    margin-bottom: 2rem;
     color: var(--blanco);
     text-shadow: 2px 2px 5px var(--negro);
+    animation: textScaleIn 0.7s ease-out;
 }
 
 .mapa-contenedor {
     position: relative;
     display: inline-block;
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.5);
+    border-radius: 20px;
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+
+/* Imagen real del mapa */
+.mapa-real {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: none;
+    border: none;
 }
 
 /* Marcador base */
 .marcador {
     position: absolute;
-    width: 22px;
-    height: 22px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: #ff9800;
     border: 3px solid white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     transform: translate(-50%, -50%);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: background-color 0.4s ease, box-shadow 0.4s ease, transform 0.3s ease, border-color 0.4s ease;
     z-index: 10;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
-/* Si está completada */
+/* Efecto hover en los marcadores */
+.marcador:hover {
+    transform: translate(-50%, -50%) scale(1.3);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    z-index: 22;
+    border-color: #2196f3;
+}
+
+/* Si está completada (VERDE ) */
 .marcador.completada {
-    background-color: #4caf50;
+    background-color: #4CAF50;
+    border-color: #c8e6c9;
+    box-shadow: 0 3px 8px rgba(0, 150, 0, 0.4);
+    color: white;
+    z-index: 12;
 }
 
+/* Si es la siguiente parada (NARANJA) */
+.marcador.siguiente {
+    background-color: #FF5722;
+
+    border-color: #ffccbc;
+
+    box-shadow: 0 0 20px rgba(255, 87, 34, 0.8);
+    z-index: 20;
+    color: white;
+    animation: marcadorPulseBright 1.8s infinite ease-in-out;
+}
+
+/* Marcador del avatar (posición actual) - AZUL  */
 .marcador-avatar {
-    width: 28px;
-    height: 28px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    border: 2px solid white;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    border: 5px solid #2196f3;
+    box-shadow: 0 0 20px rgba(33, 150, 243, 0.9);
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 30;
+    background-color: white;
+    padding: 3px;
+    animation: avatarBob 1.8s infinite ease-in-out;
+}
+
+/* Animación para el avatar flotante */
+@keyframes avatarBob {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) translateY(0px) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) translateY(-10px) rotate(3deg);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) translateY(-5px) rotate(-3deg);
+    }
 }
 
 
+/*  animación de pulso más brillante para el marcador siguiente */
+@keyframes marcadorPulseBright {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.7);   /* Color de la sombra del pulso (Naranja Brillante) */
+    }
 
-/* -- Siguiente parada (amarillo claro) */
-.marcador.siguiente {
-    background-color: #ffeb3b;
-    border-color: #fbc02d;
-    box-shadow: 0 0 8px rgba(255, 235, 59, 0.6);
+    70% {
+        transform: translate(-50%, -50%) scale(1.15); /* Pulso más visible */
+        box-shadow: 0 0 0 20px rgba(255, 87, 34, 0); /* El pulso se expande más */
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 87, 34, 0);
+    }
 }
-
-.mapa-real {
-    max-width: 95%;
-    width: 700px;
-    height: auto;
-    margin-bottom: 2rem;
-    border-radius: 12px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
-    border: 4px dashed red;
-}
-
 
 
 .guia-avatar {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
-    border: 3px solid var(--blanco);
+    border: 5px solid #ffc107;
     margin-bottom: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     background-color: var(--blanco);
     padding: 4px;
+    animation: fadeInScale 0.8s ease-out;
 }
 
 .guia-texto {
@@ -96,26 +166,38 @@
     border-left: 6px solid #ffc107;
     border-radius: 8px;
     margin-bottom: 20px;
-    max-width: 600px;
+    max-width: 700px;
     color: #333;
     font-weight: bold;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.15);
+    animation: fadeInScale 0.8s ease-out 0.2s backwards;
 }
 
 .barra-progreso {
     width: 90%;
-    max-width: 600px;
+    max-width: 700px;
     height: 20px;
     background-color: #c8e6c9;
     border-radius: 10px;
     overflow: hidden;
     margin: 20px auto;
     box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.2);
+    border: 2px solid #c8e6c9;
+    animation: fadeInScale 0.8s ease-out 0.4s backwards;
 }
 
 .barra-progreso .relleno {
     height: 100%;
-    background-color: #388e3c;
-    transition: width 0.6s ease;
+    background: linear-gradient(90deg, #66bb66, #4caf50, #388e3c);
+    transition: width 0.8s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 15px;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.4);
 }
 
 
@@ -124,11 +206,13 @@
 
 .botones-container {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
     margin-top: 2rem;
     width: 100%;
+    animation: fadeInUp 0.8s ease-out 0.6s backwards;
 }
 
 .botones-container button {
@@ -150,26 +234,14 @@
 .botones-container button:hover {
     background-color: #1b5e20;
     transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
 }
 
-/* COLORES DIFERENTES PARA CADA BOTÓN SI QUIERES */
-
-.btn-final {
-    background-color: #33691e;
+.botones-container button:active {
+    transform: translateY(-2px);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+    background-color: #00332a;
 }
-
-.btn-scan {
-    background-color: #33691e;
-}
-
-.btn-medallas {
-    background-color: #f57c00;
-}
-
-.btn-medallas:hover {
-    background-color: #ef6c00;
-}
-
 
 
 /* Estilos Modo Oscuro */
@@ -178,9 +250,58 @@
     background-color: rgba(255, 255, 255, 0.1);
     color: var(--blanco);
 }
-
+.dark .mapa-contenedor {
+    box-shadow: 0 12px 25px rgba(255, 255, 255, 0.1);
+    border-color: #424242;
+}
 .dark .mapa-check-container h2 {
     color: var(--blanco) !important;
+}
+
+.dark .marcador {
+    background-color: #424242;
+    /* Gris oscuro */
+    border-color: #757575;
+    /* Borde gris */
+    box-shadow: 0 3px 8px rgba(255, 255, 255, 0.1);
+    color: #f5f5f5;
+    /* Número claro */
+}
+
+.dark .marcador:hover {
+    border-color: #90caf9;
+    /* Borde azul claro */
+    box-shadow: 0 6px 15px rgba(255, 255, 255, 0.2);
+}
+
+.dark .marcador.completada {
+    background-color: #81c784;
+    /* Verde claro en oscuro */
+    border-color: #a5d6a7;
+    box-shadow: 0 3px 8px rgba(129, 199, 132, 0.3);
+}
+
+.dark .marcador.siguiente {
+    background-color: #ffab91;
+    /* Naranja más claro en oscuro */
+    border-color: #ffccbc;
+    box-shadow: 0 0 20px rgba(255, 171, 145, 0.9);
+    /* La animación marcadorPulseBright usa color fijo, podrías duplicarla o usar vars */
+}
+
+.dark .marcador-avatar {
+    border-color: #90caf9;
+    /* Azul claro en oscuro */
+    box-shadow: 0 0 20px rgba(144, 202, 249, 0.9);
+    background-color: #424242;
+}
+
+
+.dark .guia-avatar {
+    border-color: #ffeb3b;
+    /* Dorado claro */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+    background-color: #424242;
 }
 
 .dark .guia-texto {
@@ -190,27 +311,73 @@
     text-shadow: 0 4px 12px #ffffff7d;
 }
 
-.dark .checkpoints {
-    background-color: var(--bg-general);
+
+.dark .barra-progreso {
+    background-color: #424242;
+    box-shadow: inset 0 2px 8px rgba(255, 255, 255, 0.15);
+    border-color: #616161;
 }
 
-.dark .checkpoints li {
-    color: var(--negro);
+.dark .barra-progreso .relleno {
+    background: linear-gradient(90deg, #a5d6a7, #81c784, #66bb6a);
+    /* Degradado verde más claro */
+    color: #333;
+    text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.4);
 }
 
-.dark .checkpoints li.hecha {
-    color: var(--verde) !important;
-    background-color: var(--bg-general);
+.dark .botones-container button {
+    background-color: #424242;
+    color: #f5f5f5;
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.15);
+}
+
+.dark .botones-container button:hover {
+    background-color: #616161;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
+}
+
+.dark .botones-container button:active {
+    background-color: #333333;
+    box-shadow: 0 3px 10px rgba(255, 255, 255, 0.1);
 }
 
 /* Animaciones */
 
-@keyframes tachado {
-    from {
-        background-color: #fff3e0;
+@keyframes textScaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
     }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInScale {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeInUp {
+
+    /* Mantienes tu animación de entrada desde abajo */
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
     to {
-        background-color: #e8f5e9;
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -243,16 +410,126 @@
 
 
 
-/* Responsive para móvil */
+/* Responsive */
 
-@media (max-width: 600px) {
-    .checkpoints li {
+@media (max-width: 768px) {
+
+    .mapa-check-container {
+        padding: 2rem 1rem;
+    }
+
+    .mapa-check-container h2 {
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .guia-avatar {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+
+    .guia-texto {
         font-size: 1.1rem;
-        padding: 10px 14px;
+        padding: 15px 20px;
+        margin-bottom: 20px;
+        max-width: 95%;
+    }
+
+    .barra-progreso {
+        height: 25px;
+        margin: 20px auto;
+    }
+
+    .barra-progreso .relleno {
+        font-size: 0.9rem;
+        padding-right: 10px;
+    }
+
+    /* Los marcadores base ya se escalan, pero puedes ajustar si quieres un tamaño mínimo */
+    .marcador {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
+        border-width: 3px;
+    }
+
+    .marcador:hover {
+        transform: translate(-50%, -50%) scale(1.2);
+        /* Menos escala en móvil */
+    }
+
+
+    .marcador-avatar {
+        width: 40px;
+        height: 40px;
+        border-width: 4px;
+    }
+
+    .botones-container {
+        flex-direction: column;
+        /* Apila los botones en móvil */
+        gap: 1rem;
+        margin-top: 2rem;
     }
 
     .botones-container button {
-        width: 90%;
+        padding: 14px 30px;
+        font-size: 1.1rem;
+        width: 300px;
+        max-width: 95%;
+    }
+
+    .botones-container button:hover {
+        transform: translateY(-3px);
+        /* Menos elevación */
+    }
+
+
+}
+
+/* Breakpoint adicional para dispositivos muy pequeños */
+@media (max-width: 480px) {
+    .mapa-check-container {
+        padding: 1.5rem 0.8rem;
+    }
+
+    .mapa-check-container h2 {
+        font-size: 2rem;
+    }
+
+    .guia-avatar {
+        width: 70px;
+        height: 70px;
+    }
+
+    .guia-texto {
+        font-size: 1rem;
+        padding: 12px 16px;
+    }
+
+    .barra-progreso {
+        height: 20px;
+    }
+
+    .barra-progreso .relleno {
+        font-size: 0.8rem;
+        padding-right: 8px;
+    }
+
+    .marcador {
+        width: 25px;
+        height: 25px;
+        font-size: 0.8rem;
+    }
+
+    .marcador-avatar {
+        width: 35px;
+        height: 35px;
+    }
+
+    .botones-container button {
+        padding: 12px 25px;
         font-size: 1rem;
     }
 }
