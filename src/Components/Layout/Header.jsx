@@ -79,12 +79,12 @@ function Header() {
             className="logo"
           />
         </div>
-      </div>
 
       <h1 className="titulo-header">
         Parque <br />
         Prehistórico
       </h1>
+    </div>
 
       <div className="botones-header">
         {/* Botones con tooltips y navegación */}
