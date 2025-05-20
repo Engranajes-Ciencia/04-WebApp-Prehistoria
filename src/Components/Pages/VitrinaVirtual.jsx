@@ -63,7 +63,7 @@ function VitrinaVirtual() {
                 className="btn-volver-final"
                 onClick={() => {
                     const completadas = JSON.parse(localStorage.getItem("actividadesCompletadas")) || [];
-                    if (completadas.length >= 10) {
+                    if (completadas.length >= 20) {
                         navigate("/final");
                     } else {
                         navigate("/entre-actividad");
