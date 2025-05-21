@@ -181,7 +181,7 @@ function Form() {
           </div>
         </fieldset>
 
-        <button type="submit">{t("form.botonAventura")}</button>
+        <button className="btn-avent" type="submit">{t("form.botonAventura")}</button>
       </form>
     </>
   );
