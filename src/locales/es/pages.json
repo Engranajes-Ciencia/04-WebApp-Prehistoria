@@ -221,14 +221,54 @@
     }
   },
   "vitrinaVirtual": {
-    "galeriaVirtual": "Galería Virtual Medallas Prehistóricas"
+    "galeriaVirtual": "Galería Virtual Medallas Prehistóricas",
+    "conseguido": "Has conseguido",
+    "de": "de",
+    "medallas": "medallas",
+    "volver": "Volver"
   },
-  
-    "medallas":{
-      "1":{
-        "titulo": "Primeras plantas",
-        "curiosidad": "Colonizaron la tierra hace más de 450 millones de años." 
-      }
+  "medallas": {
+    "titulo1": "Primeras plantas",
+    "curiosidad1":  "Colonizaron la tierra hace más de 450 millones de años."
 
+  },
+    "titulo2": {
+      "titulo": "Primeras flores",
+      "curiosidad": "Aparecieron hace 150 millones de años."
+    },
+    "titulo3": {
+      "titulo": "Segundos dinosaurios",
+      "curiosidad": "Dominaron la tierra por millones de años."
+    },
+    "titulo4": {
+      "titulo": "Tortugas de las Galápagos",
+      "curiosidad": "Su caparazón puede cambiar según la isla."
+    },
+    "titulo5": {
+      "titulo": "Atapuerca",
+      "curiosidad": "Guarda huellas humanas de hace más de 800.000 años."
+    },
+    "titulo6": {
+      "titulo": "Pinturas rupestres",
+      "curiosidad": "Algunas pinturas tienen más de 30.000 años."
+    },
+    "titulo7": {
+      "titulo": "Poblado sedentario",
+      "curiosidad": "Comenzaron a construir aldeas permanentes."
+    },
+    "titulo8": {
+      "titulo": "Poblados nómadas",
+      "curiosidad": "Vivían en chozas y seguían a los animales."
+    },
+    "titulo9": {
+      "titulo": "Çatalhöyük",
+      "curiosidad": "No había calles, el techo era la acera."
+    },
+    "titulo10": {
+      "titulo": "Stonehenge",
+      "curiosidad": "Fue construido hace más de 4500 años."
     }
-}
+  }
+
+
+

@@ -2,6 +2,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "../../Styles/Pages/VitrinaVirtual.css";
+import { useTranslation } from "react-i18next";
 
 
 const medallas = [
@@ -15,18 +16,19 @@ const medallas = [
     { id: 8, titulo: "Poblados nómadas", imagen: "medalla6.png", curiosidad: "Vivían en chozas y seguían a los animales." },
     { id: 9, titulo: "Çatalhöyük", imagen: "", curiosidad: "No había calles, el techo era la acera." },
     { id: 10, titulo: "Stonehenge", imagen: "medalla9.png", curiosidad: "Fue construido hace más de 4500 años." }
-];
+];   
 
 
 function VitrinaVirtual() {
+     const { t } = useTranslation ("pages");
     const completadas = JSON.parse(localStorage.getItem("actividadesCompletadas")) || [];
     const [flippedId, setFlippedId] = useState(null);
     const navigate = useNavigate();
 
     return (
         <div className="vitrina-virtual-container">
-            <h1 className="titulo-virtual">Galería Virtual Medallas Prehistóricas</h1>
-            <p className="contador-medallas">Has conseguido {completadas.length} de {medallas.length} medallas</p>
+            <h1 className="titulo-virtual">{t("vitrinaVirtual.galeriaVirtual")}</h1>
+            <p className="contador-medallas">{t("vitrinaVirtual.conseguido")} {completadas.length} {t("vitrinaVirtual.de")} {medallas.length} {t("vitrinaVirtual.medallas")}</p>
 
             <div className="grid-medallas">
                 {medallas.map((medalla) => {
@@ -59,6 +61,8 @@ function VitrinaVirtual() {
                 })}
             </div>
 
+         
+
             <button
                 className="btn-volver-final"
                 onClick={() => {
@@ -70,7 +74,7 @@ function VitrinaVirtual() {
                     }
                 }}
             >
-                Volver
+                {t("vitrinaVirtual.volver")}
             </button>
 
         </div>
