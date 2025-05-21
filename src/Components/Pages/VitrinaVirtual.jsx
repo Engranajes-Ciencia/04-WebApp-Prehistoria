@@ -19,6 +19,8 @@ const medallas = [
 ];   
 
 
+  
+
 function VitrinaVirtual() {
      const { t } = useTranslation ("pages");
     const completadas = JSON.parse(localStorage.getItem("actividadesCompletadas")) || [];

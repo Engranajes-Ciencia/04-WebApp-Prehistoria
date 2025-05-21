@@ -237,44 +237,46 @@
     "volver": "Back"
   },
 
-  "medallas": {
-    "titulo1": "Firts plants",
-    "curiosidad1": "They colonized the land more than 450 million years ago."
-  },
-  "titulo2": {
-    "titulo": "First flowers",
-    "curiosidad": "They appeared 150 million years ago."
-  },
-  "titulo3": {
-    "titulo": "Second dinosaurs",
-    "curiosidad": "They dominated the Earth for millions of years."
-  },
-  "titulo4": {
-    "titulo": "Galápagos tortoises",
-    "curiosidad": "Their shell can change depending on the island."
-  },
-  "titulo5": {
-    "titulo": "Atapuerca",
-    "curiosidad": "It holds human traces from over 800,000 years ago."
-  },
-  "titulo6": {
-    "titulo": "Cave paintings",
-    "curiosidad": "Some paintings are more than 30,000 years old."
-  },
-  "titulo7": {
-    "titulo": "Sedentary village",
-    "curiosidad": "They began to build permanent villages."
-  },
-  "titulo8": {
-    "titulo": "Nomadic settlements",
-    "curiosidad": "They lived in huts and followed the animals."
-  },
-  "titulo9": {
-    "titulo": "Çatalhöyük",
-    "curiosidad": "There were no streets; the rooftops served as sidewalks."
-  },
-  "titulo10": {
-    "titulo": "Stonehenge",
-    "curiosidad": "It was built over 4,500 years ago."
+  "medallass": {
+    "1": {
+      "titulo": "First plants",
+      "curiosidad": "They colonized the land more than 450 million years ago."
+    },
+   "2": {
+      "titulo": "First flowers",
+      "curiosidad": "They appeared 150 million years ago."
+    },
+    "3": {
+      "titulo": "Second dinosaurs",
+      "curiosidad": "They dominated the Earth for millions of years."
+    },
+    "4": {
+      "titulo": "Galápagos tortoises",
+      "curiosidad": "Their shell can change depending on the island."
+    },
+    "5": {
+      "titulo": "Atapuerca",
+      "curiosidad": "It holds human traces from over 800,000 years ago."
+    },
+    "6": {
+      "titulo": "Cave paintings",
+      "curiosidad": "Some paintings are more than 30,000 years old."
+    },
+    "7": {
+      "titulo": "Sedentary village",
+      "curiosidad": "They began to build permanent villages."
+    },
+    "8": {
+      "titulo": "Nomadic settlements",
+      "curiosidad": "They lived in huts and followed the animals."
+    },
+    "9": {
+      "titulo": "Çatalhöyük",
+      "curiosidad": "There were no streets; the rooftops served as sidewalks."
+    },
+    "10": {
+      "titulo": "Stonehenge",
+      "curiosidad": "It was built over 4,500 years ago."
+    }
   }
 }
