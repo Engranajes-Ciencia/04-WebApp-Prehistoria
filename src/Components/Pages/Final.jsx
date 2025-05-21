@@ -126,7 +126,7 @@ function Final() {
                     className={`btn-tipo-diploma ${tipoDiploma === "adultos" ? "activo" : ""}`}
                     onClick={() => setTipoDiploma("adultos")}
                 >
-                   {t("final.diplomaAdulto")}
+                    {t("final.diplomaAdulto")}
                 </button>
             </div>
 

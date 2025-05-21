@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useMemo, useCallback } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import actividades from "../../config/data/actividades.json";
 import { marcarActividadComoCompletada } from "../../config/utils/localStorage";
@@ -6,12 +6,18 @@ import { validarAvatar, validarNombre } from "../../config/utils/validations";
 import { useTranslation } from "react-i18next";
 import "../../Styles/Pages/Actividad.css";
 
+// Componente principal de la Actividad
 function Actividad() {
     const { id } = useParams();
     const navigate = useNavigate();
     const { t } = useTranslation("pages");
 
-    const actividad = actividades.find((a) => a.id === parseInt(id));
+    // Usamos useMemo para evitar re-cálculos innecesarios de la actividad
+    const actividad = useMemo(
+        () => actividades.find((a) => a.id === parseInt(id)),
+        [id]
+    );
+
     const avatar = localStorage.getItem("avatar");
     const nombre = localStorage.getItem("nombre");
     const accesoQR = localStorage.getItem("accesoQR");
@@ -21,34 +27,54 @@ function Actividad() {
     const audioRef = useRef(null);
     const [isPlaying, setIsPlaying] = useState(false);
 
-    const toggleAudio = () => {
+    // Callback para pausar el otro audio si uno empieza a sonar
+    const pauseOtherAudio = useCallback((currentAudioRef) => {
+        if (currentAudioRef === audioRef.current && audioAltRef.current && !audioAltRef.current.paused) {
+            audioAltRef.current.pause();
+            setIsAudioAltPlaying(false);
+        } else if (currentAudioRef === audioAltRef.current && audioRef.current && !audioRef.current.paused) {
+            audioRef.current.pause();
+            setIsPlaying(false);
+        }
+    }, []);
+
+
+    const toggleAudio = useCallback(() => {
         if (!audioRef.current) return;
+
+        pauseOtherAudio(audioRef.current); // Pausar el otro audio antes de reproducir este
 
         if (isPlaying) {
             audioRef.current.pause();
         } else {
             audioRef.current.play().catch((e) => {
-                console.warn("Autoplay bloqueado por el navegador", e);
+                console.warn("Autoplay bloqueado por el navegador (audio principal):", e);
             });
         }
+        setIsPlaying((prev) => !prev);
+    }, [isPlaying, pauseOtherAudio]);
 
-        setIsPlaying(!isPlaying);
-    };
 
     // Constantes del audio para el segundo botón 🇬🇧
     const audioAltRef = useRef(null);
     const [isAudioAltPlaying, setIsAudioAltPlaying] = useState(false);
 
-    const toggleAudioAlt = () => {
+    const toggleAudioAlt = useCallback(() => {
         if (!audioAltRef.current) return;
+
+        pauseOtherAudio(audioAltRef.current); // Pausar el otro audio antes de reproducir este
+
         if (isAudioAltPlaying) {
             audioAltRef.current.pause();
         } else {
-            audioAltRef.current.play().catch((e) => console.warn("Autoplay bloqueado", e));
+            audioAltRef.current.play().catch((e) => {
+                console.warn("Autoplay bloqueado por el navegador (audio alternativo):", e);
+            });
         }
-        setIsAudioAltPlaying(!isAudioAltPlaying);
-    };
+        setIsAudioAltPlaying((prev) => !prev);
+    }, [isAudioAltPlaying, pauseOtherAudio]);
 
+    // Effect para manejar el acceso y marcar la actividad
     useEffect(() => {
         if (
             accesoQR !== "true" ||
@@ -59,118 +85,200 @@ function Actividad() {
             navigate("/EscanerQR");
             return;
         }
+        // Solo marcar como completada si la actividad existe
+        if (actividad) {
+            marcarActividadComoCompletada(Number(id));
+        }
+    }, [id, navigate, avatar, nombre, accesoQR, actividad, t]);
 
-        marcarActividadComoCompletada(Number(id));
-    }, [id, navigate, avatar, nombre, accesoQR]);
+    // Efecto para pausar los audios al desmontar o cambiar de actividad
+    useEffect(() => {
+        return () => {
+            if (audioRef.current) {
+                audioRef.current.pause();
+                setIsPlaying(false);
+            }
+            if (audioAltRef.current) {
+                audioAltRef.current.pause();
+                setIsAudioAltPlaying(false);
+            }
+        };
+    }, [id]); // Dependencia del ID para resetear al cambiar de actividad
 
-    if (!actividad || !avatar || !nombre) {
+
+
+    // Lógica para construir URLs de assets
+    const getAssetUrl = useCallback((path) => {
+        if (!path) return ''; // Retorna vacío si la ruta es nula o indefinida
+        const cleanPath = path.startsWith('/') ? path.substring(1) : path;
+        const fullUrl = `${import.meta.env.BASE_URL}${cleanPath}`;
+        console.log(`[DEBUG] URL de asset: ${fullUrl}`); 
+        return fullUrl;
+    }, []); 
+    
+
+    // Manejo de estados de carga y error (renderizado condicional temprano)
+    if (!actividad) {
+        // Si la actividad no se encuentra (ID inválido o no existe)
         return (
             <div
-                className="actividad-container"
+                className="actividad-container" // Manteniendo tu clase original
                 style={{
-                    backgroundImage: `url(${import.meta.env.BASE_URL}assets/images/nogenially/bienvenida.jpeg)`,
+                    // Usamos una imagen de fallback segura para el error
+                    backgroundImage: `url("${getAssetUrl("assets/images/nogenially/error-default.jpeg")}")`, // Asume que tienes una imagen de error
                     backgroundSize: "cover",
-                    backgroundPosition: "center"
+                    backgroundPosition: "center",
+                    backgroundAttachment: "fixed", // Para un efecto paralax ligero
                 }}
             >
-                <p className="error-msg">{t("actividad.error")}</p>
+                <p className="error-msg">{t("actividad.errorActividadNoEncontrada")}</p>
+                <button className="btn-volver-mapa" onClick={() => navigate("/")}> {/* Volver al inicio si hay un error grave */}
+                    {t("actividad.volverInicio")}
+                </button>
             </div>
         );
     }
 
-    const avatarImg = `${import.meta.env.BASE_URL}assets/avatars/${avatar}.png`;
-    const fondo = actividad.imagenFondo || actividad.imagenAlternativa;
+    if (!avatar || !nombre) {
+        // Si falta el avatar o nombre (aunque useEffect ya redirigiría)
+        return (
+            <div
+                className="actividad-container" 
+                style={{
+                    backgroundImage: `url("${getAssetUrl("assets/images/nogenially/acceso-denegado.jpeg")}")`, // Otra imagen de fallback
+                    backgroundSize: "cover",
+                    backgroundPosition: "center",
+                    backgroundAttachment: "fixed",
+                }}
+            >
+                <p className="error-msg">{t("actividad.accesoDenegado")}</p>
+                <button className="btn-volver-mapa" onClick={() => navigate("/")}> 
+                    {t("actividad.volverInicio")}
+                </button>
+            </div>
+        );
+    }
+
+    // URL para el fondo de imagen de la actividad
+    const fondoImageUrl = getAssetUrl(actividad.imagenFondo || actividad.imagenAlternativa);
+
+    // URL para el avatar
+    const avatarImgSrc = getAssetUrl(`assets/avatars/${avatar}.png`);
+
+    // Comprobación de Genially
     const tieneGenially = actividad.geniallyURL && actividad.geniallyURL.trim() !== "" && actividad.geniallyURL !== "#";
 
     // Traducciones específicas de la parada
-    const traduccionActividad = t(`${id}`, { returnObjects: true });
+    // Usamos useMemo para evitar re-cálculos innecesarios de las traducciones
+    const traduccionActividad = useMemo(() => t(`${id}`, { returnObjects: true }), [id, t]);
 
+
+    // Renderizado del componente principal
     return (
         <div
-            className="actividad-container"
+            className="actividad-container" 
             style={{
-                backgroundImage: `url(${fondo})`,
+                backgroundImage: `url("${fondoImageUrl}")`,
                 backgroundSize: "cover",
-                backgroundPosition: "center"
+                backgroundPosition: "center",
+                backgroundAttachment: "fixed", // Para un efecto paralax ligero o simplemente que la imagen no se mueva con el scroll
             }}
         >
-            <div className="saludo-titulo">
-            <div className="titulo-mensaje">
+            <div className="saludo-titulo"> 
+                <div className="titulo-mensaje"> 
+                    <h3>{traduccionActividad.titulo}</h3>
 
-            <h3>{traduccionActividad.titulo}</h3>
-
-            {traduccionActividad.avatarDialogo.mensaje !== "#" && (
-                <p>{traduccionActividad.avatarDialogo.mensaje}</p>
+                    {/* Optional chaining para evitar errores si avatarDialogo no existe o no tiene mensaje */}
+                    {traduccionActividad.avatarDialogo?.mensaje && traduccionActividad.avatarDialogo.mensaje !== "#" && (
+                        <p>{traduccionActividad.avatarDialogo.mensaje}</p>
+                    )}
+                </div>
+                <div className="actividad-header"> 
+                    <img src={avatarImgSrc} alt={t("altText.avatar")} className="avatar-actividad" /> 
+                    <div>
+                        <h2 className="saludo1">{t("actividad.saludo", { nombre })}</h2> 
+                        {traduccionActividad.avatarDialogo?.dialogo && (
+                            <p className="dialogo">{traduccionActividad.avatarDialogo.dialogo}</p> 
             )}
-            </div>
-            <div className="actividad-header">
-                <img src={avatarImg} alt="avatar" className="avatar-actividad" />
-                <div>
-                    <h2 className="saludo1">{t("actividad.saludo", { nombre })}</h2>
-                    <p className="dialogo">{traduccionActividad.avatarDialogo.dialogo}</p>
+                    </div>
                 </div>
             </div>
-            
-            
-            </div>
+
+            {/* Controles de audio */}
             {actividad.audio && (
-                <div className="audio-button-container">
-                    {/* Botón para el primer audio 🎵 */}
-                    <button onClick={toggleAudio} className="audio-button">
-                        {isPlaying ? t("actividad.pausarAudio") : t("actividad.reproducirAudio")}
+                <div className="audio-button-container"> 
+                    {/* Botón para el audio principal (Español) */}
+                    <button
+                        onClick={toggleAudio}
+                        className={`audio-button ${isPlaying ? "playing" : ""}`} 
+                        aria-label={isPlaying ? t("actividad.pausarAudio") : t("actividad.reproducirAudio")}
+                    >
+                        <i className={`fa-solid ${isPlaying ? "fa-pause" : "fa-play"}`}></i> {t("Reproducir audio")}
                     </button>
                     <audio
                         ref={audioRef}
-                        src={`${import.meta.env.BASE_URL}${actividad.audio.replace(/^\/+/, "")}`}
+                        src={getAssetUrl(actividad.audio)} // Usar getAssetUrl para audios
                         preload="auto"
+                        onEnded={() => setIsPlaying(false)} // Resetear estado cuando el audio termina
                     />
 
-                    {/* Botón para el segundo audio 🇬🇧 */}
+                    {/* Botón para el audio alternativo (Inglés) */}
                     {actividad.audioENG && (
                         <>
-                            <button onClick={toggleAudioAlt} className="audio-button-alt">
-                                {isAudioAltPlaying ? t("actividad.pausarAudioENG") : t("actividad.reproducirAudioENG")}
+                            <button
+                                onClick={toggleAudioAlt}
+                                className={`audio-button-alt ${isAudioAltPlaying ? "playing" : ""}`} 
+                                aria-label={isAudioAltPlaying ? t("actividad.pausarAudioENG") : t("Play audio")}
+                            >
+                                <i className={`fa-solid ${isAudioAltPlaying ? "fa-pause" : "fa-play"}`}></i> {t("Play audio")}
                             </button>
                             <audio
                                 ref={audioAltRef}
-                                src={`${import.meta.env.BASE_URL}${actividad.audioENG.replace(/^\/+/, "")}`}
+                                src={getAssetUrl(actividad.audioENG)} // Usar getAssetUrl para audios
                                 preload="auto"
+                                onEnded={() => setIsAudioAltPlaying(false)} // Resetear estado cuando el audio termina
                             />
                         </>
-
                     )}
-
                 </div>
             )}
 
-            {traduccionActividad.avatarDialogo.sabiasQue !== "#" && (
-                <p className="sabiasque">
-                    <strong>{t("actividad.sabiasQue")}</strong> {traduccionActividad.avatarDialogo.sabiasQue}
+            {/* Sección "Sabías Qué" */}
+            {traduccionActividad.avatarDialogo?.sabiasQue && traduccionActividad.avatarDialogo.sabiasQue !== "#" && (
+                <p className="sabiasque"> 
+                    <strong>{t("actividad.sabiasQue")}</strong>{" "}
+                    {traduccionActividad.avatarDialogo.sabiasQue}
                 </p>
             )}
 
-            {/* Renderizar Genially si existe, o el botón para el siguiente QR */}
-            {tieneGenially ? ( // Si tiene Genially
-                <div className="actividad-genially">
+            {/* Contenido principal: Genially o Botón de siguiente QR */}
+            {tieneGenially ? (
+                <div className="actividad-genially"> 
                     <iframe
-                        src={actividad.geniallyURL} 
+                        src={actividad.geniallyURL}
                         width="100%"
-                        height="500px" 
+                        height="clamp(300px, 70vh, 700px)" // Altura responsiva con clamp
                         frameBorder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" // Permisos de seguridad y UX
                         allowFullScreen
-                        title="Genially actividad"
+                        loading="lazy" // Carga diferida del iframe
                     ></iframe>
                 </div>
+
             ) : ( // Si NO tiene Genially, muestra el botón para el siguiente QR
-                <div className="actividad-siguiente">
-                    <button className="btn-siguiente" onClick={() => navigate("/EscanerQR")}>
-                        📲 {t("Escanear codigo QR")}
+                <div className="actividad-siguiente"> 
+                    <button className="btn-siguiente" onClick={() => navigate("/EscanerQR")}> 
+                        <span className="icon">📲</span> {t("Escanear codigo QR")}
                     </button>
                 </div>
             )}
 
-            {/* Opcional: Botón para volver al mapa o inicio */}
-            {/* <button onClick={() => navigate("/mapa")}>{t('volverMapa')}</button> */}
+            {/* Botón para volver a la pantalla "entre-actividad" */}
+            <div className="navigation-footer"> {/* Una clase para el pie de navegación, si quieres estilizarlo */}
+                <button className="btn-volver" onClick={() => navigate("/entre-actividad")}> 
+                    <i className="fa-solid fa-arrow-left"></i> {t("Mapa")}
+                </button>
+            </div>
 
         </div>
     );

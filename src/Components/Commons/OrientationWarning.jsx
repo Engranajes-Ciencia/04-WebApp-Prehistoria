@@ -1,19 +1,19 @@
-import { useEffect, useState } from "react";
+// src/Components/Commons/OrientationWarning.jsx
+import React from 'react';
+import useOrientation from '../../UseOrientation'; // Importa el hook desde la nueva ruta
 
-export const UseOrientation = () => {
-  const [orientation, setOrientation] = useState(
-    window.innerWidth > window.innerHeight ? "landscape" : "portrait"
-  );
+function OrientationWarning() {
+  const { orientation } = useOrientation(); // Obtiene la orientación del hook
 
-  useEffect(() => {
-    const handleResize = () => {
-      setOrientation(
-        window.innerWidth > window.innerHeight ? "landscape" : "portrait"
-      );
-    };
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  if (orientation === "portrait") {
+    return (
+      <div className="orientacion-alerta">
+        ⚠️ Para una mejor experiencia recomendamos utilizar el dispositivo
+        en modo horizontal
+      </div>
+    );
+  }
+  return null; // No muestra nada si no está en modo retrato
+}
 
-  return orientation;
-};
+export default OrientationWarning;

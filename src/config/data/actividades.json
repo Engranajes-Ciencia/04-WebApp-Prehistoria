@@ -32,6 +32,7 @@
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada3.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada3ENG.mp3",
     "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/craneos.png",
     "completada": false
   },
   {
@@ -55,6 +56,7 @@
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada5.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada5ENG.mp3",
     "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/sahara.png",
     "completada": false
   },
   {
@@ -66,6 +68,7 @@
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada6.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada6ENG.mp3",
     "geniallyURL": "https://view.genially.com/681b03dfdbac94f0fdc3927a/interactive-content-actividad6",
+    "imagenAlternativa": "/assets/images/nogenially/origen.png",
     "completada": false
   },  
   {
@@ -101,6 +104,7 @@
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada9.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada9ENG.mp3",
     "geniallyURL": "https://view.genially.com/68231bb7256d2888593fbd73/interactive-content-actividad2",
+    "imagenAlternativa": "/assets/images/nogenially/dinos.png",
     "completada": false
   },
   {
@@ -112,6 +116,7 @@
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada10.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada10ENG.mp3",
     "geniallyURL": "https://view.genially.com/6822fb3a4fee7f24275c0354/interactive-content-actividad10",
+    "imagenAlternativa": "/assets/images/nogenially/sedentario.png",
     "completada": false
   },
   {
@@ -135,6 +140,7 @@
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada12.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada12ENG.mp3",
     "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/pangea.png",
     "completada": false
   },
   {
@@ -146,6 +152,7 @@
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada13.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada13ENG.mp3",
     "geniallyURL": "https://view.genially.com/67e283be994f4e3b61c714e9/interactive-content-actividad13",
+    "imagenAlternativa": "/assets/images/nogenially/meganeura.png",
     "completada": false
   },
   {
@@ -169,6 +176,7 @@
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada15.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada15ENG.mp3",
     "geniallyURL": "https://view.genially.com/67e3cc8058a3eb22e678b730/interactive-content-actividad15",
+    "imagenAlternativa": "/assets/images/nogenially/bienvenida.jpeg",
     "completada": false
   },
   {
@@ -180,6 +188,7 @@
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada16.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada16ENG.mp3",
     "geniallyURL": "https://view.genially.com/67f8edffb7b2a9c007101174/interactive-content-actividad6",
+    "imagenAlternativa": "/assets/images/nogenially/dinos.png",
     "completada": false
   },
   {
@@ -215,6 +224,7 @@
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada19.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada19ENG.mp3",
     "geniallyURL": "https://view.genially.com/67f8f638c08c8840c0b4fe3c/interactive-content-actividad19",
+    "imagenAlternativa": "/assets/images/nogenially/laetoli.png",
     "completada": false
   },
   {
@@ -226,6 +236,7 @@
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada20.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada20ENG.mp3",
     "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad9",
+    "imagenAlternativa": "/assets/images/nogenially/arboles.png",
     "completada": false
 
   },
