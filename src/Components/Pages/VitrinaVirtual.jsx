@@ -6,16 +6,16 @@ import { useTranslation } from "react-i18next";
 
 
 const medallas = [
-    { id: 1, titulo: "Primeras plantas", imagen: "medallaParada3.png", curiosidad: "Colonizaron la tierra hace más de 450 millones de años." },
-    { id: 2, titulo: "Primeras flores", imagen: "medallaParada6.png", curiosidad: "Aparecieron hace 150 millones de años." },
-    { id: 3, titulo: "Segundos dinosaurios", imagen: "medallaParada9.png", curiosidad: "Dominaron la tierra por millones de años." },
-    { id: 4, titulo: "Tortugas de las Galápagos", imagen: "medallaParada10.png", curiosidad: "Su caparazón puede cambiar según la isla." },
-    { id: 5, titulo: "Atapuerca", imagen: "medallaParada12.png", curiosidad: "Guarda huellas humanas de hace más de 800.000 años." },
-    { id: 6, titulo:  "El hombre de Neandertal", imagen: "medallaParada13.png", curiosidad: "Su cerebro era más grande que el de los humanos modernos"},
-    { id: 7, titulo: "Cuevas y arte rupestre", imagen: "medallaParada15.png", curiosidad: "Algunas pinturas tienen más de 30.000 años." },
-    { id: 8, titulo: "Poblados nómadas", imagen: "medallaParada16.png", curiosidad: "Vivían en chozas y seguían a los animales." },
-    { id: 9, titulo: "Çatalhöyük", imagen: "medallaParada19.png", curiosidad: "No había calles, el techo era la acera." },
-    { id: 10, titulo: "Stonehenge", imagen: "medallaParada20.png", curiosidad: "Fue construido hace más de 4500 años." }
+    { id: 1, imagen: "medallaParada3.png" },
+    { id: 2, imagen: "medallaParada6.png" },
+    { id: 3, imagen: "medallaParada9.png" },
+    { id: 4, imagen: "medallaParada10.png" },
+    { id: 5, imagen: "medallaParada12.png" },
+    { id: 6, imagen: "medallaParada13.png" },
+    { id: 7, imagen: "medallaParada15.png" },
+    { id: 8, imagen: "medallaParada16.png" },
+    { id: 9, imagen: "medallaParada19.png" },
+    { id: 10, imagen: "medallaParada20.png" }
 ];   
 
 
@@ -30,7 +30,9 @@ function VitrinaVirtual() {
     return (
         <div className="vitrina-virtual-container">
             <h1 className="titulo-virtual">{t("vitrinaVirtual.galeriaVirtual")}</h1>
-            <p className="contador-medallas">{t("vitrinaVirtual.conseguido")} {completadas.length} {t("vitrinaVirtual.de")} {medallas.length} {t("vitrinaVirtual.medallas")}</p>
+            <p className="contador-medallas">
+                {t("vitrinaVirtual.conseguido", { completadas: completadas.length, total: medallas.length })}
+            </p>
 
             <div className="grid-medallas">
                 {medallas.map((medalla) => {
@@ -50,11 +52,11 @@ function VitrinaVirtual() {
                                         src={`/assets/images/imagesMedal/${medalla.imagen}`}
                                         alt={`Medalla ${medalla.id}`}
                                     />
-                                    <p>{medalla.titulo}</p>
+                                    <p>{t(`vitrinaVirtual.medallas.${medalla.id}.titulo`)}</p>
                                 </div>
                                 <div className="card-back">
-                                    <h3>🏅 {medalla.titulo}</h3>
-                                    <p className="curiosidad-text">{medalla.curiosidad}</p>
+                                    <h3>🏅 {t(`vitrinaVirtual.medallas.${medalla.id}.titulo`)}</h3>
+                                    <p className="curiosidad-text">{t(`vitrinaVirtual.medallas.${medalla.id}.curiosidad`)}</p>
                                 </div>
                             </div>
                         </div>

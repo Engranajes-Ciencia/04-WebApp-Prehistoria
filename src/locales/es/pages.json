@@ -236,53 +236,50 @@
   },
   "vitrinaVirtual": {
     "galeriaVirtual": "Galería Virtual Medallas Prehistóricas",
-    "conseguido": "Has conseguido",
-    "de": "de",
-    "medallas": "medallas",
-    "volver": "Volver"
-  },
-  "medallass": {
-    "1": {
-      "titulo": "Primeras plantas",
-      "curiosidad": "Colonizaron la tierra hace más de 450 millones de años."
-    },
- 
-  "2": {
-    "titulo": "Primeras flores",
-    "curiosidad": "Aparecieron hace 150 millones de años."
-  },
-  "3": {
-    "titulo": "Segundos dinosaurios",
-    "curiosidad": "Dominaron la Tierra durante millones de años."
-  },
-  "4": {
-    "titulo": "Tortugas de las Galápagos",
-    "curiosidad": "Su caparazón puede cambiar según la isla."
-  },
-  "5": {
-    "titulo": "Atapuerca",
-    "curiosidad": "Conserva huellas humanas de hace más de 800.000 años."
-  },
-  "6": {
-    "titulo": "Pinturas rupestres",
-    "curiosidad": "Algunas pinturas tienen más de 30.000 años."
-  },
-  "7": {
-    "titulo": "Poblado sedentario",
-    "curiosidad": "Comenzaron a construir aldeas permanentes."
-  },
-  "8": {
-    "titulo": "Poblados nómadas",
-    "curiosidad": "Vivían en chozas y seguían a los animales."
-  },
-  "9": {
-    "titulo": "Çatalhöyük",
-    "curiosidad": "No había calles; los techos servían como aceras."
-  },
-  "10": {
-    "titulo": "Stonehenge",
-    "curiosidad": "Fue construido hace más de 4.500 años."
-  }
+    "conseguido": "Has conseguido {{completadas}} de {{total}} medallas",
+    "medallas": {
+      "1": {
+        "titulo": "Primeras plantas",
+        "curiosidad": "Colonizaron la tierra hace más de 450 millones de años."
+      },
+  
+      "2": {
+        "titulo": "Primeras flores",
+        "curiosidad": "Aparecieron hace 150 millones de años."
+      },
+      "3": {
+        "titulo": "Segundos dinosaurios",
+        "curiosidad": "Dominaron la Tierra durante millones de años."
+      },
+      "4": {
+        "titulo": "Tortugas de las Galápagos",
+        "curiosidad": "Su caparazón puede cambiar según la isla."
+      },
+      "5": {
+        "titulo": "Atapuerca",
+        "curiosidad": "Conserva huellas humanas de hace más de 800.000 años."
+      },
+      "6": {
+        "titulo": "El hombre de Neandertal",
+        "curiosidad": "Su cerebro era más grande que el de los humanos modernos."
+      },
+      "7": {   
+        "titulo": "Cuevas y arte rupestre",
+        "curiosidad": "Algunas pinturas tienen más de 30.000 años."
+      },
+      "8": {
+        "titulo": "Poblados nómadas",
+        "curiosidad": "Vivían en chozas y seguían a los animales."
+      },
+      "9": {
+        "titulo": "Çatalhöyük",
+        "curiosidad": "No había calles; los techos servían como aceras."
+      },
+      "10": {
+        "titulo": "Stonehenge",
+        "curiosidad": "Fue construido hace más de 4.500 años."
+      }
+    }
   }
 }
   

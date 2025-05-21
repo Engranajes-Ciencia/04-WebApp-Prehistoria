@@ -245,52 +245,48 @@
   },
   "vitrinaVirtual": {
     "galeriaVirtual": "Virtual gallery of prehistoric medals",
-    "conseguido": "You have earned",
-    "de": "of",
-    "medallas": "medals",
-    "volver": "Back"
-  },
-
-  "medallass": {
-    "1": {
-      "titulo": "First plants",
-      "curiosidad": "They colonized the land more than 450 million years ago."
-    },
-   "2": {
-      "titulo": "First flowers",
-      "curiosidad": "They appeared 150 million years ago."
-    },
-    "3": {
-      "titulo": "Second dinosaurs",
-      "curiosidad": "They dominated the Earth for millions of years."
-    },
-    "4": {
-      "titulo": "Galápagos tortoises",
-      "curiosidad": "Their shell can change depending on the island."
-    },
-    "5": {
-      "titulo": "Atapuerca",
-      "curiosidad": "It holds human traces from over 800,000 years ago."
-    },
-    "6": {
-      "titulo": "Cave paintings",
-      "curiosidad": "Some paintings are more than 30,000 years old."
-    },
-    "7": {
-      "titulo": "Sedentary village",
-      "curiosidad": "They began to build permanent villages."
-    },
-    "8": {
-      "titulo": "Nomadic settlements",
-      "curiosidad": "They lived in huts and followed the animals."
-    },
-    "9": {
-      "titulo": "Çatalhöyük",
-      "curiosidad": "There were no streets; the rooftops served as sidewalks."
-    },
-    "10": {
-      "titulo": "Stonehenge",
-      "curiosidad": "It was built over 4,500 years ago."
+    "conseguido": "You have earned {{completadas}} out of {{total}} medals",
+    "medallas": {
+      "1": {
+        "titulo": "First plants",
+        "curiosidad": "They colonized the land more than 450 million years ago."
+      },
+    "2": {
+        "titulo": "First flowers",
+        "curiosidad": "They appeared 150 million years ago."
+      },
+      "3": {
+        "titulo": "Second dinosaurs",
+        "curiosidad": "They dominated the Earth for millions of years."
+      },
+      "4": {
+        "titulo": "Galápagos tortoises",
+        "curiosidad": "Their shell can change depending on the island."
+      },
+      "5": {
+        "titulo": "Atapuerca",
+        "curiosidad": "It holds human traces from over 800,000 years ago."
+      },
+      "6": {
+        "titulo": "Neanderthal man",
+        "curiosidad": "Its brain was larger than that of modern humans."
+      },
+      "7": {
+        "titulo": "Caves and rock art",
+        "curiosidad": "Some paintings are more than 30,000 years old."
+      },
+      "8": {
+        "titulo": "Nomadic settlements",
+        "curiosidad": "They lived in huts and followed the animals."
+      },
+      "9": {
+        "titulo": "Çatalhöyük",
+        "curiosidad": "There were no streets; the rooftops served as sidewalks."
+      },
+      "10": {
+        "titulo": "Stonehenge",
+        "curiosidad": "It was built over 4,500 years ago."
+      }
     }
   }
 }
