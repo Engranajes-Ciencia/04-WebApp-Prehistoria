@@ -6,16 +6,16 @@ import { useTranslation } from "react-i18next";
 
 
 const medallas = [
-    { id: 1, titulo: "Primeras plantas", imagen: "", curiosidad: "Colonizaron la tierra hace más de 450 millones de años." },
-    { id: 2, titulo: "Primeras flores", imagen: "", curiosidad: "Aparecieron hace 150 millones de años." },
-    { id: 3, titulo: "Segundos dinosaurios", imagen: "medalla2.png", curiosidad: "Dominaron la tierra por millones de años." },
-    { id: 4, titulo: "Tortugas de las Galápagos", imagen: "medalla3.png", curiosidad: "Su caparazón puede cambiar según la isla." },
-    { id: 5, titulo: "Atapuerca", imagen: "", curiosidad: "Guarda huellas humanas de hace más de 800.000 años." },
-    { id: 6, titulo: "Pinturas rupestres", imagen: "medalla5.png", curiosidad: "Algunas pinturas tienen más de 30.000 años." },
-    { id: 7, titulo: "Poblado sedentario", imagen: "medalla7.png", curiosidad: "Comenzaron a construir aldeas permanentes." },
-    { id: 8, titulo: "Poblados nómadas", imagen: "medalla6.png", curiosidad: "Vivían en chozas y seguían a los animales." },
-    { id: 9, titulo: "Çatalhöyük", imagen: "", curiosidad: "No había calles, el techo era la acera." },
-    { id: 10, titulo: "Stonehenge", imagen: "medalla9.png", curiosidad: "Fue construido hace más de 4500 años." }
+    { id: 1, titulo: "Primeras plantas", imagen: "medallaParada3.png", curiosidad: "Colonizaron la tierra hace más de 450 millones de años." },
+    { id: 2, titulo: "Primeras flores", imagen: "medallaParada6.png", curiosidad: "Aparecieron hace 150 millones de años." },
+    { id: 3, titulo: "Segundos dinosaurios", imagen: "medallaParada9.png", curiosidad: "Dominaron la tierra por millones de años." },
+    { id: 4, titulo: "Tortugas de las Galápagos", imagen: "medallaParada10.png", curiosidad: "Su caparazón puede cambiar según la isla." },
+    { id: 5, titulo: "Atapuerca", imagen: "medallaParada12.png", curiosidad: "Guarda huellas humanas de hace más de 800.000 años." },
+    { id: 6, titulo:  "El hombre de Neandertal", imagen: "medallaParada13.png", curiosidad: "Su cerebro era más grande que el de los humanos modernos"},
+    { id: 7, titulo: "Cuevas y arte rupestre", imagen: "medallaParada15.png", curiosidad: "Algunas pinturas tienen más de 30.000 años." },
+    { id: 8, titulo: "Poblados nómadas", imagen: "medallaParada16.png", curiosidad: "Vivían en chozas y seguían a los animales." },
+    { id: 9, titulo: "Çatalhöyük", imagen: "medallaParada19.png", curiosidad: "No había calles, el techo era la acera." },
+    { id: 10, titulo: "Stonehenge", imagen: "medallaParada20.png", curiosidad: "Fue construido hace más de 4500 años." }
 ];   
 
 
