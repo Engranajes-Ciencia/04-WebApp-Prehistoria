@@ -153,7 +153,7 @@ function Actividad() {
             {tieneGenially ? ( // Si tiene Genially
                 <div className="actividad-genially">
                     <iframe
-                        src={traduccionActividad.geniallyURL} 
+                        src={actividad.geniallyURL} 
                         width="100%"
                         height="500px" 
                         frameBorder="0"
