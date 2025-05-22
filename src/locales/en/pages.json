@@ -47,6 +47,9 @@
   "final": {
     "enhorabuena": "Congratulations!",
     "completado": "100% completed",
+    "explorador": "Time Explorer",
+    "exploradora": "Time Explorer",
+    "nombreDefault": "Time Explorer",
     "paradasCompletadas": "You have completed all the stops of Prehistoric Adventure",
     "diplomaInfantil": "Children's diploma",
     "diplomaAdulto": "Adult diploma",

@@ -41,6 +41,9 @@
   "final": {
     "enhorabuena": "¡Enhorabuena!",
     "completado": "100% completado",
+    "explorador": "Explorador del tiempo",
+    "exploradora": "Exploradora del tiempo",
+    "nombreDefault": "Explorador/a",
     "paradasCompletadas": "Has completado todas las paradas de la Aventura Prehistórica",
     "diplomaInfantil": "Diploma infantil",
     "diplomaAdulto": "Diploma Adulto",
