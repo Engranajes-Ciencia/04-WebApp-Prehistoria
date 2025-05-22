@@ -246,6 +246,7 @@
   "vitrinaVirtual": {
     "galeriaVirtual": "Virtual gallery of prehistoric medals",
     "conseguido": "You have earned {{completadas}} out of {{total}} medals",
+    "volver": "Back",
     "medallas": {
       "1": {
         "titulo": "First plants",

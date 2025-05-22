@@ -237,6 +237,7 @@
   "vitrinaVirtual": {
     "galeriaVirtual": "Galería Virtual Medallas Prehistóricas",
     "conseguido": "Has conseguido {{completadas}} de {{total}} medallas",
+    "volver": "Volver",
     "medallas": {
       "1": {
         "titulo": "Primeras plantas",

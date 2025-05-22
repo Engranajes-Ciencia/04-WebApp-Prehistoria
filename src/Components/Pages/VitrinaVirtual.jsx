@@ -48,11 +48,13 @@ function VitrinaVirtual() {
                         >
                             <div className="card-inner">
                                 <div className="card-front">
+                                    
                                     <img
                                         src={`/assets/images/imagesMedal/${medalla.imagen}`}
                                         alt={`Medalla ${medalla.id}`}
                                     />
                                     <p>{t(`vitrinaVirtual.medallas.${medalla.id}.titulo`)}</p>
+                                       
                                 </div>
                                 <div className="card-back">
                                     <h3>🏅 {t(`vitrinaVirtual.medallas.${medalla.id}.titulo`)}</h3>

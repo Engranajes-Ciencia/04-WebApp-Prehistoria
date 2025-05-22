@@ -138,12 +138,13 @@
 }
 
 .card-front img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    mix-blend-mode: multiply;
-    transition: transform 0.3s ease;
+    width: auto;
+    height: 100px; 
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
 }
+
 
 .card-front p {
     margin-top: 12px;
