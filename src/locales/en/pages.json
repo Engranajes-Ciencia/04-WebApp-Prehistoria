@@ -63,7 +63,7 @@
   "actividad": {
     "accesoDenegado": "Unauthorized access. Please scan a valid QR code.",
     "error": "Activity not found or access not allowed.",
-    "saludo": "Hi {{nombre}}!",
+    "saludo": "· Hi {{nombre}}! ·",
     "pausarAudio": "⏸️ Pausar audio",
     "reproducirAudio": "▶️ Reproducir audio",
     "botonAudioENG": "🎧 Listen in English",

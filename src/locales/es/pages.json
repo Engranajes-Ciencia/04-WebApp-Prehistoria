@@ -56,7 +56,7 @@
   "actividad": {
     "accesoDenegado": "Acceso denegado. Escanea el código QR.",
     "error": "Ha ocurrido un error al cargar la actividad.",
-    "saludo": "¡Hola {{nombre}}!",
+    "saludo": "· ¡Hola {{nombre}}! ·",
     "pausarAudio": "⏸️ Pausar audio",
     "reproducirAudio": "▶️ Reproducir audio",
     "pausarAudioENG": "⏸️ Pause audio",
