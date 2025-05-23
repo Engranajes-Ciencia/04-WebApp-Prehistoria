@@ -40,7 +40,7 @@
 }
 
 .logo {
-  max-height: clamp(80px, 12vh, 130px);  /* Altura máxima fluida para el logo */
+  max-height: clamp(90px, 16vh, 150px);  /* Altura máxima fluida para el logo */
   width: auto;
   margin: 0;
   border-radius: 16px;
@@ -122,11 +122,8 @@
 }
 
 .dark .logo {
-  background: radial-gradient(
-    ellipse at bottom center,
-    #ffffff -90%,
-    #202020 75%
-  );
+  background: transparent;
+  
 }
 
 .dark .icon-btn {
