@@ -1,55 +1,55 @@
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/Milford.woff2') format('woff2');
+  src: url('/fonts/MILF__.TTF') format('TTF');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordBold.woff2') format('woff2');
+  src: url('/fonts/MILF__B.TTF') format('TTF');
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordItalic.woff2') format('woff2');
+  src: url('/fonts/MILF__I.TTF') format('TTF');
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordBoldItalic.woff2') format('woff2');
+  src: url('/fonts/MILF__BI.TTF') format('TTF');
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordBlack.woff2') format('woff2');
+  src: url('/fonts/MILFBK__.TTF') format('TTF');
   font-weight: 900;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordCondensed.woff2') format('woff2');
+  src: url('/fonts/MILFCD__.TTF') format('TTF');
   font-weight: 400;
   font-stretch: condensed;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordCondensedBold.woff2') format('woff2');
+  src: url('/fonts/MILFCD__B.TTF') format('TTF');
   font-weight: 700;
   font-stretch: condensed;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordCondensedItalic.woff2') format('woff2');
+  src: url('/fonts/MILFCD__I.TTF') format('TTF');
   font-weight: 400;
   font-style: italic;
   font-stretch: condensed;
@@ -57,7 +57,7 @@
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordCondensedBoldItalic.woff2') format('woff2');
+  src: url('/fonts/MILFCDBI.TTF') format('TTF');
   font-weight: 700;
   font-style: italic;
   font-stretch: condensed;
@@ -65,21 +65,21 @@
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordHollow.woff2') format('woff2');
+  src: url('/fonts/MILFHO__.TTF') format('TTF');
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordLight.woff2') format('woff2');
+  src: url('/fonts/MILFT__.TTF') format('TTF');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Milford';
-  src: url('/04-WebApp-Prehistoria/fonts/MilfordLightitalic.woff2') format('woff2');
+  src: url('/fonts/MILFT_I.TTF') format('TTF');
   font-weight: 300;
   font-style: italic;
 }

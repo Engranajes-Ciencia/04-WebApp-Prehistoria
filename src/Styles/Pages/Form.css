@@ -182,6 +182,11 @@ button:hover {
   backdrop-filter: blur(8px) saturate(1.08);
 }
 
+.dark .btn-avent {
+  background: linear-gradient(135deg, #464646, #1b1b1b);
+  color: #ffffff !important;
+}
+
 .dark .form label,
 .dark .form input,
 .dark .form p,

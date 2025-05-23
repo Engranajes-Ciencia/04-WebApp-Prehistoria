@@ -89,7 +89,7 @@ function EntreActividades() {
 
             {/* Botones */}
             <div className="botones-container">
-                {completadas.length >= 10 ? (
+                {completadas.length >= 20 ? (
                     <button className="btn-final" onClick={() => navigate("/final")}>
                         {t("entreActividades.pantallaFinal")}
                     </button>

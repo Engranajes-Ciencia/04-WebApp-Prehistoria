@@ -1,7 +1,9 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ROUTES from './routerConfig';
 import { lazy, Suspense } from "react";
+import { Routes, Route } from "react-router-dom";
 
+import { ROUTES } from './routerConfig';
+
+import Layout from '../../Components/Layout/Layout';
 
 import ModoJuego from "../../Components/Pages/ModoJuego";
 import Portada from "../../Components/Pages/Portada";
@@ -22,40 +24,39 @@ const VitrinaVirtual = lazy(() => import("../../Components/Pages/VitrinaVirtual"
 function AppRouter() {
     return(
         <Routes>
-            <Route path={ROUTES.MODOJUEGO} element={<ModoJuego />} /> 
-            <Route path={ROUTES.PORTADA} element={<Portada />} />
-            <Route path={ROUTES.FORM} element={<Form />} />
-            <Route path={ROUTES.MAPA} element={<Mapa />} />
-            <Route path={ROUTES.ENTREACTIVIDADES} element={<EntreActividades />} />
-            <Route path={ROUTES.ESCANERQR} element={<EscanerQR />} />
-            <Route path={ROUTES.MODO_SECRETO} element={<ModoSecreto />} />
+            {/* Rutas que SÍ usan el Layout */}
+            <Route path={ROUTES.MODOJUEGO} element={<Layout><ModoJuego /></Layout>} />
+            <Route path={ROUTES.PORTADA} element={<Layout><Portada /></Layout>} />
+            <Route path={ROUTES.FORM} element={<Layout><Form /></Layout>} />
+            <Route path={ROUTES.MAPA} element={<Layout><Mapa /></Layout>} />
+            <Route path={ROUTES.ENTREACTIVIDADES} element={<Layout><EntreActividades /></Layout>} />
+            <Route path={ROUTES.ESCANERQR} element={<Layout><EscanerQR /></Layout>} />
+            <Route path={ROUTES.MODO_SECRETO} element={<Layout><ModoSecreto /></Layout>} />
 
+            {/* Rutas con Lazy Loading (envueltas en Layout y Suspense) */}
             <Route path={ROUTES.ACTIVIDAD} element={
                 <Suspense fallback={<LoadingSpinner />}>
-                    
-                        <Actividad />
-                    
-                </Suspense>} />
-            
-            <Route path={ROUTES.FINAL} element={
-                <Suspense fallback={<LoadingSpinner />}>
-                    
-                        <Final />
-                    
-                </Suspense>} />
-            
-            <Route path={ROUTES.VITRINA} element={
-                <Suspense fallback={<LoadingSpinner />}>
-                
-                    <Vitrina />
-                
-                </Suspense>} />
-            
-            <Route path={ROUTES.VITRINA_VIRTUAL} element={
-                <Suspense fallback={<LoadingSpinner />}>
-                    <VitrinaVirtual />
+                    <Layout><Actividad /></Layout>
                 </Suspense>
             } />
+            <Route path={ROUTES.FINAL} element={
+                <Suspense fallback={<LoadingSpinner />}>
+                    <Layout><Final /></Layout>
+                </Suspense>
+            } />
+            <Route path={ROUTES.VITRINA} element={
+                <Suspense fallback={<LoadingSpinner />}>
+                    <Layout><Vitrina /></Layout>
+                </Suspense>
+            } />
+            <Route path={ROUTES.VITRINA_VIRTUAL} element={
+                <Suspense fallback={<LoadingSpinner />}>
+                    <Layout><VitrinaVirtual /></Layout>
+                </Suspense>
+            } />
+
+            {/* Ejemplo de ruta que NO usaría el Layout (si la tuvieras) */}
+            {/* <Route path="/alguna-otra-ruta" element={<SomeComponentWithoutLayout />} /> */}
         </Routes>
     );
 }

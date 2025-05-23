@@ -198,7 +198,7 @@ p {
 }
 
 .actividad-genially {
-  margin-top: 2rem;
+  margin-top: 15px;
   border-radius: 16px;
   overflow: hidden;
   box-shadow: 0 0 16px rgba(0, 0, 0, 0.25);
@@ -225,7 +225,7 @@ p {
 
 
 .actividad-siguiente {
-  margin-top: 2rem;
+  margin-top: 15px;
   text-align: center;
 }
 
@@ -340,7 +340,7 @@ p {
     /* Apila el header y el título/mensaje */
     gap: 15px;
     /* Espacio reducido entre ellos */
-    margin-bottom: 1.5rem;
+    margin-bottom: 20px;
   }
 
   .actividad-header {
@@ -411,13 +411,13 @@ p {
   }
 
   .actividad-genially {
-    margin-top: 1.5rem;
+    margin-top: 15px;
     border-radius: 12px;
   }
 
 
   .actividad-siguiente {
-    margin-top: 1.5rem;
+    margin-top: 15px;
   }
 
   .btn-siguiente {
