@@ -91,25 +91,25 @@ function ModoSecreto() {
                 <div className="modal-secreto">
                     <img
                         src={getAssetUrl("assets/images/cofreCerrado.png")} 
-                        alt={t("CofreCerrado")} 
+                        alt={t("modoSecreto.CofreCerrado")} 
                         className="cofre-img"
                     />
-                    <h2>🎉 {t("¡Enhorabuena!")}</h2>
-                    <p>{t("Has encontrado el código secreto del parque.")}</p>
-                    <p>{t("Una actividad especial te espera..")}</p>
+                    <h2>🎉 {t("modoSecreto.¡Enhorabuena!")}</h2>
+                    <p>{t("modoSecreto.Has encontrado el código secreto del parque.")}</p>
+                    <p>{t("modoSecreto.Una actividad especial te espera..")}</p>
                 </div>
             ) : (
                 // Contenido principal del modo secreto con el Genially y el temporizador
                 <div className="contenido-secreto">
                     <img
                         src={getAssetUrl("assets/images/cofreAbierto.png")} 
-                        alt={t("CofreAbierto")} 
+                        alt={t("modoSecreto.CofreAbierto")}
                         className="cofre-img"
                     />
-                        <h1>🔓 {t("¡Modo Secreto Desbloqueado!")}</h1>
+                        <h1>🔓 {t("modoSecreto.¡Modo Secreto Desbloqueado!")}</h1>
                         <p>
                             {tiempo > 0
-                                ? t('Tienes {{time}} segundos para completar la actividad especial:', { 
+                                ? t('modoSecreto.mensajeConteoRegresivo', { 
                                     time: tiempo, // La variable 'tiempo' de React se pasa como 'time' a i18next
                                     components: {
                                         1: <strong />, // Esto envuelve el valor de 'time' con <strong>
@@ -122,7 +122,7 @@ function ModoSecreto() {
 
                     <div className="genially-container">
                         <iframe
-                                title={t("actividad-secreta")} 
+                            title={t("modoSecreto.actividad-secreta")}
                             src="https://view.genially.com/67f8fda123c430f481ddb5e6/interactive-content-actividad-8"
                             width="100%"
                             height="clamp(600px, 85vh, 800px)" 
@@ -136,7 +136,7 @@ function ModoSecreto() {
                     {/* Mostrar el botón de continuar solo cuando el tiempo se agota */}
                     {showButton && (
                         <button onClick={handleNavigation} className="btn-volver"> 
-                                {t("⏳ Tiempo agotado — Volver")}
+                                {t("modoSecreto.⏳ Tiempo agotado — Volver")}
                         </button>
                     )}
                 </div>
