@@ -96,10 +96,6 @@ function Header() {
           {modoOscuro ? "☀️" : "🌙"}
         </button>
 
-        <button className="icon-btn" onClick={toggleMute}>
-          {isMuted ? "🔇" : "🎵"}
-        </button>
-
         <button className="icon-btn" onClick={activarKiosco}>
           🖥️
         </button>
@@ -108,17 +104,7 @@ function Header() {
           {i18n.language === "es" ? "🇪🇸" : "🇬🇧"}
         </button>
 
-        {/* Componente de audio para la música de fondo */}
-        <audio
-          ref={audioRef}
-          src={`${import.meta.env.BASE_URL}sounds/musica.mp3`} // ¡Ruta corregida para musica.mp3!
-          loop
-          autoPlay
-          muted={isMuted}
-        >
-          {/* Fallback para navegadores que no soportan el tag <audio> */}
-          {t("audioNotSupported")}
-        </audio>
+        
       </div>
     </header>
   );
