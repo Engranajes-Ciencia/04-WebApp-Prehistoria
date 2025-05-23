@@ -80,13 +80,6 @@ function ModoSecreto() {
         }
     }, [mostrarModal]); // Se ejecuta cuando 'mostrarModal' cambia a true
 
-    // Mensaje dinámico del temporizador
-    const getTimerMessage = useCallback(() => {
-        if (tiempo > 0) {
-            return t('modoSecreto.temporizador', { time: tiempo });
-        }
-        return t('modoSecreto.tiempoTerminado');
-    }, [tiempo, t]);
 
     return (
         <div className="modo-secreto-container">
@@ -114,7 +107,18 @@ function ModoSecreto() {
                         className="cofre-img"
                     />
                         <h1>🔓 {t("¡Modo Secreto Desbloqueado!")}</h1>
-                        <p>{t("Tienes <strong>{tiempo}</strong> segundos para completar la actividad especial:", { time: tiempo })}</p>
+                        <p>
+                            {tiempo > 0
+                                ? t('Tienes {{time}} segundos para completar la actividad especial:', { 
+                                    time: tiempo, // La variable 'tiempo' de React se pasa como 'time' a i18next
+                                    components: {
+                                        1: <strong />, // Esto envuelve el valor de 'time' con <strong>
+                                    },
+                                })
+                                : t('modoSecreto.tiempoTerminado') 
+                            }
+                        </p>
+
 
                     <div className="genially-container">
                         <iframe

@@ -60,20 +60,18 @@
     "reproducirAudioENG": "▶️ Play audio",
     "sabiasQue": "¿Sabías que...?"
   },
-  "modoSecreto": {
-    "titulo": "¡Modo Secreto Desbloqueado!",
-    "mensajeDesbloqueado": "Has descubierto un secreto oculto. Tienes 1 minuto para explorar sus misterios...",
-    "temporizador": "Tiempo restante: {{time}} segundos",
-    "tiempoTerminado": "¡Tiempo terminado! Es hora de continuar la aventura.",
-    "continuarJuego": "Continuar Juego",
-    "tituloFelicitacion": "¡Enhorabuena!",
-    "mensajeFelicitacion1": "Has encontrado el código secreto del parque.",
-    "mensajeFelicitacion2": "Una actividad especial te espera...",
-    "altCofreCerrado": "Cofre del tesoro cerrado",
-    "altCofreAbierto": "Cofre del tesoro abierto",
-    "mensajeTiempo": "Tienes {{time}} segundos para completar la actividad especial:",
-    "geniallyTitle": "Actividad especial del modo secreto"
-  },
+    "modoSecreto": {
+      "¡Enhorabuena!": "¡Enhorabuena!",
+      "Has encontrado el código secreto del parque.": "Has encontrado el código secreto del parque.",
+      "Una actividad especial te espera..": "Una actividad especial te espera..",
+      "¡Modo Secreto Desbloqueado!": "¡Modo Secreto Desbloqueado!",
+      "mensajeConteoRegresivo": "Tienes <1>{{time}}</1> segundos para completar la actividad especial:",
+      "tiempoTerminado": "¡Tiempo terminado! Puedes continuar.",
+      "⏳ Tiempo agotado — Volver": "⏳ Tiempo agotado — Volver",
+      "CofreCerrado": "Cofre cerrado",
+      "CofreAbierto": "Cofre abierto",
+      "actividad-secreta": "Actividad secreta"
+    },
   "1": {
     "titulo": "Bienvenido. Comienza la aventura",
     "avatarDialogo": {

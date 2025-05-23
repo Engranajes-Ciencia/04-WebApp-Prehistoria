@@ -69,19 +69,17 @@
     "sabiasQue": "Did you know...?"
   },
     "modoSecreto": {
-      "titulo": "Secret Mode Unlocked!",
-      "mensajeDesbloqueado": "You have discovered a hidden secret. You have 1 minute to explore its mysteries...",
-      "temporizador": "Time remaining: {{time}} seconds",
-      "tiempoTerminado": "Time's up! It's time to continue the adventure.",
-      "continuarJuego": "Continue Game",
-      "tituloFelicitacion": "Congratulations!",
-      "mensajeFelicitacion1": "You have found the park's secret code.",
-      "mensajeFelicitacion2": "A special activity awaits you...",
-      "altCofreCerrado": "Closed treasure chest",
-      "altCofreAbierto": "Open treasure chest",
-      "mensajeTiempo": "You have {{time}} seconds to complete the special activity:",
-      "geniallyTitle": "Special secret mode activity"
-    },
+      "¡Enhorabuena!": "Congratulations!",
+      "Has encontrado el código secreto del parque.": "You've found the park's secret code.",
+      "Una actividad especial te espera..": "A special activity awaits you..",
+      "¡Modo Secreto Desbloqueado!": "Secret Mode Unlocked!",
+      "mensajeConteoRegresivo": "You have <1>{{time}}</1> seconds to complete the special activity:",
+      "tiempoTerminado": "Time's up! You can continue.",
+      "⏳ Tiempo agotado — Volver": "⏳ Time's up — Go back",
+      "CofreCerrado": "Chest closed",
+      "CofreAbierto": "Chest open",
+      "actividad-secreta": "Secret activity"
+  },
 
   "1": {
     "titulo": "Welcome – The adventure begins",
