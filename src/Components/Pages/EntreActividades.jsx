@@ -64,9 +64,9 @@ function EntreActividades() {
                                 ${isSiguiente ? "siguiente" : ""}
                             `}
                             style={{
-                                top: `${act.posY}px`,
-                                left: `${act.posX}px`,
-                                animationDelay: `${act.id * 0.05}s`
+                                top: `${act.posY}%`,
+                                left: `${act.posX}%`,
+                                transform: 'translate(-50%, -50%)' // Para centrar el punto
                             }}
                             title={`Parada ${act.id}: ${act.titulo}`
                             }
