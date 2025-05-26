@@ -87,14 +87,15 @@
   background-color: var(--verde);
   color: white;
   cursor: pointer;
+  text-shadow: 0px 0px 5px rgb(204, 255, 196);
   transition: transform 0.2s ease, box-shadow 0.3s ease, background-color 0.3s ease;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 .icon-btn:hover {
   transform: scale(1.15);
-  box-shadow: 0 0 10px #7fffbd, var(--hover-glow);
-  background-color: rgba(255, 255, 255, 0.4);
+  box-shadow: 0 0 10px #065500;
+  background-color: #ffffff66;
 }
 
 .icon-btn:hover::after {
@@ -128,12 +129,13 @@
 
 .dark .icon-btn {
   background: linear-gradient(135deg, #464646, #1b1b1b);
-  color: var(--blanco);
+  color: #ffffff !important;
   border: 2px solid rgba(255, 255, 255, 0.3);
+  text-shadow: 0px 0px 5px rgb(255, 255, 255);
 }
 .dark .icon-btn:hover {
-  background: rgba(66, 66, 66, 0.8);
-  box-shadow: 0 0 12px #00ffc3;
+  background: #424242cc;
+  box-shadow: 0 0 12px #ffffff;
 }
 
 

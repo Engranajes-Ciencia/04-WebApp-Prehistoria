@@ -67,8 +67,8 @@
 
 .btn-aventura:hover {
     background-color: #449d44;
-    transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
 }
 
 /* Estilos Modo Oscuro */
@@ -79,8 +79,13 @@
 }
 
 .dark .btn-aventura {
-    background: linear-gradient(135deg, #464646, #1b1b1b);
+    background: linear-gradient(135deg, #424242, #1b1b1b);
     color: #ffffff !important;
+}
+
+.dark .btn-aventura:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #424242);
 }
 
 /* Animaciones */

@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import { ROUTES } from './routerConfig';
 
@@ -15,7 +15,7 @@ import ModoSecreto from "../../Components/Pages/ModoSecreto";
 
 import LoadingSpinner from "../../Components/Commons/LoadingSpinner";
 
-    // Carga componentes lentos, grandes, finales o de poco uso cuando se visitan para ganar velocidad en la app
+// Carga componentes lentos, grandes, finales o de poco uso cuando se visitan para ganar velocidad en la app
 const Final = lazy(() => import("../../Components/Pages/Final"));
 const Actividad = lazy(() => import("../../Components/Pages/Actividad"));
 const Vitrina = lazy(() => import("../../Components/Pages/Vitrina"));

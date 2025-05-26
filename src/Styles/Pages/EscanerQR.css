@@ -70,11 +70,12 @@
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 #qr-reader #html5-qrcode-button-camera-permission:hover {
   background-color: #388e3c;
+  transform: scale(1.05);
 }
 
 #html5-qrcode-button-file-selection {
@@ -156,12 +157,13 @@
 }
 
 .dark #qr-reader #html5-qrcode-button-camera-permission {
-  background: linear-gradient(135deg, #464646, #1b1b1b)!important;
+  background: linear-gradient(135deg, #424242, #1b1b1b);
   color: #ffffff !important;
+  transition: all 0.3s ease;
 }
 
 .dark #html5-qrcode-button-file-selection {
-  background: linear-gradient(135deg, #464646, #1b1b1b)!important;
+  background: linear-gradient(135deg, #424242, #1b1b1b);
   color: #ffffff !important;
 }
 
@@ -172,11 +174,13 @@
 }
 
 .dark #qr-reader #html5-qrcode-button-camera-permission:hover {
-  background-color: #424242cc!important;
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #424242);
 }
 
 .dark #qr-reader #html5-qrcode-button-file-selection:hover {
-  background-color: #424242cc!important;
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #424242);
 }
 
 .dark #html5-qrcode-anchor-scan-type-change {

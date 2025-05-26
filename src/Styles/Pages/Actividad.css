@@ -96,7 +96,7 @@
   margin: 0;
   flex: 1;
   min-width: 0;
-
+  border-radius: 16px;
 }
 
 .dialogo {
@@ -242,7 +242,11 @@ p {
   transition: all 0.3s ease;
 }
 
-.btn-siguiente:hover {
+.audio-button, .audio-button-alt, .btn-volver {
+  transition: all 0.3s ease;
+}
+
+.btn-siguiente:hover, .audio-button:hover, .audio-button-alt:hover, .btn-volver:hover {
   background-color: #388e3c;
   transform: scale(1.05);
 }
@@ -285,11 +289,31 @@ p {
 .dark .audio-button {
   background: linear-gradient(135deg, #464646, #1b1b1b);
   color: #ffffff !important;
-  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692)
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692);
 }
 
-.dark .audio-button:hover {
-  background: #3a3a3a;
+.dark .audio-button-alt {
+  background: linear-gradient(135deg, #464646, #1b1b1b);
+  color: #ffffff !important;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692);
+}
+
+.dark .btn-siguiente {
+  background: linear-gradient(135deg, #464646, #1b1b1b);
+  color: #ffffff !important;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692);
+}
+
+.dark .btn-volver {
+  background: linear-gradient(135deg, #464646, #1b1b1b);
+  color: #ffffff !important;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692);
+  transition: all 0.3s ease;
+}
+
+.dark .btn-siguiente:hover, .dark .audio-button:hover, .dark .audio-button-alt:hover, .dark .btn-volver:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #424242);
 }
 
 .dark .titulo-mensaje {
@@ -312,7 +336,6 @@ p {
 .dark iframe {
   filter: brightness(0.9);
 }
-
 
 
 /* Animaciones */
