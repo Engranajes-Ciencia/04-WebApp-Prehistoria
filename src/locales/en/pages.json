@@ -249,43 +249,43 @@
     "conseguido": "You have earned {{completadas}} out of {{total}} medals",
     "volver": "Back",
     "medallas": {
-      "1": {
+      "3": {
         "titulo": "First plants",
         "curiosidad": "They colonized the land more than 450 million years ago."
       },
-    "2": {
+      "6": {
         "titulo": "First flowers",
         "curiosidad": "They appeared 150 million years ago."
       },
-      "3": {
+      "9": {
         "titulo": "Second dinosaurs",
         "curiosidad": "They dominated the Earth for millions of years."
       },
-      "4": {
+      "10": {
         "titulo": "Galápagos tortoises",
         "curiosidad": "Their shell can change depending on the island."
       },
-      "5": {
+      "12": {
         "titulo": "Atapuerca",
         "curiosidad": "It holds human traces from over 800,000 years ago."
       },
-      "6": {
+      "13": {
         "titulo": "Neanderthal man",
         "curiosidad": "Its brain was larger than that of modern humans."
       },
-      "7": {
+      "15": {
         "titulo": "Caves and rock art",
         "curiosidad": "Some paintings are more than 30,000 years old."
       },
-      "8": {
+      "16": {
         "titulo": "Nomadic settlements",
         "curiosidad": "They lived in huts and followed the animals."
       },
-      "9": {
+      "19": {
         "titulo": "Çatalhöyük",
         "curiosidad": "There were no streets; the rooftops served as sidewalks."
       },
-      "10": {
+      "20": {
         "titulo": "Stonehenge",
         "curiosidad": "It was built over 4,500 years ago."
       }
