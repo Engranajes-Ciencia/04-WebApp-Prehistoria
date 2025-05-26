@@ -3,8 +3,8 @@
     "id": 1,
     "titulo": "Bienvenida – Comienza la aventura",
     "ubicacion": "Entrada principal del parque",
-    "posX": 510,
-    "posY": 1130,
+    "posX": 58.21,
+    "posY": 79.75,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada1.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada1ENG.mp3",
     "geniallyURL": "#",
@@ -15,8 +15,8 @@
     "id": 2,
     "titulo": "El origen de la vida",
     "ubicacion": "Zona de fósiles marinos",
-    "posX": 770,
-    "posY": 1050,
+    "posX": 77.72,
+    "posY": 74.43,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada2.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada2ENG.mp3",
     "geniallyURL": "#",
@@ -27,19 +27,20 @@
     "id": 3,
     "titulo": "Las primeras plantas",
     "ubicacion": "Área de musgos y helechos antiguos",
-    "posX": 570,
-    "posY": 1035,
+    "posX": 78.82,
+    "posY": 66.66,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada3.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada3ENG.mp3",
     "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/craneos.png",
     "completada": false
   },
   {
     "id": 4,
     "titulo": "Prototaxiles y Meganeuras",
     "ubicacion": "#",
-    "posX": 520,
-    "posY": 590,
+    "posX": 61.20,
+    "posY": 69.95,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada4.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada4ENG.mp3",
     "geniallyURL": "#",
@@ -50,30 +51,32 @@
     "id": 5,
     "titulo": "Los primeros árboles",
     "ubicacion": "#",
-    "posX": 480,
-    "posY": 540,
+    "posX": 69.23,
+    "posY": 66.21,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada5.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada5ENG.mp3",
     "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/sahara.png",
     "completada": false
   },
   {
     "id": 6,
     "titulo": "Las primeras flores",
     "ubicacion": "#",
-    "posX": 780,
-    "posY": 800,
+    "posX": 71.51,
+    "posY": 61.98,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada6.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada6ENG.mp3",
     "geniallyURL": "https://view.genially.com/681b03dfdbac94f0fdc3927a/interactive-content-actividad6",
+    "imagenAlternativa": "/assets/images/nogenially/origen.png",
     "completada": false
   },  
   {
     "id": 7,
     "titulo": "Los primeros dinosaurios",
     "ubicacion": "  # ",
-    "posX": 490,
-    "posY": 870,
+    "posX": 51.45,
+    "posY": 61.36,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada7.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada7ENG.mp3",
     "geniallyURL": "#",
@@ -84,8 +87,8 @@
     "id": 8,
     "titulo": "La deriva continental",
     "ubicacion": "#",
-    "posX": 710,
-    "posY": 720,
+    "posX": 72.53,
+    "posY": 52.61,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada8.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada8ENG.mp3",
     "geniallyURL": "#",
@@ -96,30 +99,32 @@
     "id": 9,
     "titulo": "Los segundos dinosaurios",
     "ubicacion": "#",
-    "posX": 520,
-    "posY": 700,
+    "posX": 56.09,
+    "posY": 46.71,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada9.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada9ENG.mp3",
     "geniallyURL": "https://view.genially.com/68231bb7256d2888593fbd73/interactive-content-actividad2",
+    "imagenAlternativa": "/assets/images/nogenially/dinos.png",
     "completada": false
   },
   {
     "id": 10,
     "titulo": "Galápagos y Darwin",
     "ubicacion": "#",
-    "posX": 700,
-    "posY":540,
+    "posX": 71.04,
+    "posY":39.78,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada10.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada10ENG.mp3",
     "geniallyURL": "https://view.genially.com/6822fb3a4fee7f24275c0354/interactive-content-actividad10",
+    "imagenAlternativa": "/assets/images/nogenially/sedentario.png",
     "completada": false
   },
   {
     "id": 11,
     "titulo": "Huellas de Laetoli",
     "ubicacion": "Descubrimiento de pisadas humanas fósiles",
-    "posX": 560,
-    "posY": 490,
+    "posX": 54.12,
+    "posY": 35.16,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada11.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada11ENG.mp3",
     "geniallyURL": "https://view.genially.com/67f8fa02c2e20bb7b0ca82c6/interactive-content-actividad-4",
@@ -130,30 +135,32 @@
     "id": 12,
     "titulo": "Atapuerca",
     "ubicacion": "#",
-    "posX": 500,
-    "posY": 420,
+    "posX": 67.50,
+    "posY": 26.47,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada12.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada12ENG.mp3",
     "geniallyURL": "#",
+    "imagenAlternativa": "/assets/images/nogenially/pangea.png",
     "completada": false
   },
   {
     "id": 13,
     "titulo": "El hombre de Neandertal",
     "ubicacion": "#",
-    "posX": 460,
-    "posY": 390,
+    "posX": 63.80,
+    "posY": 18.47,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada13.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada13ENG.mp3",
     "geniallyURL": "https://view.genially.com/67e283be994f4e3b61c714e9/interactive-content-actividad13",
+    "imagenAlternativa": "/assets/images/nogenially/meganeura.png",
     "completada": false
   },
   {
     "id": 14,
     "titulo": "Cráneos y evolución humana",
     "ubicacion": "#",
-    "posX": 430,
-    "posY": 350,
+    "posX": 54.75,
+    "posY": 24.71,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada14.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada14ENG.mp3",
     "geniallyURL": "#",
@@ -164,30 +171,32 @@
     "id": 15,
     "titulo": "Cuevas y arte rupestre",
     "ubicacion": "Arte prehistórico",
-    "posX": 350,
-    "posY": 230,
+    "posX": 49.56,
+    "posY": 24.15,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada15.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada15ENG.mp3",
     "geniallyURL": "https://view.genially.com/67e3cc8058a3eb22e678b730/interactive-content-actividad15",
+    "imagenAlternativa": "/assets/images/nogenially/bienvenida.jpeg",
     "completada": false
   },
   {
     "id": 16,
     "titulo": "Los poblados nómadas",
     "ubicacion": "Estilo de vida de los nómadas",
-    "posX": 340,
-    "posY": 150,
+    "posX": 47.12,
+    "posY": 15.79,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada16.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada16ENG.mp3",
     "geniallyURL": "https://view.genially.com/67f8edffb7b2a9c007101174/interactive-content-actividad6",
+    "imagenAlternativa": "/assets/images/nogenially/dinos.png",
     "completada": false
   },
   {
     "id": 17,
     "titulo": "Primeros poblados sedentarios",
     "ubicacion": "Primeros asentamientos",
-    "posX": 360,
-    "posY": 180,
+    "posX": 23.21,
+    "posY": 25.66,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada17.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada17ENG.mp3",
     "geniallyURL": "https://view.genially.com/67f8f638c08c8840c0b4fe3c/interactive-content-actividad7",
@@ -198,8 +207,8 @@
     "id": 18,
     "titulo": "Pinturas del Sáhara y de Laja Alta",
     "ubicacion": "#",
-    "posX": 400,
-    "posY": 310,
+    "posX": 40.20,
+    "posY": 30.12,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada18.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada18ENG.mp3",
     "geniallyURL": "#",
@@ -210,113 +219,26 @@
     "id": 19,
     "titulo": "Çatalhöyük",
     "ubicacion": "#",
-    "posX": 370,
-    "posY": 270,
+    "posX": 47.36,
+    "posY": 32.68,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada19.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada19ENG.mp3",
     "geniallyURL": "https://view.genially.com/67f8f638c08c8840c0b4fe3c/interactive-content-actividad19",
+    "imagenAlternativa": "/assets/images/nogenially/laetoli.png",
     "completada": false
   },
   {
     "id": 20,
     "titulo": "Stonehenge",
     "ubicacion": "Monumento megalítico",
-    "posX": 420,
-    "posY": 580,
+    "posX": 46.33,
+    "posY": 40.21,
     "audio": "/sounds/paradasaudio/ESP/Adultos/parada20.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/Adultos/parada20ENG.mp3",
     "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad9",
-    "completada": false
-
-  },
-
-
-
-
-  {
-    "id": 111,
-    "titulo": "Fósiles prehistóricos",
-    "ubicacion": "Fósil de trilobite y helecho",
-    "audio": "/sounds/soundsParadas/Parada1Trilobitesv2,5.mp3",
-    "avatarDialogo": {
-      "explorador": {
-        "dialogo": " Estás en la parada 1: Fósiles prehistóricos. Prepárate para descubrir algo fascinante.",
-        "mensaje": "Bienvenido a tu primera parada. Aquí descubrirás datos asombrosos sobre cómo vivieron los trilobites. Fueron animales marinos que habitaron los océanos hace unos 500 millones de años.",
-        "sabiasQue": "¿Sabías que los trilobites existieron antes que los dinosaurios?"
-      },
-      "exploradora": {
-        "dialogo": "¡Estas en la parada 1 sobre fósiles prehistóricos! Te encantará lo que verás.",
-        "mensaje": "Bienvenido a tu primera parada. Aquí descubrirás datos asombrosos sobre cómo vivieron los trilobites. Fueron animales marinos que habitaron los océanos hace unos 500 millones de años.",
-        "sabiasQue": "¿Sabías que las plantas fósiles ayudaron a formar el carbón que usamos hoy?"
-      }
-    },
-    "geniallyURL": "https://view.genially.com/67e134e5a75d54115e15f3f0/interactive-content-actividad-1",
-    "completada": false
-  },
-  {
-    "id": 113,
-    "titulo": "Tortuga de las Galápagos",
-    "ubicacion": "Zona de reptiles fósiles",
-    "posX": 200,
-    "posY": 130,
-    "audio": "/sounds/soundsParadas/Parada3Tortugasv2,5.mp3",
-    "avatarDialogo": {
-      "explorador": {
-        "dialogo": "¡ Estás en la parada 3: Tortuga de las Galápagos. Prepárate para descubrir algo fascinante.",
-        "mensaje": "Bienvenido a tu tercera parada. Aquí descubrirás a las increíbles tortugas de las Galápagos, famosas por su longevidad y tamaño impresionante. Estas majestuosas criaturas han sobrevivido por siglos en un ecosistema único, adaptándose a las condiciones extremas de las islas. Observa cómo se mueven lentamente, pero con gran determinación, recorriendo su hogar volcánico.",
-        "sabiasQue": "¿Sabías que pueden pesar más de 200 kilos?"
-      },
-      "exploradora": {
-        "dialogo": "¡Estas en la parada 3 sobre la tortuga de las Galápagos! Te encantará lo que verás.",
-        "mensaje": "Bienvenido a tu tercera parada. Aquí descubrirás a las increíbles tortugas de las Galápagos, famosas por su longevidad y tamaño impresionante. Estas majestuosas criaturas han sobrevivido por siglos en un ecosistema único, adaptándose a las condiciones extremas de las islas. Observa cómo se mueven lentamente, pero con gran determinación, recorriendo su hogar volcánico.",
-        "sabiasQue": "¿Sabías que su caparazón puede cambiar según la isla?"
-      }
-    },
-    "geniallyURL": "https://view.genially.com/67f8f2f8b5b5ac75ac152d4e/interactive-content-actividad-3",
-    "completada": false
-  },
-  {
-    "id": 118,
-    "titulo": "Pozo",
-    "ubicacion": "Acceso al agua en la antigüedad",
-    "posX": 200,
-    "posY": 130,
-    "audio": "/sounds/soundsParadas/Parada8Pozov2,5.mp3",
-    "avatarDialogo": {
-      "explorador": {
-        "dialogo": "Parada 8: El agua era más valiosa que el oro. Sin pozos, no había futuro.",
-        "mensaje": "Bienvenido a tu octava parada. Aquí descubrirás el pozo prehistórico, una estructura clave para la supervivencia de las antiguas comunidades. Estos pozos eran utilizados para almacenar agua, un recurso vital en tiempos donde su acceso no siempre era fácil. Observa cómo fueron construidos y cómo jugaron un papel fundamental en la evolución de los asentamientos humanos.",
-        "sabiasQue": "¿Sabías que algunos tenían poleas para sacar el agua más fácil?"
-      },
-      "exploradora": {
-        "dialogo": "Parada 8 activada. Cada gota contaba. Vamos a descubrir cómo sacaban el agua.",
-        "mensaje": "Bienvenido a tu octava parada. Aquí descubrirás el pozo prehistórico, una estructura clave para la supervivencia de las antiguas comunidades. Estos pozos eran utilizados para almacenar agua, un recurso vital en tiempos donde su acceso no siempre era fácil. Observa cómo fueron construidos y cómo jugaron un papel fundamental en la evolución de los asentamientos humanos.",
-        "sabiasQue": "¿Sabías que los primeros pozos datan del Neolítico?"
-      }
-    },
-    "geniallyURL": "https://view.genially.com/67f8fda123c430f481ddb5e6/interactive-content-actividad-8",
-    "completada": false
-  },
-  {
-    "id": 120,
-    "titulo": "Templo de Karnak",
-    "ubicacion": "Antiguo Egipto",
-    
-    "audio": "/sounds/soundsParadas/Parada10Karnakv2,5.mp3",
-    "avatarDialogo": {
-      "explorador": {
-        "dialogo": "¡Última parada! El Templo de Karnak es testigo de siglos de historia. Vamos a explorarlo juntos.",
-        "mensaje": "Bienvenido a tu última parada. Has llegado al Templo de Karnak, uno de los complejos religiosos más impresionantes del antiguo Egipto. Construido a lo largo de más de dos mil años, este templo era un lugar de adoración dedicado a los dioses y faraones. Sus enormes columnas y relieves cuentan historias de batallas, rituales y ofrendas. Observa su grandiosidad y siente el poder de una civilización que dejó una huella imborrable en la historia.",
-        "sabiasQue": "¿Sabías que cada faraón dejaba su huella en Karnak?"
-      },
-      "exploradora": {
-        "dialogo": "Llegamos a la parada 10. Un lugar sagrado lleno de símbolos y leyendas del antiguo Egipto.",
-        "mensaje": "Bienvenido a tu última parada. Has llegado al Templo de Karnak, uno de los complejos religiosos más impresionantes del antiguo Egipto. Construido a lo largo de más de dos mil años, este templo era un lugar de adoración dedicado a los dioses y faraones. Sus enormes columnas y relieves cuentan historias de batallas, rituales y ofrendas. Observa su grandiosidad y siente el poder de una civilización que dejó una huella imborrable en la historia.",
-        "sabiasQue": "¿Sabías que era el centro religioso más importante del antiguo Egipto?"
-      }
-    },
-    "geniallyURL": "https://view.genially.com/67e283be994f4e3b61c714e9/interactive-content-actividad10",
+    "imagenAlternativa": "/assets/images/nogenially/arboles.png",
     "completada": false
 
   }
+
 ]

@@ -1,6 +1,6 @@
+// src/config/routes/routerConfig.js
 
-
-const ROUTES = {
+export const ROUTES = {
     MODOJUEGO: '/',
     PORTADA: '/portada',
     FORM: '/form',
@@ -12,7 +12,5 @@ const ROUTES = {
     VITRINA: '/vitrina',
     VITRINA_VIRTUAL: '/vitrina-virtual',
     MODO_SECRETO: '/secreto',
-
+    // Añadir cualquier otra ruta 
 };
-
-export default ROUTES;

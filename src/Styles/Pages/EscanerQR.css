@@ -11,9 +11,14 @@
 }
 
 .scanner-container h2 {
-  font-size: 2.2rem;
-  color: #2e7d32;
-  margin-bottom: 30px;
+  font-size: 2.5rem;
+  padding: 10px;
+  color: #4da180;
+  border-style: inset;
+  border-radius: 16px;
+  border-color: #7cdfc3;
+  background: linear-gradient(135deg, #e9fefa, #dcfff4);
+  text-shadow: 2px 2px 26px rgba(197, 255, 242, 0.692) !important;
 }
 
 #html5-qrcode-anchor-scan-type-change {
@@ -22,36 +27,74 @@
 }
 
 /* QR Reader Box */
+
+#qr-reader__header_message {
+  border: 2px solid #000000!important;
+  border-color: #ff0000b8!important;
+  border-radius: 16px;
+  background-color: #ff3f3fb9!important;
+  color: #000000!important;
+}
+
+#qr-reader > div > img:first-of-type {
+  transform: translateY(4px) translateX(-5px);
+}
+
 #qr-reader {
   width: 100%;
   max-width: 350px;
+  height: 325px;
   aspect-ratio: 1 / 1;
   background-color: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 8px 30px var(--verde);
   overflow: hidden;
   padding: 10px;
 }
 
+#qr-reader__scan_region img {
+  background: var(--verde);
+  border:4px solid #005800;
+  border-radius: 16px;
+  padding: 10px;
+  transform: translateY(10px) translateX(0px)!important;
+}
+
 /* Cambiar botón de subir imagen */
-#qr-reader button {
+#qr-reader #html5-qrcode-button-camera-permission {
   background-color: #4caf50;
   color: white;
   font-weight: bold;
   padding: 10px 20px;
+  margin-bottom: 15px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: all 0.3s ease;
 }
 
-#qr-reader button:hover {
+#qr-reader #html5-qrcode-button-camera-permission:hover {
   background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+#html5-qrcode-button-file-selection {
+  margin-bottom: 5px;
+}
+
+#html5-qrcode-anchor-scan-type-change:hover {
+  color:#6ec1fc!important;
+}
+
+#qr-reader__dashboard_section > div > div:nth-of-type(2) {
+  border-style: none!important;
 }
 
 /* Cambiar botón de subir imagen */
 .texto-escaneo {
-
+  background: #baffddd6;
+  border-radius: 16px;
+  padding: 5px;
   margin-top: 20px;
   font-size: 1rem;
   color: #555;
@@ -59,7 +102,7 @@
 
   font-size: 1.1rem;
   font-weight: 500;
-  color: #2e7d32;
+  color: #4da180;
   margin-top: 12px;
   animation: fadeIn 1s ease;
 }
@@ -70,6 +113,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
+  transform: translateY(-60px);
 }
 
 .spinner {
@@ -84,7 +128,68 @@
 
 /* Estilos Modo Oscuro */
 
+.dark #qr-reader {
+    box-shadow: 0 8px 30px #ffffff89!important;
+}
 
+.dark .scanner-container h2 {
+  color: #ffffff!important;
+  background: linear-gradient(135deg, #212121, #424242);
+  border-color: #212121;
+  text-shadow: 2px 2px 26px rgba(213, 213, 213, 0.692) !important;
+}
+
+.dark .texto-escaneo {
+  background: #515151d6;
+  color: #ffffff!important;
+}
+
+.dark #qr-reader__scan_region img {
+  border:4px solid #000000;
+}
+
+.dark #qr-reader__header_message {
+  border: 2px solid #000000!important;
+  border-color: #ff0000b8!important;
+  border-radius: 16px;
+  background-color: #ff3f3fb9!important;
+  color: #ffffff!important;
+}
+
+.dark #qr-reader #html5-qrcode-button-camera-permission {
+  background: linear-gradient(135deg, #424242, #1b1b1b);
+  color: #ffffff !important;
+  transition: all 0.3s ease;
+}
+
+.dark #html5-qrcode-button-file-selection {
+  background: linear-gradient(135deg, #424242, #1b1b1b);
+  color: #ffffff !important;
+}
+
+.dark #qr-reader__scan_region img {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.dark #qr-reader #html5-qrcode-button-camera-permission:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #424242);
+}
+
+.dark #qr-reader #html5-qrcode-button-file-selection:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #424242);
+}
+
+.dark #html5-qrcode-anchor-scan-type-change {
+  color:#5dabff!important;
+}
+
+.dark #html5-qrcode-anchor-scan-type-change:hover {
+  color:#a5d8ff!important;
+}
 
 .dark .scanner-container {
   background: linear-gradient(135deg, #212121, #424242);
@@ -141,7 +246,7 @@
 
 /* Forzar todos los textos internos de html5-qrcode */
 .dark #qr-reader * {
-  color: #80d8ff !important;
+  color: #80d8ff;
 }
 
 .dark .spinner {
@@ -160,4 +265,95 @@
 
 .dark #qr-reader button:hover {
   background-color: #00897b;
+}
+
+
+/* Estilos para el MessageBox */
+.message-box-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fondo oscuro semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Asegura que esté por encima de todo */
+}
+
+.message-box-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* Sombra para el efecto flotante */
+  text-align: center;
+  max-width: 80%;
+  /* Ancho máximo para pantallas grandes */
+  width: auto;
+  /* Ajuste automático del ancho */
+  color: #333;
+  /* Color de texto oscuro */
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  /* Tamaño de fuente responsivo */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* Espacio entre el texto y el botón */
+}
+
+.message-box-button {
+  background-color: #4CAF50;
+  /* Verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  /* Tamaño de fuente responsivo */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Transiciones suaves */
+}
+
+.message-box-button:hover {
+  background-color: #45a049;
+  /* Verde más oscuro al pasar el ratón */
+  transform: translateY(-2px);
+  /* Pequeño efecto de elevación */
+}
+
+/* Puedes añadir media queries para hacer los tamaños aún más responsivos */
+@media (max-width: 600px) {
+  .message-box-content {
+    padding: 20px;
+    margin: 20px;
+    /* Para que no se pegue a los bordes en móviles */
+  }
+
+  .message-box-button {
+    padding: 8px 15px;
+  }
+}
+
+/* Opcional: Estilos para el spinner-container si quieres un overlay */
+.spinner-container {
+  position: absolute;
+  /* O fixed, dependiendo de tu layout */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  /* Fondo semi-transparente para el spinner */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 900;
+  /* Debajo del message-box-overlay */
+  /* Asegúrate de que el padre (.scanner-container o el body) tenga position: relative */
 }

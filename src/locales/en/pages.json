@@ -1,4 +1,3 @@
-
 {
   "modojuego": {
     "titulo": "Choose your game style",
@@ -21,7 +20,7 @@
     "botonAventura": "Start Adventure",
     "alertaNombreInvalido": "The name can only contain letters, numbers, and spaces.",
     "alertaFaltanDatos": "Please enter your name and choose an avatar."
-},
+  },
 
   "mapa": {
     "saludo": "Greetings {{nombre}}!",
@@ -43,12 +42,14 @@
     "escanear": "Scan next stop",
     "pantallaFinal": "See final screen",
     "medallas": "See medals"
-
   },
 
   "final": {
     "enhorabuena": "Congratulations!",
     "completado": "100% completed",
+    "explorador": "Time Explorer",
+    "exploradora": "Time Explorer",
+    "nombreDefault": "Time Explorer",
     "paradasCompletadas": "You have completed all the stops of Prehistoric Adventure",
     "diplomaInfantil": "Children's diploma",
     "diplomaAdulto": "Adult diploma",
@@ -62,15 +63,25 @@
   "actividad": {
     "accesoDenegado": "Unauthorized access. Please scan a valid QR code.",
     "error": "Activity not found or access not allowed.",
-    "saludo": "Hi {{nombre}}!",
+    "saludo": "· Hi {{nombre}}! ·",
     "pausarAudio": "⏸️ Pausar audio",
     "reproducirAudio": "▶️ Reproducir audio",
     "botonAudioENG": "🎧 Listen in English",
-    "pausarAudioENG": "⏸️ Pause audio",           
-    "reproducirAudioENG": "▶️ Play audio",         
+    "pausarAudioENG": "⏸️ Pause audio",
+    "reproducirAudioENG": "▶️ Play audio",
     "sabiasQue": "Did you know...?"
-
-
+  },
+    "modoSecreto": {
+      "¡Enhorabuena!": "Congratulations!",
+      "Has encontrado el código secreto del parque.": "You've found the park's secret code.",
+      "Una actividad especial te espera..": "A special activity awaits you..",
+      "¡Modo Secreto Desbloqueado!": "Secret Mode Unlocked!",
+      "mensajeConteoRegresivo": "You have <1>{{time}}</1> seconds to complete the special activity:",
+      "tiempoTerminado": "Time's up! You can continue.",
+      "⏳ Tiempo agotado — Volver": "⏳ Time's up — Go back",
+      "CofreCerrado": "Chest closed",
+      "CofreAbierto": "Chest open",
+      "actividad-secreta": "Secret activity"
   },
 
   "1": {
@@ -103,7 +114,6 @@
       "dialogo": "Stop 4. Fungal colossi and giant dragonflies, all in one view!",
       "mensaje": "In this area, we see two very different yet equally amazing creatures. Prototaxites were giant fungi that could reach up to 8 meters in height. Next to them, a creature that looks like a huge dragonfly: the Meganeura, an insect from the Carboniferous period that could hunt small reptiles. Before the dinosaurs, these were the rulers of the Earth.",
       "sabiasQue": "Did you know that over 300 million years ago, there were 8-meter-high mushrooms and giant dragonflies that hunted reptiles? They were kings before the dinosaurs!"
-
     }
   },
   "5": {
@@ -235,18 +245,50 @@
     }
   },
   "vitrinaVirtual": {
-    "galeriaVirtual": "Virtual gallery of prehistoric medals"
-  },
-  
-    "medallas":{
-      "1":{
+    "galeriaVirtual": "Virtual gallery of prehistoric medals",
+    "conseguido": "You have earned {{completadas}} out of {{total}} medals",
+    "volver": "Back",
+    "medallas": {
+      "3": {
         "titulo": "First plants",
-        "curiosidad": "They colonized the Earth more than 150 million years ago." 
+        "curiosidad": "They colonized the land more than 450 million years ago."
       },
-      "2":{
-
+      "6": {
+        "titulo": "First flowers",
+        "curiosidad": "They appeared 150 million years ago."
+      },
+      "9": {
+        "titulo": "Second dinosaurs",
+        "curiosidad": "They dominated the Earth for millions of years."
+      },
+      "10": {
+        "titulo": "Galápagos tortoises",
+        "curiosidad": "Their shell can change depending on the island."
+      },
+      "12": {
+        "titulo": "Atapuerca",
+        "curiosidad": "It holds human traces from over 800,000 years ago."
+      },
+      "13": {
+        "titulo": "Neanderthal man",
+        "curiosidad": "Its brain was larger than that of modern humans."
+      },
+      "15": {
+        "titulo": "Caves and rock art",
+        "curiosidad": "Some paintings are more than 30,000 years old."
+      },
+      "16": {
+        "titulo": "Nomadic settlements",
+        "curiosidad": "They lived in huts and followed the animals."
+      },
+      "19": {
+        "titulo": "Çatalhöyük",
+        "curiosidad": "There were no streets; the rooftops served as sidewalks."
+      },
+      "20": {
+        "titulo": "Stonehenge",
+        "curiosidad": "It was built over 4,500 years ago."
       }
-      
     }
+  }
 }
-

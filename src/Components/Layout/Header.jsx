@@ -10,118 +10,102 @@ function Header() {
   const { i18n, t } = useTranslation();
   const [isMuted, setIsMuted] = useState(false);
   const audioRef = useRef(null);
-  const [tooltip, setTooltip] = useState("");
 
 
-  // Mostrar tooltip al pulsar
-  const showTooltip = (text) => {
-    setTooltip(text);
-    setTimeout(() => setTooltip(""), 3000);
-  };
 
 
+  // Efecto para inicializar el tema oscuro y el volumen del audio
   useEffect(() => {
+    // Restaurar el modo oscuro desde localStorage
     const savedTheme = localStorage.getItem("modoOscuro");
     const isDark = savedTheme === "true";
     setModoOscuro(isDark);
     if (isDark) {
       document.documentElement.classList.add("dark");
     }
-  }, []);
 
+    // Establecer el volumen inicial del audio
+    if (audioRef.current) {
+      audioRef.current.volume = 0.1; // Establece un volumen bajo
+    }
+  }, []); // Se ejecuta solo una vez al montar el componente
+
+
+  // Toggle para cambiar entre modo oscuro y claro
   const toggleModoOscuro = () => {
-    const nuevoEstado = !modoOscuro;
-    setModoOscuro(nuevoEstado);
-    document.documentElement.classList.toggle("dark", nuevoEstado);
-    localStorage.setItem("modoOscuro", nuevoEstado);
-    showTooltip(nuevo ? "Modo Oscuro" : "Modo Claro");
+    const nuevoEstadoModoOscuro = !modoOscuro; 
+    setModoOscuro(nuevoEstadoModoOscuro);
+    document.documentElement.classList.toggle("dark", nuevoEstadoModoOscuro);
+    localStorage.setItem("modoOscuro", nuevoEstadoModoOscuro);
   };
 
+
+  // Toggle para silenciar/activar música
   const toggleMute = () => {
-    setIsMuted(!isMuted);
+    const nuevoEstadoMute = !isMuted; 
+    setIsMuted(nuevoEstadoMute);
     if (audioRef.current) {
-      audioRef.current.muted = !isMuted;
-      showTooltip(isMuted ? "Música Activada" : "Música Silenciada");
+      audioRef.current.muted = nuevoEstadoMute; 
     }
   };
 
+
+  // Toggle para cambiar el idioma
   const toggleLanguage = () => {
-    const nuevoIdioma = i18n.language === "es" ? "en" : "es";
+    const nuevoIdioma = i18n.language === "es" ? "en" : "es"; 
     i18n.changeLanguage(nuevoIdioma);
-    showTooltip(nuevo === "es" ? "Español" : "English");
   };
 
+
+  // Activar modo kiosco (pantalla completa)
   const activarKiosco = () => {
     const el = document.documentElement;
     if (el.requestFullscreen) el.requestFullscreen();
-    else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen();
-    else if (el.msRequestFullscreen) el.msRequestFullscreen();
-    showTooltip("Modo Kiosco");
+    else if (el.webkitRequestFullscreen) el.webkitRequestFullscreen(); // Safari
+    else if (el.msRequestFullscreen) el.msRequestFullscreen(); // IE/Edge
   };
 
 
-  useEffect(() => {
-      if (audioRef.current) {
-        audioRef.current.volume = 0.1; // Establece el volumen
-      }
-  }, []);
 
   return (
     <header className="header">
 
-      {/* Tooltip flotante */}
-      {tooltip && <div className="tooltip-touch">{tooltip}</div>}
-      <div className="header-top">
-
+      <div className="header-left-section">
         <div className="branding">
+          {/* Usar import.meta.env.BASE_URL para rutas de assets estáticos */}
           <img
             src={`${import.meta.env.BASE_URL}assets/images/Logo-principal.png`}
             alt="Logo empresa"
             className="logo"
           />
         </div>
-      </div>
 
       <h1 className="titulo-header">
         Parque <br />
         Prehistórico
       </h1>
+    </div>
 
       <div className="botones-header">
+        {/* Botones con tooltips y navegación */}
+        <button className="icon-btn" onClick={() => navigate("/")}>
+          🏠
+        </button>
 
-        <button className="icon-btn" data-tooltip="Inicio"  onClick={() => navigate("/")}>🏠</button>
-
-        <button
-          className="icon-btn"
-          data-tooltip={modoOscuro ? "Modo Claro" : "Modo Oscuro"}
-          onClick={toggleModoOscuro}
-        >
+        <button className="icon-btn" onClick={toggleModoOscuro}>
           {modoOscuro ? "☀️" : "🌙"}
         </button>
 
+        <button className="icon-btn" onClick={activarKiosco}>
+          🖥️
+        </button>
 
-
-        <button className="icon-btn" data-tooltip="Música" onClick={toggleMute}>{isMuted ? "🔇" : "🎵"}</button> 
-
-
-        <button className="icon-btn" data-tooltip="Kiosco" onClick={activarKiosco}>🖥️</button>
-
-        <button className="icon-btn" data-tooltip="Idioma"  onClick={toggleLanguage}>
+        <button className="icon-btn" onClick={toggleLanguage}>
           {i18n.language === "es" ? "🇪🇸" : "🇬🇧"}
         </button>
 
-        <audio
-          ref={audioRef}
-          src="/sounds/musica.mp3" // Ruta de la musica
-          loop
-          autoPlay
-          muted={isMuted}>
-
-        </audio>
-  
-
+        
       </div>
-
     </header>
   );
 }

@@ -138,12 +138,13 @@
 }
 
 .card-front img {
-    width: 100%;
-    height: auto;
-    border-radius: 10px;
-    mix-blend-mode: multiply;
-    transition: transform 0.3s ease;
+    width: auto;
+    height: 100px; 
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
 }
+
 
 .card-front p {
     margin-top: 12px;
@@ -230,11 +231,12 @@
     border-radius: 10px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 .btn-volver-final:hover {
     background-color: #2e7d32;
+    transform: scale(1.05);
 }
 
 /* Modo oscuro */
@@ -287,7 +289,14 @@
 }
 
 .dark .btn-volver-final {
-    background-color: var(--verde);
+    background: linear-gradient(135deg, #464646, #1b1b1b);
+    color: #ffffff!important;
+    transition: all 0.3s ease;
+}
+
+.dark .btn-volver-final:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #424242);
 }
 
 /* === TEXTO CABECERA FADE === */

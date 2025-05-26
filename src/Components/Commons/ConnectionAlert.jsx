@@ -21,7 +21,7 @@ function ConnectionAlert() {
     <>
       {!isOnline && (
         <div className='connection-alert'>
-         ⚠️ ¡Estás desconectado de Internet!
+          ⚠️ ¡Estás desconectado de Internet!
         </div>
       )}
     </>

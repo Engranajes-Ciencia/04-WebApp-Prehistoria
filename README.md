@@ -108,20 +108,45 @@
 
     A continuación se detalla el esquema árbol del directorio de carpetas de la aplicación:
             .
-        ├── public                  # Archivos públicos accesibles desde el navegador
-        │   ├── assets              # Archivos estáticos, como imágenes o documentos
-        │   ├── fonts               # Fuentes tipográficas usadas en la app
-        │   ├── icons               # Iconos de la app (pueden ser SVG o imágenes)
-        │   └── sounds              # Archivos de audio (sonidos, música, etc.)
-        ├── src                     # Código fuente de la aplicación
-        │   ├── assets              # Archivos relacionados con la app (como imágenes)
-        │   │   └── fontsPDF        # Fuentes específicas para la firma de los diplomas
-        │   ├── components          # Componentes reutilizables para la app
-        │   │   ├── commons         # Componentes comunes usados en varias partes
-        │   │   ├── layouts         # Estructuras de página (header, footer, etc.)
-        │   │   └── pages           # Componentes específicos de cada página
-        │   ├── config              # Archivos de configuración de la app
-        │   ├── styles              # Archivos de estilo CSS o preprocesadores (SASS, etc.)
+        public/  # Carpeta principal que contiene los recursos accesibles desde el navegador.
+  
+                ├─ assets/  # Almacena elementos visuales como imágenes, avatares y fondos.
+                │  
+                │  ├─ avatars/  # Guarda los avatares utilizados en el proyecto.
+                │  
+                │  ├─ form-fondo/  # Contiene imágenes de fondo utilizadas en formularios.
+                │  
+                │  ├─ images/  # Carpeta donde se almacenan imágenes generales del proyecto.
+                │  │  
+                │  │  ├─ imagesMedal/  # Posiblemente imágenes de medallas o logros.
+                │  │  
+                │  │  ├─ nogenially/  # Carpeta con imágenes específicas para la plataforma Genially.
+                
+                ├─ fonts/  # Almacena las fuentes tipográficas utilizadas en el proyecto.
+                
+                ├─ icons/  # Guarda los iconos gráficos que se usan en la interfaz.
+                
+                ├─ sounds/  # Contiene archivos de sonido para la aplicación.
+                │  
+                │  ├─ paradasaudio/  # Organiza los audios según idioma y tipo.
+                │  │  
+                │  │  ├─ ENG/  # Audios en inglés.
+                │  │  │  
+                │  │  │  ├─ Adultos/  # Audios dirigidos a adultos.
+                │  │  │  
+                │  │  │  ├─ Infantil/  # Audios dirigidos a niños.
+                │  │  
+                │  │  ├─ ESP/  # Audios en español.
+                │  │  │  
+                │  │  │  ├─ Adultos/  # Audios dirigidos a adultos.
+                │  │  │  
+                │  │  │  ├─ Infantil/  # Audios dirigidos a niños.
+
+                404.html  # Página de error 404 que se muestra cuando un recurso no se encuentra.
+                
+                site.webmanifest  # Archivo de manifiesto web para configurar la Progressive Web App.
+                
+                vite.svg  # Archivo SVG, probablemente el logo de Vite, utilizado en el desarrollo.
 
 
         Explicación de cada carpeta:

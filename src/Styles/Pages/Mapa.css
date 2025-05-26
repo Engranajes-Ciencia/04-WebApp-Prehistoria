@@ -133,6 +133,16 @@ html, body {
     color: var(--blanco);
 }
 
+.dark .qr-button, .dark .volver-button {
+    background: linear-gradient(135deg, #464646, #1b1b1b);
+    color: #ffffff !important;
+}
+
+.dark .qr-button:hover, .dark .volver-button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #424242);
+}
+
 /* Animaciones */
 
 @keyframes aparecer {

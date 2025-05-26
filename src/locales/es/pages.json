@@ -41,6 +41,9 @@
   "final": {
     "enhorabuena": "¡Enhorabuena!",
     "completado": "100% completado",
+    "explorador": "Explorador del tiempo",
+    "exploradora": "Exploradora del tiempo",
+    "nombreDefault": "Explorador/a",
     "paradasCompletadas": "Has completado todas las paradas de la Aventura Prehistórica",
     "diplomaInfantil": "Diploma infantil",
     "diplomaAdulto": "Diploma Adulto",
@@ -53,13 +56,25 @@
   "actividad": {
     "accesoDenegado": "Acceso denegado. Escanea el código QR.",
     "error": "Ha ocurrido un error al cargar la actividad.",
-    "saludo": "¡Hola {{nombre}}!",
+    "saludo": "· ¡Hola {{nombre}}! ·",
     "pausarAudio": "⏸️ Pausar audio",
     "reproducirAudio": "▶️ Reproducir audio",
     "pausarAudioENG": "⏸️ Pause audio",
     "reproducirAudioENG": "▶️ Play audio",
     "sabiasQue": "¿Sabías que...?"
   },
+    "modoSecreto": {
+      "¡Enhorabuena!": "¡Enhorabuena!",
+      "Has encontrado el código secreto del parque.": "Has encontrado el código secreto del parque.",
+      "Una actividad especial te espera..": "Una actividad especial te espera..",
+      "¡Modo Secreto Desbloqueado!": "¡Modo Secreto Desbloqueado!",
+      "mensajeConteoRegresivo": "Tienes <1>{{time}}</1> segundos para completar la actividad especial:",
+      "tiempoTerminado": "¡Tiempo terminado! Puedes continuar.",
+      "⏳ Tiempo agotado — Volver": "⏳ Tiempo agotado — Volver",
+      "CofreCerrado": "Cofre cerrado",
+      "CofreAbierto": "Cofre abierto",
+      "actividad-secreta": "Actividad secreta"
+    },
   "1": {
     "titulo": "Bienvenido. Comienza la aventura",
     "avatarDialogo": {
@@ -221,14 +236,55 @@
     }
   },
   "vitrinaVirtual": {
-    "galeriaVirtual": "Galería Virtual Medallas Prehistóricas"
-  },
-  
-    "medallas":{
-      "1":{
+    "galeriaVirtual": "Galería Virtual Medallas Prehistóricas",
+    "conseguido": "Has conseguido {{completadas}} de {{total}} medallas",
+    "volver": "Volver",
+    "medallas": {
+      "3": {
         "titulo": "Primeras plantas",
-        "curiosidad": "Colonizaron la tierra hace más de 450 millones de años." 
+        "curiosidad": "Colonizaron la tierra hace más de 450 millones de años."
+      },
+  
+      "6": {
+        "titulo": "Primeras flores",
+        "curiosidad": "Aparecieron hace 150 millones de años."
+      },
+      "9": {
+        "titulo": "Segundos dinosaurios",
+        "curiosidad": "Dominaron la Tierra durante millones de años."
+      },
+      "10": {
+        "titulo": "Tortugas de las Galápagos",
+        "curiosidad": "Su caparazón puede cambiar según la isla."
+      },
+      "12": {
+        "titulo": "Atapuerca",
+        "curiosidad": "Conserva huellas humanas de hace más de 800.000 años."
+      },
+      "13": {
+        "titulo": "El hombre de Neandertal",
+        "curiosidad": "Su cerebro era más grande que el de los humanos modernos."
+      },
+      "15": {   
+        "titulo": "Cuevas y arte rupestre",
+        "curiosidad": "Algunas pinturas tienen más de 30.000 años."
+      },
+      "16": {
+        "titulo": "Poblados nómadas",
+        "curiosidad": "Vivían en chozas y seguían a los animales."
+      },
+      "19": {
+        "titulo": "Çatalhöyük",
+        "curiosidad": "No había calles; los techos servían como aceras."
+      },
+      "20": {
+        "titulo": "Stonehenge",
+        "curiosidad": "Fue construido hace más de 4.500 años."
       }
-
     }
+  }
 }
+  
+
+
+

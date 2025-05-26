@@ -113,8 +113,8 @@ button {
 
 button:hover {
   background: linear-gradient(135deg, #5f8b6a 60%, #4f745a 100%);
-  transform: translateY(-2px) scale(1.04);
   box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+  transform: scale(1.05);
 }
 
 /* Avatares */
@@ -180,6 +180,16 @@ button:hover {
   box-shadow: 0 12px 28px rgba(255, 255, 255, 0.1);
   color: var(--blanco);
   backdrop-filter: blur(8px) saturate(1.08);
+}
+
+.dark .btn-avent {
+  background: linear-gradient(135deg, #464646, #1b1b1b);
+  color: #ffffff !important;
+}
+
+.dark .btn-avent:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #424242);
 }
 
 .dark .form label,
