@@ -19,10 +19,10 @@ const medallas = [
 ];   
 
 
-  
+
 
 function VitrinaVirtual() {
-     const { t } = useTranslation ("pages");
+    const { t } = useTranslation ("pages");
     const completadas = JSON.parse(localStorage.getItem("actividadesCompletadas")) || [];
     const [flippedId, setFlippedId] = useState(null);
     const navigate = useNavigate();
