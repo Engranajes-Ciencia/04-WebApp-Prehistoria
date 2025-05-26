@@ -33,7 +33,7 @@
   },
   "entreActividades": {
     "mapa": "Mapa del recorrido",
-    "guiaTexto": "¡Buen trabajo {{nombre}}! Has completado {{ultimaCompletada}} de 20 paradas.",
+    "guiaTexto": "¡Buen trabajo {{nombre}}! Has completado {{completadas}} de 20 paradas.",
     "escanear": "Escanear siguiente parada",
     "pantallaFinal": "Ver pantalla final",
     "medallas": "Ver medallas"
