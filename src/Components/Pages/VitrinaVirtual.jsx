@@ -9,10 +9,10 @@ const medallas = [
     { id: 3, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada3.png` },
     { id: 6, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada6.png` },
     { id: 9, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada9.png` },
-    { id: 10, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada10.png` },
+    { id: 10, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada10.jpg` },
     { id: 12, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada12.png` },
     { id: 13, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada13.png` },
-    { id: 15, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada15.png` },
+    { id: 15, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada15.jpg` },
     { id: 16, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada16.png` },
     { id: 19, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada19.png` },
     { id: 20, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada20.png` }
