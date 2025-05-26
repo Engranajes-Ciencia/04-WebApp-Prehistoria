@@ -33,17 +33,13 @@
   flex-shrink: 0;
 }
 
-.branding {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 .logo {
   max-height: clamp(90px, 16vh, 150px);  /* Altura máxima fluida para el logo */
   width: auto;
   margin: 0;
   border-radius: 16px;
+  background: radial-gradient(circle at bottom, #ffffff95, transparent 55%)!important;
+  padding: 10px;
   object-fit: contain;
 }
 
@@ -115,11 +111,6 @@
 .dark .titulo-header {
   color: #fff;
   text-shadow: 2px 2px 16px rgba(255, 255, 255, 0.2);
-}
-
-.dark .branding {
-  background-color: rgba(255, 255, 255, 0.1);
-  color: var(--blanco);
 }
 
 .dark .logo {

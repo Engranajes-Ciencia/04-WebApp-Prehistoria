@@ -4,6 +4,7 @@
   align-items: center;
   gap: 20px;
   padding: 40px 20px;
+  height: 600px;
   text-align: center;
   background: linear-gradient(120deg, #f0fdf4, #e3f2fd);
   animation: fadeIn 0.8s ease-in-out;
@@ -50,6 +51,7 @@
   box-shadow: 0 8px 30px var(--verde);
   overflow: hidden;
   padding: 10px;
+  top: -20px;
 }
 
 #qr-reader__scan_region img {
@@ -103,27 +105,32 @@
   font-size: 1.1rem;
   font-weight: 500;
   color: #4da180;
-  margin-top: 12px;
+  margin-top: 30px;
   animation: fadeIn 1s ease;
 }
 
 /* Spinner */
 .spinner-container {
+  position:sticky;
   display: flex;
-  flex-direction: column;
+  background-color: #a8dbb5aa;
   align-items: center;
-  margin-top: 10px;
-  transform: translateY(-60px);
+  justify-content: center;
+  border-radius: 16px;
+  margin-top: -10px;
+  width: 200px;
+  height: 130px;
+  top: 750px;
 }
 
 .spinner {
-  width: 40px;
-  height: 40px;
-  border: 5px solid #ddd;
-  border-top: 5px solid #007bff;
+  width: 50px;
+  height: 50px;
+  border: 5px solid var(--grisclaro);
+  border-top: 5px solid var(--verde);
   border-radius: 50%;
   animation: spin 1s linear infinite;
-  margin-bottom: 10px;
+  margin-bottom: -15px;
 }
 
 /* Estilos Modo Oscuro */
@@ -200,6 +207,9 @@
   color: #007bff;
 }
 
+.dark .spinner-container {
+  background-color: #1e1e1eaa;
+}
 
 /* Animaciones */
 
@@ -341,13 +351,7 @@
 
 /* Opcional: Estilos para el spinner-container si quieres un overlay */
 .spinner-container {
-  position: absolute;
   /* O fixed, dependiendo de tu layout */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
   /* Fondo semi-transparente para el spinner */
   display: flex;
   flex-direction: column;

@@ -58,7 +58,6 @@
     font-size: 1rem;
     font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
 }
 
 .btn-descargar {
@@ -71,7 +70,8 @@
 }
 
 .btn-reiniciar {
-    background-color: #c62828;
+    border: 2px solid #8e0000;
+    border-color: #c62828;
     color: white;
 }
 
@@ -90,13 +90,14 @@
     color: var(--verde);
 }
 
-.dark .btn-descargar {
-    background-color: var(--verde);
-    color: var(--blanco);
+.dark .btn-reiniciar:hover, .dark .btn-descargar:hover, .dark .btn-vitrina:hover, .dark .btn-tipo-diploma:hover {
+    transform: scale(1.05)!important;
+    background: linear-gradient(135deg, #424242)!important;
 }
 
-.dark .btn-reiniciar {
-    background-color: #b71c1c;
+.dark .btn-reiniciar, .dark .btn-descargar, .dark .btn-vitrina, .dark .btn-tipo-diploma {
+    background: linear-gradient(135deg, #424242, #1b1b1b)!important;
+    color: #ffffff !important;
 }
 
 /* 🎉 Animación Diploma */
