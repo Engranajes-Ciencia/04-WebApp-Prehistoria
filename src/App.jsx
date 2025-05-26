@@ -5,7 +5,7 @@ import "./App.css";
 import "./index.css";
 import "./Styles/Commons/OrientationWarning.css";
 
-import { BrowserRouter as Router } from "react-router-dom";
+import { HashRouter as Router } from "react-router-dom";
 
 import AppRouter from "./config/routes/AppRouter";
 
@@ -38,18 +38,14 @@ function App() {
     );
   }
 
-  // Define la base URL dinámicamente.
-  // import.meta.env.VITE_BASE_URL se lee de tus archivos .env
-  const BASE_URL = import.meta.env.VITE_BASE_URL || '/';
 
   return (
-    <Router basename={BASE_URL}>
+    <Router>
       {/* Componentes globales */}
       <ConnectionAlert />
       <InactivityTimer />
       {/* Renderiza el componente OrientationWarning directamente */}
       <OrientationWarning /> 
-
       <AppRouter />
     </Router>
   );
