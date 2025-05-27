@@ -8,32 +8,30 @@ function Portada() {
     const navigate = useNavigate();
     const audioRef = useRef(null);
 
-    useEffect(() => {
-        // Crear la referencia del audio solo si no existe
-        if (!audioRef.current) {
-            audioRef.current = new Audio(`${import.meta.env.BASE_URL}sounds/vozportada.wav`);
-            audioRef.current.volume = 0.5; // Ajustar volumen si es necesario
-        }
+     useEffect(() => {
+        // Obtiene la ruta del audio desde el archivo de traducción
+        const audioPath = import.meta.env.BASE_URL + t("portada.audio");
+        const audio = new Audio(audioPath);
+        audio.volume = 0.5;
+        audioRef.current = audio;
 
-        // Intentar reproducir el audio cuando la página se cargue
         const playAudio = async () => {
             try {
-                await audioRef.current.play();
+                await audio.play();
             } catch (error) {
-                console.warn("El navegador bloqueó el autoplay. Se necesita interacción del usuario.");
+                console.warn("Autoplay bloqueado. Se necesita interacción del usuario.");
             }
         };
 
-        playAudio(); // Llamar a la función de reproducción al cargar la página
+        playAudio();
 
         return () => {
-            // Detener el audio cuando el usuario salga de la página
             if (audioRef.current) {
                 audioRef.current.pause();
                 audioRef.current.currentTime = 0;
             }
         };
-    }, []); // Se ejecuta solo una vez al montar el componente
+    }, [t]); // Se vuelve a ejecutar si cambia el idioma
 
     const handleStart = () => {
         navigate("/form");
@@ -55,6 +53,7 @@ function Portada() {
 }
 
 export default Portada;
+
 
 
 

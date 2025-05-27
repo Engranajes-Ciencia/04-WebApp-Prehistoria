@@ -10,7 +10,8 @@
   "portada": {
     "titulo": "Prehistoric Adventure",
     "descripcion": "Welcome to the Prehistoric Adventure! You have just embarked on a journey through time where you will uncover the best-kept secrets of human history and Earth. Guided by your faithful companion (you choose!), you will visit 10 sacred places, ancient fossils, ancestral civilizations, and amazing monuments. At each stop, you will find a QR code that activates a mission: an interactive activity that will make you think, learn, and overcome challenges. Are you ready to become a true time explorer? 🧭 Your adventure starts now!",
-    "empezar": "Start Adventure"
+    "empezar": "Start Adventure",
+    "audio": "sounds/vozportadaENG.mp3"
   },
 
   "form": {
