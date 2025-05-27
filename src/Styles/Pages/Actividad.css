@@ -1,18 +1,5 @@
 /* src/components/pages/Actividad.css */
 
-/* Animación de entrada suave */
-
-@keyframes fadeSlideIn {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 .audio-button-container {
   display: flex;
   justify-content: center;     
@@ -185,17 +172,7 @@ p {
       flex-shrink: 0;
 }
 
-@keyframes aparecerSabias {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
 .actividad-genially {
   margin-top: 15px;
@@ -346,8 +323,31 @@ p {
   }
 }
 
+@keyframes aparecerSabias {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
 
-/* Responsive */
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeSlideIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries */
 
 @media (max-width: 768px) {
   /* Usamos 768px como breakpoint común */

@@ -133,6 +133,77 @@
   margin-bottom: -15px;
 }
 
+.spinner-container {
+  /* O fixed, dependiendo de tu layout */
+  /* Fondo semi-transparente para el spinner */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 900;
+  /* Debajo del message-box-overlay */
+  /* Asegúrate de que el padre (.scanner-container o el body) tenga position: relative */
+}
+
+
+/* Estilos para el MessageBox */
+.message-box-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fondo oscuro semi-transparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  /* Asegura que esté por encima de todo */
+}
+
+.message-box-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  /* Sombra para el efecto flotante */
+  text-align: center;
+  max-width: 80%;
+  /* Ancho máximo para pantallas grandes */
+  width: auto;
+  /* Ajuste automático del ancho */
+  color: #333;
+  /* Color de texto oscuro */
+  font-size: clamp(1rem, 3vw, 1.2rem);
+  /* Tamaño de fuente responsivo */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  /* Espacio entre el texto y el botón */
+}
+
+.message-box-button {
+  background-color: #4CAF50;
+  /* Verde */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: clamp(1rem, 2.5vw, 1.1rem);
+  /* Tamaño de fuente responsivo */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  /* Transiciones suaves */
+}
+
+.message-box-button:hover {
+  background-color: #45a049;
+  /* Verde más oscuro al pasar el ratón */
+  transform: translateY(-2px);
+  /* Pequeño efecto de elevación */
+}
+
 /* Estilos Modo Oscuro */
 
 .dark #qr-reader {
@@ -211,31 +282,6 @@
   background-color: #1e1e1eaa;
 }
 
-/* Animaciones */
-
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Estilos Modo Oscuro */
-
 .dark .scanner-container {
   background: linear-gradient(135deg, #212121, #424242);
   color: var(--blanco);
@@ -277,66 +323,30 @@
   background-color: #00897b;
 }
 
+/* Animaciones */
 
-/* Estilos para el MessageBox */
-.message-box-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.7);
-  /* Fondo oscuro semi-transparente */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1000;
-  /* Asegura que esté por encima de todo */
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-.message-box-content {
-  background-color: white;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  /* Sombra para el efecto flotante */
-  text-align: center;
-  max-width: 80%;
-  /* Ancho máximo para pantallas grandes */
-  width: auto;
-  /* Ajuste automático del ancho */
-  color: #333;
-  /* Color de texto oscuro */
-  font-size: clamp(1rem, 3vw, 1.2rem);
-  /* Tamaño de fuente responsivo */
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  /* Espacio entre el texto y el botón */
-}
-
-.message-box-button {
-  background-color: #4CAF50;
-  /* Verde */
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-size: clamp(1rem, 2.5vw, 1.1rem);
-  /* Tamaño de fuente responsivo */
-  transition: background-color 0.3s ease, transform 0.2s ease;
-  /* Transiciones suaves */
-}
-
-.message-box-button:hover {
-  background-color: #45a049;
-  /* Verde más oscuro al pasar el ratón */
-  transform: translateY(-2px);
-  /* Pequeño efecto de elevación */
-}
-
-/* Puedes añadir media queries para hacer los tamaños aún más responsivos */
+/* Media Queries */
 @media (max-width: 600px) {
   .message-box-content {
     padding: 20px;
@@ -347,17 +357,4 @@
   .message-box-button {
     padding: 8px 15px;
   }
-}
-
-/* Opcional: Estilos para el spinner-container si quieres un overlay */
-.spinner-container {
-  /* O fixed, dependiendo de tu layout */
-  /* Fondo semi-transparente para el spinner */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 900;
-  /* Debajo del message-box-overlay */
-  /* Asegúrate de que el padre (.scanner-container o el body) tenga position: relative */
 }
