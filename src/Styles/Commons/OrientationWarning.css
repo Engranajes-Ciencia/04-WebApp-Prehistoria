@@ -5,7 +5,15 @@
   width: 100%;
   background-color: rgb(60, 150, 203);
   text-align: center;
-  padding: 10px;
-  z-index: 1000;
+  padding: 8px 16px;
   font-weight: bold;
+  z-index: 1000;
+  font-size: 14px;
+  color: white;
+  min-height: unset !important; /* Importante para que no ocupe toda la pantalla*/
+  height: 40px !important; /* Importante para que no ocupe toda la pantalla*/
+  line-height: 40px; /* Importante para que no ocupe toda la pantalla*/
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

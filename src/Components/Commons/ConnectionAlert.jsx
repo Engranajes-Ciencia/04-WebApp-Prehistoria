@@ -1,7 +1,9 @@
 import { useState, useEffect } from 'react';
 import "../../Styles/Commons/ConnectionAlert.css";
+import { useTranslation, Trans } from "react-i18next";
 
 function ConnectionAlert() {
+  const { t } = useTranslation();
   const [isOnline, setIsOnline] = useState(navigator.onLine);
 
   useEffect(() => {
@@ -21,7 +23,7 @@ function ConnectionAlert() {
     <>
       {!isOnline && (
         <div className='connection-alert'>
-          ⚠️ ¡Estás desconectado de Internet!
+          {t("connection.alert")}
         </div>
       )}
     </>
