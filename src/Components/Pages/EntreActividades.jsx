@@ -97,7 +97,7 @@ function EntreActividades() {
 
                 <button className="btn-scan" onClick={() => navigate("/EscanerQR")}>
                     {t("entreActividades.escanear")}
-                    <span className="icono-scan">📱</span>
+                    <span className="icono-scan">📷</span>
                     
                 </button>
                 <button className="btn-medallas" onClick={() => navigate("/vitrina-virtual")}>
