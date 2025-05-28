@@ -73,20 +73,14 @@ function Header() {
           🏠
         </button>
 
-        {/* BOTÓN: Entre Actividades */}
-        <button
-          className="icon-btn"
-          onClick={() => navigate("/entre-actividad")}
-        >
-          🗺️ {/* Ejemplo de icono, puedes cambiarlo */}
-        </button>
+        
 
         {/* BOTÓN: Escáner QR */}
         <button
           className="icon-btn"
           onClick={() => navigate("/escanerQR")}
         >
-          📷 {/* Ejemplo de icono, puedes cambiarlo */}
+          📷 
         </button>
 
 

@@ -259,7 +259,7 @@ function Actividad() {
                         width="100%"
                         height="clamp(300px, 70vh, 700px)" // Altura responsiva con clamp
                         frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" // Permisos de seguridad y UX
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                         allowFullScreen
                         loading="lazy" // Carga diferida del iframe
                     ></iframe>
@@ -274,7 +274,7 @@ function Actividad() {
             )}
 
             {/* Botón para volver a la pantalla "entre-actividad" */}
-            <div className="navigation-footer"> {/* Una clase para el pie de navegación, si quieres estilizarlo */}
+            <div className="navigation-footer"> 
                 <button className="btn-volver" onClick={() => navigate("/entre-actividad")}> 
                     <i className="fa-solid fa-arrow-left"></i> {t("Mapa")}
                 </button>
