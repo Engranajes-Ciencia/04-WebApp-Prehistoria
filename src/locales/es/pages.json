@@ -62,14 +62,16 @@
     "reproducirAudio": "▶️ Reproducir audio",
     "pausarAudioENG": "⏸️ Pause audio",
     "reproducirAudioENG": "▶️ Play audio",
-    "sabiasQue": "¿Sabías que...?"
+    "sabiasQue": "¿Sabías que...?",
+    "verMapaActividad": "🗺️ Ver mapa",
+    "EscanearQR": "📲 Escanear codigo QR"
   },
     "modoSecreto": {
       "¡Enhorabuena!": "¡Enhorabuena!",
       "Has encontrado el código secreto del parque.": "Has encontrado el código secreto del parque.",
       "Una actividad especial te espera..": "Una actividad especial te espera..",
       "¡Modo Secreto Desbloqueado!": "¡Modo Secreto Desbloqueado!",
-      "mensajeConteoRegresivo": "Tienes <1>{{time}}</1> segundos para completar la actividad especial:",
+      "mensajeConteoRegresivo": "Tienes {{time}} segundos para completar la actividad especial:",
       "tiempoTerminado": "¡Tiempo terminado! Puedes continuar.",
       "⏳ Tiempo agotado — Volver": "⏳ Tiempo agotado — Volver",
       "CofreCerrado": "Cofre cerrado",
@@ -80,7 +82,7 @@
     "titulo": "Bienvenido. Comienza la aventura",
     "avatarDialogo": {
       "dialogo": "¡Hola aventureros! Yo seré vuestro guía en este recorrido por la historia de la humanidad.",
-      "mensaje": "Bienvenidos y bienvenidas al Parque de las Ciencias de la Prehistoria. Soy X y os invito a acompañarme en este viaje a través del tiempo, desde los orígenes de la vida en la Tierra hasta las primeras civilizaciones humanas. Aquí aprenderemos cómo evolucionaron las plantas, los animales y también nosotros, los seres humanos. Recordad: no toquéis las maquetas, cuidad el entorno y sobre todo… ¡disfrutad aprendiendo!",
+      "mensaje": "Bienvenidos y bienvenidas al Parque de las Ciencias de la Prehistoria. Os invito a acompañarme en este viaje a través del tiempo, desde los orígenes de la vida en la Tierra hasta las primeras civilizaciones humanas. Aquí aprenderemos cómo evolucionaron las plantas, los animales y también nosotros, los seres humanos. Recordad: no toquéis las maquetas, cuidad el entorno y sobre todo… ¡disfrutad aprendiendo!",
       "sabiasQue": "¿Sabías que la vida en la Tierra comenzó hace más de 3.500 millones de años?"
     }
   },

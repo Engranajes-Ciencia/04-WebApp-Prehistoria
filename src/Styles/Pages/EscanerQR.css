@@ -4,7 +4,7 @@
   align-items: center;
   gap: 20px;
   padding: 40px 20px;
-  height: 600px;
+  height: 650px;
   text-align: center;
   background: linear-gradient(120deg, #f0fdf4, #e3f2fd);
   animation: fadeIn 0.8s ease-in-out;
@@ -119,8 +119,10 @@
   border-radius: 16px;
   margin-top: -10px;
   width: 200px;
-  height: 130px;
-  top: 750px;
+  height: 140px;
+  top: 710px;
+  flex-direction: column;
+  z-index: 900;
 }
 
 .spinner {
@@ -131,18 +133,6 @@
   border-radius: 50%;
   animation: spin 1s linear infinite;
   margin-bottom: -15px;
-}
-
-.spinner-container {
-  /* O fixed, dependiendo de tu layout */
-  /* Fondo semi-transparente para el spinner */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  z-index: 900;
-  /* Debajo del message-box-overlay */
-  /* Asegúrate de que el padre (.scanner-container o el body) tenga position: relative */
 }
 
 
