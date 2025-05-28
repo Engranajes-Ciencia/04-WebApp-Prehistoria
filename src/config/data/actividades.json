@@ -39,7 +39,7 @@
     "id": 4,
     "titulo": "Prototaxiles y Meganeuras",
     "ubicacion": "#",
-    "posX": 61.20,
+    "posX": 61.2,
     "posY": 69.95,
     "audio": "/sounds/paradasaudio/ESP/parada4ESP.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/parada4ENG.mp3",
@@ -70,7 +70,7 @@
     "geniallyURL": "https://view.genially.com/681b03dfdbac94f0fdc3927a/interactive-content-actividad6",
     "imagenAlternativa": "/assets/images/nogenially/origen.png",
     "completada": false
-  },  
+  },
   {
     "id": 7,
     "titulo": "Los primeros dinosaurios",
@@ -103,7 +103,7 @@
     "posY": 46.71,
     "audio": "/sounds/paradasaudio/ESP/parada9ESP.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/parada9ENG.mp3",
-    "geniallyURL": "https://view.genially.com/68231bb7256d2888593fbd73/interactive-content-actividad2",
+    "geniallyURL": "https://view.genially.com/68231bb7256d2888593fbd73/interactive-content-actividad9",
     "imagenAlternativa": "/assets/images/nogenially/dinos.png",
     "completada": false
   },
@@ -112,7 +112,7 @@
     "titulo": "Galápagos y Darwin",
     "ubicacion": "#",
     "posX": 71.04,
-    "posY":39.78,
+    "posY": 39.78,
     "audio": "/sounds/paradasaudio/ESP/parada10ESP.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/parada10ENG.mp3",
     "geniallyURL": "https://view.genially.com/6822fb3a4fee7f24275c0354/interactive-content-actividad10",
@@ -135,7 +135,7 @@
     "id": 12,
     "titulo": "Atapuerca",
     "ubicacion": "#",
-    "posX": 67.50,
+    "posX": 67.5,
     "posY": 26.47,
     "audio": "/sounds/paradasaudio/ESP/parada12ESP.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/parada12ENG.mp3",
@@ -147,7 +147,7 @@
     "id": 13,
     "titulo": "El hombre de Neandertal",
     "ubicacion": "#",
-    "posX": 63.80,
+    "posX": 63.8,
     "posY": 18.47,
     "audio": "/sounds/paradasaudio/ESP/parada13ESP.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/parada13ENG.mp3",
@@ -207,7 +207,7 @@
     "id": 18,
     "titulo": "Pinturas del Sáhara y de Laja Alta",
     "ubicacion": "#",
-    "posX": 40.20,
+    "posX": 40.2,
     "posY": 30.12,
     "audio": "/sounds/paradasaudio/ESP/parada18ESP.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/parada18ENG.mp3",
@@ -235,10 +235,8 @@
     "posY": 40.21,
     "audio": "/sounds/paradasaudio/ESP/parada20ESP.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/parada20ENG.mp3",
-    "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad9",
+    "geniallyURL": "https://view.genially.com/67f65b9660c12a0045379037/interactive-content-actividad20",
     "imagenAlternativa": "/assets/images/nogenially/arboles.png",
     "completada": false
-
   }
-
 ]
