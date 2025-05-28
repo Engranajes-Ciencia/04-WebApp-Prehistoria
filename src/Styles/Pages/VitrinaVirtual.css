@@ -240,6 +240,7 @@
 }
 
 /* Modo oscuro */
+
 .dark .vitrina-virtual-container {
     background: linear-gradient(145deg, #1e1e1e, #2d2d2d);
     color: var(--blanco);

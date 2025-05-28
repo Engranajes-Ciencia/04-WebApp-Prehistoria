@@ -9,7 +9,8 @@
   "portada": {
     "titulo": "Aventura Prehistórica",
     "descripcion": "¡Bienvenido a la Aventura Prehistórica! Acabas de embarcarte en un viaje en el tiempo donde descubrirás los secretos mejor guardados de la historia de la humanidad y de la Tierra. Guiado por tu fiel compañero o compañera (¡tú eliges!), recorrerás 10 lugares sagrados, fósiles milenarios, civilizaciones ancestrales y monumentos asombrosos. En cada parada encontrarás un código QR que activará una misión: una actividad interactiva que te hará pensar, aprender y superar retos. ¿Estás preparado para convertirte en un auténtico explorador del tiempo? 🧭 ¡Tu aventura comienza ya!",
-    "empezar": "Empezar Aventura"
+    "empezar": "Empezar Aventura",
+    "audio": "sounds/vozPortadaESP.mp3"
   },
   "form": {
     "nombre": "Nombre de explorador/a:",
@@ -257,8 +258,8 @@
         "titulo": "Tortugas de las Galápagos",
         "curiosidad": "Su caparazón puede cambiar según la isla."
       },
-      "12": {
-        "titulo": "Atapuerca",
+      "11": {
+        "titulo": "Huellas de Laetoli",
         "curiosidad": "Conserva huellas humanas de hace más de 800.000 años."
       },
       "13": {

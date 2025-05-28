@@ -44,7 +44,6 @@ function App() {
       {/* Componentes globales */}
       <ConnectionAlert />
       <InactivityTimer />
-      {/* Renderiza el componente OrientationWarning directamente */}
       <OrientationWarning /> 
       <AppRouter />
     </Router>

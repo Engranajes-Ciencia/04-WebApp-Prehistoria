@@ -110,43 +110,6 @@
     animation: avatarBob 1.8s infinite ease-in-out;
 }
 
-/* Animación para el avatar flotante */
-@keyframes avatarBob {
-
-    0%,
-    100% {
-        transform: translate(-50%, -50%) translateY(0px) rotate(0deg);
-    }
-
-    30% {
-        transform: translate(-50%, -50%) translateY(-10px) rotate(3deg);
-    }
-
-    70% {
-        transform: translate(-50%, -50%) translateY(-5px) rotate(-3deg);
-    }
-}
-
-
-/*  animación de pulso más brillante para el marcador siguiente */
-@keyframes marcadorPulseBright {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.7);   /* Color de la sombra del pulso (Naranja Brillante) */
-    }
-
-    70% {
-        transform: translate(-50%, -50%) scale(1.15); /* Pulso más visible */
-        box-shadow: 0 0 0 20px rgba(255, 87, 34, 0); /* El pulso se expande más */
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-        box-shadow: 0 0 0 0 rgba(255, 87, 34, 0);
-    }
-}
-
-
 .guia-avatar {
     width: 100px;
     height: 100px;
@@ -325,14 +288,19 @@
     text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.4);
 }
 
+.dark .btn-scan, .dark .btn-medallas {
+
+}
+
 .dark .botones-container button {
-    background-color: #424242;
-    color: #f5f5f5;
+    background: linear-gradient(135deg, #424242, #1b1b1b);
+    color: #ffffff !important;
     box-shadow: 0 6px 18px rgba(255, 255, 255, 0.15);
 }
 
 .dark .botones-container button:hover {
-    background-color: #616161;
+    transform: scale(1.05);
+    background: linear-gradient(135deg, #424242);
     box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
 }
 
@@ -406,11 +374,46 @@
     100% {
         transform: translate(-50%, -50%) scale(1);
         box-shadow: 0 0 0 0 rgba(33, 150, 243, 0);
-    } }
+    } 
+}
+
+/* Animación para el avatar flotante */
+@keyframes avatarBob {
+
+    0%,
+    100% {
+        transform: translate(-50%, -50%) translateY(0px) rotate(0deg);
+    }
+
+    30% {
+        transform: translate(-50%, -50%) translateY(-10px) rotate(3deg);
+    }
+
+    70% {
+        transform: translate(-50%, -50%) translateY(-5px) rotate(-3deg);
+    }
+}
 
 
+/*  animación de pulso más brillante para el marcador siguiente */
+@keyframes marcadorPulseBright {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.7);   /* Color de la sombra del pulso (Naranja Brillante) */
+    }
 
-/* Responsive */
+    70% {
+        transform: translate(-50%, -50%) scale(1.15); /* Pulso más visible */
+        box-shadow: 0 0 0 20px rgba(255, 87, 34, 0); /* El pulso se expande más */
+    }
+
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        box-shadow: 0 0 0 0 rgba(255, 87, 34, 0);
+    }
+}
+
+/* Media Queries */
 
 @media (max-width: 768px) {
 

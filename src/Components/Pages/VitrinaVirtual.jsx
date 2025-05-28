@@ -9,7 +9,7 @@ const medallas = [
     { id: 6, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada6.png` },
     { id: 9, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada9.png` },
     { id: 10, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada10.png` },
-    { id: 12, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada12.png` },
+    { id: 11, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada11.png` },
     { id: 13, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada13.png` },
     { id: 15, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada15.png` },
     { id: 16, imagen: `${import.meta.env.BASE_URL}assets/images/imagesMedal/medallaParada16.png` },

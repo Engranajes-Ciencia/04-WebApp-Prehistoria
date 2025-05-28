@@ -1,10 +1,15 @@
 {
-
-
-  "actividad": {
-  "siguienteQR": "Scanner QR"
+  "orientation": {
+    "warning": "⚠️ Rotate your device for a better experience"
   },
 
+  "connection": {
+    "alert":"⚠️ No internet connection detected!"
+  },
+
+  "actividad": {
+    "siguienteQR": "Scanner QR"
+  },
 
   "footer": {
     "proyecto": "🌍 Educational project for the Prehistoric Park",
