@@ -12,11 +12,15 @@ function EntreActividades() {
     const navigate = useNavigate();
 
     const ultimaCompletada = completadas.length > 0 ? completadas[completadas.length - 1] : null;
-    const siguiente = completadas.length + 1;
 
 
     const avatar = localStorage.getItem("avatar") || "explorador"; // o exploradora
     const nombre = localStorage.getItem("nombre") || "explorador/a";
+
+    //  filtrar antes para asegurar que solo mapeas elementos válidos
+    const actividadesRenderizables = actividades.filter(
+        (act) => typeof act.posX === "number" && typeof act.posY === "number"
+    );
 
 
     return (
@@ -29,12 +33,12 @@ function EntreActividades() {
                 className="guia-avatar"
             />
             <p className="guia-texto">
-                {t("entreActividades.guiaTexto", { nombre, completadas: completadas.length })}
+                {t("entreActividades.guiaTexto", { nombre, completadas: completadas.length, totalActividades: actividades.length })}
             </p>
 
 
             <div className="barra-progreso">
-                <div className="relleno" style={{ width: `${(completadas.length / 20) * 100}%` }}></div>
+                <div className="relleno" style={{ width: `${(completadas.length / actividades.length) * 100}%` }}></div>
             </div>
 
             {/* Imagen del mapa */}
@@ -47,21 +51,17 @@ function EntreActividades() {
 
 
                 {/* Marcadores dinámicos sobre el mapa */}
-                {actividades.map((act) => {
-
-                    if (typeof act.posX !== "number" || typeof act.posY !== "number") return null;
-
+                {actividadesRenderizables.map((act) => {
+                    
 
                     const isCompletada = completadas.includes(act.id);
                     const isActual = act.id === ultimaCompletada;
-                    const isSiguiente = act.id === siguiente;
 
                     return (
                         <div
                             key={act.id}
                             className={`marcador 
                                 ${isCompletada ? "completada" : ""}
-                                ${isSiguiente ? "siguiente" : ""}
                             `}
                             style={{
                                 top: `${act.posY}%`,
@@ -89,6 +89,7 @@ function EntreActividades() {
 
             {/* Botones */}
             <div className="botones-container">
+
                 <button className="btn-final" onClick={() => navigate("/final", { state: { paradas: completadas } })}>
                     {t("entreActividades.final")}
                     <span className="icono-final">🎉</span>

@@ -10,7 +10,6 @@
     text-align: center;
     font-family: 'Milford', sans-serif;
     animation: fadeSlide 0.8s ease;
-    overflow: hidden;
     box-sizing: border-box;
 }
 
@@ -39,8 +38,6 @@
     width: auto;
     height: auto;
     border-radius: 15px;
-    box-shadow: none;
-    border: none;
 }
 
 /* Marcador base */
@@ -81,17 +78,7 @@
     z-index: 12;
 }
 
-/* Si es la siguiente parada (NARANJA) */
-.marcador.siguiente {
-    background-color: #FF5722;
 
-    border-color: #ffccbc;
-
-    box-shadow: 0 0 20px rgba(255, 87, 34, 0.8);
-    z-index: 20;
-    color: white;
-    animation: marcadorPulseBright 1.8s infinite ease-in-out;
-}
 
 /* Marcador del avatar (posición actual) - AZUL  */
 .marcador-avatar {
@@ -239,22 +226,13 @@
 
 .dark .marcador.completada {
     background-color: #81c784;
-    /* Verde claro en oscuro */
     border-color: #a5d6a7;
     box-shadow: 0 3px 8px rgba(129, 199, 132, 0.3);
 }
 
-.dark .marcador.siguiente {
-    background-color: #ffab91;
-    /* Naranja más claro en oscuro */
-    border-color: #ffccbc;
-    box-shadow: 0 0 20px rgba(255, 171, 145, 0.9);
-    /* La animación marcadorPulseBright usa color fijo, podrías duplicarla o usar vars */
-}
 
 .dark .marcador-avatar {
     border-color: #90caf9;
-    /* Azul claro en oscuro */
     box-shadow: 0 0 20px rgba(144, 202, 249, 0.9);
     background-color: #424242;
 }
@@ -283,14 +261,10 @@
 
 .dark .barra-progreso .relleno {
     background: linear-gradient(90deg, #a5d6a7, #81c784, #66bb6a);
-    /* Degradado verde más claro */
     color: #333;
     text-shadow: 1px 1px 4px rgba(255, 255, 255, 0.4);
 }
 
-.dark .btn-scan, .dark .btn-medallas {
-
-}
 
 .dark .botones-container button {
     background: linear-gradient(135deg, #424242, #1b1b1b);
@@ -337,7 +311,6 @@
 
 @keyframes fadeInUp {
 
-    /* Mantienes tu animación de entrada desde abajo */
     from {
         opacity: 0;
         transform: translateY(40px);
@@ -395,23 +368,7 @@
 }
 
 
-/*  animación de pulso más brillante para el marcador siguiente */
-@keyframes marcadorPulseBright {
-    0% {
-        transform: translate(-50%, -50%) scale(1);
-        box-shadow: 0 0 0 0 rgba(255, 87, 34, 0.7);   /* Color de la sombra del pulso (Naranja Brillante) */
-    }
 
-    70% {
-        transform: translate(-50%, -50%) scale(1.15); /* Pulso más visible */
-        box-shadow: 0 0 0 20px rgba(255, 87, 34, 0); /* El pulso se expande más */
-    }
-
-    100% {
-        transform: translate(-50%, -50%) scale(1);
-        box-shadow: 0 0 0 0 rgba(255, 87, 34, 0);
-    }
-}
 
 /* Media Queries */
 

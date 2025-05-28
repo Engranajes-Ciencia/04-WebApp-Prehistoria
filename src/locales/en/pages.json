@@ -74,14 +74,16 @@
     "botonAudioENG": "🎧 Listen in English",
     "pausarAudioENG": "⏸️ Pause audio",
     "reproducirAudioENG": "▶️ Play audio",
-    "sabiasQue": "Did you know...?"
+    "sabiasQue": "Did you know...?",
+    "verMapaActividad": "🗺️ View map",
+    "EscanearQR": "📲 Scanner code QR"
   },
     "modoSecreto": {
       "¡Enhorabuena!": "Congratulations!",
       "Has encontrado el código secreto del parque.": "You've found the park's secret code.",
       "Una actividad especial te espera..": "A special activity awaits you..",
       "¡Modo Secreto Desbloqueado!": "Secret Mode Unlocked!",
-      "mensajeConteoRegresivo": "You have <1>{{time}}</1> seconds to complete the special activity:",
+      "mensajeConteoRegresivo": "You have {{time}} seconds to complete the special activity:",
       "tiempoTerminado": "Time's up! You can continue.",
       "⏳ Tiempo agotado — Volver": "⏳ Time's up — Go back",
       "CofreCerrado": "Chest closed",
@@ -93,7 +95,7 @@
     "titulo": "Welcome – The adventure begins",
     "avatarDialogo": {
       "dialogo": "Hello adventurers! I will be your guide on this journey through the history of humankind.",
-      "mensaje": "Welcome to the Prehistoric Science Park. I'm X, and I invite you to join me on this journey through time, from the origins of life on Earth to the first human civilizations. Here, we’ll learn how plants, animals, and humans evolved. Remember: don’t touch the models, take care of the environment, and above all… enjoy learning!",
+      "mensaje": "Welcome to the Prehistoric Science Park. I invite you to join me on this journey through time, from the origins of life on Earth to the first human civilizations. Here, we’ll learn how plants, animals, and humans evolved. Remember: don’t touch the models, take care of the environment, and above all… enjoy learning!",
       "sabiasQue": "Did you know that life on Earth began more than 3.5 billion years ago?"
     }
   },

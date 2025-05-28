@@ -228,6 +228,49 @@ p {
   transform: scale(1.05);
 }
 
+/* boton mapa */
+/* Contenedor del botón  */
+.navigation-footer {
+  width: 100%;
+  padding: 15px 20px;
+  box-sizing: border-box;
+  text-align: right;
+  margin-top: 20px;
+}
+
+.btn-volver {
+  padding: 14px 28px; 
+  font-size: 1.15rem;
+  font-weight: bold;
+  min-width: 150px;
+  height: 50px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0, 123, 255, 0.4);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  }
+
+    .btn-volver:hover {
+      background-color: #0056b3;
+      /* Un azul más oscuro al pasar el mouse */
+      transform: translateY(-3px) scale(1.03);
+      /* Efecto de elevación y ligero zoom */
+      box-shadow: 0 8px 20px rgba(0, 123, 255, 0.5);
+    }
+  
+    .btn-volver:active {
+      transform: translateY(-1px) scale(0.98);
+      /* Efecto al hacer clic */
+      box-shadow: 0 4px 10px rgba(0, 123, 255, 0.3); }
+
+
 /* Estilos Modo Oscuro */
 
 .dark .actividad-container {
@@ -313,6 +356,22 @@ p {
 .dark iframe {
   filter: brightness(0.9);
 }
+
+
+/* Ajustes para el modo oscuro para .btn-volver */
+.dark .btn-volver {
+  background-color: #005cbf;
+  color: #e0e0e0 !important;
+  box-shadow: 0 5px 15px rgba(0, 92, 191, 0.5);
+  text-shadow: none;
+}
+
+.dark .btn-volver:hover {
+  background-color: #004c9e;
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 76, 158, 0.6);
+}
+
 
 
 /* Animaciones */

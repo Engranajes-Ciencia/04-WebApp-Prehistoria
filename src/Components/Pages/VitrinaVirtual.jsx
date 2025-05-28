@@ -25,7 +25,21 @@ function VitrinaVirtual() {
     const medallaIds = medallas.map(m => m.id);
     const actividadesConMedalla = actividadesCompletadas.filter(id => medallaIds.includes(id));
 
-    const [flippedId, setFlippedId] = useState(null);
+    //  Usar  array para los IDs de las tarjetas giradas
+    const [flippedIds, setFlippedIds] = useState([]);
+
+    // Función para manejar el clic en una tarjeta
+    const handleCardClick = (medallaId) => {
+        setFlippedIds(prevFlippedIds => {
+            if (prevFlippedIds.includes(medallaId)) {
+                // Si ya está girada, la quitamos del array (para volverla a su estado frontal)
+                return prevFlippedIds.filter(id => id !== medallaId);
+            } else {
+                // Si no está girada, la añadimos al array
+                return [...prevFlippedIds, medallaId];
+            }
+        });
+    };
 
     return (
         <div className="vitrina-virtual-container">
@@ -37,14 +51,17 @@ function VitrinaVirtual() {
             <div className="grid-medallas">
                 {medallas.map((medalla) => {
                     const completada = actividadesConMedalla.includes(medalla.id);
-                    const isFlipped = flippedId === medalla.id;
+                    //  Verifica si el ID de la medalla actual está en el array `flippedIds`
+                    const isFlipped = flippedIds.includes(medalla.id);
 
                     return (
+
                         <div
                             key={medalla.id}
                             className={`card-flip ${completada ? "completada" : "bloqueada"} ${isFlipped ? "flipped" : ""}`}
-                            onClick={() => completada && setFlippedId(isFlipped ? null : medalla.id)}
+                            onClick={() => completada && handleCardClick(medalla.id)}
                         >
+
                             <div className="card-inner">
                                 <div className="card-front">
                                     <img
@@ -53,10 +70,13 @@ function VitrinaVirtual() {
                                     />
                                     <p>{t(`vitrinaVirtual.medallas.${medalla.id}.titulo`)}</p>
                                 </div>
+
+
                                 <div className="card-back">
                                     <h3>🏅 {t(`vitrinaVirtual.medallas.${medalla.id}.titulo`)}</h3>
                                     <p className="curiosidad-text">{t(`vitrinaVirtual.medallas.${medalla.id}.curiosidad`)}</p>
                                 </div>
+                                
                             </div>
                         </div>
                     );
