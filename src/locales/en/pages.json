@@ -91,7 +91,7 @@
     "titulo": "Welcome – The adventure begins",
     "avatarDialogo": {
       "dialogo": "Hello adventurers! I will be your guide on this journey through the history of humankind.",
-      "mensaje": "Welcome to the Prehistoric Science Park. I'm X, and I invite you to join me on this journey through time, from the origins of life on Earth to the first human civilizations. Here, we’ll learn how plants, animals, and humans evolved. Remember: don’t touch the models, take care of the environment, and above all… enjoy learning!",
+      "mensaje": "Welcome to the Prehistoric Science Park. I invite you to join me on this journey through time, from the origins of life on Earth to the first human civilizations. Here, we’ll learn how plants, animals, and humans evolved. Remember: don’t touch the models, take care of the environment, and above all… enjoy learning!",
       "sabiasQue": "Did you know that life on Earth began more than 3.5 billion years ago?"
     }
   },
