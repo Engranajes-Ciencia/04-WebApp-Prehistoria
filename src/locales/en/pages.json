@@ -28,7 +28,10 @@
     "dialogo": "I am guide {{guia}}. You follow {{guia}}.<0></0><0></0>{{nombre}} wear strange clothes.<0></0><0></0>{{nombre}} not from here?<0></0><0></0>No problem,<0></0><0></0>{{nombre}} and {{guia}} explore lands!",
     "instruccion": "Scan a QR code or select an activity to begin.",
     "botonQR": "Scan QR Code",
-    "botonVolver": "Back"
+    "botonVolver": "Back",
+    "botonNoQR": "Select Activity",
+    "seleccionQR": "Select a QR code to scan",
+    "botonCerrar": "❌"
   },
 
   "escaner": {
