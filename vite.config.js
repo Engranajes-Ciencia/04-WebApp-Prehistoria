@@ -3,6 +3,7 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
+  base: '/04-WebApp-Prehistoria/',
   server: {
     fs: {
       // 🔐 Reforzar seguridad: evitar que se lean archivos fuera del directorio del proyecto
