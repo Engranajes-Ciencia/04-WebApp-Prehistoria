@@ -32,7 +32,6 @@
     "audio": "/sounds/paradasaudio/ESP/parada3ESP.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/parada3ENG.mp3",
     "geniallyURL": "https://view.genially.com/6835cc6feb5d455af71445e9/interactive-content-actividad3",
-    "geniallyURL": "https://view.genially.com/67f8f2f8b5b5ac75ac152d4e/interactive-content-actividad-3",
     "imagenAlternativa": "/assets/images/nogenially/craneos.png",
     "completada": false
   },
@@ -128,7 +127,7 @@
     "posY": 35.16,
     "audio": "/sounds/paradasaudio/ESP/parada11ESP.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/parada11ENG.mp3",
-    "geniallyURL": "https://view.genially.com/67f8fa02c2e20bb7b0ca82c6/interactive-content-actividad-4",
+    "geniallyURL": "#",
     "imagenAlternativa": "/assets/images/nogenially/laetoli.png",
     "completada": false
   },
@@ -140,7 +139,7 @@
     "posY": 26.47,
     "audio": "/sounds/paradasaudio/ESP/parada12ESP.mp3",
     "audioENG": "/sounds/paradasaudio/ENG/parada12ENG.mp3",
-    "geniallyURL": "https://view.genially.com/67f8fa02c2e20bb7b0ca82c6/interactive-content-actividad-4",
+    "geniallyURL": "#",
     "imagenAlternativa": "/assets/images/nogenially/pangea.png",
     "completada": false
   },
