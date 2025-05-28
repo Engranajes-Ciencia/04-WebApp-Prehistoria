@@ -7,7 +7,7 @@ import "../../Styles/Pages/EntreActividades.css";
 import { useTranslation } from "react-i18next";
 
 function EntreActividades() {
-    const { t } = useTranslation ("pages");
+    const { t } = useTranslation("pages");
     const completadas = getActividadesCompletadas();
     const navigate = useNavigate();
 
@@ -70,7 +70,7 @@ function EntreActividades() {
                             }}
                             title={`Parada ${act.id}: ${act.titulo}`
                             }
-                        
+
                         >
                             {act.id} {/* Añade el número de parada aquí */}
                             {isActual && (
@@ -85,26 +85,28 @@ function EntreActividades() {
                 })}
             </div>
 
-            
+
 
             {/* Botones */}
             <div className="botones-container">
 
-                {completadas.length >= actividades.length ? (
-                    <button className="btn-final" onClick={() => navigate("/final")}>
-                        {t("entreActividades.pantallaFinal")}
-                    </button>
-                ) : (
-                        <button className="btn-scan" onClick={() => navigate("/EscanerQR")}>
-                            {t("entreActividades.escanear")}
-                            
-                        </button>
-                )}
+                <button className="btn-final" onClick={() => navigate("/final", { state: { paradas: completadas } })}>
+                    {t("entreActividades.final")}
+                    <span className="icono-final">🎉</span>
+                </button>
 
+
+                <button className="btn-scan" onClick={() => navigate("/EscanerQR")}>
+                    {t("entreActividades.escanear")}
+                    <span className="icono-scan">📷</span>
+
+                </button>
                 <button className="btn-medallas" onClick={() => navigate("/vitrina-virtual")}>
                     {t("entreActividades.medallas")}
+                    <span className="icono-medallas">🏅</span>
                 </button>
             </div>
+
         </div>
     );
 }
