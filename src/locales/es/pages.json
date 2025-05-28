@@ -36,7 +36,7 @@
     "mapa": "Mapa del recorrido",
     "guiaTexto": "¡Buen trabajo {{nombre}}! Has completado {{completadas}} de 20 paradas.",
     "escanear": "Escanear siguiente parada",
-    "pantallaFinal": "Ver pantalla final",
+    "final": "Ver pantalla final",
     "medallas": "Ver medallas"
   },
   "final": {

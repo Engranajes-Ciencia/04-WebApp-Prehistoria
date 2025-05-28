@@ -42,7 +42,8 @@
     "guiaTexto": "Good job {{nombre}}! You have completed {{completadas}} of 20 stops.",
     "escanear": "Scan next stop",
     "pantallaFinal": "See final screen",
-    "medallas": "See medals"
+    "medallas": "See medals",
+    "final": "End tour"
   },
 
   "final": {

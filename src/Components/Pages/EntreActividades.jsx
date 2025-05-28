@@ -90,7 +90,7 @@ function EntreActividades() {
             {/* Botones */}
             <div className="botones-container">
                 <button className="btn-final" onClick={() => navigate("/final", { state: { paradas: completadas } })}>
-                    Finalizar recorrido
+                    {t("entreActividades.final")}
                     <span className="icono-final">🎉</span>
                 </button>
 
@@ -98,7 +98,7 @@ function EntreActividades() {
                 <button className="btn-scan" onClick={() => navigate("/EscanerQR")}>
                     {t("entreActividades.escanear")}
                     <span className="icono-scan">📷</span>
-                    
+
                 </button>
                 <button className="btn-medallas" onClick={() => navigate("/vitrina-virtual")}>
                     {t("entreActividades.medallas")}
