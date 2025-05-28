@@ -1,16 +1,12 @@
-import { useRef, useEffect, useState } from "react";
+import {  useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../../Styles/Layout/Header.css";
-import { Link } from "react-router-dom";
 
 function Header() {
   const navigate = useNavigate();
   const [modoOscuro, setModoOscuro] = useState(false);
   const { i18n, t } = useTranslation();
-  const [isMuted, setIsMuted] = useState(false);
-  const audioRef = useRef(null);
-
 
 
 
@@ -23,12 +19,7 @@ function Header() {
     if (isDark) {
       document.documentElement.classList.add("dark");
     }
-
-    // Establecer el volumen inicial del audio
-    if (audioRef.current) {
-      audioRef.current.volume = 0.1; // Establece un volumen bajo
-    }
-  }, []); // Se ejecuta solo una vez al montar el componente
+  }, []);
 
 
   // Toggle para cambiar entre modo oscuro y claro
@@ -37,16 +28,6 @@ function Header() {
     setModoOscuro(nuevoEstadoModoOscuro);
     document.documentElement.classList.toggle("dark", nuevoEstadoModoOscuro);
     localStorage.setItem("modoOscuro", nuevoEstadoModoOscuro);
-  };
-
-
-  // Toggle para silenciar/activar música
-  const toggleMute = () => {
-    const nuevoEstadoMute = !isMuted; 
-    setIsMuted(nuevoEstadoMute);
-    if (audioRef.current) {
-      audioRef.current.muted = nuevoEstadoMute; 
-    }
   };
 
 
@@ -92,18 +73,36 @@ function Header() {
           🏠
         </button>
 
-        <button className="icon-btn" onClick={toggleModoOscuro}>
-          {modoOscuro ? "☀️" : "🌙"}
+        {/* BOTÓN: Entre Actividades */}
+        <button
+          className="icon-btn"
+          onClick={() => navigate("/entre-actividad")}
+        >
+          🗺️ {/* Ejemplo de icono, puedes cambiarlo */}
         </button>
+
+        {/* BOTÓN: Escáner QR */}
+        <button
+          className="icon-btn"
+          onClick={() => navigate("/escanerQR")}
+        >
+          📷 {/* Ejemplo de icono, puedes cambiarlo */}
+        </button>
+
 
         <button className="icon-btn" onClick={activarKiosco}>
           🖥️
+        </button>
+
+        <button className="icon-btn" onClick={toggleModoOscuro}>
+          {modoOscuro ? "☀️" : "🌙"}
         </button>
 
         <button className="icon-btn" onClick={toggleLanguage}>
           {i18n.language === "es" ? "🇪🇸" : "🇬🇧"}
         </button>
 
+        
         
       </div>
     </header>
