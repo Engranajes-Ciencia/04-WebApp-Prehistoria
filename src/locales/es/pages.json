@@ -69,7 +69,7 @@
       "Has encontrado el código secreto del parque.": "Has encontrado el código secreto del parque.",
       "Una actividad especial te espera..": "Una actividad especial te espera..",
       "¡Modo Secreto Desbloqueado!": "¡Modo Secreto Desbloqueado!",
-      "mensajeConteoRegresivo": "Tienes <1>{{time}}</1> segundos para completar la actividad especial:",
+      "mensajeConteoRegresivo": "Tienes {{time}} segundos para completar la actividad especial:",
       "tiempoTerminado": "¡Tiempo terminado! Puedes continuar.",
       "⏳ Tiempo agotado — Volver": "⏳ Tiempo agotado — Volver",
       "CofreCerrado": "Cofre cerrado",
