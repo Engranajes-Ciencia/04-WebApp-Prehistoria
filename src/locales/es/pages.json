@@ -62,7 +62,9 @@
     "reproducirAudio": "▶️ Reproducir audio",
     "pausarAudioENG": "⏸️ Pause audio",
     "reproducirAudioENG": "▶️ Play audio",
-    "sabiasQue": "¿Sabías que...?"
+    "sabiasQue": "¿Sabías que...?",
+    "verMapaActividad": "🗺️ Ver mapa",
+    "EscanearQR": "📲 Escanear codigo QR"
   },
     "modoSecreto": {
       "¡Enhorabuena!": "¡Enhorabuena!",

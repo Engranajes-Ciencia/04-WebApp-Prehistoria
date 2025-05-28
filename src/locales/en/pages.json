@@ -70,7 +70,9 @@
     "botonAudioENG": "🎧 Listen in English",
     "pausarAudioENG": "⏸️ Pause audio",
     "reproducirAudioENG": "▶️ Play audio",
-    "sabiasQue": "Did you know...?"
+    "sabiasQue": "Did you know...?",
+    "verMapaActividad": "🗺️ View map",
+    "EscanearQR": "📲 Scanner code QR"
   },
     "modoSecreto": {
       "¡Enhorabuena!": "Congratulations!",

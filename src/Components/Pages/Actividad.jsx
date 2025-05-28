@@ -268,7 +268,7 @@ function Actividad() {
             ) : ( // Si NO tiene Genially, muestra el botón para el siguiente QR
                 <div className="actividad-siguiente"> 
                     <button className="btn-siguiente" onClick={() => navigate("/EscanerQR")}> 
-                        <span className="icon">📲</span> {t("Escanear codigo QR")}
+                        <span className="icon"></span> {t("actividad.EscanearQR")}
                     </button>
                 </div>
             )}
@@ -276,7 +276,7 @@ function Actividad() {
             {/* Botón para volver a la pantalla "entre-actividad" */}
             <div className="navigation-footer"> 
                 <button className="btn-volver" onClick={() => navigate("/entre-actividad")}> 
-                    <i className="fa-solid fa-arrow-left"></i> {t("Mapa")}
+                    <i className="fa-solid fa-map-location-dot"></i> {t("actividad.verMapaActividad")}
                 </button>
             </div>
 
