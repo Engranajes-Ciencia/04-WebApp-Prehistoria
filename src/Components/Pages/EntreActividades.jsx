@@ -11,7 +11,7 @@ function EntreActividades() {
     const completadas = getActividadesCompletadas();
     const navigate = useNavigate();
 
-    const ultimaCompletada = completadas[completadas.length - 1];
+    const ultimaCompletada = completadas.length > 0 ? completadas[completadas.length - 1] : null;
     const siguiente = completadas.length + 1;
 
 
@@ -29,7 +29,7 @@ function EntreActividades() {
                 className="guia-avatar"
             />
             <p className="guia-texto">
-                {t("entreActividades.guiaTexto", { nombre, ultimaCompletada })}
+                {t("entreActividades.guiaTexto", { nombre, completadas: completadas.length })}
             </p>
 
 

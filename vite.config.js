@@ -1,13 +1,19 @@
-import { defineConfig, loadEnv } from 'vite'
-import react from '@vitejs/plugin-react'
+import { defineConfig } from "vite";
+import react from "@vitejs/plugin-react";
 
-// https://vite.dev/config/
-export default defineConfig(({ mode }) => {
-
-  const env = loadEnv(mode, process.cwd());
-
-  return {
-    base: env.VITE_BASE_URL || '/', // esto es para GitHub Pages
-    plugins: [react()],
-  };
+export default defineConfig({
+  plugins: [react()],
+  server: {
+    fs: {
+      // 🔐 Reforzar seguridad: evitar que se lean archivos fuera del directorio del proyecto
+      strict: true,
+      deny: [".."], // niega acceso a rutas padres
+    },
+    port: 3000, // Cambia si usas otro puerto
+    open: true, // Abre el navegador automáticamente
+  },
+  build: {
+    outDir: "dist",
+    sourcemap: false,
+  },
 });

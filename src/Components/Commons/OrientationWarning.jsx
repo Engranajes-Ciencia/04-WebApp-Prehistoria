@@ -1,15 +1,16 @@
 // src/Components/Commons/OrientationWarning.jsx
 import React from 'react';
 import useOrientation from '../../UseOrientation'; // Importa el hook desde la nueva ruta
+import { useTranslation, Trans } from "react-i18next";
 
 function OrientationWarning() {
+  const { t } = useTranslation();
   const { orientation } = useOrientation(); // Obtiene la orientación del hook
 
   if (orientation === "portrait") {
     return (
       <div className="orientacion-alerta">
-        ⚠️ Para una mejor experiencia recomendamos utilizar el dispositivo
-        en modo horizontal
+        {t("orientation.warning")}
       </div>
     );
   }

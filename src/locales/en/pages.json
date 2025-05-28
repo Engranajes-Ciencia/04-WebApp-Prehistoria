@@ -10,7 +10,8 @@
   "portada": {
     "titulo": "Prehistoric Adventure",
     "descripcion": "Welcome to the Prehistoric Adventure! You have just embarked on a journey through time where you will uncover the best-kept secrets of human history and Earth. Guided by your faithful companion (you choose!), you will visit 10 sacred places, ancient fossils, ancestral civilizations, and amazing monuments. At each stop, you will find a QR code that activates a mission: an interactive activity that will make you think, learn, and overcome challenges. Are you ready to become a true time explorer? 🧭 Your adventure starts now!",
-    "empezar": "Start Adventure"
+    "empezar": "Start Adventure",
+    "audio": "sounds/vozPortadaENG.mp3"
   },
 
   "form": {
@@ -38,7 +39,7 @@
 
   "entreActividades": {
     "mapa": "Map of the route",
-    "guiaTexto": "Good job {{nombre}}! You have completed {{ultimaCompletada}} of 20 stops.",
+    "guiaTexto": "Good job {{nombre}}! You have completed {{completadas}} of 20 stops.",
     "escanear": "Scan next stop",
     "pantallaFinal": "See final screen",
     "medallas": "See medals"
@@ -265,8 +266,8 @@
         "titulo": "Galápagos tortoises",
         "curiosidad": "Their shell can change depending on the island."
       },
-      "12": {
-        "titulo": "Atapuerca",
+      "11": {
+        "titulo": "footprints of Laetoli",
         "curiosidad": "It holds human traces from over 800,000 years ago."
       },
       "13": {

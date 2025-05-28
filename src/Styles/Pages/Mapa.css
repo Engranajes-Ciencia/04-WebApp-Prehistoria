@@ -157,4 +157,45 @@ html, body {
     }
 }
 
+/* Media Queries */
+@media (max-width: 600px) {
+  .saludo {
+    padding: 20px 15px;
+    font-size: 18px;
+  }
+
+  .saludo h2 {
+    font-size: 1.6rem;
+  }
+
+  .saludo p {
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .guia {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .avatar-mini {
+    width: 60%;
+    height: auto;
+  }
+
+  .botones {
+    flex-direction: column;
+    gap: 12px;
+    font-size: 16px;
+  }
+
+  .qr-button,
+  .volver-button {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+
 
