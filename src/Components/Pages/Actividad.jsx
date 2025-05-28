@@ -213,7 +213,7 @@ function Actividad() {
                         className={`audio-button ${isPlaying ? "playing" : ""}`} 
                         aria-label={isPlaying ? t("actividad.pausarAudio") : t("actividad.reproducirAudio")}
                     >
-                        <i className={`fa-solid ${isPlaying ? "fa-pause" : "fa-play"}`}></i> {t("Reproducir audio")}
+                        <i className={`fa-solid ${isPlaying ? "fa-pause" : "fa-play"}`}></i> {isPlaying ? t("actividad.pausarAudio") : t("actividad.reproducirAudio")}
                     </button>
                     <audio
                         ref={audioRef}
@@ -228,9 +228,9 @@ function Actividad() {
                             <button
                                 onClick={toggleAudioAlt}
                                 className={`audio-button-alt ${isAudioAltPlaying ? "playing" : ""}`} 
-                                aria-label={isAudioAltPlaying ? t("actividad.pausarAudioENG") : t("Play audio")}
+                                aria-label={isAudioAltPlaying ? t("actividad.pausarAudioENG") : t("actividad.reproducirAudioENG")}
                             >
-                                <i className={`fa-solid ${isAudioAltPlaying ? "fa-pause" : "fa-play"}`}></i> {t("Play audio")}
+                                <i className={`fa-solid ${isAudioAltPlaying ? "fa-pause" : "fa-play"}`}></i> {isAudioAltPlaying ? t("actividad.pausarAudioENG") : t("actividad.reproducirAudioENG")}
                             </button>
                             <audio
                                 ref={audioAltRef}
@@ -267,9 +267,7 @@ function Actividad() {
 
             ) : ( // Si NO tiene Genially, muestra el botón para el siguiente QR
                 <div className="actividad-siguiente"> 
-                    <button className="btn-siguiente" onClick={() => navigate("/EscanerQR")}> 
-                        <span className="icon"></span> {t("actividad.EscanearQR")}
-                    </button>
+                    
                 </div>
             )}
 

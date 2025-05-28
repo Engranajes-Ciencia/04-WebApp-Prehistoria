@@ -4,9 +4,11 @@
   display: flex;
   justify-content: center;     
   align-items: center;
-  gap: 20px;                   
-  padding: 20px;               
-  margin: 20px auto;           
+  gap: 1rem;                   
+  padding: 20px 40px 20px 20px;               
+  margin: 20px auto;
+  width: 100%;
+  max-width: 100%;           
   background: transparent;
   background-size: cover;      
   border-radius: 12px;
@@ -15,6 +17,9 @@
 
 .audio-button,
 .audio-button-alt {
+  justify-content: center;
+  text-align: center;
+  width: 240px;
   padding: 12px 24px;
   font-size: 16px;
   font-weight: bold;
@@ -116,6 +121,7 @@
   flex: 1;
   min-width: 0;
   height: auto;
+  text-align: justify;
   min-height: 150px;
   border-radius: 16px;
   background-color: #ffffffc0;
@@ -127,7 +133,9 @@
 
 h3 {
   font-size: 38px;
-  margin-bottom: 10px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  text-align: center;
 }
 
 p {
@@ -138,7 +146,7 @@ p {
 
 .sabiasque {
   position: relative;
-  max-width: 95%;
+  max-width: 100%;
   width: auto;
   font-size: 1.1rem;
   font-weight: bold;
