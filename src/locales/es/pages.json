@@ -31,8 +31,22 @@
     "titulo": "Escanea el código QR",
     "escaneando": "Escaneando... apunta con la cámara al QR",
     "qrInvalido": "QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número",
-    "botonSinQr": "No hay QR",
-    "seleccionarParada": "Selecciona una parada"
+    "qrActividadDetectado": "Actividad detectada: ID {{id}}",
+    "permisoDenegado": "Permiso de cámara denegado. Habilita el acceso desde la configuración.",
+    "noCamaraEncontrada": "No se encontró una cámara en el dispositivo.",
+    "codigoSecretoEncontrado": "¡Código secreto encontrado!",
+    "stopScanning": "Detener escaneo",
+    "cameraPermissionDenied": "Permisos de cámara denegados. Por favor, restablécelos y recarga la página.",
+    "noCameraFound": "No se encontró una cámara."
+  },
+  "scannerUI": {
+    "scanQR": "Escanear QR",
+    "requestPermissions": "Solicitar permisos de cámara",
+    "scanImage": "Escanear imagen",
+    "stopScanning": "Detener escaneo",
+    "permissionDenied": "Permisos de cámara denegados. Por favor, restablécelos y recarga la página.",
+    "noCameraFound": "No se encontró una cámara.",
+    "chooseImage": "Cargar imagen - Ninguna imagen seleccionada"
   },
   "entreActividades": {
     "mapa": "Mapa del recorrido",
