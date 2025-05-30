@@ -62,8 +62,9 @@ function Header() {
         </div>
 
       <h1 className="titulo-header">
-        Parque de la <br />
-        Prehistoria
+        
+        <span className="linea1">Parque de la</span><br />
+  <span className="linea2">Prehistoria</span>
       </h1>
     </div>
 
