@@ -148,98 +148,99 @@ function EscanerQR() {
 
   // Efecto para inicializar y limpiar el scanner
   useEffect(() => {
-    const qrReaderId = "qr-reader";
+  const qrReaderId = "qr-reader";
 
-    // Si ya hay una instancia en la ref, no crear una nueva.
-    // Solo si el scanner ya está "clear" podemos intentar un nuevo render.
-    if (!qrScannerRef.current) {
-      qrScannerRef.current = new Html5QrcodeScanner(
-        qrReaderId,
-        {
-          fps: 10,
-          qrbox: { width: 250, height: 250 }, // Objeto para qrbox
-          rememberLastUsedCamera: true,
-        },
-        false // Deshabilitar el botón de "Scan an Image File" por defecto si no lo necesitas
-      );
-      qrScannerRef.current.render(onScanSuccess, onScanError);
-      setScanning(true); // Asegurarse de que el spinner esté visible al inicio
-    } else {
-      // Si el scanner ya existe (ej. el componente se remonta), solo asegúrate de que esté renderizado
-      // y que el estado de escaneo sea correcto.
-      if (qrScannerRef.current.getState() !== 2) { // 2 significa Html5QrcodeScanner.State.SCANNING
-        qrScannerRef.current.render(onScanSuccess, onScanError);
-        setScanning(true);
+  const container = document.getElementById(qrReaderId);
+
+  const translations = {
+    "Scan QR Code": t("scannerUI.scanQR"),
+    "Request Camera Permissions": t("scannerUI.requestPermissions"),
+    "Scan an Image File": t("scannerUI.scanImage"),
+    "Stop Scanning": t("scannerUI.stopScanning"),
+    "Camera permissions denied. Please reset permission and refresh the page.": t("scannerUI.permissionDenied"),
+    "No camera found.": t("scannerUI.noCameraFound"),
+    "Choose image - No image choosen": t("scannerUI.chooseImage")
+  };
+
+  // Traducción segura del DOM
+  const walkAndTranslate = (node) => {
+    if (node.nodeType === Node.TEXT_NODE) {
+      const original = node.textContent.trim();
+      const translated = translations[original];
+      if (translated && node.textContent !== translated) {
+        node.textContent = translated;
       }
+    } else if (node.nodeType === Node.ELEMENT_NODE) {
+      if (node.placeholder && translations[node.placeholder]) {
+        node.placeholder = translations[node.placeholder];
+      }
+      if (node.title && translations[node.title]) {
+        node.title = translations[node.title];
+      }
+      Array.from(node.childNodes).forEach(walkAndTranslate);
     }
+  };
 
-
-    //  Traducción automática de textos del scanner con MutationObserver 
-    const translateScannerUI = () => {
-      const translations = {
-        "Scan QR Code": t("Escaner QR"),
-        "Request Camera Permissions": t("Permisos camara"),
-        "Scan an Image File": t("Escanear imagen"),
-        "Stop Scanning": t("escaner.stopScanning"),
-        "Camera permissions denied. Please reset permission and refresh the page.": t("escaner.cameraPermissionDenied"),
-        "No camera found.": t("escaner.noCameraFound"),
-        "Choose image - No image choosen": t("Cargar imagen"),
-        // Añadir más traducciones 
-      };
-
-      const container = document.getElementById(qrReaderId);
-      if (!container) return;
-
-      const walkAndTranslate = (node) => {
-        if (node.nodeType === Node.TEXT_NODE && node.textContent.trim() in translations) {
-          node.textContent = translations[node.textContent.trim()];
-        } else if (node.nodeType === Node.ELEMENT_NODE) {
-          // Traducir atributos específicos si es necesario (ej. placeholder, title)
-          if (node.placeholder && translations[node.placeholder]) {
-            node.placeholder = translations[node.placeholder];
-          }
-          if (node.title && translations[node.title]) {
-            node.title = translations[node.title];
-          }
-          // Recorrer hijos
-          Array.from(node.childNodes).forEach(walkAndTranslate);
-        }
-      };
-
+  const translateScannerUI = () => {
+    const container = document.getElementById(qrReaderId);
+    if (container) {
+      observerRef.current?.disconnect(); // Desactivar observer temporalmente
       walkAndTranslate(container);
-    };
+      observerRef.current?.observe(container, { childList: true, subtree: true, characterData: true }); // Reactivar observer
+    }
+  };
 
-    // Observar cambios en el DOM del scanner para traducir dinámicamente
-    observerRef.current = new MutationObserver((mutations) => {
-      // Solo traducir si hay cambios en el DOM y el mensaje no está activo (para evitar re-traducciones constantes)
-      if (!message) { // Solo traducir si no hay un mensaje modal activo
+  // Crear scanner si no existe
+  if (!qrScannerRef.current) {
+    qrScannerRef.current = new Html5QrcodeScanner(
+      qrReaderId,
+      {
+        fps: 10,
+        qrbox: { width: 250, height: 250 },
+        rememberLastUsedCamera: true
+      },
+      false
+    );
+    qrScannerRef.current.render(onScanSuccess, onScanError);
+    setScanning(true);
+  }
+
+  // Configurar observer para traducir dinámicamente
+  if (!observerRef.current && container) {
+    observerRef.current = new MutationObserver(() => {
+      if (!message) {
         translateScannerUI();
       }
     });
 
-    // Pequeño delay para asegurar que el scanner esté en el DOM antes de observar
-    const initObserverTimeout = setTimeout(() => {
-      const container = document.getElementById(qrReaderId);
-      if (container) {
-        observerRef.current.observe(container, { childList: true, subtree: true, characterData: true });
-        translateScannerUI(); // Traducción inicial
-      }
-    }, 500); // Aumentado el delay para mayor seguridad
+    observerRef.current.observe(container, {
+      childList: true,
+      subtree: true,
+      characterData: true
+    });
+  }
 
-    // Limpieza al desmontar el componente o al cambiar de idioma
-    return () => {
-      clearTimeout(initObserverTimeout);
-      if (qrScannerRef.current) {
-        qrScannerRef.current.clear().catch((err) => {
-          console.error("Error al limpiar scanner en unmount:", err);
-        });
-        qrScannerRef.current = null; // Limpiar la ref al desmontar
-      }
-      if (observerRef.current) {
-        observerRef.current.disconnect();
-      }
-    };
-  }, [onScanSuccess, onScanError, t, i18n.language, message]); // Añadimos 'message' a las dependencias del observer
+  // Traducción inicial tras pequeño delay
+  const initialTranslateTimeout = setTimeout(() => {
+    translateScannerUI();
+  }, 500);
+
+  // Limpieza
+  return () => {
+    clearTimeout(initialTranslateTimeout);
+    if (qrScannerRef.current) {
+      qrScannerRef.current.clear().catch((err) => {
+        console.error("Error clearing QR scanner:", err);
+      });
+      qrScannerRef.current = null;
+    }
+    if (observerRef.current) {
+      observerRef.current.disconnect();
+      observerRef.current = null;
+    }
+  };
+}, [onScanSuccess, onScanError, t, i18n.language, message]);
+
 
   return (
     <div className="scanner-container"> 
@@ -254,7 +255,7 @@ function EscanerQR() {
       {scanning && (
         <div className="spinner-container"> 
           <div className="spinner"></div> 
-          <p className="texto-escaneo">{t("escaneando")}</p> 
+          <p className="texto-escaneo">{t("escaner.escaneando")}</p> 
         </div>
       )}
 
