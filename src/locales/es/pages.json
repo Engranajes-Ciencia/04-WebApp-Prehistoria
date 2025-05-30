@@ -30,7 +30,9 @@
   "escaner": {
     "titulo": "Escanea el código QR",
     "escaneando": "Escaneando... apunta con la cámara al QR",
-    "qrInvalido": "QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número"
+    "qrInvalido": "QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número",
+    "botonSinQr": "No hay QR",
+    "seleccionarParada": "Selecciona una parada"
   },
   "entreActividades": {
     "mapa": "Mapa del recorrido",
