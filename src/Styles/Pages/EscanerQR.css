@@ -324,7 +324,7 @@
   color: var(--blanco);
 }
 
-.qr-reader-box {
+.dark .qr-reader-box {
   background: linear-gradient(135deg, #212121, #424242);
   color: var(--blanco);
 }
@@ -351,6 +351,12 @@
   color: #ffffff !important;
   text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692);
 }
+
+.dark #qr-reader #html5-qrcode-button-camera-permission {
+  background: linear-gradient(135deg, #464646, #1b1b1b);
+  color: #ffffff !important;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692);
+} 
 
 /* ANIMACIÓN DE SPINNER */
 @keyframes spin {
