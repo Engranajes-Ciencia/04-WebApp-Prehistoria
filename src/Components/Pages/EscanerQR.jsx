@@ -7,6 +7,8 @@ import i18n from "../../i18n/i18n";
 import "../../Styles/Pages/EscanerQR.css";
 import { marcarModoSecretoDesbloqueado } from "../../config/utils/localStorage";
 
+// MENSAJE
+
 const MessageBox = ({ message, onClose }) => {
   if (!message) return null;
   return (
@@ -19,16 +21,29 @@ const MessageBox = ({ message, onClose }) => {
   );
 };
 
+// COMPONENTE PRINCIPAL 
+
 function EscanerQR() {
   const { t } = useTranslation("pages");
   const navigate = useNavigate();
+
   const [scanning, setScanning] = useState(true);
   const [message, setMessage] = useState(null);
   const [mostrarOpciones, setMostrarOpciones] = useState(false);
+
   const qrScannerRef = useRef(null);
   const observerRef = useRef(null);
 
   const paradasDisponibles = Array.from({ length: 20 }, (_, i) => i + 1);
+
+  // FUNCIONES
+
+  const handleParadaClick = (id) => {
+    setMostrarOpciones(false);
+    triggerConfetti();
+    localStorage.setItem("accesoQR", "true");
+    navigate(`/actividad/${id}`);
+  };
 
   const showMessage = useCallback((text) => {
     setMessage(text);
@@ -43,76 +58,72 @@ function EscanerQR() {
     });
   }, []);
 
-  const handleParadaClick = (id) => {
-    setMostrarOpciones(false);
-    triggerConfetti();
-    localStorage.setItem("accesoQR", "true");
-    navigate(`/actividad/${id}`);
-  };
+  // ÉXITO EN ESCANEO 
 
-  const onScanSuccess = useCallback(
-    (decodedText) => {
-      setScanning(false);
-      const cleanText = decodedText.trim();
-      let targetRoute = null;
+  const onScanSuccess = useCallback((decodedText) => {
+    setScanning(false);
+    const cleanText = decodedText.trim();
+    let targetRoute = null;
 
-      if (cleanText === "codigo-secreto") {
-        marcarModoSecretoDesbloqueado();
-        targetRoute = "/secreto";
-        showMessage(t("Codigo secreto encontrado"));
-      } else if (cleanText.includes("/actividad/")) {
-        const urlParts = cleanText.split("/actividad/");
-        const idPart = urlParts[urlParts.length - 1];
-        const activityId = parseInt(idPart);
+    if (cleanText === "codigo-secreto") {
+      marcarModoSecretoDesbloqueado();
+      targetRoute = "/secreto";
+      showMessage(t("Codigo secreto encontrado"));
+    } else if (cleanText.includes("/actividad/")) {
+      const idPart = cleanText.split("/actividad/").pop();
+      const activityId = parseInt(idPart);
 
-        if (!isNaN(activityId) && activityId > 0) {
-          targetRoute = `/actividad/${activityId}`;
-          showMessage(t("escaner.qrActividadDetectado", { id: activityId }));
-        } else {
-          showMessage(t("escaner.qrInvalido"));
-        }
-      } else if (cleanText.startsWith("parada-")) {
-        const idPart = cleanText.split("-")[1];
-        const activityId = parseInt(idPart);
-
-        if (!isNaN(activityId) && activityId > 0) {
-          targetRoute = `/actividad/${activityId}`;
-          showMessage(t("escaner.qrActividadDetectado", { id: activityId }));
-        } else {
-          showMessage(t("escaner.qrInvalido"));
-        }
+      if (!isNaN(activityId) && activityId > 0) {
+        targetRoute = `/actividad/${activityId}`;
+        showMessage(t("escaner.qrActividadDetectado", { id: activityId }));
       } else {
         showMessage(t("escaner.qrInvalido"));
       }
+    } else if (cleanText.startsWith("parada-")) {
+      const idPart = cleanText.split("-")[1];
+      const activityId = parseInt(idPart);
 
-      if (targetRoute) {
-        triggerConfetti();
-        localStorage.setItem("accesoQR", "true");
-        if (qrScannerRef.current) {
-          qrScannerRef.current.clear().catch(() => { });
-        }
-        setTimeout(() => {
-          navigate(targetRoute);
-        }, 500);
+      if (!isNaN(activityId) && activityId > 0) {
+        targetRoute = `/actividad/${activityId}`;
+        showMessage(t("escaner.qrActividadDetectado", { id: activityId }));
       } else {
-        if (qrScannerRef.current) {
-          qrScannerRef.current.clear().catch(() => { });
-        }
+        showMessage(t("escaner.qrInvalido"));
       }
-    },
-    [navigate, t, triggerConfetti, showMessage]
-  );
+    } else {
+      showMessage(t("escaner.qrInvalido"));
+    }
 
-  const onScanError = useCallback(
-    (error) => {
-      if (error.message && error.message.includes("Permission denied")) {
-        showMessage(t("escaner.permisoDenegado"));
-      } else if (error.message && error.message.includes("No camera found")) {
-        showMessage(t("escaner.noCamaraEncontrada"));
+    if (targetRoute) {
+      triggerConfetti();
+      localStorage.setItem("accesoQR", "true");
+
+      if (qrScannerRef.current) {
+        qrScannerRef.current.clear().catch(err =>
+          console.error("Error al limpiar el scanner antes de navegar:", err)
+        );
       }
-    },
-    [showMessage, t]
-  );
+
+      setTimeout(() => navigate(targetRoute), 500);
+    } else {
+      if (qrScannerRef.current) {
+        qrScannerRef.current.clear().catch(err =>
+          console.error("Error al limpiar el scanner para QR inválido:", err)
+        );
+      }
+    }
+  }, [navigate, t, triggerConfetti, showMessage]);
+
+  // ERROR EN ESCANEO 
+
+  const onScanError = useCallback((error) => {
+    if (error.message?.includes("Permission denied")) {
+      showMessage(t("escaner.permisoDenegado"));
+    } else if (error.message?.includes("No camera found")) {
+      showMessage(t("escaner.noCamaraEncontrada"));
+    }
+  }, [showMessage, t]);
+
+  // CERRAR MENSAJE
 
   const closeMessage = useCallback(() => {
     setMessage(null);
@@ -122,83 +133,88 @@ function EscanerQR() {
     }
   }, [scanning, onScanSuccess, onScanError]);
 
+  // EFECTO DE MONTAJE
+
   useEffect(() => {
-  const qrReaderId = "qr-reader";
-
-  const container = document.getElementById(qrReaderId);
-
-  const translations = {
-    "Scan QR Code": t("scannerUI.scanQR"),
-    "Request Camera Permissions": t("scannerUI.requestPermissions"),
-    "Scan an Image File": t("scannerUI.scanImage"),
-    "Stop Scanning": t("scannerUI.stopScanning"),
-    "Camera permissions denied. Please reset permission and refresh the page.": t("scannerUI.permissionDenied"),
-    "No camera found.": t("scannerUI.noCameraFound"),
-    "Choose image - No image choosen": t("scannerUI.chooseImage")
-  };
-
-  // Traducción segura del DOM
-  const walkAndTranslate = (node) => {
-    if (node.nodeType === Node.TEXT_NODE) {
-      const original = node.textContent.trim();
-      const translated = translations[original];
-      if (translated && node.textContent !== translated) {
-        node.textContent = translated;
-      }
-    } else if (node.nodeType === Node.ELEMENT_NODE) {
-      if (node.placeholder && translations[node.placeholder]) {
-        node.placeholder = translations[node.placeholder];
-      }
-      if (node.title && translations[node.title]) {
-        node.title = translations[node.title];
-      }
-      Array.from(node.childNodes).forEach(walkAndTranslate);
-    }
-  };
-
-  const translateScannerUI = () => {
+    const qrReaderId = "qr-reader";
     const container = document.getElementById(qrReaderId);
-    if (container) {
-      observerRef.current?.disconnect(); // Desactivar observer temporalmente
-      walkAndTranslate(container);
+
+    const translations = {
+      "Scan QR Code": t("scannerUI.scanQR"),
+      "Request Camera Permissions": t("scannerUI.requestPermissions"),
+      "Scan an Image File": t("scannerUI.scanImage"),
+      "Stop Scanning": t("scannerUI.stopScanning"),
+      "Camera permissions denied. Please reset permission and refresh the page.": t("scannerUI.permissionDenied"),
+      "No camera found.": t("scannerUI.noCameraFound"),
+      "Choose image - No image choosen": t("scannerUI.chooseImage")
     };
 
-    // Observar cambios en el DOM del scanner para traducir dinámicamente
-    observerRef.current = new MutationObserver((mutations) => {
-      // Solo traducir si hay cambios en el DOM y el mensaje no está activo (para evitar re-traducciones constantes)
-      if (!message) { // Solo traducir si no hay un mensaje modal activo
-        translateScannerUI();
+    const walkAndTranslate = (node) => {
+      if (node.nodeType === Node.TEXT_NODE) {
+        const original = node.textContent.trim();
+        const translated = translations[original];
+        if (translated && node.textContent !== translated) {
+          node.textContent = translated;
+        }
+      } else if (node.nodeType === Node.ELEMENT_NODE) {
+        if (node.placeholder && translations[node.placeholder]) {
+          node.placeholder = translations[node.placeholder];
+        }
+        if (node.title && translations[node.title]) {
+          node.title = translations[node.title];
+        }
+        Array.from(node.childNodes).forEach(walkAndTranslate);
       }
-    });
+    };
 
-    // Pequeño delay para asegurar que el scanner esté en el DOM antes de observar
-    const initObserverTimeout = setTimeout(() => {
+    const translateScannerUI = () => {
       const container = document.getElementById(qrReaderId);
       if (container) {
-        observerRef.current.observe(container, { childList: true, subtree: true, characterData: true });
-        translateScannerUI(); // Traducción inicial
+        observerRef.current?.disconnect();
+        walkAndTranslate(container);
+        observerRef.current?.observe(container, { childList: true, subtree: true, characterData: true });
       }
-    }, 500); // Aumentado el delay para mayor seguridad
+    };
 
-    // Limpieza al desmontar el componente o al cambiar de idioma
+    if (!qrScannerRef.current) {
+      qrScannerRef.current = new Html5QrcodeScanner(
+        qrReaderId,
+        { fps: 10, qrbox: { width: 250, height: 250 }, rememberLastUsedCamera: true },
+        false
+      );
+      qrScannerRef.current.render(onScanSuccess, onScanError);
+      setScanning(true);
+    }
+
+    if (!observerRef.current && container) {
+      observerRef.current = new MutationObserver(() => {
+        if (!message) translateScannerUI();
+      });
+      observerRef.current.observe(container, { childList: true, subtree: true, characterData: true });
+    }
+
+    const initialTranslateTimeout = setTimeout(() => translateScannerUI(), 500);
+
     return () => {
-      clearTimeout(initObserverTimeout);
+      clearTimeout(initialTranslateTimeout);
       if (qrScannerRef.current) {
-        qrScannerRef.current.clear().catch((err) => {
-          console.error("Error al limpiar scanner en unmount:", err);
-        });
-        qrScannerRef.current = null; // Limpiar la ref al desmontar
+        qrScannerRef.current.clear().catch(err => console.error("Error clearing QR scanner:", err));
+        qrScannerRef.current = null;
       }
       if (observerRef.current) {
         observerRef.current.disconnect();
+        observerRef.current = null;
       }
     };
-  }, [onScanSuccess, onScanError, t, i18n.language, message]); // Añadimos 'message' a las dependencias del observer
+  }, [onScanSuccess, onScanError, t, i18n.language, message]);
+
+  // RENDER 
 
   return (
     <div className="scanner-container">
       <h2 className="scanner-title">{t("escaner.titulo")}</h2>
 
+      {/* ✅ BOTÓN "Sin QR" + Dropdown arriba derecha */}
       <div className="no-qr-section">
         <button className="no-qr-button" onClick={() => setMostrarOpciones(!mostrarOpciones)}>
           🚫 {t("escaner.botonSinQr")}
@@ -206,7 +222,6 @@ function EscanerQR() {
 
         {mostrarOpciones && (
           <div className="contenedor-paradas-scroll">
-            <p>{t("escaner.seleccionarParada") || "Selecciona una parada:"}</p>
             <div className="grid-paradas">
               {paradasDisponibles.map((id) => (
                 <button key={id} className="parada-button" onClick={() => handleParadaClick(id)}>
@@ -218,12 +233,13 @@ function EscanerQR() {
         )}
       </div>
 
-      <div id="qr-reader" className="qr-reader-box"></div>
+
+      <div id="qr-reader" className="qr-reader-box" />
 
       {scanning && (
-        <div className="spinner-container"> 
-          <div className="spinner"></div> 
-          <p className="texto-escaneo">{t("escaneando")}</p> 
+        <div className="spinner-container">
+          <div className="spinner" />
+          <p className="texto-escaneo">{t("escaner.escaneando")}</p>
         </div>
       )}
 
