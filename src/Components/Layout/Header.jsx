@@ -1,4 +1,4 @@
-import {  useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../../Styles/Layout/Header.css";
@@ -8,6 +8,27 @@ function Header() {
   const [modoOscuro, setModoOscuro] = useState(false);
   const { i18n, t } = useTranslation();
 
+  const [logoClickCount, setLogoClickCount] = useState(0);
+  const logoClickTimer = useRef(null);
+  const RUTA_SECRETA_ADMIN = "/admin"; // la que hayas definido
+
+  const handleLogoClick = () => {
+    setLogoClickCount(prevCount => prevCount + 1);
+
+    // Reiniciar el contador si pasa demasiado tiempo entre clics
+    clearTimeout(logoClickTimer.current);
+    logoClickTimer.current = setTimeout(() => {
+      setLogoClickCount(0);
+    }, 2000); // Ej: 1.5 segundos para hacer los clics
+  };
+
+  useEffect(() => {
+    if (logoClickCount >= 6) { // Acceder después de 5 clics
+      setLogoClickCount(0); // Resetear contador
+      clearTimeout(logoClickTimer.current); // Limpiar timer
+      navigate(RUTA_SECRETA_ADMIN);
+    }
+  }, [logoClickCount, navigate, RUTA_SECRETA_ADMIN]);
 
 
   // Efecto para inicializar el tema oscuro y el volumen del audio
@@ -52,7 +73,7 @@ function Header() {
     <header className="header">
 
       <div className="header-left-section">
-        <div className="branding">
+        <div className="branding" onClick={handleLogoClick} >
           {/* Usar import.meta.env.BASE_URL para rutas de assets estáticos */}
           <img
             src={`${import.meta.env.BASE_URL}assets/images/Logo-principal.png`}

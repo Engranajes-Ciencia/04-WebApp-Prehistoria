@@ -81,6 +81,68 @@
       "CofreAbierto": "Cofre abierto",
       "actividad-secreta": "Actividad secreta"
     },
+
+    "admin": {
+      "tituloPanel": "Panel de Estadísticas (Local)",
+      "auth": {
+        "titulo": "Panel de Administración", 
+        "subtitulo": "Acceso restringido. Introduce la clave para continuar.",
+        "labelClave": "Clave de Acceso", 
+        "placeholderClave": "Introduce tu clave secreta",
+        "botonEntrar": "Acceder",
+        "notaSeguridad": "Este panel es para uso administrativo exclusivo."
+      },
+      "secciones": {
+        "datosJugador": "Datos del Jugador",
+        "metricasUso": "Métricas de Uso",
+        "progreso": "Progreso del Juego",
+        "administracion": "Administración"
+      },
+      "labels": {
+        "nombre": "Nombre",
+        "avatar": "Avatar",
+        "iniciosJuego": "Inicios del juego",
+        "tiempoTotal": "Tiempo total de uso (aprox.)",
+        "actividadesCompletadas": "Actividades Completadas (IDs y Títulos)",
+        "modoSecreto": "Modo Secreto Desbloqueado",
+        "ultimoReset": "Último Reseteo de Estadísticas"
+      },
+      "stats": {
+        "noDefinido": "No definido",
+        "ninguna": "Ninguna",
+        "actividadDesconocida": "Actividad Desconocida",
+        "nunca": "Nunca"
+      },
+      "unidades": {
+        "veces": "veces",
+        "segundos": "segundos",
+        "minutos": "minutos",
+        "horas": "horas"
+      },
+      "respuestas": {
+        "si": "Sí",
+        "no": "No"
+      },
+      "botones": {
+        "volver": "Volver",
+        "copiarStats": "Copiar Estadísticas",
+        "resetStats": "Resetear Estadísticas y Progreso"
+      },
+      "confirmaciones": {
+        "resetTotal": "¿Estás seguro de que quieres resetear TODAS las estadísticas y datos de progreso de esta tablet? Esta acción no se puede deshacer."
+      },
+      "alertas": {
+        "statsReseteadas": "Todas las estadísticas y datos de progreso han sido reseteados en esta tablet.",
+        "claveIncorrecta": "Clave incorrecta.",
+        "statsCopiadas": "Estadísticas copiadas al portapapeles."
+      },
+      "errores": {
+        "copiarStats": "Error al copiar estadísticas: "
+      },
+      "notas": {
+        "datosLocales": "Estos datos son específicos de esta tablet/navegador y se almacenan localmente."
+      }
+    },
   "1": {
     "titulo": "Bienvenido. Comienza la aventura",
     "avatarDialogo": {

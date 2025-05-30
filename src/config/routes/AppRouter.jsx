@@ -1,17 +1,10 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 
 import { ROUTES } from './routerConfig';
 
 import Layout from '../../Components/Layout/Layout';
-
-import ModoJuego from "../../Components/Pages/ModoJuego";
-import Portada from "../../Components/Pages/Portada";
-import Form from "../../Components/Pages/Form";
-import Mapa from "../../Components/Pages/Mapa";
-import EscanerQR from '../../Components/Pages/EscanerQR';
-import EntreActividades from "../../Components/Pages/EntreActividades";
-import ModoSecreto from "../../Components/Pages/ModoSecreto";
+import AdminStats from "../../Components/Pages/AdminStats";
 
 import LoadingSpinner from "../../Components/Commons/LoadingSpinner";
 
@@ -21,7 +14,23 @@ const Actividad = lazy(() => import("../../Components/Pages/Actividad"));
 const Vitrina = lazy(() => import("../../Components/Pages/Vitrina"));
 const VitrinaVirtual = lazy(() => import("../../Components/Pages/VitrinaVirtual"));
 
+// Componentes no lazy
+import ModoJuego from "../../Components/Pages/ModoJuego";
+import Portada from "../../Components/Pages/Portada";
+import Form from "../../Components/Pages/Form";
+import Mapa from "../../Components/Pages/Mapa";
+import EscanerQR from '../../Components/Pages/EscanerQR';
+import EntreActividades from "../../Components/Pages/EntreActividades";
+import ModoSecreto from "../../Components/Pages/ModoSecreto";
+
+
+
+
+
 function AppRouter() {
+
+    const RUTA_SECRETA_ADMIN = "/admin"; // Define tu ruta secreta aquí
+
     return(
         <Routes>
             {/* Rutas que SÍ usan el Layout */}
@@ -55,8 +64,10 @@ function AppRouter() {
                 </Suspense>
             } />
 
-            {/* Ejemplo de ruta que NO usaría el Layout (si la tuvieras) */}
-            {/* <Route path="/alguna-otra-ruta" element={<SomeComponentWithoutLayout />} /> */}
+            {/* RUTA DE ADMIN - SIN LAYOUT para que no aparezca en la navegación normal */}
+            <Route path={RUTA_SECRETA_ADMIN} element={<AdminStats />} />
+
+
         </Routes>
     );
 }

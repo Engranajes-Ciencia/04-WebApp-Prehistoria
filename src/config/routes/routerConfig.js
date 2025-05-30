@@ -12,5 +12,6 @@ export const ROUTES = {
     VITRINA: '/vitrina',
     VITRINA_VIRTUAL: '/vitrina-virtual',
     MODO_SECRETO: '/secreto',
+    ADMIN_STATS: '/admin-stats'
     // Añadir cualquier otra ruta 
 };

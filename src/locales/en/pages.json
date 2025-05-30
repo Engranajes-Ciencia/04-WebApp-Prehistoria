@@ -91,6 +91,68 @@
       "actividad-secreta": "Secret activity"
   },
 
+  "admin": {
+    "tituloPanel": "Admin Panel (Local Stats)",
+    "auth": {
+      "titulo": "Administration Panel",
+      "subtitulo": "Restricted access. Enter the key to proceed.",
+      "labelClave": "Access Key",
+      "placeholderClave": "Enter your secret key",
+      "botonEntrar": "Access",
+      "notaSeguridad": "This panel is for administrative use only."
+    },
+    "secciones": {
+      "datosJugador": "Player Data",
+      "metricasUso": "Usage Metrics",
+      "progreso": "Game Progress",
+      "administracion": "Administration"
+    },
+    "labels": {
+      "nombre": "Name",
+      "avatar": "Avatar",
+      "iniciosJuego": "Game Starts",
+      "tiempoTotal": "Total Usage Time (approx.)",
+      "actividadesCompletadas": "Completed Activities (IDs & Titles)",
+      "modoSecreto": "Secret Mode Unlocked",
+      "ultimoReset": "Last Stats Reset"
+    },
+    "stats": {
+      "noDefinido": "Not set",
+      "ninguna": "None",
+      "actividadDesconocida": "Unknown Activity",
+      "nunca": "Never"
+    },
+    "unidades": {
+      "veces": "times",
+      "segundos": "seconds",
+      "minutos": "minutes",
+      "horas": "hours"
+    },
+    "respuestas": {
+      "si": "Yes",
+      "no": "No"
+    },
+    "botones": {
+      "volver": "Back",
+      "copiarStats": "Copy Stats",
+      "resetStats": "Reset Stats & Progress"
+    },
+    "confirmaciones": {
+      "resetTotal": "Are you sure you want to reset ALL statistics and progress data on this tablet? This action cannot be undone."
+    },
+    "alertas": {
+      "statsReseteadas": "All statistics and progress data have been reset on this tablet.",
+      "claveIncorrecta": "Incorrect key.",
+      "statsCopiadas": "Statistics copied to clipboard."
+    },
+    "errores": {
+      "copiarStats": "Error copying statistics: "
+    },
+    "notas": {
+      "datosLocales": "This data is specific to this tablet/browser and is stored locally."
+    }
+  },
+
   "1": {
     "titulo": "Welcome – The adventure begins",
     "avatarDialogo": {
