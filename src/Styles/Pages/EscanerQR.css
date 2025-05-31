@@ -252,7 +252,7 @@
 /* BOTÓN "NO HAY QR" */
 .no-qr-section {
   position: absolute;
-  top: 20px;
+  top: -17.8px;
   right: 20px;
   z-index: 50;
   display: flex;
