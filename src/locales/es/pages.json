@@ -33,7 +33,19 @@
   "escaner": {
     "titulo": "Escanea el código QR",
     "escaneando": "Escaneando... apunta con la cámara al QR",
-    "qrInvalido": "QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número"
+    "qrInvalido": "QR no válido. Asegúrate de que el QR contiene una URL con /actividad/número",
+    "qrActividadDetectado": "Actividad detectada: ID {{id}}",
+    "permisoDenegado": "Permiso de cámara denegado. Habilita el acceso desde la configuración.",
+    "noCamaraEncontrada": "No se encontró una cámara en el dispositivo.",
+    "codigoSecretoEncontrado": "¡Código secreto encontrado!",
+    "botonSinQr": "🚫 Parada sin QR",
+    "paradaNumero": "Parada {{id}}"
+  },
+  "scannerUI": {
+    "chooseImage": "Cargar imagen - Ninguna imagen seleccionada",
+    "chooseImageButton": "Elegir imagen",
+    "scanImage": "Escanear imagen",
+    "requestPermissions": "Solicitar permisos de cámara"
   },
   "entreActividades": {
     "mapa": "Mapa del recorrido",

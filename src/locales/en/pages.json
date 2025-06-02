@@ -34,10 +34,22 @@
     "botonCerrar": "❌"
   },
 
-  "escaner": {
+   "escaner": {
     "titulo": "Scan the QR code",
-    "escaneando": "Scanning... point the camera at the QR code",
-    "qrInvalido": "Invalid QR. Make sure it contains a URL with /actividad/number"
+    "escaneando": "Scanning... point the camera at the QR",
+    "qrInvalido": "Invalid QR. Make sure the QR contains a URL with /activity/number",
+    "qrActividadDetectado": "Activity detected: ID {{id}}",
+    "permisoDenegado": "Camera permission denied. Enable access in settings.",
+    "noCamaraEncontrada": "No camera found on the device.",
+    "codigoSecretoEncontrado": "Secret code found!",
+    "botonSinQr": "🚫 Stop without QR",
+    "paradaNumero": "Stop {{id}}"
+  },
+  "scannerUI": {
+    "chooseImage": "Load image - No image selected",
+    "chooseImageButton": "Choose image",
+    "scanImage": "Scan an Image File",
+    "requestPermissions": "Request Camera Permissions"
   },
 
   "entreActividades": {

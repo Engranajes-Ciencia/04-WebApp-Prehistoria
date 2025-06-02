@@ -1,16 +1,21 @@
+/* --- CONTENEDOR PRINCIPAL DEL SCANNER --- */
 .scanner-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 20px;
   padding: 40px 20px;
-  height: 650px;
   text-align: center;
   background: linear-gradient(120deg, #f0fdf4, #e3f2fd);
   animation: fadeIn 0.8s ease-in-out;
   transition: background 0.4s ease;
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  overflow-y: auto; /* Permite scroll si se excede altura */
 }
 
+/* --- TÍTULO DEL ESCÁNER --- */
 .scanner-container h2 {
   font-size: 2.5rem;
   padding: 10px;
@@ -19,105 +24,111 @@
   border-radius: 16px;
   border-color: #7cdfc3;
   background: linear-gradient(135deg, #e9fefa, #dcfff4);
-  text-shadow: 2px 2px 26px rgba(197, 255, 242, 0.692) !important;
+  text-shadow: 2px 2px 26px rgba(197, 255, 242, 0.69);
 }
 
+/* --- CAMBIO DE TIPO DE ESCANEO (Link o botón para cambiar tipo) --- */
 #html5-qrcode-anchor-scan-type-change {
   color: #007bff;
   font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+#html5-qrcode-anchor-scan-type-change:hover {
+  color: #6ec1fc !important;
 }
 
-/* QR Reader Box */
-
-#qr-reader__header_message {
-  border: 2px solid #000000!important;
-  border-color: #ff0000b8!important;
-  border-radius: 16px;
-  background-color: #ff3f3fb9!important;
-  color: #000000!important;
-}
-
-#qr-reader > div > img:first-of-type {
-  transform: translateY(4px) translateX(-5px);
-}
-
+/* --- CAJA DEL QR (Contenedor del lector QR) --- */
 #qr-reader {
   width: 100%;
-  max-width: 350px;
-  height: 325px;
-  aspect-ratio: 1 / 1;
+  max-width: 400px;
+  min-height: 200px;
   background-color: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 8px 30px var(--verde);
-  overflow: hidden;
-  padding: 10px;
-  top: -20px;
+  box-shadow: 0 8px 30px rgba(77, 161, 128, 0.5);
+  overflow: visible !important;
+  padding: 12px;
+  position: relative;
+  border: 2px solid #4da180;
+  z-index: 15;
 }
 
+/* Imagen principal del lector (normalmente cámara o placeholder) */
+#qr-reader > div > img:first-of-type {
+  transform: translateY(3px) translateX(-3px);
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.1));
+  margin-top: 10px;
+}
+
+/* Región visible para escanear QR */
 #qr-reader__scan_region img {
-  background: var(--verde);
-  border:4px solid #005800;
+  background: #4da180;
+  border: 4px solid #007b33;
   border-radius: 16px;
   padding: 10px;
-  transform: translateY(10px) translateX(0px)!important;
+  transform: translateY(8px);
+  box-shadow: 0 0 10px #4da180a0;
+  margin-top: -10px;
 }
 
-/* Cambiar botón de subir imagen */
+/* Mensaje de error visible dentro del lector */
+#qr-reader__header_message {
+  border: 2px solid #ff3f3f !important;
+  border-radius: 16px;
+  background-color: #ff6b6bb9 !important;
+  color: #000 !important;
+  font-weight: bold;
+  padding: 8px 12px;
+  margin-bottom: 12px;
+  text-shadow: none;
+}
+
+/* Botón para dar permiso a la cámara */
 #qr-reader #html5-qrcode-button-camera-permission {
   background-color: #4caf50;
   color: white;
   font-weight: bold;
-  padding: 10px 20px;
+  padding: 12px 22px;
   margin-bottom: 15px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: all 0.3s ease;
 }
-
 #qr-reader #html5-qrcode-button-camera-permission:hover {
   background-color: #388e3c;
   transform: scale(1.05);
 }
 
+/* Botón para selección de archivo QR */
 #html5-qrcode-button-file-selection {
   margin-bottom: 5px;
 }
 
-#html5-qrcode-anchor-scan-type-change:hover {
-  color:#6ec1fc!important;
-}
-
+/* Quitar bordes extra en el dashboard interno */
 #qr-reader__dashboard_section > div > div:nth-of-type(2) {
-  border-style: none!important;
+  border-style: none !important;
 }
 
-/* Cambiar botón de subir imagen */
+/* Texto descriptivo debajo del escáner */
 .texto-escaneo {
   background: #baffddd6;
   border-radius: 16px;
-  padding: 5px;
-  margin-top: 20px;
-  font-size: 1rem;
-  color: #555;
-  transition: color 0.3s ease;
-
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #4da180;
   margin-top: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #4da180;
   animation: fadeIn 1s ease;
+  box-shadow: 0 3px 10px #a8e5c5aa;
 }
 
-/* Spinner */
+/* --- SPINNER DE CARGA --- */
 .spinner-container {
-  position:sticky;
   display: flex;
-  background-color: #a8dbb5aa;
   align-items: center;
   justify-content: center;
   border-radius: 16px;
-  margin-top: -10px;
+  margin-top: 30px;
   width: 200px;
   height: 140px;
   top: 710px;
@@ -135,21 +146,15 @@
   margin-bottom: -15px;
 }
 
-
-/* Estilos para el MessageBox */
+/* --- MENSAJE EMERGENTE --- */
 .message-box-overlay {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background-color: rgba(0, 0, 0, 0.7);
-  /* Fondo oscuro semi-transparente */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 1000;
-  /* Asegura que esté por encima de todo */
 }
 
 .message-box-content {
@@ -157,194 +162,204 @@
   padding: 30px;
   border-radius: 15px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-  /* Sombra para el efecto flotante */
   text-align: center;
   max-width: 80%;
-  /* Ancho máximo para pantallas grandes */
   width: auto;
-  /* Ajuste automático del ancho */
   color: #333;
-  /* Color de texto oscuro */
   font-size: clamp(1rem, 3vw, 1.2rem);
-  /* Tamaño de fuente responsivo */
   display: flex;
   flex-direction: column;
   gap: 20px;
-  /* Espacio entre el texto y el botón */
 }
 
 .message-box-button {
-  background-color: #4CAF50;
-  /* Verde */
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
   font-size: clamp(1rem, 2.5vw, 1.1rem);
-  /* Tamaño de fuente responsivo */
   transition: background-color 0.3s ease, transform 0.2s ease;
-  /* Transiciones suaves */
 }
-
 .message-box-button:hover {
   background-color: #45a049;
-  /* Verde más oscuro al pasar el ratón */
   transform: translateY(-2px);
-  /* Pequeño efecto de elevación */
+}
+
+/* --- LISTA DE PARADAS - CUADRÍCULA --- */
+.lista-paradas-grid {
+  list-style: none;
+  padding: 0;
+  margin: 5px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 10px;
+  max-width: 500px;
+  width: 100%;
+  position: relative;
+  z-index: 20;
+}
+
+.parada-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #79a981;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.parada-button:hover {
+  background-color: #5e8a69;
+}
+
+/* CONTENEDOR SCROLLABLE DE PARADAS */
+.contenedor-paradas-scroll {
+  max-height: 280px;
+  overflow-y: auto;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  margin: 15px 0 25px 0;
+  position: relative;
+  z-index: 25;
+  width: 100%;
+  max-width: 500px;
+}
+
+/* GRID PARA PARADAS (dentro del scroll) */
+.grid-paradas {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.grid-paradas .parada-button {
+  padding: 8px 12px;
+  background-color: #79a981;
+  border-radius: 6px;
+  font-weight: 600;
+}
+.grid-paradas .parada-button:hover {
+  background-color: #66bb6a;
+}
+
+/* BOTÓN "NO HAY QR" */
+.no-qr-section {
+  position: absolute;
+  top: -17.8px;
+  right: 20px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.no-qr-button {
+  padding: 8px 16px;
+  background-color: #f44336;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.no-qr-button:hover {
+  background-color: #d32f2f;
+  transform: translateY(-1px);
+}
+
+/* --- Contenedor desplegable fino y compacto --- */
+.contenedor-paradas-scroll {
+  margin-top: 8px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 240px;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+/* --- Diseño en dos columnas para las paradas --- */
+.grid-paradas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.grid-paradas .parada-button {
+  background-color: #79a981;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  font-weight: 600;
+  cursor: pointer;
+  width: calc(50% - 6px);
+  text-align: center;
+}
+
+.grid-paradas .parada-button:hover {
+  background-color: #66bb6a;
 }
 
 /* Estilos Modo Oscuro */
 
-.dark #qr-reader {
-    box-shadow: 0 8px 30px #ffffff89!important;
+.dark .scanner-container {
+  background: linear-gradient(135deg, #212121, #424242);
+  color: var(--blanco);
 }
 
-.dark .scanner-container h2 {
-  color: #ffffff!important;
+.dark .contenedor-paradas-scroll {
+  background: linear-gradient(135deg, #212121, #424242);
+  color: var(--blanco);
+}
+
+.dark .qr-reader-box {
+  background: linear-gradient(135deg, #212121, #424242);
+  color: var(--blanco);
+}
+
+.dark .scanner-title {
   background: linear-gradient(135deg, #212121, #424242);
   border-color: #212121;
-  text-shadow: 2px 2px 26px rgba(213, 213, 213, 0.692) !important;
+  text-shadow: 2px 2px 26px rgba(175, 175, 175, 0.692) !important;
 }
 
-.dark .texto-escaneo {
-  background: #515151d6;
-  color: #ffffff!important;
+ .dark .texto-escaneo {
+  background: linear-gradient(270deg, #22222200, #1a1a1a);
+  text-shadow: 2px 2px 10px rgba(204, 204, 204, 0.815) !important;
+ }
+
+ .dark .no-qr-button {
+  background: linear-gradient(135deg, #464646, #1b1b1b);
+  color: #ffffff !important;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692);
 }
 
-.dark #qr-reader__scan_region img {
-  border:4px solid #000000;
-}
-
-.dark #qr-reader__header_message {
-  border: 2px solid #000000!important;
-  border-color: #ff0000b8!important;
-  border-radius: 16px;
-  background-color: #ff3f3fb9!important;
-  color: #ffffff!important;
+.dark .parada-button {
+  background: linear-gradient(135deg, #464646, #1b1b1b);
+  color: #ffffff !important;
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692);
 }
 
 .dark #qr-reader #html5-qrcode-button-camera-permission {
-  background: linear-gradient(135deg, #424242, #1b1b1b);
+  background: linear-gradient(135deg, #464646, #1b1b1b);
   color: #ffffff !important;
-  transition: all 0.3s ease;
-}
+  text-shadow: 1px 1px 6px rgba(255, 255, 255, 0.692);
+} 
 
-.dark #html5-qrcode-button-file-selection {
-  background: linear-gradient(135deg, #424242, #1b1b1b);
-  color: #ffffff !important;
-}
-
-.dark #qr-reader__scan_region img {
-  background: #ffffff;
-  border-radius: 16px;
-  padding: 10px;
-}
-
-.dark #qr-reader #html5-qrcode-button-camera-permission:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, #424242);
-}
-
-.dark #qr-reader #html5-qrcode-button-file-selection:hover {
-  transform: scale(1.05);
-  background: linear-gradient(135deg, #424242);
-}
-
-.dark #html5-qrcode-anchor-scan-type-change {
-  color:#5dabff!important;
-}
-
-.dark #html5-qrcode-anchor-scan-type-change:hover {
-  color:#a5d8ff!important;
-}
-
-.dark .scanner-container {
-  background: linear-gradient(135deg, #212121, #424242);
-  color: var(--blanco);
-}
-
-.dark .html5-qrcode-anchor-scan-type-change.html5-qrcode-elemen {
-  color: #007bff;
-}
-
-.dark .spinner-container {
-  background-color: #1e1e1eaa;
-}
-
-.dark .scanner-container {
-  background: linear-gradient(135deg, #212121, #424242);
-  color: var(--blanco);
-}
-
-.dark .html5-qrcode-anchor-scan-type-change {
-  color: #007bff;
-}
-
-.dark .scanner-container h2 {
-  color: #a5d6a7;
-}
-
-.dark #qr-reader {
-  background-color: #2a2a2a;
-  box-shadow: 0 0 25px rgba(0, 255, 120, 0.15);
-}
-
-/* Forzar todos los textos internos de html5-qrcode */
-.dark #qr-reader * {
-  color: #80d8ff;
-}
-
-.dark .spinner {
-  border-color: #888;
-  border-top-color: #80d8ff;
-}
-
-.dark .texto-escaneo {
-  color: #80d8ff;
-}
-
-/* Botones de librería */
-.dark #qr-reader button {
-  background-color: #26a69a;
-}
-
-.dark #qr-reader button:hover {
-  background-color: #00897b;
-}
-
-/* Animaciones */
-
+/* ANIMACIÓN DE SPINNER */
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Media Queries */
-@media (max-width: 600px) {
-  .message-box-content {
-    padding: 20px;
-    margin: 20px;
-    /* Para que no se pegue a los bordes en móviles */
-  }
-
-  .message-box-button {
-    padding: 8px 15px;
-  }
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }

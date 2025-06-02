@@ -2,7 +2,7 @@
     min-height: 100vh;
     height: auto;
     padding: 2rem 1.5rem;
-    background: url('/assets/images/fondo-mapa.png') no-repeat center center fixed;
+    background: url('/assets/images/fondo-olas.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     flex-direction: column;
