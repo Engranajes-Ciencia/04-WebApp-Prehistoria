@@ -180,7 +180,7 @@ Progreso:
                     <strong>{t('admin.labels.iniciosJuego')}:</strong> {stats.inicios} {t('admin.unidades.veces')}
                 </p>
                 <p className="admin-stats-item">
-                    <strong>{t('labels.tiempoTotal')}:</strong><br />
+                    <strong>{t('admin.labels.tiempoTotal')}:</strong><br />
                     {formattedTime.segundos} {t('admin.unidades.segundos')}<br />
                     {formattedTime.minutos} {t('admin.unidades.minutos')}<br />
                     {formattedTime.horas} {t('admin.unidades.horas')}
