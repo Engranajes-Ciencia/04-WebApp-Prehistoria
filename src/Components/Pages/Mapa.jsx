@@ -98,9 +98,7 @@ function Mapa() {
                     <button className="volver-button" onClick={() => navigate("/Form")}>
                         🔙 {t("mapa.botonVolver")}
                     </button>
-                    <button className="no-qr-button" onClick={() => setMostrarOpciones(true)}>
-                        🚫 {t("mapa.botonNoQR")}
-                    </button>
+                    
                 </div>
 
                 {mostrarOpciones && (
