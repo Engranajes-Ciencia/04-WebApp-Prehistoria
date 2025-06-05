@@ -28,7 +28,7 @@ function AppRouter() {
             <Route path={ROUTES.MODOJUEGO} element={<Layout><ModoJuego /></Layout>} />
             <Route path={ROUTES.PORTADA} element={<Layout><Portada /></Layout>} />
             <Route path={ROUTES.FORM} element={<Layout><Form /></Layout>} />
-            <Route path={ROUTES.MAPA} element={<Layout><Mapa /></Layout>} />
+            <Route path={ROUTES.MAPA} element={<Mapa />} />
             <Route path={ROUTES.ENTREACTIVIDADES} element={<Layout><EntreActividades /></Layout>} />
             <Route path={ROUTES.ESCANERQR} element={<Layout><EscanerQR /></Layout>} />
             <Route path={ROUTES.MODO_SECRETO} element={<Layout><ModoSecreto /></Layout>} />
