@@ -74,9 +74,9 @@
     "error": "Ha ocurrido un error al cargar la actividad.",
     "saludo": "· ¡Hola {{nombre}}! ·",
     "pausarAudio": "⏸️ Pausar audio",
-    "reproducirAudio": "▶️ Reproducir audio",
-    "pausarAudioENG": "⏸️ Pausar audio infantil",
-    "reproducirAudioENG": "▶️ Reproducir audio infantil",
+    "reproducirAudio": "▶️ Audio general",
+    "pausarAudioENG": "⏸️ Pausar audio",
+    "reproducirAudioENG": "▶️ Audio infantil",
     "sabiasQue": "¿Sabías que...?",
     "verMapaActividad": "🗺️ Ver mapa",
     "EscanearQR": "📲 Escanear codigo QR"
