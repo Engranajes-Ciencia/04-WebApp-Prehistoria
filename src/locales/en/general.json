@@ -1,19 +1,19 @@
 {
   "orientation": {
-    "warning": "⚠️ Rotate your device for a better experience"
+    "warning": "⚠️ Gira el dispositivo para una mejor experiencia"
   },
 
   "connection": {
-    "alert":"⚠️ No internet connection detected!"
+    "alert":"⚠️ ¡Estás desconectado de Internet!"
   },
 
   "actividad": {
-    "siguienteQR": "Scanner QR"
+    "siguienteQR": "Ir al siguiente QR"
   },
-
+  
   "footer": {
-    "proyecto": "🌍 Educational project for the Prehistoric Park",
-    "desarrolladoPor": "🧠 Developed by <1>Engranajes Ciencia</1> & FCT Team 💻",
-    "derechos": "© {{year}} All rights reserved"
+    "proyecto": "🌍 Proyecto educativo para el Parque de la Ciencia de la Prehistoria",
+    "desarrolladoPor": "🧠 Desarrollado por <1>Engranajes Ciencia</1> & Equipo FCT 💻",
+    "derechos": "© {{year}} Todos los derechos reservados"
   }
 }
