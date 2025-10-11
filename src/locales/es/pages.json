@@ -1,28 +1,28 @@
 {
   "modojuego": {
-    "titulo": "Elige tu estilo de juego",
-    "subtitulo": "¿Exploras solo o acompañado?",
-    "modoIndividual": "Modo individual",
-    "modoEquipo": "Modo equipo",
+    "titulo": "Elige un modo de juego",
+    "subtitulo": "¿Vienes en familia o con el cole?",
+    "modoIndividual": "Modo en familia",
+    "modoEquipo": "Modo colegio",
     "proximamente": "Próximamente"
   },
   "portada": {
-    "titulo": "Aventura Prehistórica",
-    "descripcion": "¡Bienvenido a la Aventura Prehistórica! Acabas de embarcarte en un viaje en el tiempo donde descubrirás los secretos mejor guardados de la historia de la humanidad y de la Tierra. Guiado por tu fiel compañero o compañera (¡tú eliges!), recorrerás 10 lugares sagrados, fósiles milenarios, civilizaciones ancestrales y monumentos asombrosos. En cada parada encontrarás un código QR que activará una misión: una actividad interactiva que te hará pensar, aprender y superar retos. ¿Estás preparado para convertirte en un auténtico explorador del tiempo? 🧭 ¡Tu aventura comienza ya!",
-    "empezar": "Empezar Aventura",
+    "titulo": "Parque de la Prehistórica",
+    "descripcion": "¡Bienvenidos a esta aventura prehistórica! Acabáis de embarcaros en un apasionante viaje en el tiempo, con el que descubriréis la historia de nuestro planeta, desde el origen de la vida hasta la aparición de las primeras civilizaciones. En cada parada encontraréis un código QR que os conducirá a una explicación detallada, y en diez de ellas encontraréis una actividad interactiva. Id superándolas para conseguir las insignias y obtener vuestro diploma al final. ¿Estáis preparados para convertiros en auténticos exploradores del tiempo? ¡Vuestra aventura comienza ya!",
+    "empezar": "¡Empezar aventura!",
     "audio": "/sounds/vozPortadaESP.mp3"
   },
   "form": {
     "nombre": "Nombre de explorador/a:",
-    "placeholderNombre": "Escribe tu nombre...",
-    "guia": "Elige a tu guía:",
-    "botonAventura": "Empezar Aventura",
+    "placeholderNombre": "Escribid un nombre...",
+    "guia": "Elige a vuestro guía:",
+    "botonAventura": "¡Empezar la aventura!",
     "alertaNombreInvalido": "El nombre solo puede contener letras, números y espacios.",
-    "alertaFaltanDatos": "Por favor, escribe tu nombre y elige un avatar."
+    "alertaFaltanDatos": "Por favor, escribid un nombre de equipo y eligid un avatar."
   },
   "mapa": {
     "saludo": "¡Saludos {{nombre}}!",
-    "dialogo": "Yo ser guía {{guia}}. Tú seguir {{guia}}.<0></0><0></0>{{nombre}} tener prendas raras.<0></0><0></0>¿{{nombre}} no ser de aquí?<0></0><0></0>No importar,<0></0><0></0>¡{{nombre}} y {{guia}} explorar tierras!",
+    "dialogo": "Yo seré vuestro guía {{guia}}.<0></0>{{nombre}} tener prendas raras.<0></0><0></0>¿{{nombre}} no sois de aquí?<0></0><0></0>No importa,<0></0><0></0>¡{{nombre}} y {{guia}} explorararemos estas tierras!",
     "instruccion": "Escanea un código QR o selecciona una actividad para comenzar.",
     "botonQR": "Escanear Código QR",
     "botonVolver": "Volver",
